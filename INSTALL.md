@@ -1,17 +1,11 @@
-### [X](http://link-to-x.com)
+### [QBittorrent](https://www.qbittorrent.org/)
 
-#### Install using Git
+#### Download theme
 
-If you are a git user, you can install the theme and keep up to date by cloning the repo:
-
-    $ git clone https://github.com/dracula/template.git
-
-#### Install manually
-
-Download using the [GitHub .zip download](https://github.com/dracula/template/archive/master.zip) option and unzip them.
+Download .qbtheme using the [raw .qbtheme download](https://github.com/MahdyMirzade/qbittorrent/raw/master/qbittorrent.qbtheme) option.
 
 #### Activating theme
 
-1. Do this
-2. Then that
-3. Boom! It's working
+1. Enable theme selection from menu: → Tools → Options → Behavior → Interface → Use custom UI Theme.
+2. In 'UI Theme file' click on the file icon and select your '.qbtheme' file.
+3. Restart qbittorrent to apply theme.
