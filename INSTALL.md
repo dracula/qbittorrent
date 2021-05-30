@@ -2,7 +2,7 @@
 
 #### Download theme
 
-Download .qbtheme using the [raw .qbtheme download](https://github.com/MahdyMirzade/qbittorrent/raw/master/qbittorrent.qbtheme) option.
+Download .qbtheme using the [raw .qbtheme download](https://github.com/dracula/qbittorrent/raw/master/qbittorrent.qbtheme) option.
 
 #### Activating theme
 
