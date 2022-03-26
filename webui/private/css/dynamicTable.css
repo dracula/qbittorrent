@@ -1,0 +1,105 @@
+/**************************************************************
+
+    Dynamic Table
+    v 0.4
+
+**************************************************************/
+
+.dynamicTable tbody tr {
+    background-color: #fff;
+}
+
+.dynamicTable tbody tr:nth-child(even),
+.dynamicTable tbody tr.alt {
+    background-color: #eee;
+}
+
+#transferList .dynamicTable td {
+    padding: 0 2px;
+}
+
+.dynamicTable tbody tr.selected {
+    background-color: #354158;
+    color: #fff;
+}
+
+.dynamicTable tbody tr:hover {
+    background-color: #ee6600;
+    color: #fff;
+}
+
+#transferList tr:hover {
+    cursor: pointer;
+}
+
+#transferList img.stateIcon {
+    height: 1.3em;
+    margin-bottom: -1px;
+    vertical-align: middle;
+}
+
+tr.dynamicTableHeader {
+    cursor: pointer;
+}
+
+.dynamicTable {
+    border-spacing: 0;
+    padding: 0;
+    table-layout: fixed;
+    width: 1%;
+}
+
+.dynamicTable th {
+    background-color: #eee;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 4px;
+    white-space: nowrap;
+}
+
+.dynamicTable td {
+    padding: 0px 4px;
+    white-space: nowrap;
+}
+
+.dynamicTable thead tr {
+    background-color: #eee;
+}
+
+.dynamicTable th,
+.dynamicTable td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dynamicTable th.sorted {
+    background-image: url("../icons/go-up.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.dynamicTable th.sorted.reverse {
+    background-image: url("../icons/go-down.svg");
+}
+
+.dynamicTable td img.flags {
+    height: 1.25em;
+    vertical-align: middle;
+}
+
+.dynamicTableFixedHeaderDiv {
+    overflow: hidden;
+}
+
+.dynamicTableDiv {
+    overflow: auto;
+}
+
+.dynamicTableDiv thead th {
+    height: 0px !important;
+    line-height: 0px !important;
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+}

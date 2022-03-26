@@ -1,0 +1,41 @@
+body {
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    text-align: left;
+}
+
+.col {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.row {
+    margin-bottom: 5px;
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5em;
+    text-align: center;
+}
+
+#formplace {
+    padding: 10px;
+    text-align: left;
+}
+
+#error_msg {
+    color: #f00;
+}
+
+#login {
+    float: right;
+}
+
+#logo img {
+    height: 11em;
+}

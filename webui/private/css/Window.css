@@ -1,0 +1,386 @@
+/*
+
+Window.css for Mocha UI
+
+Theme: Default
+
+Copyright:
+	Copyright (c) 2007-2009 Greg Houston, <http://greghoustondesign.com/>.
+
+License:
+	MIT-style license.
+
+Required by:
+	Window.js and Modal.css
+
+*/
+
+/* Windows
+---------------------------------------------------------------- */
+
+.mocha {
+    background-color: #e5e5e5;
+    display: none;
+    overflow: hidden;
+}
+
+.mochaOverlay {
+    left: 0;
+    position: absolute; /* This is also set in theme.js in order to make theme transitions smoother */
+    top: 0;
+}
+
+/*
+
+	We get a little creative here in order to define a gradient in the CSS using a query
+	string appended to a background image.
+
+	"from" is the top color of the gradient. "to" is the bottom color of the gradient.
+
+	Both must be hex values without the leading # sign.
+
+*/
+
+.mochaTitlebar {
+    background: url("../images/spacer.gif?from=fafafa&to=e5e5e5");
+    overflow: hidden;
+    width: 100%;
+}
+
+.mochaTitlebar h3 {
+    color: #888;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    margin: 0;
+    padding: 5px 10px 4px 12px;
+}
+
+.mocha.isFocused .mochaTitlebar h3 {
+    color: #181818;
+}
+
+.mochaToolbarWrapper {
+    background: #f1f1f1;
+    border-top: 1px solid #d9d9d9;
+    height: 29px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* For IE */
+}
+
+div.mochaToolbarWrapper.bottom {
+    border: 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.mochaToolbar {
+    border-top: 1px solid #fff;
+    width: 100%; /* For IE */
+}
+
+.mochaContentBorder {
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+}
+
+/* Has a fixed height and scrollbars if required. */
+.mochaContentWrapper {
+    background: #fff;
+    font-size: 12px;
+    overflow: auto;
+}
+
+.mochaContent {
+    padding: 10px 12px;
+}
+
+.mocha .handle {
+    background: #0f0;
+    font-size: 1px; /* For IE6 */
+    height: 3px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 3px;
+    z-index: 2;
+}
+
+/* Corner resize handles */
+.mocha .corner {
+    background: #f00;
+    height: 10px;
+    width: 10px;
+}
+
+/* Bottom right resize handle */
+.mocha .cornerSE {
+    background: #fefefe; /* This is the color of the visible resize handle */
+    height: 20px;
+    width: 20px;
+}
+
+.mochaCanvasHeader {
+    background: transparent;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.mochaControls {
+    background: transparent;
+    height: 14px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 52px;
+    z-index: 4;
+}
+
+.mochaCanvasControls {
+    background: transparent;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    z-index: 3;
+}
+
+/*
+	To use images for these buttons:
+	1. Set the useCanvasControls window option to false.
+	2. If you use a different button size you may need to reposition the controls.
+	   Modify the controlsOffset window option.
+	2. Replcac the background-color with a background-image for each button.
+
+*/
+.mochaMinimizeButton,
+.mochaMaximizeButton,
+.mochaCloseButton {
+    background-color: #fff;
+    color: #666;
+    cursor: pointer;
+    float: right;
+    font-size: 1px;
+    height: 14px;
+    margin-left: 5px;
+    width: 14px;
+    z-index: 4;
+}
+
+.mochaMinimizeButton {
+    margin-left: 0;
+}
+
+.mochaSpinner {
+    background: url("../images/spinner.gif") no-repeat;
+    bottom: 7px;
+    display: none;
+    height: 16px;
+    left: 6px;
+    position: absolute;
+    width: 16px;
+}
+
+.mochaIframe {
+    width: 100%;
+}
+
+/* Fix for IE6 select z-index issue */
+.zIndexFix {
+    border: 1px solid transparent;
+    display: block;
+    /*filter: mask();*/
+    height: 100px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    z-index: -1;
+}
+
+/* Viewport overlays
+---------------------------------------------------------------- */
+
+#modalOverlay {
+    background: #000;
+    display: none;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+/* Fix for IE6 select z-index issue */
+#modalFix {
+    display: none;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* Underlay */
+
+#windowUnderlay {
+    background: #fff;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+* html #windowUnderlay {
+    position: absolute;
+}
+
+/* The replaced class is used internally when converting CSS values to Canvas. These classes should not be removed. */
+
+.mocha.replaced,
+.mochaTitlebar.replaced,
+.mochaMinimizeButton.replaced,
+.mochaMaximizeButton.replaced,
+.mochaCloseButton.replaced {
+    background-color: transparent !important;
+}
+
+.windowClosed {
+    display: none;
+    left: -20000px;
+    overflow: hidden;
+    position: absolute;
+    top: -20000px;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.windowClosed .mochaContentBorder,
+.windowClosed .mochaToolbarWrapper,
+.windowClosed .mochaTitlebar,
+.windowClosed .mochaControls,
+.windowClosed .mochaCanvasControls {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+/* Modals */
+
+.modal2 {
+    border: 8px solid #fff;
+}
+
+.modal2 .mochaContentBorder {
+    border-width: 0px;
+}
+
+/* Window Themes */
+
+.mocha.no-canvas {
+    background: #e5e5e5;
+    border: 1px solid #555;
+}
+
+.mocha.no-canvas .mochaTitlebar {
+    background: #e5e5e5;
+}
+
+.mocha.transparent .mochaTitlebar h3 {
+    color: #fff;
+    display: none;
+}
+
+.mocha.transparent .mochaContentWrapper {
+    background: transparent;
+}
+
+.mocha.notification {
+    background: #cedff2;
+}
+
+.mocha.notification .mochaTitlebar {
+    opacity: 0;
+}
+
+.mocha.notification .mochaContentBorder {
+    border-width: 0px;
+}
+
+.mocha.notification .mochaContentWrapper {
+    background: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Example Window Themes */
+
+#about_contentWrapper {
+    background: #e5e5e5 url("../images/logo2.gif") 3px 3px no-repeat;
+}
+
+#builder_contentWrapper {
+    background: #f5f5f7;
+}
+
+#json01 .mochaTitlebar {
+    background: #6dd2db;
+}
+
+#json02 .mochaTitlebar {
+    background: #6db6db;
+}
+
+#json03 .mochaTitlebar {
+    background: #6d92db;
+}
+
+.jsonExample .mochaTitlebar h3 {
+    color: #ddd;
+}
+
+/* This does not work in IE6. */
+.isFocused.jsonExample .mochaTitlebar h3 {
+    color: #fff;
+}
+
+#fxmorpherExample .mochaContentWrapper {
+    background: #577a9e;
+}
+
+#clock {
+    background: #fff;
+}
+
+/* Workaround to make invisible buttons clickable */
+
+.mochaMinimizeButton.replaced,
+.mochaMaximizeButton.replaced,
+.mochaCloseButton.replaced {
+    background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7") !important;
+}
+
+/* iOS iframe scrolling */
+.windowFrame .mochaContentWrapper {
+    /* scroll the Window content. !important required. */
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
+}
+
+.windowFrame .mochaContent {
+    height: 100%;
+}
+
+.windowFrame iframe {
+    /* fix double scroll bar by reducing frame height. !important required. */
+    height: calc(100% - 5px) !important;
+}

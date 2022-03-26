@@ -1,11 +1,19 @@
 ### [QBittorrent](https://www.qbittorrent.org/)
 
-#### Download theme
+#### Application Theme (Client)
 
-Download .qbtheme using the [raw .qbtheme download](https://github.com/dracula/qbittorrent/raw/master/qbittorrent.qbtheme) option.
+1. Download .qbtheme using the [raw .qbtheme download](https://github.com/dracula/qbittorrent/raw/master/qbittorrent.qbtheme) option.
+2. Enable theme selection from menu: → Tools → Options → Behavior → Interface → Use custom UI Theme.
+3. In 'UI Theme file' click on the file icon and select your '.qbtheme' file.
+4. Restart qbittorrent to apply theme.
 
-#### Activating theme
+#### WebUI Theme (Server)
 
-1. Enable theme selection from menu: → Tools → Options → Behavior → Interface → Use custom UI Theme.
-2. In 'UI Theme file' click on the file icon and select your '.qbtheme' file.
-3. Restart qbittorrent to apply theme.
+1. Clone the repository:
+    ```
+    cd /opt
+    git clone https://github.com/dracula/qbittorrent.git
+    chmod -R 777 nightwalker
+    ```
+2. Enable theme selection from menu: → Tools → Options → Web UI → Use alternative Web UI.
+3. In 'Files locations' bar, you should type `/opt/qbittorrent/webui` .

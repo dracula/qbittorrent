@@ -1,0 +1,436 @@
+/*
+
+Core.css for Mocha UI
+
+Theme: Default
+
+Copyright:
+	Copyright (c) 2007-2009 Greg Houston, <http://greghoustondesign.com/>.
+
+License:
+	MIT-style license.
+
+Required by:
+	Layout.js
+
+*/
+
+/* Layout
+---------------------------------------------------------------- */
+
+html,
+body {
+    background: #fff;
+}
+
+body {
+    margin: 0; /* Required */
+}
+
+#desktop {
+    cursor: default; /* Fix for issue in IE7. IE7 wants to use the I-bar text cursor */
+    height: 100%;
+    min-height: 100%;
+    min-width: 400px; /* Helps keep header content from wrapping */
+    overflow: hidden;
+    position: relative;
+}
+
+#desktopHeader {
+    background: #f2f2f2;
+}
+
+#desktopTitlebarWrapper {
+    background: #718ba6 url("../images/bg-header.gif") repeat-x;
+    height: 45px;
+    overflow: hidden;
+    position: relative;
+}
+
+#desktopTitlebar {
+    background: url("../images/logo.gif") no-repeat;
+    background-position: left 0;
+    height: 32px;
+    padding: 7px 8px 6px;
+}
+
+#desktopTitlebar h1.applicationTitle {
+    color: #fff;
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0;
+    padding: 0 5px 0 0;
+}
+
+#desktopTitlebar h2.tagline {
+    color: #d4dce4;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 7px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#desktopTitlebar h2.tagline .taglineEm {
+    color: #fff;
+    font-weight: bold;
+}
+
+#topNav {
+    color: #d4dce4;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding: 13px 10px 0 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+}
+
+#topNav a {
+    color: #fff;
+    font-weight: normal;
+}
+
+#topNav a:hover {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+#desktopNavbar {
+    background: #f2f2f2;
+    /*background-color: #ccc;*/
+    border-bottom: 1px solid #3f3f3f;
+    height: 20px;
+    margin: 0 0px;
+    overflow: hidden; /* Remove this line if you want the menu to be backward compatible with Firefox 2 */
+}
+
+#desktopNavbar ul {
+    font-size: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#desktopNavbar > ul > li {
+    float: left;
+}
+
+#desktopNavbar a {
+    display: block;
+}
+
+#desktopNavbar ul li a {
+    color: #333;
+    font-weight: normal;
+    padding: 2px 10px 6px;
+}
+
+#desktopNavbar ul li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+#desktopNavbar ul li a.arrow-right,
+#desktopNavbar ul li a:hover.arrow-right {
+    background-image: url("../images/arrow-right.gif");
+    background-position: right 7px;
+    background-repeat: no-repeat;
+}
+
+#desktopNavbar li ul {
+    background: #fff url("../images/bg-dropdown.gif") repeat-y;
+    border: 1px solid #3f3f3f;
+    left: -999em;
+    margin-top: -6px;
+    position: absolute;
+    z-index: 8000;
+}
+
+#desktopNavbar li:hover ul ul,
+#desktopNavbar li.ieHover ul ul,
+#desktopNavbar li:hover ul ul ul,
+#desktopNavbar li.ieHover ul ul ul {
+    left: -999em;
+}
+
+#desktopNavbar li ul ul {
+    /* third-and-above-level lists */
+    margin: -22px 0 0 163px;
+}
+
+#desktopNavbar li ul li .check {
+    background: #555;
+    font-size: 1px;
+    height: 5px;
+    left: 6px;
+    line-height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 8px;
+    width: 5px;
+}
+
+#desktopNavbar li ul li a {
+    color: #3f3f3f;
+    font-weight: normal;
+    min-width: 120px;
+    padding: 1px 10px 1px 20px;
+    position: relative;
+}
+
+#desktopNavbar li ul li a:hover {
+    background: #6c98d9;
+    border-radius: 2px;
+    color: #fff;
+}
+
+#desktopNavbar li ul li a:hover .check {
+    background: #fff;
+}
+
+/* lists nested under hovered list items */
+#desktopNavbar li:hover ul,
+#desktopNavbar li.ieHover ul,
+#desktopNavbar li li.ieHover ul,
+#desktopNavbar li li li.ieHover ul,
+#desktopNavbar li li:hover ul,
+#desktopNavbar li li li:hover ul {
+    left: auto;
+}
+
+/* For IE7 */
+#desktopNavbar li:hover {
+    position: static;
+}
+
+li.divider {
+    border-top: 1px solid #ebebeb;
+    margin-top: 2px;
+    padding-top: 3px;
+}
+
+#pageWrapper {
+    border-bottom: 1px solid #909090;
+    border-top: 1px solid #909090;
+    overflow: hidden; /* This can be set to hidden or auto */
+    position: relative;
+    /*height: 100%;*/
+}
+
+/* Footer */
+
+#desktopFooterWrapper {
+    bottom: 0;
+    height: 30px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+#desktopFooter {
+    background: #f2f2f2;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 24px;
+    padding: 6px 8px 0;
+}
+
+/* Panel Layout
+---------------------------------------------------------------- */
+
+/* Columns */
+
+.column {
+    float: left;
+    overflow: hidden; /* Required by IE6 */
+    position: relative;
+}
+
+/* Panels */
+
+.panel {
+    background: #f8f8f8;
+    border-bottom: 1px solid #b9b9b9;
+    overflow: auto;
+    position: relative;
+}
+
+.panelWrapper.collapsed .panel-header {
+    border-bottom: 0;
+}
+
+.panelAlt {
+    background: #f2f2f2;
+}
+
+.bottomPanel {
+    border-bottom: 0;
+}
+
+.pad {
+    padding: 8px;
+}
+
+#mainPanel {
+    background: #fff;
+}
+
+.panel-header {
+    background: #f1f1f1 url("../images/bg-panel-header.gif") repeat-x;
+    border-bottom: 1px solid #d3d3d3;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.panel-headerContent {
+    padding-top: 2px;
+}
+
+.panel-headerContent.tabs {
+    background: url("../images/tabs.gif") repeat-x;
+    background-position: left -68px;
+}
+
+.panel-header h2 {
+    color: #333;
+    display: inline-block;
+    font-size: 12px;
+    height: 22px;
+    margin: 0;
+    overflow: hidden;
+    padding: 3px 8px 0;
+}
+
+.panel-collapse {
+    background: url("../icons/collapse.svg") left top no-repeat;
+}
+
+.panel-expand {
+    background: url("../icons/collapse.svg") left top no-repeat;
+    transform: rotate(180deg);
+}
+
+.icon16 {
+    cursor: pointer;
+    margin: 4px 0 0 2px;
+}
+
+/* Column and Panel Handles */
+
+.horizontalHandle {
+    background: #eee url("../images/bg-handle-horizontal.gif") repeat-x;
+    font-size: 1px;
+    height: 4px;
+    line-height: 1px;
+    overflow: hidden;
+}
+
+.horizontalHandle.detached .handleIcon {
+    background: transparent;
+}
+
+.horizontalHandle .handleIcon {
+    background: url("../images/handle-icon-horizontal.gif") center center
+        no-repeat;
+    font-size: 1px;
+    height: 4px;
+    line-height: 1px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.columnHandle {
+    background: #c3c3c3 url("../images/handle-icon.gif") center center no-repeat;
+    border: 1px solid #909090;
+    border-bottom: 0;
+    border-top: 0;
+    float: left;
+    min-height: 10px;
+    overflow: hidden;
+    width: 4px;
+}
+
+/* Toolboxes */
+
+.toolbox {
+    float: right;
+    height: 24px;
+    margin-top: 3px;
+    overflow: hidden;
+    padding: 0 5px;
+    text-align: right;
+}
+
+/* Have to specify div here for IE6's sake */
+div.toolbox.divider {
+    background: url("../images/toolbox-divider.gif") repeat-y;
+    padding-left: 8px;
+}
+
+.toolbox img.disabled {
+    cursor: default;
+}
+
+.iconWrapper {
+    border: 1px solid transparent;
+    display: inline-block;
+    height: 22px;
+    min-width: 22px;
+    overflow: hidden;
+}
+
+* html .iconWrapper {
+    border: 0;
+    padding: 1px;
+}
+
+.iconWrapper img {
+    cursor: pointer;
+    margin: 0;
+    padding: 3px;
+}
+
+.iconWrapper:hover {
+    border: 1px solid #a0a0a0;
+    border-radius: 3px;
+}
+
+#spinnerWrapper {
+    background: url("../images/spinner-placeholder.gif") no-repeat;
+    height: 16px;
+    margin: 4px 5px 0;
+    width: 16px;
+}
+
+#spinner {
+    background: url("../images/spinner.gif") no-repeat;
+    display: none;
+    height: 16px;
+    width: 16px;
+}
+
+#desktopFooter td {
+    text-align: left;
+    vertical-align: top;
+}
+
+td.speedLabel {
+    cursor: pointer;
+    min-width: 18em;
+}
+
+#freeSpaceOnDisk {
+    white-space: nowrap;
+}
+
+#DHTNodes {
+    white-space: nowrap;
+}
