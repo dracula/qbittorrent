@@ -13,7 +13,7 @@
     ```
     cd /opt
     git clone https://github.com/dracula/qbittorrent.git
-    chmod -R 777 nightwalker
+    chmod -R 777 qbittorrent
     ```
 2. Enable theme selection from menu: → Tools → Options → Web UI → Use alternative Web UI.
 3. In 'Files locations' bar, you should type `/opt/qbittorrent/webui` .
