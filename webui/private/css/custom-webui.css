@@ -62,7 +62,6 @@ a {
 
 #desktopNavbar li ul .divider {
     border-top-color: var(--color-Grey) !important;
-    display: none;
 }
 
 #pageWrapper {
