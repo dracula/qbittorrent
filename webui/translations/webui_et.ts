@@ -42,6 +42,30 @@
         <source>Don't create subfolder</source>
         <translation>Ära loo alamkausta</translation>
     </message>
+    <message>
+        <source>Manual</source>
+        <translation>Käsitsi</translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation>Automaatne</translation>
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Stop condition:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -77,16 +101,16 @@
         <translation>Pausi torrentid</translation>
     </message>
     <message>
-        <source>Delete torrents</source>
-        <translation>Kustuta torrentid</translation>
-    </message>
-    <message>
         <source>New Category</source>
         <translation>Uus Kategooria</translation>
     </message>
     <message>
         <source>Edit category...</source>
         <translation>Muuda kategooriat...</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Eemalda torrentid</translation>
     </message>
 </context>
 <context>
@@ -272,10 +296,6 @@
         <translation>Lae üles lokaalne torrent</translation>
     </message>
     <message>
-        <source>Are you sure you want to delete the selected torrents from the transfer list?</source>
-        <translation>Kindel, et soovite kustutada valitud torrentid ülekanneteloendist?</translation>
-    </message>
-    <message>
         <source>Save</source>
         <translation>Salvesta</translation>
     </message>
@@ -363,6 +383,10 @@
         <source>Original author</source>
         <translation>Algne autor</translation>
     </message>
+    <message>
+        <source>Are you sure you want to remove the selected torrents from the transfer list?</source>
+        <translation>Kindel, et soovite eemaldada valitud torrentid ülekanneteloendist?</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -427,10 +451,6 @@
         <translation>Paus</translation>
     </message>
     <message>
-        <source>Delete</source>
-        <translation>Kustuta</translation>
-    </message>
-    <message>
         <source>Pause All</source>
         <translation>Pausi Kõik</translation>
     </message>
@@ -489,7 +509,7 @@
     </message>
     <message>
         <source>Transfers</source>
-        <translation type="unfinished" />
+        <translation>Ülekanded</translation>
     </message>
     <message>
         <source>Move up in the queue</source>
@@ -573,6 +593,22 @@
     </message>
     <message>
         <source>Filters Sidebar</source>
+        <translation>Filtrite külgriba</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Loobu</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Eemalda</translation>
+    </message>
+    <message>
+        <source>Would you like to resume all torrents?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Would you like to pause all torrents?</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -600,7 +636,7 @@
     </message>
     <message>
         <source>Web UI</source>
-        <translation type="unfinished" />
+        <translation>Web UI</translation>
     </message>
     <message>
         <source>Language</source>
@@ -613,10 +649,6 @@
     <message>
         <source>Email notification upon download completion</source>
         <translation>E-mailile teavitused pärast allalaadimise lõpetamist</translation>
-    </message>
-    <message>
-        <source>Run external program on torrent completion</source>
-        <translation>Käivita väline programm, pärast torrenti lõpetamist</translation>
     </message>
     <message>
         <source>IP Filtering</source>
@@ -712,7 +744,7 @@
     </message>
     <message>
         <source>Listening Port</source>
-        <translation type="unfinished" />
+        <translation>Kuulatav port</translation>
     </message>
     <message>
         <source>Port used for incoming connections:</source>
@@ -752,7 +784,7 @@
     </message>
     <message>
         <source>(None)</source>
-        <translation type="unfinished" />
+        <translation>(Puudub)</translation>
     </message>
     <message>
         <source>SOCKS4</source>
@@ -768,7 +800,7 @@
     </message>
     <message>
         <source>Host:</source>
-        <translation type="unfinished" />
+        <translation>Host:</translation>
     </message>
     <message>
         <source>Port:</source>
@@ -796,7 +828,7 @@
     </message>
     <message>
         <source>Global Rate Limits</source>
-        <translation type="unfinished" />
+        <translation>Üldine kiiruse limiidid</translation>
     </message>
     <message>
         <source>Upload:</source>
@@ -808,7 +840,7 @@
     </message>
     <message>
         <source>Alternative Rate Limits</source>
-        <translation type="unfinished" />
+        <translation>Alternatiivsed kiiruse piirangud</translation>
     </message>
     <message>
         <source>From:</source>
@@ -838,11 +870,11 @@
     </message>
     <message>
         <source>Rate Limits Settings</source>
-        <translation type="unfinished" />
+        <translation>Kiiruse piirangu sätted</translation>
     </message>
     <message>
         <source>Apply rate limit to transport overhead</source>
-        <translation type="unfinished" />
+        <translation>Määra kiiruse limiit edastatavale lisainfole</translation>
     </message>
     <message>
         <source>Apply rate limit to µTP protocol</source>
@@ -922,7 +954,7 @@
     </message>
     <message>
         <source>Supported parameters (case sensitive):</source>
-        <translation type="unfinished" />
+        <translation>Toetatud parameetrid (sõltuvalt suur- ja väiketähest):</translation>
     </message>
     <message>
         <source>%N: Torrent name</source>
@@ -942,7 +974,7 @@
     </message>
     <message>
         <source>%D: Save path</source>
-        <translation type="unfinished" />
+        <translation>%D: Salvestamise asukoht</translation>
     </message>
     <message>
         <source>%C: Number of files</source>
@@ -958,7 +990,7 @@
     </message>
     <message>
         <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., "%N")</source>
-        <translation type="unfinished" />
+        <translation>Vihje: ümbritsege parameeter jutumärkidega, et vältida teksti katkestamist tühimikes (nt "%N").</translation>
     </message>
     <message>
         <source>The Web UI username must be at least 3 characters long.</source>
@@ -990,7 +1022,7 @@
     </message>
     <message>
         <source>Download rate threshold:</source>
-        <translation type="unfinished" />
+        <translation>Allalaadimise kiiruse piirmäär:</translation>
     </message>
     <message>
         <source>Upload rate threshold:</source>
@@ -1022,7 +1054,7 @@
     </message>
     <message>
         <source>Switch torrent to Manual Mode</source>
-        <translation type="unfinished" />
+        <translation>Lülita torrent manuaalsesse režiimi</translation>
     </message>
     <message>
         <source>When Torrent Category changed:</source>
@@ -1066,7 +1098,7 @@
     </message>
     <message>
         <source>Switch affected torrents to Manual Mode</source>
-        <translation type="unfinished" />
+        <translation>Lülitage mõjutatud torrentid manuaalsesse režiimi</translation>
     </message>
     <message>
         <source>Files location:</source>
@@ -1074,11 +1106,11 @@
     </message>
     <message>
         <source>Manual</source>
-        <translation type="unfinished" />
+        <translation>Juhend</translation>
     </message>
     <message>
         <source>Torrent inactivity timer:</source>
-        <translation type="unfinished" />
+        <translation>Torrenti passiivsuse timer:</translation>
     </message>
     <message>
         <source>Default Torrent Management Mode:</source>
@@ -1123,10 +1155,6 @@
     <message>
         <source>Anti-leech</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable OS cache:</source>
-        <translation>Luba OS'i puhver:</translation>
     </message>
     <message>
         <source>When ratio reaches</source>
@@ -1274,7 +1302,7 @@
     </message>
     <message>
         <source>Session timeout:</source>
-        <translation type="unfinished" />
+        <translation>Sessiooni aegumistähtaeg:</translation>
     </message>
     <message>
         <source>Resolve peer countries:</source>
@@ -1283,10 +1311,6 @@
     <message>
         <source>ban for:</source>
         <translation>bänni kuni:</translation>
-    </message>
-    <message>
-        <source>Use piece extent affinity (requires libtorrent &gt;= 1.2.2):</source>
-        <translation type="unfinished" />
     </message>
     <message>
         <source>Stop tracker timeout:</source>
@@ -1310,7 +1334,7 @@
     </message>
     <message>
         <source>Add custom HTTP headers</source>
-        <translation type="unfinished" />
+        <translation>Lisa kohandatud HTTP päised</translation>
     </message>
     <message>
         <source>Filters:</source>
@@ -1318,7 +1342,7 @@
     </message>
     <message>
         <source>Enable fetching RSS feeds</source>
-        <translation type="unfinished" />
+        <translation>RSS-voogude toomise lubamine</translation>
     </message>
     <message>
         <source>Hashing threads (requires libtorrent &gt;= 2.0):</source>
@@ -1354,7 +1378,7 @@
     </message>
     <message>
         <source>Download REPACK/PROPER episodes</source>
-        <translation type="unfinished" />
+        <translation>Laadi alla REPACK/PROPER osad</translation>
     </message>
     <message>
         <source>Feeds refresh interval:</source>
@@ -1367,10 +1391,6 @@
     <message>
         <source>Maximum number of articles per feed:</source>
         <translation>Maksimum kogus artikleid feed'idel:</translation>
-    </message>
-    <message>
-        <source>Max concurrent HTTP announces (requires libtorrent &gt;= 1.2.7):</source>
-        <translation type="unfinished" />
     </message>
     <message>
         <source> min</source>
@@ -1394,7 +1414,7 @@
     </message>
     <message>
         <source>RSS Smart Episode Filter</source>
-        <translation type="unfinished" />
+        <translation>RSS tark osa filter</translation>
     </message>
     <message>
         <source>Disk cache (requires libtorrent &lt; 2.0):</source>
@@ -1413,10 +1433,6 @@
         <translation>Partneri ühenduse protokoll:</translation>
     </message>
     <message>
-        <source>Support internationalized domain name (IDN) (requires libtorrent &gt;= 1.2.12):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>Torrent content layout:</source>
         <translation>Torrenti sisu paigutus:</translation>
     </message>
@@ -1426,7 +1442,7 @@
     </message>
     <message>
         <source>Original</source>
-        <translation type="unfinished" />
+        <translation>Originaal</translation>
     </message>
     <message>
         <source>Don't create subfolder</source>
@@ -1454,7 +1470,7 @@
     </message>
     <message>
         <source>Trusted proxies list:</source>
-        <translation type="unfinished" />
+        <translation>Usaldatud prokside nimekiri</translation>
     </message>
     <message>
         <source>Enable reverse proxy support</source>
@@ -1486,7 +1502,7 @@
     </message>
     <message>
         <source>Log performance warnings</source>
-        <translation type="unfinished" />
+        <translation>Logi jõudluse hoiatused</translation>
     </message>
     <message>
         <source>Maximum outstanding requests to a single peer:</source>
@@ -1494,6 +1510,142 @@
     </message>
     <message>
         <source>Max active checking torrents:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Memory mapped files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Default</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>POSIX-compliant</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>This option is less effective on Linux</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk IO type (libtorrent &gt;= 2.0; requires restart):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Write-through (requires libtorrent &gt;= 2.0.6)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>It controls the internal state update interval which in turn will affect UI updates</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk IO read mode:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disable OS cache</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk IO write mode:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use piece extent affinity:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Max concurrent HTTP announces:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enable OS cache</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Refresh interval:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Physical memory (RAM) usage limit (applied if libtorrent &gt;= 2.0):</source>
+        <translation>Füüsilise mälu (RAM) kasutamise limiit (määratakse kui libtorrent &gt;= 2.0):</translation>
+    </message>
+    <message>
+        <source>ms</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Excluded file names</source>
+        <translation>Välistatud failide nimed</translation>
+    </message>
+    <message>
+        <source>Support internationalized domain name (IDN):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Run external program on torrent finished</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use ';' to split multiple entries. Can use wildcard '*'.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Run external program on torrent added</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>HTTPS certificate should not be empty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>HTTPS key should not be empty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Run external program</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enable port forwarding for embedded tracker:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>If checked, hostname lookups are done via the proxy.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use proxy for hostname lookup</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent stop condition:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -1523,7 +1675,7 @@
     <message>
         <source>Progress</source>
         <comment>i.e: % downloaded</comment>
-        <translation type="unfinished" />
+        <translation>Edenemine</translation>
     </message>
     <message>
         <source>Down Speed</source>
@@ -1574,6 +1726,10 @@
     <message>
         <source>Add peers...</source>
         <translation>Lisa partnereid...</translation>
+    </message>
+    <message>
+        <source>Peer ID Client</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -1633,7 +1789,7 @@
     </message>
     <message>
         <source>Transfer</source>
-        <translation type="unfinished" />
+        <translation>Ülekandmine</translation>
     </message>
     <message>
         <source>Time Active:</source>
@@ -1782,11 +1938,11 @@
     </message>
     <message>
         <source>Info Hash v2:</source>
-        <translation type="unfinished" />
+        <translation>Info räsi v2:</translation>
     </message>
     <message>
         <source>Info Hash v1:</source>
-        <translation type="unfinished" />
+        <translation>Info räsi v1:</translation>
     </message>
     <message>
         <source>N/A</source>
@@ -1794,14 +1950,14 @@
     </message>
     <message>
         <source>Progress:</source>
-        <translation type="unfinished" />
+        <translation>Edenemine:</translation>
     </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
     <message>
         <source>Monitored Folder</source>
-        <translation type="unfinished" />
+        <translation>Jälgitav Kaust</translation>
     </message>
     <message>
         <source>Override Save Location</source>
@@ -1809,7 +1965,7 @@
     </message>
     <message>
         <source>Monitored folder</source>
-        <translation type="unfinished" />
+        <translation>Jälgitav kaust</translation>
     </message>
     <message>
         <source>Default save location</source>
@@ -1887,11 +2043,11 @@
     </message>
     <message>
         <source>Write cache overload:</source>
-        <translation type="unfinished" />
+        <translation>Kirjuta vahemälu ülekoormust:</translation>
     </message>
     <message>
         <source>Read cache overload:</source>
-        <translation type="unfinished" />
+        <translation>Loe vahemälu ülekoormust:</translation>
     </message>
     <message>
         <source>Total queued size:</source>
@@ -1902,7 +2058,7 @@
     <name>StatusBar</name>
     <message>
         <source>DHT: %1 nodes</source>
-        <translation type="unfinished" />
+        <translation>DHT: %1 sõlme</translation>
     </message>
 </context>
 <context>
@@ -2184,10 +2340,6 @@
         <translation>Teavitus</translation>
     </message>
     <message>
-        <source>Downloaded</source>
-        <translation>Allalaetud</translation>
-    </message>
-    <message>
         <source>Tracker URL:</source>
         <translation>Jälitaja URL:</translation>
     </message>
@@ -2222,10 +2374,6 @@
     <message>
         <source>Copy tracker URL</source>
         <translation>Kopeeri jälitaja URL</translation>
-    </message>
-    <message>
-        <source>Add a new tracker...</source>
-        <translation>Lisa uus jälitaja...</translation>
     </message>
     <message>
         <source>Edit tracker URL...</source>
@@ -2268,23 +2416,27 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <source>Size</source>
-        <translation type="vanished">Suurus</translation>
+        <source>Total Size</source>
+        <translation>Kogu suurus</translation>
     </message>
     <message>
-        <source>Total Size</source>
-        <translation type="unfinished" />
+        <source>Times Downloaded</source>
+        <translation>Kordi allalaaditud</translation>
+    </message>
+    <message>
+        <source>Add trackers...</source>
+        <translation>Lisa jälitajaid...</translation>
     </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
     <message>
-        <source>Trackers addition dialog</source>
-        <translation>Jälitajate lisa dialoog</translation>
-    </message>
-    <message>
         <source>List of trackers to add (one per line):</source>
         <translation>Nimekiri jälitajate lisamiseks (üks rea kohta):</translation>
+    </message>
+    <message>
+        <source>Add trackers</source>
+        <translation>Lisa jälitajaid</translation>
     </message>
 </context>
 <context>
@@ -2412,11 +2564,6 @@
         <translation>Paus</translation>
     </message>
     <message>
-        <source>Delete</source>
-        <comment>Delete the torrent</comment>
-        <translation>Kustuta</translation>
-    </message>
-    <message>
         <source>Limit share ratio...</source>
         <translation>Piira jagamise suhet...</translation>
     </message>
@@ -2489,10 +2636,6 @@
     <message>
         <source>Download in sequential order</source>
         <translation>Järjestikuses allalaadimine</translation>
-    </message>
-    <message>
-        <source>Force Recheck</source>
-        <translation>Sunni Ülekontrolli</translation>
     </message>
     <message>
         <source>New Category</source>
@@ -2570,6 +2713,14 @@
         <source>Torrent ID</source>
         <translation>Torrent'i ID</translation>
     </message>
+    <message>
+        <source>Export .torrent</source>
+        <translation>Ekspordi .torrent</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Eemalda</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -2583,7 +2734,7 @@
     </message>
     <message>
         <source>Set no share limit</source>
-        <translation type="unfinished" />
+        <translation>Ilma jagamise piiranguta</translation>
     </message>
     <message>
         <source>Set share limit to</source>
@@ -2604,16 +2755,12 @@
 <context>
     <name>confirmDeletionDlg</name>
     <message>
-        <source>Deletion confirmation</source>
-        <translation>Kustutamise kinnitamine</translation>
+        <source>Also permanently delete the files</source>
+        <translation>Samuti kustuta lõplikult ka failid</translation>
     </message>
     <message>
-        <source>Also delete the files on the hard disk</source>
-        <translation>Samuti kustuta failid kõvakettalt</translation>
-    </message>
-    <message>
-        <source>Deletion confirmation - qBittorrent</source>
-        <translation>Kustutamise kinnitamine - qBittorrent</translation>
+        <source>Remove torrent(s)</source>
+        <translation>Eemalda torrent('eid)</translation>
     </message>
 </context>
 <context>
@@ -2807,6 +2954,14 @@
         <source>showing</source>
         <translation>kuvatakse</translation>
     </message>
+    <message>
+        <source>Click the "Search plugins..." button at the bottom right of the window to install some.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>There aren't any search plugins installed.</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -2931,10 +3086,6 @@
         <translation>Lisa silt...</translation>
     </message>
     <message>
-        <source>Delete torrents</source>
-        <translation>Kustuta torrentid</translation>
-    </message>
-    <message>
         <source>Tag:</source>
         <translation>Silt:</translation>
     </message>
@@ -2957,6 +3108,10 @@
     <message>
         <source>Remove tag</source>
         <translation>Eemalda silt</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Eemalda torrentid</translation>
     </message>
 </context>
 <context>
@@ -3006,7 +3161,7 @@
     </message>
     <message>
         <source>An advanced BitTorrent client programmed in C++, based on Qt toolkit and libtorrent-rasterbar.</source>
-        <translation type="unfinished" />
+        <translation>Täiustatud BitTorrenti klient, mis on programmeeritud C++ keeles ja põhineb Qt tööriistakomplektil ja libtorrent-rasterbaril.</translation>
     </message>
     <message>
         <source>Name:</source>
@@ -3038,7 +3193,7 @@
     </message>
     <message>
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
-        <translation type="unfinished" />
+        <translation>DB-IP tasuta IP to Country Lite andmebaasi kasutatakse partnerite riikide määramiseks. Andmebaas on litsentseeritud Creative Commons Attribution 4.0 International License alusel.</translation>
     </message>
     <message>
         <source>Authors</source>
@@ -3190,7 +3345,7 @@
     </message>
     <message>
         <source>Fetching of RSS feeds is disabled now! You can enable it in application settings.</source>
-        <translation type="unfinished" />
+        <translation>RSS-voogude kättesaamine on nüüd välja lülitatud! Saate selle lubada rakenduse seadetes.</translation>
     </message>
     <message>
         <source>Deletion confirmation</source>
@@ -3217,15 +3372,15 @@
     </message>
     <message>
         <source>Matching RSS Articles</source>
-        <translation type="unfinished" />
+        <translation>Vastavad RSS artiklid</translation>
     </message>
     <message>
         <source>* to match zero or more of any characters</source>
-        <translation type="unfinished" />
+        <translation>*, et sobitada null või rohkem tähemärki</translation>
     </message>
     <message>
         <source> will match all articles.</source>
-        <translation type="unfinished" />
+        <translation>vastab kõigile artiklitele.</translation>
     </message>
     <message>
         <source>Episode filter rules: </source>
@@ -3245,7 +3400,7 @@
     </message>
     <message>
         <source>Use Regular Expressions</source>
-        <translation type="unfinished" />
+        <translation>Kasuta regulaarseid väljendeid</translation>
     </message>
     <message>
         <source>New rule name</source>
@@ -3257,11 +3412,11 @@
     </message>
     <message>
         <source>? to match any single character</source>
-        <translation type="unfinished" />
+        <translation>? mis tahes üksikule tähemärgile vastamiseks</translation>
     </message>
     <message>
         <source>Matches articles based on episode filter.</source>
-        <translation type="unfinished" />
+        <translation>Sobitab artikleid vastavalt osa filtrile.</translation>
     </message>
     <message>
         <source>Assign Category:</source>
@@ -3269,11 +3424,11 @@
     </message>
     <message>
         <source>Regex mode: use Perl-compatible regular expressions</source>
-        <translation type="unfinished" />
+        <translation>Regex-režiim: kasuta Perliga ühilduvaid regulaarseid väljendeid</translation>
     </message>
     <message>
         <source>| is used as OR operator</source>
-        <translation type="unfinished" />
+        <translation>| kasutatakse OR operaatorina</translation>
     </message>
     <message>
         <source>Clear downloaded episodes</source>
@@ -3281,7 +3436,7 @@
     </message>
     <message>
         <source>Whitespaces count as AND operators (all words, any order)</source>
-        <translation type="unfinished" />
+        <translation>Valged tühikud loetakse AND-operaatoriteks (kõik sõnad, mis tahes järjekorras).</translation>
     </message>
     <message>
         <source>An expression with an empty %1 clause (e.g. %2)</source>
@@ -3305,7 +3460,7 @@
     </message>
     <message>
         <source>Infinite range: &lt;b&gt;1x25-;&lt;/b&gt; matches episodes 25 and upward of season one, and all episodes of later seasons</source>
-        <translation type="unfinished" />
+        <translation>Lõpmatu valik: &lt;b&gt;1x25-;&lt;/b&gt; sobib esimese hooaja 25. ja hilisemate hooaegade kõigi osadega.</translation>
     </message>
     <message>
         <source>Save to a Different Directory</source>
@@ -3349,11 +3504,11 @@
     </message>
     <message>
         <source>Episode number is a mandatory positive value</source>
-        <translation type="unfinished" />
+        <translation>Osa number on kohustuslik positiivne väärtus</translation>
     </message>
     <message>
         <source> will match 2, 5, 8 through 15, 30 and onward episodes of season one</source>
-        <translation type="unfinished" />
+        <translation> vastab 2, 5, 8 kuni 15, 30 ja järgnevatele osadele esimesest hooajast</translation>
     </message>
     <message>
         <source>Rule deletion confirmation</source>
@@ -3361,7 +3516,7 @@
     </message>
     <message>
         <source>Last Match: %1 days ago</source>
-        <translation type="unfinished" />
+        <translation>Viimane sobivus: %1 päeva tagasi</translation>
     </message>
     <message>
         <source>Episode Filter:</source>
@@ -3373,7 +3528,7 @@
     </message>
     <message>
         <source>Season number is a mandatory non-zero value</source>
-        <translation type="unfinished" />
+        <translation>Hooaja number on kohustuslik nullist erinev väärtus</translation>
     </message>
     <message>
         <source>Never</source>
@@ -3389,7 +3544,7 @@
     </message>
     <message>
         <source>Use Smart Episode Filter</source>
-        <translation type="unfinished" />
+        <translation>Kasuta tarka osa filtrit</translation>
     </message>
     <message>
         <source>If word order is important use * instead of whitespace.</source>
@@ -3405,11 +3560,11 @@
     </message>
     <message>
         <source>Wildcard mode: you can use</source>
-        <translation type="unfinished" />
+        <translation>Wildcard-režiim: saate kasutada</translation>
     </message>
     <message>
         <source> will exclude all articles.</source>
-        <translation type="unfinished" />
+        <translation> välistab kõik artiklid.</translation>
     </message>
     <message>
         <source>Delete rule</source>
@@ -3417,7 +3572,7 @@
     </message>
     <message>
         <source>Ignore Subsequent Matches for (0 to Disable)</source>
-        <translation type="unfinished" />
+        <translation>Ignoreeri järgnevaid vasteid (0 keelamiseks)</translation>
     </message>
     <message>
         <source>Rename rule...</source>
@@ -3425,7 +3580,7 @@
     </message>
     <message>
         <source>Last Match: Unknown</source>
-        <translation type="unfinished" />
+        <translation>Viimane sobivus: teadmata</translation>
     </message>
     <message>
         <source>Clear downloaded episodes...</source>
@@ -3434,7 +3589,8 @@
     <message>
         <source>Smart Episode Filter will check the episode number to prevent downloading of duplicates.
 Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also support - as a separator)</source>
-        <translation type="unfinished" />
+        <translation>Tark episoodide filter kontrollib episoodi numbrit, et vältida korduvaid duplikaatide allalaadimist.
+Toetab formaate: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (kuupäevade formaate toetavad ka, kus - märk on vahel)</translation>
     </message>
     <message>
         <source>Torrent content layout:</source>
@@ -3456,10 +3612,6 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
 <context>
     <name>TrackerFiltersList</name>
     <message>
-        <source>Delete torrents</source>
-        <translation>Kustuta torrentid</translation>
-    </message>
-    <message>
         <source>Resume torrents</source>
         <translation>Jätka torrentitega</translation>
     </message>
@@ -3474,6 +3626,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Pause torrents</source>
         <translation>Pausi torrentid</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Eemalda torrentid</translation>
     </message>
 </context>
 <context>

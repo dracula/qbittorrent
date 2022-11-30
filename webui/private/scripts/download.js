@@ -82,6 +82,16 @@ window.qBittorrent.Download = (function() {
                     $('autoTMM').selectedIndex = 0;
                 }
 
+                if (pref.torrent_stop_condition === "MetadataReceived") {
+                    $('stopCondition').selectedIndex = 1;
+                }
+                else if (pref.torrent_stop_condition === "FilesChecked") {
+                    $('stopCondition').selectedIndex = 2;
+                }
+                else {
+                    $('stopCondition').selectedIndex = 0;
+                }
+
                 if (pref.torrent_content_layout === "Subfolder") {
                     $('contentLayout').selectedIndex = 1;
                 }
@@ -106,7 +116,7 @@ window.qBittorrent.Download = (function() {
         }
         else {
             item.nextElementSibling.hidden = true;
-            const text = item.options[item.selectedIndex].innerHTML;
+            const text = item.options[item.selectedIndex].textContent;
             item.nextElementSibling.value = text;
 
             if ($('autoTMM').selectedIndex == 1) {

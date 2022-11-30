@@ -626,7 +626,6 @@ img[src="icons/inode-directory.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/inode-tag.svg"] {
@@ -634,7 +633,6 @@ img[src="icons/inode-tag.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/network-server.svg"] {
@@ -642,7 +640,6 @@ img[src="icons/network-server.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/paused.svg"] {
@@ -650,7 +647,6 @@ img[src="icons/paused.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
@@ -660,7 +656,6 @@ img[src="icons/stalledDL.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/stalledUP.svg"] {
@@ -668,7 +663,6 @@ img[src="icons/stalledUP.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/seeding.svg"],
@@ -677,7 +671,6 @@ img[src="icons/uploading.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/downloading_small.svg"],
@@ -686,7 +679,6 @@ img[src="icons/downloading.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/connected.svg"] {
@@ -694,7 +686,6 @@ img[src="icons/connected.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/disconnected.svg"] {
@@ -702,7 +693,6 @@ img[src="icons/disconnected.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/slow.svg"] {
@@ -710,7 +700,6 @@ img[src="icons/slow.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/slow_off.svg"] {
@@ -718,7 +707,6 @@ img[src="icons/slow_off.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/completed.svg"] {
@@ -726,7 +714,6 @@ img[src="icons/completed.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 img[src="icons/mail-folder-inbox.svg"] {
@@ -734,7 +721,6 @@ img[src="icons/mail-folder-inbox.svg"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: content-box;
-    object-position: -999999px 999999px;
 }
 
 

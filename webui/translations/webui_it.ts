@@ -42,6 +42,30 @@
         <source>Don't create subfolder</source>
         <translation>Non creare sottocartella</translation>
     </message>
+    <message>
+        <source>Manual</source>
+        <translation>Manuale</translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation>Automatica</translation>
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Stop condition:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -77,16 +101,16 @@
         <translation>Metti in pausa torrent</translation>
     </message>
     <message>
-        <source>Delete torrents</source>
-        <translation>Elimina torrent</translation>
-    </message>
-    <message>
         <source>New Category</source>
         <translation>Nuova Categoria</translation>
     </message>
     <message>
         <source>Edit category...</source>
         <translation>Modifica categoria...</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Rimuovi torrent</translation>
     </message>
 </context>
 <context>
@@ -272,10 +296,6 @@
         <translation>Carica torrent locale</translation>
     </message>
     <message>
-        <source>Are you sure you want to delete the selected torrents from the transfer list?</source>
-        <translation>Sei sicuro di voler eliminare i torrent selezionati dall'elenco trasferimenti?</translation>
-    </message>
-    <message>
         <source>Save</source>
         <translation>Salva</translation>
     </message>
@@ -363,6 +383,10 @@
         <source>Original author</source>
         <translation>Autore originale</translation>
     </message>
+    <message>
+        <source>Are you sure you want to remove the selected torrents from the transfer list?</source>
+        <translation>Sei sicuro di voler rimuovere i torrent selezionati dall'elenco di trasferimento?</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -425,10 +449,6 @@
     <message>
         <source>Pause</source>
         <translation>Metti in pausa</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Elimina</translation>
     </message>
     <message>
         <source>Pause All</source>
@@ -573,6 +593,22 @@
     </message>
     <message>
         <source>Filters Sidebar</source>
+        <translation>Barra laterale filtri</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Annulla</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Rimuovi</translation>
+    </message>
+    <message>
+        <source>Would you like to resume all torrents?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Would you like to pause all torrents?</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -613,10 +649,6 @@
     <message>
         <source>Email notification upon download completion</source>
         <translation>Notifica email a download completato</translation>
-    </message>
-    <message>
-        <source>Run external program on torrent completion</source>
-        <translation>Esegui programma esterno a torrent completato</translation>
     </message>
     <message>
         <source>IP Filtering</source>
@@ -1125,10 +1157,6 @@
         <translation>Anti leech</translation>
     </message>
     <message>
-        <source>Enable OS cache:</source>
-        <translation>Abilita cache S.O.:</translation>
-    </message>
-    <message>
         <source>When ratio reaches</source>
         <translation>Quando raggiungi rapporto</translation>
     </message>
@@ -1285,10 +1313,6 @@
         <translation>ban per:</translation>
     </message>
     <message>
-        <source>Use piece extent affinity (requires libtorrent &gt;= 1.2.2):</source>
-        <translation>Usa affinità segmento (richiede libtorrent &gt;= 1.2.2):</translation>
-    </message>
-    <message>
         <source>Stop tracker timeout:</source>
         <translation>Stop timeout tracker:</translation>
     </message>
@@ -1369,10 +1393,6 @@
         <translation>Numero max articoli per feed:</translation>
     </message>
     <message>
-        <source>Max concurrent HTTP announces (requires libtorrent &gt;= 1.2.7):</source>
-        <translation>Numero massimo annunci HTTP simultanei (richiede libtorrent&gt; = 1.2.7):</translation>
-    </message>
-    <message>
         <source> min</source>
         <translation> min</translation>
     </message>
@@ -1411,10 +1431,6 @@
     <message>
         <source>Peer connection protocol:</source>
         <translation>Protocollo connessione peer:</translation>
-    </message>
-    <message>
-        <source>Support internationalized domain name (IDN) (requires libtorrent &gt;= 1.2.12):</source>
-        <translation>Supporto nome dominio internazionalizzato (IDN) (richiede libtorrent &gt;= 1.2.12):</translation>
     </message>
     <message>
         <source>Torrent content layout:</source>
@@ -1482,18 +1498,160 @@
     </message>
     <message>
         <source>Disk queue size:</source>
-        <translation type="unfinished" />
+        <translation>Dimensione coda disco:</translation>
     </message>
     <message>
         <source>Log performance warnings</source>
-        <translation type="unfinished" />
+        <translation>Avvisi prestazioni registro</translation>
     </message>
     <message>
         <source>Maximum outstanding requests to a single peer:</source>
-        <translation type="unfinished" />
+        <translation>Numero max richieste in sospeso per singolo peer:</translation>
     </message>
     <message>
         <source>Max active checking torrents:</source>
+        <translation>Numero max torrent di controllo attivi:</translation>
+    </message>
+    <message>
+        <source>Memory mapped files</source>
+        <translation>File mappati in memoria</translation>
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>Predefinito</translation>
+    </message>
+    <message>
+        <source>POSIX-compliant</source>
+        <translation>Conforme a POSIX</translation>
+    </message>
+    <message>
+        <source>This option is less effective on Linux</source>
+        <translation>Questa opzione è meno efficace su Linux</translation>
+    </message>
+    <message>
+        <source>Disk IO type (libtorrent &gt;= 2.0; requires restart):</source>
+        <translation>Tipo di I/O del disco (libtorrent &gt;= 2.0; richiede il riavvio):</translation>
+    </message>
+    <message>
+        <source>Write-through (requires libtorrent &gt;= 2.0.6)</source>
+        <translation>Write-through (richiede libtorrent &gt;= 2.0.6)</translation>
+    </message>
+    <message>
+        <source>It controls the internal state update interval which in turn will affect UI updates</source>
+        <translation>Controlla l'intervallo di aggiornamento dello stato interno che a sua volta influenzerà gli aggiornamenti dell'interfaccia utente</translation>
+    </message>
+    <message>
+        <source>Disk IO read mode:</source>
+        <translation>Modalità lettura I/O disco:</translation>
+    </message>
+    <message>
+        <source>Disable OS cache</source>
+        <translation>Disabilita cache sistema operativo</translation>
+    </message>
+    <message>
+        <source>Disk IO write mode:</source>
+        <translation>Modalità scrittura I/O disco:</translation>
+    </message>
+    <message>
+        <source>Use piece extent affinity:</source>
+        <translation>Usa affinità estensione segmento:</translation>
+    </message>
+    <message>
+        <source>Max concurrent HTTP announces:</source>
+        <translation>Annunci HTTP simultanei max:</translation>
+    </message>
+    <message>
+        <source>Enable OS cache</source>
+        <translation>Abilita cache sistema operativo</translation>
+    </message>
+    <message>
+        <source>Refresh interval:</source>
+        <translation>Intervallo aggiornamento:</translation>
+    </message>
+    <message>
+        <source>Physical memory (RAM) usage limit (applied if libtorrent &gt;= 2.0):</source>
+        <translation>Limite uso memoria fisica (RAM) (applicato se libtorrent &gt;= 2.0):</translation>
+    </message>
+    <message>
+        <source>ms</source>
+        <translation>ms</translation>
+    </message>
+    <message>
+        <source>Excluded file names</source>
+        <translation>Nomi file esclusi</translation>
+    </message>
+    <message>
+        <source>Support internationalized domain name (IDN):</source>
+        <translation>Supporto nome dominio internazionalizzato (IDN):</translation>
+    </message>
+    <message>
+        <source>Run external program on torrent finished</source>
+        <translation>Esegui programma esterno a torrent completato</translation>
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use ';' to split multiple entries. Can use wildcard '*'.</source>
+        <translation>Elenco autorizzati per filtrare valori nell'intestazione host HTTP.
+Per difendersi da attacchi DSN rebinding, dovresti inserire
+i nomi dominio usati dal server dell'interfaccia web.
+
+Usa ';' per dividere voci multiple. Si può usare il carattere
+jolly '*'.</translation>
+    </message>
+    <message>
+        <source>Run external program on torrent added</source>
+        <translation>Esegui programma esterno a torrent aggiunto</translation>
+    </message>
+    <message>
+        <source>HTTPS certificate should not be empty</source>
+        <translation>Il certificato HTTPS non può essere vuoto</translation>
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.</source>
+        <translation>Per usare l'indirizzo client inoltrato (intestazione X-Forwarded-For) specifica gli IP del proxy inverso (o le sottoreti, ad esempio 0.0.0.0/24).
+Usa ';' per dividere più voci.</translation>
+    </message>
+    <message>
+        <source>HTTPS key should not be empty</source>
+        <translation>La chiave HTTPS non può essere vuota</translation>
+    </message>
+    <message>
+        <source>Run external program</source>
+        <translation>Esegui programma esterno</translation>
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enable port forwarding for embedded tracker:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>If checked, hostname lookups are done via the proxy.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use proxy for hostname lookup</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent stop condition:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -1574,6 +1732,10 @@
     <message>
         <source>Add peers...</source>
         <translation>Aggiungi peers...</translation>
+    </message>
+    <message>
+        <source>Peer ID Client</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2184,10 +2346,6 @@
         <translation>Messaggio</translation>
     </message>
     <message>
-        <source>Downloaded</source>
-        <translation>Scaricati</translation>
-    </message>
-    <message>
         <source>Tracker URL:</source>
         <translation>URL tracker:</translation>
     </message>
@@ -2222,10 +2380,6 @@
     <message>
         <source>Copy tracker URL</source>
         <translation>Copia URL tracker</translation>
-    </message>
-    <message>
-        <source>Add a new tracker...</source>
-        <translation>Aggiungi un nuovo tracker...</translation>
     </message>
     <message>
         <source>Edit tracker URL...</source>
@@ -2268,23 +2422,27 @@
         <translation>Progresso</translation>
     </message>
     <message>
-        <source>Size</source>
-        <translation type="vanished">Dimensione</translation>
+        <source>Total Size</source>
+        <translation>Dimensione totale</translation>
     </message>
     <message>
-        <source>Total Size</source>
-        <translation type="unfinished" />
+        <source>Times Downloaded</source>
+        <translation>N volte scaricati</translation>
+    </message>
+    <message>
+        <source>Add trackers...</source>
+        <translation>Aggiungi tracker...</translation>
     </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
     <message>
-        <source>Trackers addition dialog</source>
-        <translation>Finestra per l'aggiunta dei server traccia</translation>
-    </message>
-    <message>
         <source>List of trackers to add (one per line):</source>
         <translation>Elenco dei server traccia da aggiungere (uno per riga):</translation>
+    </message>
+    <message>
+        <source>Add trackers</source>
+        <translation>Aggiungi tracker</translation>
     </message>
 </context>
 <context>
@@ -2412,11 +2570,6 @@
         <translation>Metti in pausa</translation>
     </message>
     <message>
-        <source>Delete</source>
-        <comment>Delete the torrent</comment>
-        <translation>Elimina</translation>
-    </message>
-    <message>
         <source>Limit share ratio...</source>
         <translation>Limita rapporto di condivione...</translation>
     </message>
@@ -2489,10 +2642,6 @@
     <message>
         <source>Download in sequential order</source>
         <translation>Scarica in ordine sequenziale</translation>
-    </message>
-    <message>
-        <source>Force Recheck</source>
-        <translation>Forza ricontrollo</translation>
     </message>
     <message>
         <source>New Category</source>
@@ -2570,6 +2719,14 @@
         <source>Torrent ID</source>
         <translation>ID torrent</translation>
     </message>
+    <message>
+        <source>Export .torrent</source>
+        <translation>Esporta .torrent</translation>
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation>Rimuovi</translation>
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -2604,16 +2761,12 @@
 <context>
     <name>confirmDeletionDlg</name>
     <message>
-        <source>Deletion confirmation</source>
-        <translation>Conferma cancellazione</translation>
+        <source>Also permanently delete the files</source>
+        <translation>Elimina anche permanentemente i file</translation>
     </message>
     <message>
-        <source>Also delete the files on the hard disk</source>
-        <translation>Elimina anche il relativo file dal disco fisso</translation>
-    </message>
-    <message>
-        <source>Deletion confirmation - qBittorrent</source>
-        <translation>Conferma eliminazione - qBittorrent</translation>
+        <source>Remove torrent(s)</source>
+        <translation>Rimuovi torrent</translation>
     </message>
 </context>
 <context>
@@ -2807,6 +2960,14 @@
         <source>showing</source>
         <translation>visualizzando</translation>
     </message>
+    <message>
+        <source>Click the "Search plugins..." button at the bottom right of the window to install some.</source>
+        <translation>Per installare i plugin seleziona "Cerca plugin..." in basso a destra nella finestra.</translation>
+    </message>
+    <message>
+        <source>There aren't any search plugins installed.</source>
+        <translation>Non c'è nessun plugin di ricerca installato.</translation>
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -2931,10 +3092,6 @@
         <translation>Aggiungi tag...</translation>
     </message>
     <message>
-        <source>Delete torrents</source>
-        <translation>Elimina torrent</translation>
-    </message>
-    <message>
         <source>Tag:</source>
         <translation>Tag:</translation>
     </message>
@@ -2957,6 +3114,10 @@
     <message>
         <source>Remove tag</source>
         <translation>Rimuovi tag</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Rimuovi torrent</translation>
     </message>
 </context>
 <context>
@@ -3459,10 +3620,6 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
 <context>
     <name>TrackerFiltersList</name>
     <message>
-        <source>Delete torrents</source>
-        <translation>Elimina torrent</translation>
-    </message>
-    <message>
         <source>Resume torrents</source>
         <translation>Riprendi torrent</translation>
     </message>
@@ -3477,6 +3634,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Pause torrents</source>
         <translation>Pausa torrent</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation>Rimuovi torrent</translation>
     </message>
 </context>
 <context>

@@ -42,6 +42,30 @@
         <source>Don't create subfolder</source>
         <translation>Non crear subcartafol</translation>
     </message>
+    <message>
+        <source>Manual</source>
+        <translation>Manual</translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation>Automático</translation>
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Stop condition:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -77,16 +101,16 @@
         <translation>Deter os torrents</translation>
     </message>
     <message>
-        <source>Delete torrents</source>
-        <translation>Eliminar os torrents</translation>
-    </message>
-    <message>
         <source>New Category</source>
         <translation>Nova categoría</translation>
     </message>
     <message>
         <source>Edit category...</source>
         <translation>Editar categoría...</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -272,10 +296,6 @@
         <translation>Enviar torrent local</translation>
     </message>
     <message>
-        <source>Are you sure you want to delete the selected torrents from the transfer list?</source>
-        <translation>Está seguro que desexa eliminar os torrents seleccionados da lista de transferencias?</translation>
-    </message>
-    <message>
         <source>Save</source>
         <translation>Gardar</translation>
     </message>
@@ -364,6 +384,10 @@ Non use caracteres especiais no nome da categoría.</translation>
         <source>Original author</source>
         <translation>Autor orixinal</translation>
     </message>
+    <message>
+        <source>Are you sure you want to remove the selected torrents from the transfer list?</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -426,10 +450,6 @@ Non use caracteres especiais no nome da categoría.</translation>
     <message>
         <source>Pause</source>
         <translation>Deter</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Borrar</translation>
     </message>
     <message>
         <source>Pause All</source>
@@ -576,6 +596,22 @@ Non use caracteres especiais no nome da categoría.</translation>
         <source>Filters Sidebar</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Would you like to resume all torrents?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Would you like to pause all torrents?</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>OptionsDialog</name>
@@ -614,10 +650,6 @@ Non use caracteres especiais no nome da categoría.</translation>
     <message>
         <source>Email notification upon download completion</source>
         <translation>Enviar unha notificación por correo-e ao rematar a descarga</translation>
-    </message>
-    <message>
-        <source>Run external program on torrent completion</source>
-        <translation>Executar un programa externo ao rematar o torrent</translation>
     </message>
     <message>
         <source>IP Filtering</source>
@@ -1126,10 +1158,6 @@ Non use caracteres especiais no nome da categoría.</translation>
         <translation>Anti-sambesuga</translation>
     </message>
     <message>
-        <source>Enable OS cache:</source>
-        <translation>Activar a caché do sistema operativo:</translation>
-    </message>
-    <message>
         <source>When ratio reaches</source>
         <translation>Cando a taxa alcance</translation>
     </message>
@@ -1286,10 +1314,6 @@ Non use caracteres especiais no nome da categoría.</translation>
         <translation>prohibir durante:</translation>
     </message>
     <message>
-        <source>Use piece extent affinity (requires libtorrent &gt;= 1.2.2):</source>
-        <translation>Usar afinidade de extensión de pezas (require libtorrent &gt;= 1.2.2)</translation>
-    </message>
-    <message>
         <source>Stop tracker timeout:</source>
         <translation>Deter o tempo de espera do rastreador:</translation>
     </message>
@@ -1370,10 +1394,6 @@ Non use caracteres especiais no nome da categoría.</translation>
         <translation>Número máximo de artigos por fonte:</translation>
     </message>
     <message>
-        <source>Max concurrent HTTP announces (requires libtorrent &gt;= 1.2.7):</source>
-        <translation>Anuncios HTTP simultáneos máximos (require libtorrent &gt;= 1.2.7):</translation>
-    </message>
-    <message>
         <source> min</source>
         <translation>min.</translation>
     </message>
@@ -1412,10 +1432,6 @@ Non use caracteres especiais no nome da categoría.</translation>
     <message>
         <source>Peer connection protocol:</source>
         <translation>Protocolo de conexión de pares:</translation>
-    </message>
-    <message>
-        <source>Support internationalized domain name (IDN) (requires libtorrent &gt;= 1.2.12):</source>
-        <translation>Admite nomes de dominio internacionalizados (IDN) (require libtorrent &gt;= 1.2.12):</translation>
     </message>
     <message>
         <source>Torrent content layout:</source>
@@ -1497,6 +1513,146 @@ Non use caracteres especiais no nome da categoría.</translation>
         <source>Max active checking torrents:</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Memory mapped files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Default</source>
+        <translation>Predeterminado</translation>
+    </message>
+    <message>
+        <source>POSIX-compliant</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>This option is less effective on Linux</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk IO type (libtorrent &gt;= 2.0; requires restart):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Write-through (requires libtorrent &gt;= 2.0.6)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>It controls the internal state update interval which in turn will affect UI updates</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk IO read mode:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disable OS cache</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk IO write mode:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use piece extent affinity:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Max concurrent HTTP announces:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enable OS cache</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Refresh interval:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Physical memory (RAM) usage limit (applied if libtorrent &gt;= 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>ms</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Excluded file names</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Support internationalized domain name (IDN):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Run external program on torrent finished</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use ';' to split multiple entries. Can use wildcard '*'.</source>
+        <translation>Lista branca para o filtrado dos valores das cabeceiras dos servidores HTTP.
+Co fin de defenderse contra o ataque «DNS rebinding»,
+deberia poñer nomes de dominios usados polo servidor WebUI.
+
+Usar «;» para dividir entradas múltiples. Pode usar o comodín «*».</translation>
+    </message>
+    <message>
+        <source>Run external program on torrent added</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>HTTPS certificate should not be empty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>HTTPS key should not be empty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Run external program</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enable port forwarding for embedded tracker:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>If checked, hostname lookups are done via the proxy.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use proxy for hostname lookup</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent stop condition:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -1575,6 +1731,10 @@ Non use caracteres especiais no nome da categoría.</translation>
     <message>
         <source>Add peers...</source>
         <translation>Engadir pares...</translation>
+    </message>
+    <message>
+        <source>Peer ID Client</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2185,10 +2345,6 @@ Non use caracteres especiais no nome da categoría.</translation>
         <translation>Mensaxe</translation>
     </message>
     <message>
-        <source>Downloaded</source>
-        <translation>Descargado</translation>
-    </message>
-    <message>
         <source>Tracker URL:</source>
         <translation>URL do localizador:</translation>
     </message>
@@ -2223,10 +2379,6 @@ Non use caracteres especiais no nome da categoría.</translation>
     <message>
         <source>Copy tracker URL</source>
         <translation>Copiar a url do localizador</translation>
-    </message>
-    <message>
-        <source>Add a new tracker...</source>
-        <translation>Engadir un novo localizador...</translation>
     </message>
     <message>
         <source>Edit tracker URL...</source>
@@ -2269,23 +2421,27 @@ Non use caracteres especiais no nome da categoría.</translation>
         <translation>Progreso</translation>
     </message>
     <message>
-        <source>Size</source>
-        <translation type="vanished">Tamaño</translation>
+        <source>Total Size</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <source>Total Size</source>
+        <source>Times Downloaded</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Add trackers...</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
     <message>
-        <source>Trackers addition dialog</source>
-        <translation>Diálogo de adición de localizadores</translation>
-    </message>
-    <message>
         <source>List of trackers to add (one per line):</source>
         <translation>Lista de localizadores a engadir (un por liña):</translation>
+    </message>
+    <message>
+        <source>Add trackers</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2413,11 +2569,6 @@ Non use caracteres especiais no nome da categoría.</translation>
         <translation>Deter</translation>
     </message>
     <message>
-        <source>Delete</source>
-        <comment>Delete the torrent</comment>
-        <translation>Eliminar</translation>
-    </message>
-    <message>
         <source>Limit share ratio...</source>
         <translation>Límite da taxa de compartición...</translation>
     </message>
@@ -2490,10 +2641,6 @@ Non use caracteres especiais no nome da categoría.</translation>
     <message>
         <source>Download in sequential order</source>
         <translation>Descargar en orde secuencial</translation>
-    </message>
-    <message>
-        <source>Force Recheck</source>
-        <translation>Forzar outra comprobación</translation>
     </message>
     <message>
         <source>New Category</source>
@@ -2571,6 +2718,14 @@ Non use caracteres especiais no nome da categoría.</translation>
         <source>Torrent ID</source>
         <translation>ID do torrent</translation>
     </message>
+    <message>
+        <source>Export .torrent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
@@ -2605,16 +2760,12 @@ Non use caracteres especiais no nome da categoría.</translation>
 <context>
     <name>confirmDeletionDlg</name>
     <message>
-        <source>Deletion confirmation</source>
-        <translation>Confirmación da eliminación</translation>
+        <source>Also permanently delete the files</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <source>Also delete the files on the hard disk</source>
-        <translation>Eliminar tamén os ficheiros do disco duro</translation>
-    </message>
-    <message>
-        <source>Deletion confirmation - qBittorrent</source>
-        <translation>Confirmación de eliminación - 'qBittorrent</translation>
+        <source>Remove torrent(s)</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2808,6 +2959,14 @@ Non use caracteres especiais no nome da categoría.</translation>
         <source>showing</source>
         <translation>amosando</translation>
     </message>
+    <message>
+        <source>Click the "Search plugins..." button at the bottom right of the window to install some.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>There aren't any search plugins installed.</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
@@ -2932,10 +3091,6 @@ Non use caracteres especiais no nome da categoría.</translation>
         <translation>Engadir unha etiqueta...</translation>
     </message>
     <message>
-        <source>Delete torrents</source>
-        <translation>Eliminar os torrents</translation>
-    </message>
-    <message>
         <source>Tag:</source>
         <translation>Etiqueta:</translation>
     </message>
@@ -2958,6 +3113,10 @@ Non use caracteres especiais no nome da categoría.</translation>
     <message>
         <source>Remove tag</source>
         <translation>Eliminar etiqueta</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -3458,10 +3617,6 @@ Compatíbel cos formatos: S01E01, 1x1, 2017.12.31 e 31.12.2017 (os formatos da d
 <context>
     <name>TrackerFiltersList</name>
     <message>
-        <source>Delete torrents</source>
-        <translation>Eliminar os torrents</translation>
-    </message>
-    <message>
         <source>Resume torrents</source>
         <translation>Continuar os torrents</translation>
     </message>
@@ -3476,6 +3631,10 @@ Compatíbel cos formatos: S01E01, 1x1, 2017.12.31 e 31.12.2017 (os formatos da d
     <message>
         <source>Pause torrents</source>
         <translation>Deter os torrents</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>

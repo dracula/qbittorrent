@@ -42,6 +42,30 @@
         <source>Don't create subfolder</source>
         <translation>Nu creea subdosar</translation>
     </message>
+    <message>
+        <source>Manual</source>
+        <translation>Manual</translation>
+    </message>
+    <message>
+        <source>Automatic</source>
+        <translation>Automat</translation>
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Stop condition:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
@@ -77,16 +101,16 @@
         <translation>Suspendă torentele</translation>
     </message>
     <message>
-        <source>Delete torrents</source>
-        <translation>Șterge torentele</translation>
-    </message>
-    <message>
         <source>New Category</source>
         <translation>Adauga categorie</translation>
     </message>
     <message>
         <source>Edit category...</source>
         <translation>Modifică această categorie&lt;br&gt;</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -272,10 +296,6 @@
         <translation>Încărcare torrent local</translation>
     </message>
     <message>
-        <source>Are you sure you want to delete the selected torrents from the transfer list?</source>
-        <translation>Sigur doriți să ștergeți torrentele selectate din lista de transferuri?</translation>
-    </message>
-    <message>
         <source>Save</source>
         <translation>Salvează</translation>
     </message>
@@ -363,6 +383,10 @@
         <source>Original author</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Are you sure you want to remove the selected torrents from the transfer list?</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -425,10 +449,6 @@
     <message>
         <source>Pause</source>
         <translation>Suspendare</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <translation>Șterge</translation>
     </message>
     <message>
         <source>Pause All</source>
@@ -573,6 +593,22 @@
     </message>
     <message>
         <source>Filters Sidebar</source>
+        <translation>Bara laterală cu filtre</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Would you like to resume all torrents?</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Would you like to pause all torrents?</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -613,10 +649,6 @@
     <message>
         <source>Email notification upon download completion</source>
         <translation>Trimite notificări prin email la finalizarea descărcării</translation>
-    </message>
-    <message>
-        <source>Run external program on torrent completion</source>
-        <translation>Rulează un program extern la încheierea descărcării torrentului</translation>
     </message>
     <message>
         <source>IP Filtering</source>
@@ -990,11 +1022,11 @@
     </message>
     <message>
         <source>Download rate threshold:</source>
-        <translation type="unfinished" />
+        <translation>Prag viteză de descărcare:</translation>
     </message>
     <message>
         <source>Upload rate threshold:</source>
-        <translation type="unfinished" />
+        <translation>Prag viteză de încărcare:</translation>
     </message>
     <message>
         <source>Change current password</source>
@@ -1125,10 +1157,6 @@
         <translation type="unfinished" />
     </message>
     <message>
-        <source>Enable OS cache:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>When ratio reaches</source>
         <translation>Când rația ajunge la</translation>
     </message>
@@ -1246,7 +1274,7 @@
     </message>
     <message>
         <source>KiB</source>
-        <translation type="unfinished" />
+        <translation>KiO</translation>
     </message>
     <message>
         <source>Round-robin</source>
@@ -1258,7 +1286,7 @@
     </message>
     <message>
         <source>MiB</source>
-        <translation type="unfinished" />
+        <translation>MiO</translation>
     </message>
     <message>
         <source>Send buffer low watermark:</source>
@@ -1283,10 +1311,6 @@
     <message>
         <source>ban for:</source>
         <translation>interzis pentru: </translation>
-    </message>
-    <message>
-        <source>Use piece extent affinity (requires libtorrent &gt;= 1.2.2):</source>
-        <translation type="unfinished" />
     </message>
     <message>
         <source>Stop tracker timeout:</source>
@@ -1369,10 +1393,6 @@
         <translation>Numărul maxim de articole per flux:</translation>
     </message>
     <message>
-        <source>Max concurrent HTTP announces (requires libtorrent &gt;= 1.2.7):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source> min</source>
         <translation> min</translation>
     </message>
@@ -1411,10 +1431,6 @@
     <message>
         <source>Peer connection protocol:</source>
         <translation>Conexiuni totale cu parteneri:</translation>
-    </message>
-    <message>
-        <source>Support internationalized domain name (IDN) (requires libtorrent &gt;= 1.2.12):</source>
-        <translation type="unfinished" />
     </message>
     <message>
         <source>Torrent content layout:</source>
@@ -1496,6 +1512,142 @@
         <source>Max active checking torrents:</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <source>Memory mapped files</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Default</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>POSIX-compliant</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>This option is less effective on Linux</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk IO type (libtorrent &gt;= 2.0; requires restart):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Write-through (requires libtorrent &gt;= 2.0.6)</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>It controls the internal state update interval which in turn will affect UI updates</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk IO read mode:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disable OS cache</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Disk IO write mode:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use piece extent affinity:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Max concurrent HTTP announces:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enable OS cache</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Refresh interval:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Physical memory (RAM) usage limit (applied if libtorrent &gt;= 2.0):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>ms</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Excluded file names</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Support internationalized domain name (IDN):</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Run external program on torrent finished</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Whitelist for filtering HTTP Host header values.
+In order to defend against DNS rebinding attack,
+you should put in domain names used by WebUI server.
+
+Use ';' to split multiple entries. Can use wildcard '*'.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Run external program on torrent added</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>HTTPS certificate should not be empty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>HTTPS key should not be empty</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Run external program</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Files checked</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Enable port forwarding for embedded tracker:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>If checked, hostname lookups are done via the proxy.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Use proxy for hostname lookup</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Metadata received</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Torrent stop condition:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>None</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -1575,6 +1727,10 @@
         <source>Add peers...</source>
         <translation>Adăugare parteneri...</translation>
     </message>
+    <message>
+        <source>Peer ID Client</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>PropListDelegate</name>
@@ -1599,7 +1755,7 @@
     </message>
     <message>
         <source>Do not download</source>
-        <translation type="unfinished" />
+        <translation>Nu descărca</translation>
     </message>
 </context>
 <context>
@@ -2162,7 +2318,7 @@
     </message>
     <message>
         <source>Availability</source>
-        <translation type="unfinished" />
+        <translation>Disponibilitate</translation>
     </message>
 </context>
 <context>
@@ -2182,10 +2338,6 @@
     <message>
         <source>Message</source>
         <translation>Mesaj</translation>
-    </message>
-    <message>
-        <source>Downloaded</source>
-        <translation>Descărcat</translation>
     </message>
     <message>
         <source>Tracker URL:</source>
@@ -2224,10 +2376,6 @@
         <translation>Copiază URL-ul urmăritorului</translation>
     </message>
     <message>
-        <source>Add a new tracker...</source>
-        <translation>Adăugare urmăritor nou...</translation>
-    </message>
-    <message>
         <source>Edit tracker URL...</source>
         <translation>Editează URL-ul urmăritorului...</translation>
     </message>
@@ -2249,7 +2397,7 @@
     </message>
     <message>
         <source>Availability</source>
-        <translation type="unfinished" />
+        <translation>Disponibilitate</translation>
     </message>
     <message>
         <source>Tier</source>
@@ -2261,26 +2409,34 @@
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Nume</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation type="unfinished" />
+        <translation>Progres</translation>
     </message>
     <message>
         <source>Total Size</source>
+        <translation>Dimensiiune totală</translation>
+    </message>
+    <message>
+        <source>Times Downloaded</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Add trackers...</source>
         <translation type="unfinished" />
     </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
     <message>
-        <source>Trackers addition dialog</source>
-        <translation>Dialog adăugare urmăritoare</translation>
-    </message>
-    <message>
         <source>List of trackers to add (one per line):</source>
         <translation>Listă urmăritoare de adăugat (unul per linie):</translation>
+    </message>
+    <message>
+        <source>Add trackers</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2300,15 +2456,15 @@
     </message>
     <message>
         <source>Moving</source>
-        <translation type="unfinished" />
+        <translation>Se mută</translation>
     </message>
     <message>
         <source>[F] Seeding</source>
-        <translation type="unfinished" />
+        <translation>[F] Se contribuie</translation>
     </message>
     <message>
         <source>Seeding</source>
-        <translation type="unfinished" />
+        <translation>Se contribuie</translation>
     </message>
     <message>
         <source>Queued</source>
@@ -2320,15 +2476,15 @@
     </message>
     <message>
         <source>[F] Downloading</source>
-        <translation type="unfinished" />
+        <translation>[F] Se descarcă</translation>
     </message>
     <message>
         <source>Downloading metadata</source>
-        <translation type="unfinished" />
+        <translation>Se descarcă metadatele</translation>
     </message>
     <message>
         <source>Checking</source>
-        <translation type="unfinished" />
+        <translation>Se verifică</translation>
     </message>
     <message>
         <source>Missing Files</source>
@@ -2348,7 +2504,7 @@
     </message>
     <message>
         <source>Stalled</source>
-        <translation type="unfinished" />
+        <translation>Stagnat</translation>
     </message>
     <message>
         <source>%1 (seeded for %2)</source>
@@ -2406,11 +2562,6 @@
         <source>Pause</source>
         <comment>Pause the torrent</comment>
         <translation>Suspendă</translation>
-    </message>
-    <message>
-        <source>Delete</source>
-        <comment>Delete the torrent</comment>
-        <translation>Șterge</translation>
     </message>
     <message>
         <source>Limit share ratio...</source>
@@ -2487,10 +2638,6 @@
         <translation>Descarcă în ordine secvențială</translation>
     </message>
     <message>
-        <source>Force Recheck</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>New Category</source>
         <translation>Categorie nouă</translation>
     </message>
@@ -2504,7 +2651,7 @@
     </message>
     <message>
         <source>Set location</source>
-        <translation type="unfinished" />
+        <translation>Stabilire locație</translation>
     </message>
     <message>
         <source>Force reannounce</source>
@@ -2552,7 +2699,7 @@
     </message>
     <message>
         <source>Add...</source>
-        <translation type="unfinished" />
+        <translation>Adăugare...</translation>
     </message>
     <message>
         <source>Info hash v1</source>
@@ -2565,6 +2712,14 @@
     <message>
         <source>Torrent ID</source>
         <translation>ID torent</translation>
+    </message>
+    <message>
+        <source>Export .torrent</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Remove</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2600,16 +2755,12 @@
 <context>
     <name>confirmDeletionDlg</name>
     <message>
-        <source>Deletion confirmation</source>
-        <translation>Confirmare ștergere</translation>
+        <source>Also permanently delete the files</source>
+        <translation type="unfinished" />
     </message>
     <message>
-        <source>Also delete the files on the hard disk</source>
-        <translation>Șterge și fișierele de pe disc</translation>
-    </message>
-    <message>
-        <source>Deletion confirmation - qBittorrent</source>
-        <translation>Confirmare ștergere - qBittorrent</translation>
+        <source>Remove torrent(s)</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2710,7 +2861,7 @@
     <name>PluginSourceDlg</name>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>Renunță</translation>
     </message>
     <message>
         <source>Plugin path:</source>
@@ -2733,7 +2884,7 @@
     <name>SearchEngineWidget</name>
     <message>
         <source>Seeds:</source>
-        <translation type="unfinished" />
+        <translation>Surse:</translation>
     </message>
     <message>
         <source>All plugins</source>
@@ -2741,11 +2892,11 @@
     </message>
     <message>
         <source>Size:</source>
-        <translation type="unfinished" />
+        <translation>Dimensiune:</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished" />
+        <translation>Oprește</translation>
     </message>
     <message>
         <source>Search</source>
@@ -2761,7 +2912,7 @@
     </message>
     <message>
         <source>Search in:</source>
-        <translation type="unfinished" />
+        <translation>Caută în:</translation>
     </message>
     <message>
         <source>Filter</source>
@@ -2785,7 +2936,7 @@
     </message>
     <message>
         <source>Warning</source>
-        <translation type="unfinished" />
+        <translation>Avertizare</translation>
     </message>
     <message>
         <source>Increase window width to display additional filters</source>
@@ -2797,10 +2948,18 @@
     </message>
     <message>
         <source>Results</source>
-        <translation type="unfinished" />
+        <translation>Rezulatate</translation>
     </message>
     <message>
         <source>showing</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Click the "Search plugins..." button at the bottom right of the window to install some.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>There aren't any search plugins installed.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -2847,11 +3006,11 @@
     <name>SearchResultsTable</name>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Nume</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="unfinished" />
+        <translation>Dimensiune</translation>
     </message>
     <message>
         <source>Leechers</source>
@@ -2863,41 +3022,41 @@
     </message>
     <message>
         <source>Seeders</source>
-        <translation type="unfinished" />
+        <translation>Surse</translation>
     </message>
 </context>
 <context>
     <name>SearchPluginsTable</name>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation>Nume</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished" />
+        <translation>Adresă URL</translation>
     </message>
     <message>
         <source>Enabled</source>
-        <translation type="unfinished" />
+        <translation>Activat</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished" />
+        <translation>Versiune</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished" />
+        <translation>Da</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished" />
+        <translation>Nu</translation>
     </message>
 </context>
 <context>
     <name>PeersAdditionDialog</name>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation>Renunță</translation>
     </message>
     <message>
         <source>Add Peers</source>
@@ -2909,7 +3068,7 @@
     </message>
     <message>
         <source>Ok</source>
-        <translation type="unfinished" />
+        <translation>Bine</translation>
     </message>
     <message>
         <source>Format: IPv4:port / [IPv6]:port</source>
@@ -2925,10 +3084,6 @@
     <message>
         <source>Add tag...</source>
         <translation>Adăugare etichetă...</translation>
-    </message>
-    <message>
-        <source>Delete torrents</source>
-        <translation>Șterge torentele</translation>
     </message>
     <message>
         <source>Tag:</source>
@@ -2953,6 +3108,10 @@
     <message>
         <source>Remove tag</source>
         <translation>Elimină eticheta</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -3050,22 +3209,22 @@
     </message>
     <message>
         <source>qBittorrent icon</source>
-        <translation type="unfinished" />
+        <translation>Pictogramă qBittorrent</translation>
     </message>
 </context>
 <context>
     <name>OptionDialog</name>
     <message>
         <source>All addresses</source>
-        <translation type="unfinished" />
+        <translation>Toate adresele</translation>
     </message>
     <message>
         <source>All IPv6 addresses</source>
-        <translation type="unfinished" />
+        <translation>Toate adresele IPv6</translation>
     </message>
     <message>
         <source>All IPv4 addresses</source>
-        <translation type="unfinished" />
+        <translation>Toate adresele IPv4</translation>
     </message>
 </context>
 <context>
@@ -3453,16 +3612,12 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
 <context>
     <name>TrackerFiltersList</name>
     <message>
-        <source>Delete torrents</source>
-        <translation>Șterge torrentele</translation>
-    </message>
-    <message>
         <source>Resume torrents</source>
         <translation>Reia torrentele</translation>
     </message>
     <message>
         <source>All (%1)</source>
-        <translation type="unfinished" />
+        <translation>Toate (%1)</translation>
     </message>
     <message>
         <source>Trackerless (%1)</source>
@@ -3471,6 +3626,10 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
     <message>
         <source>Pause torrents</source>
         <translation>Suspendă torrentele</translation>
+    </message>
+    <message>
+        <source>Remove torrents</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>

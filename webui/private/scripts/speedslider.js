@@ -35,7 +35,7 @@ MochaUI.extend({
             let maximum = 500;
             new Request({
                 url: 'api/v2/transfer/uploadLimit',
-                method: 'post',
+                method: 'get',
                 data: {},
                 onSuccess: function(data) {
                     if (data) {
@@ -54,7 +54,8 @@ MochaUI.extend({
                     // And create slider
                     if (hashes[0] == 'global') {
                         let up_limit = maximum;
-                        if (up_limit < 0) up_limit = 0;
+                        if (up_limit < 0)
+                            up_limit = 0;
                         maximum = 10000;
                         new Slider($('uplimitSliderarea'), $('uplimitSliderknob'), {
                             steps: maximum,
@@ -97,7 +98,8 @@ MochaUI.extend({
                                             up_limit = 0;
                                             break;
                                         }
-                                    if (up_limit < 0) up_limit = 0;
+                                    if (up_limit < 0)
+                                        up_limit = 0;
                                     new Slider($('uplimitSliderarea'), $('uplimitSliderknob'), {
                                         steps: maximum,
                                         offset: 0,
@@ -137,7 +139,7 @@ MochaUI.extend({
             let maximum = 500;
             new Request({
                 url: 'api/v2/transfer/downloadLimit',
-                method: 'post',
+                method: 'get',
                 data: {},
                 onSuccess: function(data) {
                     if (data) {
@@ -156,7 +158,8 @@ MochaUI.extend({
                     // And create slider
                     if (hashes[0] == 'global') {
                         let dl_limit = maximum;
-                        if (dl_limit < 0) dl_limit = 0;
+                        if (dl_limit < 0)
+                            dl_limit = 0;
                         maximum = 10000;
                         new Slider($('dllimitSliderarea'), $('dllimitSliderknob'), {
                             steps: maximum,
@@ -199,7 +202,8 @@ MochaUI.extend({
                                             dl_limit = 0;
                                             break;
                                         }
-                                    if (dl_limit < 0) dl_limit = 0;
+                                    if (dl_limit < 0)
+                                        dl_limit = 0;
                                     new Slider($('dllimitSliderarea'), $('dllimitSliderknob'), {
                                         steps: maximum,
                                         offset: 0,

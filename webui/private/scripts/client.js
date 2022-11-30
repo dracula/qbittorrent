@@ -91,7 +91,7 @@ const getShowFiltersSidebar = function() {
     // Show Filters Sidebar is enabled by default
     const show = LocalPreferences.get('show_filters_sidebar');
     return (show === null) || (show === 'true');
-}
+};
 
 function genHash(string) {
     // origins:
@@ -112,7 +112,8 @@ const fetchQbtVersion = function() {
         url: 'api/v2/app/version',
         method: 'get',
         onSuccess: function(info) {
-            if (!info) return;
+            if (!info)
+                return;
             sessionStorage.setItem('qbtVersion', info);
         }
     }).send();
@@ -127,7 +128,6 @@ const qbtVersion = function() {
 };
 
 window.addEvent('load', function() {
-
     const saveColumnSizes = function() {
         const filters_width = $('Filters').getSize().x;
         const properties_height_rel = $('propertiesPanel').getSize().y / Window.getSize().y;
@@ -245,7 +245,7 @@ window.addEvent('load', function() {
     toggleFilterDisplay = function(filter) {
         const element = filter + "FilterList";
         LocalPreferences.set('filter_' + filter + "_collapsed", !$(element).hasClass("invisible"));
-        $(element).toggleClass("invisible")
+        $(element).toggleClass("invisible");
         const parent = $(element).getParent(".filterWrapper");
         const toggleIcon = $(parent).getChildren(".filterTitle img");
         if (toggleIcon)
@@ -416,7 +416,7 @@ window.addEvent('load', function() {
 
         const create_link = function(hash, text, count) {
             const html = '<a href="#" onclick="setCategoryFilter(' + hash + ');return false;">'
-                + '<img src="icons/inode-directory.svg"/>'
+                + '<img src="images/view-categories.svg"/>'
                 + window.qBittorrent.Misc.escapeHtml(text) + ' (' + count + ')' + '</a>';
             const el = new Element('li', {
                 id: hash,
@@ -473,7 +473,7 @@ window.addEvent('load', function() {
 
         const createLink = function(hash, text, count) {
             const html = '<a href="#" onclick="setTagFilter(' + hash + ');return false;">'
-                + '<img src="icons/inode-directory.svg"/>'
+                + '<img src="images/tags.svg"/>'
                 + window.qBittorrent.Misc.escapeHtml(text) + ' (' + count + ')' + '</a>';
             const el = new Element('li', {
                 id: hash,
@@ -527,7 +527,7 @@ window.addEvent('load', function() {
 
         const createLink = function(hash, text, count) {
             const html = '<a href="#" onclick="setTrackerFilter(' + hash + ');return false;">'
-                + '<img src="icons/network-server.svg"/>'
+                + '<img src="images/trackers.svg"/>'
                 + window.qBittorrent.Misc.escapeHtml(text.replace("%1", count)) + '</a>';
             const el = new Element('li', {
                 id: hash,
@@ -767,15 +767,15 @@ window.addEvent('load', function() {
 
         switch (serverState.connection_status) {
             case 'connected':
-                $('connectionStatus').src = 'icons/connected.svg';
+                $('connectionStatus').src = 'images/connected.svg';
                 $('connectionStatus').alt = 'QBT_TR(Connection status: Connected)QBT_TR[CONTEXT=MainWindow]';
                 break;
             case 'firewalled':
-                $('connectionStatus').src = 'icons/firewalled.svg';
+                $('connectionStatus').src = 'images/firewalled.svg';
                 $('connectionStatus').alt = 'QBT_TR(Connection status: Firewalled)QBT_TR[CONTEXT=MainWindow]';
                 break;
             default:
-                $('connectionStatus').src = 'icons/disconnected.svg';
+                $('connectionStatus').src = 'images/disconnected.svg';
                 $('connectionStatus').alt = 'QBT_TR(Connection status: Disconnected)QBT_TR[CONTEXT=MainWindow]';
                 break;
         }
@@ -812,11 +812,11 @@ window.addEvent('load', function() {
 
     const updateAltSpeedIcon = function(enabled) {
         if (enabled) {
-            $('alternativeSpeedLimits').src = 'icons/slow.svg';
+            $('alternativeSpeedLimits').src = 'images/slow.svg';
             $('alternativeSpeedLimits').alt = 'QBT_TR(Alternative speed limits: On)QBT_TR[CONTEXT=MainWindow]';
         }
         else {
-            $('alternativeSpeedLimits').src = 'icons/slow_off.svg';
+            $('alternativeSpeedLimits').src = 'images/slow_off.svg';
             $('alternativeSpeedLimits').alt = 'QBT_TR(Alternative speed limits: Off)QBT_TR[CONTEXT=MainWindow]';
         }
     };
@@ -1186,6 +1186,98 @@ window.addEvent('load', function() {
     $('searchTabLink').addEvent('click', showSearchTab);
     $('rssTabLink').addEvent('click', showRssTab);
     updateTabDisplay();
+
+    const registerDragAndDrop = () => {
+        $('desktop').addEventListener('dragover', (ev) => {
+            if (ev.preventDefault)
+                ev.preventDefault();
+        });
+
+        $('desktop').addEventListener('dragenter', (ev) => {
+            if (ev.preventDefault)
+                ev.preventDefault();
+        });
+
+        $('desktop').addEventListener("drop", (ev) => {
+            if (ev.preventDefault)
+                ev.preventDefault();
+
+            const droppedFiles = ev.dataTransfer.files;
+
+            if (droppedFiles.length > 0) {
+                // dropped files or folders
+
+                // can't handle folder due to cannot put the filelist (from dropped folder)
+                // to <input> `files` field
+                for (const item of ev.dataTransfer.items) {
+                    if (item.webkitGetAsEntry().isDirectory)
+                        return;
+                }
+
+                const id = 'uploadPage';
+                new MochaUI.Window({
+                    id: id,
+                    title: "QBT_TR(Upload local torrent)QBT_TR[CONTEXT=HttpServer]",
+                    loadMethod: 'iframe',
+                    contentURL: new URI("upload.html").toString(),
+                    addClass: 'windowFrame', // fixes iframe scrolling on iOS Safari
+                    scrollbars: true,
+                    maximizable: false,
+                    paddingVertical: 0,
+                    paddingHorizontal: 0,
+                    width: loadWindowWidth(id, 500),
+                    height: loadWindowHeight(id, 460),
+                    onResize: () => {
+                        saveWindowSize(id);
+                    },
+                    onContentLoaded: () => {
+                        const fileInput = $(`${id}_iframe`).contentDocument.getElementById('fileselect');
+                        fileInput.files = droppedFiles;
+                    }
+                });
+            }
+
+            const droppedText = ev.dataTransfer.getData("text");
+            if (droppedText.length > 0) {
+                // dropped text
+
+                const urls = droppedText.split('\n')
+                    .map((str) => str.trim())
+                    .filter((str) => {
+                        const lowercaseStr = str.toLowerCase();
+                        return lowercaseStr.startsWith("http:")
+                            || lowercaseStr.startsWith("https:")
+                            || lowercaseStr.startsWith("magnet:")
+                            || ((str.length === 40) && !(/[^0-9A-Fa-f]/.test(str))) // v1 hex-encoded SHA-1 info-hash
+                            || ((str.length === 32) && !(/[^2-7A-Za-z]/.test(str))); // v1 Base32 encoded SHA-1 info-hash
+                    });
+
+                if (urls.length <= 0)
+                    return;
+
+                const id = 'downloadPage';
+                const contentURI = new URI('download.html').setData("urls", urls.map(encodeURIComponent).join("|"));
+                new MochaUI.Window({
+                    id: id,
+                    title: "QBT_TR(Download from URLs)QBT_TR[CONTEXT=downloadFromURL]",
+                    loadMethod: 'iframe',
+                    contentURL: contentURI.toString(),
+                    addClass: 'windowFrame', // fixes iframe scrolling on iOS Safari
+                    scrollbars: true,
+                    maximizable: false,
+                    closable: true,
+                    paddingVertical: 0,
+                    paddingHorizontal: 0,
+                    width: loadWindowWidth(id, 500),
+                    height: loadWindowHeight(id, 600),
+                    onResize: () => {
+                        saveWindowSize(id);
+                    }
+                });
+            }
+        });
+    };
+    registerDragAndDrop();
 });
 
 function registerMagnetHandler() {
