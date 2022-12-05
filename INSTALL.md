@@ -1,7 +1,6 @@
 ### [QBittorrent](https://www.qbittorrent.org/)
 
 #### Application Theme (Client)
-![qbittorrent dracula theme](screenshots/screenshot.png)
 
 1. Download .qbtheme using the [raw .qbtheme download](https://github.com/dracula/qbittorrent/raw/master/dracula.qbtheme) option.
 2. Enable theme selection from menu: Tools -> Options -> Behavior -> Interface -> Use custom UI Theme.
@@ -10,7 +9,7 @@
 
 
 #### Troubleshooting for Microsoft Windows
-![windows flashes white](./screenshots/troubleshooting.windows-titlebar.png)
+![windows flashes white](https://raw.githubusercontent.com/dracula/qbittorrent/master/screenshots/troubleshooting.windows-titlebar.png)
 
 In Windows, qBittorrent application flashes white when reopens after being minimized, and also the title bar isn't light themed.
 This problem exists because the app is non-native.
@@ -25,7 +24,7 @@ In order to fix this issue:
 **Method 3.** Use the [MicaForEveryone](https://github.com/minusium/MicaForEveryone) (Windows 11 only)
 
 #### WebUI Theme (Server)
-![qbittorrent dracula theme (webui)](screenshots/screenshot.webui.png)
+![qbittorrent dracula theme (webui)](https://raw.githubusercontent.com/dracula/qbittorrent/master/screenshots/screenshot.webui.png)
 
 1. Clone the repository:
     ```
