@@ -2,7 +2,7 @@
 
 > A dark theme for [QBittorent](https://www.qbittorrent.org/).
 
-For more information about theme developement and structure, [click here](https://github.com/MahdiMirzade/qbittorrent).
+For more information about theme development and structure, [click here](https://github.com/MahdiMirzade/qbittorrent).
 
 Application theme:
 
