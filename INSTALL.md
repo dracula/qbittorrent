@@ -3,17 +3,17 @@
 #### Application Theme (Client)
 
 1. Download .qbtheme using the [raw .qbtheme download](https://github.com/dracula/qbittorrent/raw/master/dracula.qbtheme) option.
-2. Enable theme selection from menu: Tools -> Options -> Behavior -> Interface -> Use custom UI Theme.
-3. In 'UI Theme file' click on the file icon and select your '.qbtheme' file.
-4. Restart qbittorrent to apply theme.
+2. Enable theme selection from menu: Tools -> Preferences -> Behaviour -> Interface -> Use custom UI Theme.
+3. In 'UI Theme file', click on the file icon and select your '.qbtheme' file.
+4. Restart qBittorrent to apply the theme.
 
 
 #### Troubleshooting for Microsoft Windows
 ![windows flashes white](https://raw.githubusercontent.com/dracula/qbittorrent/master/screenshots/troubleshooting.windows-titlebar.png)
 
-In Windows, qBittorrent application flashes white when reopens after being minimized, and also the title bar isn't light themed.
+In Windows, the qBittorrent application flashes white when reopened after being minimized, and also, the title bar isn't light-themed.
 This problem exists because the app is non-native.
-It opens a white canvas and before the rendering engine is active.
+It opens a white canvas before the rendering engine is active.
 
 In order to fix this issue:
 
@@ -33,4 +33,4 @@ In order to fix this issue:
     chmod -R 777 qbittorrent
     ```
 2. Enable theme selection from menu: → Tools → Options → Web UI → Use alternative Web UI.
-3. In 'Files locations' bar, you should type `/opt/qbittorrent/webui` .
+3. In the 'Files locations' bar, you should type `/opt/qbittorrent/webui`.
