@@ -5,7 +5,7 @@
 
 QWidget {
   background: %cl0%;
-  color: %cl7%;
+  color: %cl16%;
   border: none;
 }
 

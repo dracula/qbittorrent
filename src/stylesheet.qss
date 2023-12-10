@@ -5,7 +5,7 @@
 
 QWidget {
   background: #282A36;
-  color: #BFBFBF;
+  color: %cl16%;
   border: none;
 }
 
@@ -20,17 +20,17 @@ QMenuBar {
 QMenuBar::item {
   padding: 5px 10px;
   width: 100%;
-  color: #BFBFBF;
+  color: #6272A4;
 }
 
 QMenuBar::item:selected {
   background: #282A36;
-  color: #6272A4;
+  color: ;
 }
 
 QMenuBar::item:pressed {
   background: #282A36;
-  color: #6272A4;
+  color: ;
 }
 
 /*
@@ -47,16 +47,16 @@ QMenu::item {
   margin: 0;
   padding: 5px 10px 5px 5px;
   background: #282A36;
-  color: #BFBFBF;
+  color: #6272A4;
 }
 
 QMenu::item:selected {
   background: #282A36;
-  color: #6272A4;
+  color: ;
 }
 
 QMenu::separator {
-  background: #6272A4;
+  background: ;
   height: 1px;
 }
 
@@ -95,7 +95,7 @@ QToolButton {
 }
 
 QToolButton:hover {
-  background: #4D4D4D;
+  background: #44475A;
   border: none;
 }
 
@@ -119,7 +119,7 @@ QToolBar QLineEdit {
 */
 
 QSplitter::handle {
-  background: #4D4D4D;
+  background: #44475A;
 }
 
 QSplitter::handle:horizontal {
@@ -149,7 +149,7 @@ QMainWindow {
 QFrame, QLabel {
   outline: none;
   background: #282A36;
-  color: #BFBFBF;
+  color: #6272A4;
 }
 
 QLabel:disabled {
@@ -164,7 +164,7 @@ QToolTip {
   padding: 5px;
   background: #282A36;
   border: 2px solid #222;
-  color: #BFBFBF;
+  color: #6272A4;
 }
 
 /*
@@ -182,20 +182,20 @@ QTabWidget::pane {
 */
 
 QTabBar::tab:top {
-  background: #4D4D4D;
-  color: #BFBFBF;
+  background: #44475A;
+  color: #6272A4;
   margin: 0;
   padding: 5px;
 }
 
 QTabBar::tab:top:hover {
   background: #282A36;
-  color: #4D4D4D;
+  color: #44475A;
 }
 
 QTabBar::tab:top:selected {
   background: #282A36;
-  color: #6272A4;
+  color: ;
 }
 
 /*
@@ -203,7 +203,7 @@ QTabBar::tab:top:selected {
 */
 QListView {
   background: #282A36;
-  color: #BFBFBF;
+  color: #6272A4;
   border: none;
 }
 
@@ -213,20 +213,20 @@ QListView::item {
 
 QListView::item:hover {
   background: #282A36;
-  color: #4D4D4D;
+  color: #44475A;
   padding: 0px;
 }
 
 QListView::item:selected:active {
   outline: none;
   background: #282A36;
-  color: #6272A4;
+  color: ;
   padding: 0px;
 }
 
 QListView::item:selected:!active {
   background: #282A36;
-  color: #6272A4;
+  color: ;
   padding: 0px;
 }
 
@@ -253,7 +253,7 @@ QTableView QCheckBox {
 
 QTreeView {
   background: #282A36;
-  color: #BFBFBF;
+  color: #6272A4;
   border: none;
 }
 
@@ -263,18 +263,18 @@ QTreeView::item {
 
 QTreeView::item:hover {
   background: #282A36;
-  color: #4D4D4D;
+  color: #44475A;
   padding: 0px;
 }
 
 QTreeView::item:pressed {
-  background: #6272A4;
+  background: ;
   padding: 0px;
 }
 
 QTreeView::item:selected {
   background: #282A36;
-  color: #6272A4;
+  color: ;
   padding: 0px;
 }
 
@@ -296,11 +296,11 @@ QProgressBar {
 }
 
 QProgressBar::chunk {
-  background: #6272A4;
+  background: ;
 }
 
 QProgressBar::chunk:disabled {
-  background: #6272A4;
+  background: ;
 }
 
 /*
@@ -313,7 +313,7 @@ QScrollBar:horizontal {
 }
 
 QScrollBar::handle:horizontal {
-  background: #4D4D4D;
+  background: #44475A;
   width: 5px;
 }
 
@@ -338,7 +338,7 @@ QScrollBar::right-arrow:horizontal
 {
   width: 0px;
   height: 0px;
-  background: #BFBFBF;
+  background: #6272A4;
 }
 
 QScrollBar::add-page:horizontal,
@@ -357,7 +357,7 @@ QScrollBar:vertical {
 }
 
 QScrollBar::handle:vertical {
-  background: #4D4D4D;
+  background: #44475A;
   height: 5px;
 }
 
@@ -392,26 +392,26 @@ QPushButton:enabled
 {
   padding: 5px 10px;
   background: #282A36;
-  color: #BFBFBF;
+  color: #6272A4;
 }
 
 QPushButton:hover {
-  color: #4D4D4D;
+  color: #44475A;
 }
 
 QPushButton:focus {
   outline: none;
-  color: #6272A4;
+  color: ;
 }
 
 QPushButton:pressed {
   padding: 5px 10px;
   border: none;
-  color: #6272A4;
+  color: ;
 }
 
 QPushButton:disabled {
-  color: #4D4D4D;
+  color: #44475A;
 }
 
 /*
@@ -422,7 +422,7 @@ QLineEdit,
 QLineEdit:read-only
 {
   background: #282A36;
-  color: #6272A4;
+  color: ;
   border: none;
   padding: 4px;
 }
@@ -430,7 +430,7 @@ QLineEdit:read-only
 QLineEdit:disabled,
 QLineEdit:disabled:read-only
 {
-  color: #4D4D4D;
+  color: #44475A;
 }
 
 /*
@@ -440,11 +440,11 @@ QLineEdit:disabled:read-only
 QHeaderView::section {
   background: #282A36;
   padding: 0 5px;
-  color: #BFBFBF;
+  color: #6272A4;
 }
 
 QHeaderView::section:hover {
-  background: #4D4D4D;
+  background: #44475A;
 }
 
 /*
@@ -460,7 +460,7 @@ QDialog {
 */
 
 QCheckBox:disabled {
-  color: #4D4D4D;
+  color: #44475A;
 }
 
 /*
@@ -469,29 +469,29 @@ QCheckBox:disabled {
 
 QComboBox {
   background: #282A36;
-  color: #6272A4;
+  color: ;
   padding: 4px;
 }
 
 QComboBox:focus {
   background: #282A36;
-  color: #6272A4;
+  color: ;
 }
 
 QComboBox:disabled {
-  color: #4D4D4D;
+  color: #44475A;
 }
 
 QComboBox:on {
   background: #282A36;
-  color: #6272A4;
+  color: ;
 }
 
 QComboBox QAbstractItemView {
   background: #282A36;
-  color: #6272A4;
+  color: ;
   selection-background-color: #282A36;
-  selection-color: #6272A4;
+  selection-color: ;
   outline: none;
 }
 
@@ -500,7 +500,7 @@ QComboBox::drop-down {
   subcontrol-position: top right;
   width: 6ex;
   background: #282A36;
-  color: #6272A4;
+  color: ;
 }
 
 /*
@@ -509,17 +509,17 @@ QComboBox::drop-down {
 
 QSpinBox {
   background: #282A36;
-  color: #6272A4;
+  color: ;
   border: none;
   padding: 4px;
 }
 
 QSpinBox:disabled {
-  color: #4D4D4D;
+  color: #44475A;
 }
 
 QSpinBox:focus {
-  background: #6272A4;
+  background: ;
   color: #282A36;
 }
 
@@ -543,11 +543,11 @@ QGroupBox::title {
 }
 
 QGroupBox QLabel {
-  color: #BFBFBF;
+  color: #6272A4;
 }
 
 QGroupBox QCheckBox {
-  color: #BFBFBF;
+  color: #6272A4;
 }
 
 QGroupBox::title:disabled {
@@ -558,7 +558,7 @@ TransferListWidget {
   qproperty-downloadingStateForeground: #5AF78E;
   qproperty-forcedDownloadingStateForeground: #5AF78E;
   qproperty-downloadingMetadataStateForeground: #5AF78E;
-  qproperty-allocatingStateForeground: #4D4D4D;
+  qproperty-allocatingStateForeground: #44475A;
   qproperty-stalledDownloadingStateForeground: #F4F99D;
   qproperty-stalledUploadingStateForeground: #F4F99D;
   qproperty-uploadingStateForeground: #CAA9FA;
