@@ -1,0 +1,21 @@
+! Dracula Xresources palette
+! Var name    Code      clr name    - Is base dracula?
+*.foreground: #F8F8F2 ! foreground  - y
+*.background: #282A36 ! background  - y
+*.color0:     #282A36 ! "black"     - y
+*.color1:     #FF5555 ! red         - y
+*.color2:     #50FA7B ! green       - y
+*.color3:     #F1FA8C ! yellow      - y
+*.color4:     #BD93F9 ! purple      - y
+*.color5:     #FF79C6 ! pink        - y
+*.color6:     #8BE9FD ! cyan        - y
+*.color7:     #6272A4 ! lght gray   - y
+*.color8:     #44475A ! grey        - y
+*.color9:     #FF6E67 ! red 2       - n
+*.color10:    #5AF78E ! green 2     - n
+*.color11:    #F4F99D ! yellow 2    - n
+*.color12:    #CAA9FA ! purple 2    - n
+*.color13:    #FF92D0 ! pink 2      - n
+*.color14:    #9AEDFE ! cyan 2      - n
+*.color15:    #919dc0 ! lghtst gray - n
+*.color16:    #282A36 ! "white"     - y
