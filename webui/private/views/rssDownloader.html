@@ -131,13 +131,13 @@
 
 <div id="RssDownloader" class="RssDownloader">
     <div id="rssDownloaderDisabled" class="invisible">
-        QBT_TR(Auto downloading of RSS torrents is disabled now! You can enable it in application settings.)QBT_TR[CONTEXT=AutomatedRssDownloader]
+        Auto downloading of RSS torrents is disabled now! You can enable it in application settings.
     </div>
     <div id="leftRssDownloaderColumn">
         <div id="topMenuBar">
-            <b id="rulesTableDesc">QBT_TR(Download Rules)QBT_TR[CONTEXT=AutomatedRssDownloader]</b>
-            <button id="newRuleButton" class="imageButton" onclick="qBittorrent.RssDownloader.addRule()"></button>
-            <button id="deleteRuleButton" class="imageButton" onclick="qBittorrent.RssDownloader.removeSelectedRule()"></button>
+            <b id="rulesTableDesc">Download Rules</b>
+            <button type="button" id="newRuleButton" class="imageButton" onclick="qBittorrent.RssDownloader.addRule()"></button>
+            <button type="button" id="deleteRuleButton" class="imageButton" onclick="qBittorrent.RssDownloader.removeSelectedRule()"></button>
         </div>
         <div id="rulesTable">
             <div id="rulesSelectionCheckBoxList">
@@ -161,15 +161,15 @@
     </div>
     <div id="centerRssDownloaderColumn">
         <fieldset class="settings" id="ruleSettings">
-            <legend>QBT_TR(Rule Definition)QBT_TR[CONTEXT=AutomatedRssDownloader]</legend>
+            <legend>Rule Definition</legend>
             <div class="formRow">
                 <input disabled type="checkbox" id="useRegEx" onclick="qBittorrent.RssDownloader.setElementTitles()" />
-                <label for="useRegEx">QBT_TR(Use Regular Expressions)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                <label for="useRegEx">Use Regular Expressions</label>
             </div>
             <table class="fullWidth">
                 <tr>
                     <td>
-                        <label for="mustContainText" class="noWrap">QBT_TR(Must Contain:)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                        <label for="mustContainText" class="noWrap">Must Contain:</label>
                     </td>
                     <td class="fullWidth">
                         <input disabled type="text" id="mustContainText" class="fullWidth" autocorrect="off" autocapitalize="none" />
@@ -177,7 +177,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="mustNotContainText" class="noWrap">QBT_TR(Must Not Contain:)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                        <label for="mustNotContainText" class="noWrap">Must Not Contain:</label>
                     </td>
                     <td class="fullWidth">
                         <input disabled type="text" id="mustNotContainText" class="fullWidth" autocorrect="off" autocapitalize="none" />
@@ -185,17 +185,17 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="episodeFilterText" class="noWrap">QBT_TR(Episode Filter:)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                        <label for="episodeFilterText" class="noWrap">Episode Filter:</label>
                     </td>
                     <td class="fullWidth">
                         <input disabled type="text" id="episodeFilterText" class="fullWidth" autocorrect="off" autocapitalize="none" />
                     </td>
                 </tr>
             </table>
-            <div class="formRow" title="QBT_TR(Smart Episode Filter will check the episode number to prevent downloading of duplicates.
-Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also support - as a separator))QBT_TR[CONTEXT=AutomatedRssDownloader]">
+            <div class="formRow" title="Smart Episode Filter will check the episode number to prevent downloading of duplicates.
+Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also support - as a separator)">
                 <input disabled type="checkbox" id="useSmartFilter" />
-                <label for="useSmartFilter">QBT_TR(Use Smart Episode Filter)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                <label for="useSmartFilter">Use Smart Episode Filter</label>
             </div>
 
             <hr>
@@ -203,7 +203,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
             <table class="fullWidth">
                 <tr>
                     <td>
-                        <label class="noWrap">QBT_TR(Assign Category:)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                        <label class="noWrap">Assign Category:</label>
                     </td>
                     <td class="fullWidth">
                         <select disabled id="assignCategoryCombobox" class="fullWidth">
@@ -211,15 +211,24 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                         </select>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <label class="noWrap">Add Tags:</label>
+                    </td>
+                    <td class="fullWidth">
+                        <input type="text" id="ruleAddTags" class="fullWidth" autocapitalize="none" autocorrect="off" />
+                    </td>
+                </tr>
             </table>
+
             <div class="formRow">
                 <input disabled type="checkbox" id="savetoDifferentDir" />
-                <label for="savetoDifferentDir">QBT_TR(Save to a Different Directory)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                <label for="savetoDifferentDir">Save to a Different Directory</label>
             </div>
             <table class="fullWidth">
                 <tr>
                     <td>
-                        <label class="noWrap" for="saveToText">QBT_TR(Save to:)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                        <label class="noWrap" for="saveToText">Save to:</label>
                     </td>
                     <td class="fullWidth">
                         <input disabled type="text" class="fullWidth" id="saveToText" autocorrect="off" autocapitalize="none" />
@@ -228,23 +237,23 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
             </table>
             <table>
                 <tr>
-                    <td><label for="ignoreDaysValue">QBT_TR(Ignore Subsequent Matches for (0 to Disable))QBT_TR[CONTEXT=AutomatedRssDownloader]</label></td>
-                    <td><input type="number" id="ignoreDaysValue" min="0" />QBT_TR( days)QBT_TR[CONTEXT=AutomatedRssDownloader]</td>
+                    <td><label for="ignoreDaysValue">Ignore Subsequent Matches for (0 to Disable)</label></td>
+                    <td><input type="number" id="ignoreDaysValue" min="0" /> days</td>
                 </tr>
             </table>
             <div id="lastMatchDiv">
-                <span id="lastMatchText">QBT_TR(Last Match: Unknown)QBT_TR[CONTEXT=AutomatedRssDownloader]</span>
+                <span id="lastMatchText">Last Match: Unknown</span>
             </div>
             <table class="fullWidth">
                 <tr>
                     <td>
-                        <label class="noWrap">QBT_TR(Add Paused:)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                        <label class="noWrap">Add Paused:</label>
                     </td>
                     <td class="fullWidth">
                         <select disabled id="addPausedCombobox" class="fullWidth">
-                            <option value="default">QBT_TR(Use global settings)QBT_TR[CONTEXT=AutomatedRssDownloader]</option>
-                            <option value="always">QBT_TR(Always)QBT_TR[CONTEXT=AutomatedRssDownloader]</option>
-                            <option value="never">QBT_TR(Never)QBT_TR[CONTEXT=AutomatedRssDownloader]</option>
+                            <option value="default">Use global settings</option>
+                            <option value="always">Always</option>
+                            <option value="never">Never</option>
                         </select>
                     </td>
                 </tr>
@@ -252,21 +261,21 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
             <table class="fullWidth">
                 <tr>
                     <td>
-                        <label class="noWrap">QBT_TR(Torrent content layout:)QBT_TR[CONTEXT=AutomatedRssDownloader]</label>
+                        <label class="noWrap">Torrent content layout:</label>
                     </td>
                     <td class="fullWidth">
                         <select disabled id="contentLayoutCombobox" class="fullWidth">
-                            <option value="Default">QBT_TR(Use global settings)QBT_TR[CONTEXT=AutomatedRssDownloader]</option>
-                            <option value="Original">QBT_TR(Original)QBT_TR[CONTEXT=AutomatedRssDownloader]</option>
-                            <option value="Subfolder">QBT_TR(Create subfolder)QBT_TR[CONTEXT=AutomatedRssDownloader]</option>
-                            <option value="NoSubfolder">QBT_TR(Don't create subfolder)QBT_TR[CONTEXT=AutomatedRssDownloader]</option>
+                            <option value="Default">Use global settings</option>
+                            <option value="Original">Original</option>
+                            <option value="Subfolder">Create subfolder</option>
+                            <option value="NoSubfolder">Don't create subfolder</option>
                         </select>
                     </td>
                 </tr>
             </table>
         </fieldset>
         <fieldset class="settings" id="rssDownloaderFeeds">
-            <legend>QBT_TR(Apply Rule to Feeds:)QBT_TR[CONTEXT=AutomatedRssDownloader]</legend>
+            <legend>Apply Rule to Feeds:</legend>
             <div id="rssDownloaderFeedsTable">
                 <div id="rssDownloaderFeedSelectionFixedHeaderDiv" class="dynamicTableFixedHeaderDiv invisible">
                     <table class="dynamicTable unselectable">
@@ -285,12 +294,12 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                 </div>
             </div>
         </fieldset>
-        <button disabled id="saveButton" onclick="qBittorrent.RssDownloader.saveSettings()">
-            QBT_TR(Save)QBT_TR[CONTEXT=HttpServer]
+        <button disabled type="button" id="saveButton" onclick="qBittorrent.RssDownloader.saveSettings()">
+            Save
         </button>
     </div>
     <div id="rightRssDownloaderColumn">
-        <b id="articleTableDesc">QBT_TR(Matching RSS Articles)QBT_TR[CONTEXT=AutomatedRssDownloader]</b>
+        <b id="articleTableDesc">Matching RSS Articles</b>
         <div id="rssDownloaderArticlesTable">
             <div id="rssDownloaderArticlesFixedHeaderDiv" class="dynamicTableFixedHeaderDiv invisible">
                 <table class="dynamicTable unselectable">
@@ -312,10 +321,10 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
 </div>
 
 <ul id="rssDownloaderRuleMenu" class="contextMenu">
-    <li><a href="#addRule"><img src="images/list-add.svg" alt="QBT_TR(Add new rule...)QBT_TR[CONTEXT=AutomatedRssDownloader]" /> QBT_TR(Add new rule...)QBT_TR[CONTEXT=AutomatedRssDownloader]</a></li>
-    <li><a href="#deleteRule"><img src="images/edit-clear.svg" alt="QBT_TR(Delete rule)QBT_TR[CONTEXT=AutomatedRssDownloader]" /> QBT_TR(Delete rule)QBT_TR[CONTEXT=AutomatedRssDownloader]</a></li>
-    <li class="separator"><a href="#renameRule"><img src="images/edit-rename.svg" alt="QBT_TR(Rename rule...)QBT_TR[CONTEXT=AutomatedRssDownloader]" /> QBT_TR(Rename rule...)QBT_TR[CONTEXT=AutomatedRssDownloader]</a></li>
-    <li class="separator"><a href="#clearDownloadedEpisodes"><img src="images/edit-clear.svg" alt="QBT_TR(Clear downloaded episodes...)QBT_TR[CONTEXT=AutomatedRssDownloader]" /> QBT_TR(Clear downloaded episodes...)QBT_TR[CONTEXT=AutomatedRssDownloader]</a></li>
+    <li><a href="#addRule"><img src="images/list-add.svg" alt="Add new rule..." /> Add new rule...</a></li>
+    <li><a href="#deleteRule"><img src="images/edit-clear.svg" alt="Delete rule" /> Delete rule</a></li>
+    <li class="separator"><a href="#renameRule"><img src="images/edit-rename.svg" alt="Rename rule..." /> Rename rule...</a></li>
+    <li class="separator"><a href="#clearDownloadedEpisodes"><img src="images/edit-clear.svg" alt="Clear downloaded episodes..." /> Clear downloaded episodes...</a></li>
 </ul>
 
 <script>
@@ -506,7 +515,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         const addRule = () => {
             new MochaUI.Window({
                 id: 'newRulePage',
-                title: 'QBT_TR(New rule name)QBT_TR[CONTEXT=AutomatedRssDownloader]',
+                title: 'New rule name',
                 loadMethod: 'iframe',
                 contentURL: 'newrule.html',
                 scrollbars: false,
@@ -520,7 +529,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         const renameRule = (rule) => {
             new MochaUI.Window({
                 id: 'renameRulePage',
-                title: 'QBT_TR(Rule renaming)QBT_TR[CONTEXT=AutomatedRssDownloader]',
+                title: 'Rule renaming',
                 loadMethod: 'iframe',
                 contentURL: 'rename_rule.html?rule=' + encodeURIComponent(rule),
                 scrollbars: false,
@@ -542,7 +551,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
             const encodedRules = rules.map((rule) => encodeURIComponent(rule));
             new MochaUI.Window({
                 id: 'removeRulePage',
-                title: 'QBT_TR(Rule deletion confirmation)QBT_TR[CONTEXT=AutomatedRssDownloader]',
+                title: 'Rule deletion confirmation',
                 loadMethod: 'iframe',
                 contentURL: 'confirmruledeletion.html?rules=' + encodeURIComponent(encodedRules.join('|')),
                 scrollbars: false,
@@ -557,7 +566,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
             const encodedRules = rules.map((rule) => encodeURIComponent(rule));
             new MochaUI.Window({
                 id: 'clearRulesPage',
-                title: 'QBT_TR(New rule name)QBT_TR[CONTEXT=AutomatedRssDownloader]',
+                title: 'New rule name',
                 loadMethod: 'iframe',
                 contentURL: 'confirmruleclear.html?rules=' + encodeURIComponent(encodedRules.join('|')),
                 scrollbars: false,
@@ -577,40 +586,44 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
             rulesList[rule].mustNotContain = $('mustNotContainText').value;
             rulesList[rule].episodeFilter = $('episodeFilterText').value;
             rulesList[rule].smartFilter = $('useSmartFilter').checked;
-            rulesList[rule].assignedCategory = $('assignCategoryCombobox').value;
-            rulesList[rule].savePath = $('savetoDifferentDir').checked ? $('saveToText').value : '';
             rulesList[rule].ignoreDays = parseInt($('ignoreDaysValue').value);
+            rulesList[rule].affectedFeeds = rssDownloaderFeedSelectionTable.rows.filter((row) => row.full_data.checked)
+                .map((row) => row.full_data.url)
+                .getValues();
+
+            rulesList[rule].torrentParams.category = $('assignCategoryCombobox').value;
+            rulesList[rule].torrentParams.tags = $('ruleAddTags').value.split(',');
+            if ($('savetoDifferentDir').checked) {
+                rulesList[rule].torrentParams.save_path = $('saveToText').value;
+                rulesList[rule].torrentParams.use_auto_tmm = false;
+            }
 
             switch ($('addPausedCombobox').value) {
                 case 'default':
-                    rulesList[rule].addPaused = null;
+                    rulesList[rule].torrentParams.stopped = null;
                     break;
                 case 'always':
-                    rulesList[rule].addPaused = true;
+                    rulesList[rule].torrentParams.stopped = true;
                     break;
                 case 'never':
-                    rulesList[rule].addPaused = false;
+                    rulesList[rule].torrentParams.stopped = false;
                     break;
             }
 
             switch ($('contentLayoutCombobox').value) {
                 case 'Default':
-                    rulesList[rule].torrentContentLayout = null;
+                    rulesList[rule].torrentParams.content_layout = null;
                     break;
                 case 'Original':
-                    rulesList[rule].torrentContentLayout = 'Original';
+                    rulesList[rule].torrentParams.content_layout = 'Original';
                     break;
                 case 'Subfolder':
-                    rulesList[rule].torrentContentLayout = 'Subfolder';
+                    rulesList[rule].torrentParams.content_layout = 'Subfolder';
                     break;
                 case 'NoSubfolder':
-                    rulesList[rule].torrentContentLayout = 'NoSubfolder';
+                    rulesList[rule].torrentParams.content_layout = 'NoSubfolder';
                     break;
             }
-
-            rulesList[rule].affectedFeeds = rssDownloaderFeedSelectionTable.rows.filter((row) => row.full_data.checked)
-                .map((row) => row.full_data.url)
-                .getValues();
 
             new Request({
                 url: 'api/v2/rss/setRule',
@@ -666,6 +679,7 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                 $('episodeFilterText').disabled = true;
                 $('useSmartFilter').disabled = true;
                 $('assignCategoryCombobox').disabled = true;
+                $('ruleAddTags').disabled = true;
                 $('savetoDifferentDir').disabled = true;
                 $('saveToText').disabled = true;
                 $('ignoreDaysValue').disabled = true;
@@ -679,10 +693,11 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                 $('episodeFilterText').value = '';
                 $('useSmartFilter').checked = false;
                 $('assignCategoryCombobox').value = 'default';
+                $('ruleAddTags').value = '';
                 $('savetoDifferentDir').checked = false;
                 $('saveToText').value = '';
                 $('ignoreDaysValue').value = 0;
-                $('lastMatchText').textContent = 'QBT_TR(Last Match: Unknown)QBT_TR[CONTEXT=AutomatedRssDownloader]';
+                $('lastMatchText').textContent = 'Last Match: Unknown';
                 $('addPausedCombobox').value = 'default';
                 $('contentLayoutCombobox').value = 'Default';
                 rssDownloaderFeedSelectionTable.clear();
@@ -701,9 +716,8 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                 $('episodeFilterText').disabled = false;
                 $('useSmartFilter').disabled = false;
                 $('assignCategoryCombobox').disabled = false;
+                $('ruleAddTags').disabled = false;
                 $('savetoDifferentDir').disabled = false;
-                $('savetoDifferentDir').checked = rulesList[ruleName].savePath ? false : true;
-                $('saveToText').disabled = rulesList[ruleName].savePath ? false : true;
                 $('ignoreDaysValue').disabled = false;
                 $('addPausedCombobox').disabled = false;
                 $('contentLayoutCombobox').disabled = false;
@@ -715,30 +729,32 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
                 $('episodeFilterText').value = rulesList[ruleName].episodeFilter;
                 $('useSmartFilter').checked = rulesList[ruleName].smartFilter;
 
-                $('assignCategoryCombobox').value = rulesList[ruleName].assignedCategory ? rulesList[ruleName].assignedCategory : 'default';
-                $('savetoDifferentDir').checked = rulesList[ruleName].savePath !== '';
-                $('saveToText').value = rulesList[ruleName].savePath;
+                $('assignCategoryCombobox').value = rulesList[ruleName].torrentParams.category ? rulesList[ruleName].torrentParams.category : 'default';
+                $('ruleAddTags').value = rulesList[ruleName].torrentParams.tags.join(',');
+                $('savetoDifferentDir').checked = rulesList[ruleName].torrentParams.save_path !== '';
+                $('saveToText').disabled = !$('savetoDifferentDir').checked;
+                $('saveToText').value = rulesList[ruleName].torrentParams.save_path;
                 $('ignoreDaysValue').value = rulesList[ruleName].ignoreDays;
 
                 // calculate days since last match
                 if (rulesList[ruleName].lastMatch !== '') {
                     let timeDiffInMs = new Date().getTime() - new Date(rulesList[ruleName].lastMatch).getTime();
                     let daysAgo = Math.floor(timeDiffInMs / (1000 * 60 * 60 * 24)).toString();
-                    $('lastMatchText').textContent = ' QBT_TR(Last Match: %1 days ago)QBT_TR[CONTEXT=AutomatedRssDownloader]'.replace('%1', daysAgo);
+                    $('lastMatchText').textContent = ' Last Match: %1 days ago'.replace('%1', daysAgo);
                 }
                 else {
-                    $('lastMatchText').textContent = 'QBT_TR(Last Match: Unknown)QBT_TR[CONTEXT=AutomatedRssDownloader]';
+                    $('lastMatchText').textContent = 'Last Match: Unknown';
                 }
 
-                if (rulesList[ruleName].addPaused === null)
+                if (rulesList[ruleName].torrentParams.stopped === null)
                     $('addPausedCombobox').value = 'default';
                 else
-                    $('addPausedCombobox').value = rulesList[ruleName].addPaused ? 'always' : 'never';
+                    $('addPausedCombobox').value = rulesList[ruleName].torrentParams.stopped ? 'always' : 'never';
 
-                if (rulesList[ruleName].torrentContentLayout === null)
+                if (rulesList[ruleName].torrentParams.content_layout === null)
                     $('contentLayoutCombobox').value = 'Default';
                 else
-                    $('contentLayoutCombobox').value = rulesList[ruleName].torrentContentLayout;
+                    $('contentLayoutCombobox').value = rulesList[ruleName].torrentParams.content_layout;
 
                 setElementTitles();
 
@@ -760,34 +776,34 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
         const setElementTitles = () => {
             let mainPart;
             if ($('useRegEx').checked) {
-                mainPart = 'QBT_TR(Regex mode: use Perl-compatible regular expressions)QBT_TR[CONTEXT=AutomatedRssDownloader]\n\n';
+                mainPart = 'Regex mode: use Perl-compatible regular expressions\n\n';
             }
             else {
-                mainPart = 'QBT_TR(Wildcard mode: you can use)QBT_TR[CONTEXT=AutomatedRssDownloader]\n\n'
-                    + ' ● QBT_TR(? to match any single character)QBT_TR[CONTEXT=AutomatedRssDownloader]\n'
-                    + ' ● QBT_TR(* to match zero or more of any characters)QBT_TR[CONTEXT=AutomatedRssDownloader]\n'
-                    + ' ● QBT_TR(Whitespaces count as AND operators (all words, any order))QBT_TR[CONTEXT=AutomatedRssDownloader]\n'
-                    + ' ● QBT_TR(| is used as OR operator)QBT_TR[CONTEXT=AutomatedRssDownloader]\n\n'
-                    + 'QBT_TR(If word order is important use * instead of whitespace.)QBT_TR[CONTEXT=AutomatedRssDownloader]\n\n';
+                mainPart = 'Wildcard mode: you can use\n\n'
+                    + ' ● ? to match any single character\n'
+                    + ' ● * to match zero or more of any characters\n'
+                    + ' ● Whitespaces count as AND operators (all words, any order)\n'
+                    + ' ● | is used as OR operator\n\n'
+                    + 'If word order is important use * instead of whitespace.\n\n';
             }
-            let secondPart = 'QBT_TR(An expression with an empty %1 clause (e.g. %2))QBT_TR[CONTEXT=AutomatedRssDownloader]'
+            let secondPart = 'An expression with an empty %1 clause (e.g. %2)'
                 .replace('%1', '|').replace('%2', 'expr|');
 
-            $('mustContainText').title = mainPart + secondPart + 'QBT_TR( will match all articles.)QBT_TR[CONTEXT=AutomatedRssDownloader]';
-            $('mustNotContainText').title = mainPart + secondPart + 'QBT_TR( will exclude all articles.)QBT_TR[CONTEXT=AutomatedRssDownloader]';
+            $('mustContainText').title = mainPart + secondPart + ' will match all articles.';
+            $('mustNotContainText').title = mainPart + secondPart + ' will exclude all articles.';
 
-            let episodeFilterTitle = 'QBT_TR(Matches articles based on episode filter.)QBT_TR[CONTEXT=AutomatedRssDownloader]\n\n'
-                + 'QBT_TR(Example: )QBT_TR[CONTEXT=AutomatedRssDownloader]'
+            let episodeFilterTitle = 'Matches articles based on episode filter.\n\n'
+                + 'Example: '
                 + '1x2;8-15;5;30-;'
-                + 'QBT_TR( will match 2, 5, 8 through 15, 30 and onward episodes of season one)QBT_TR[CONTEXT=AutomatedRssDownloader]\n\n'
-                + 'QBT_TR(Episode filter rules: )QBT_TR[CONTEXT=AutomatedRssDownloader]\n\n'
-                + ' ● QBT_TR(Season number is a mandatory non-zero value)QBT_TR[CONTEXT=AutomatedRssDownloader]\n'
-                + ' ● QBT_TR(Episode number is a mandatory positive value)QBT_TR[CONTEXT=AutomatedRssDownloader]\n'
-                + ' ● QBT_TR(Filter must end with semicolon)QBT_TR[CONTEXT=AutomatedRssDownloader]\n'
-                + ' ● QBT_TR(Three range types for episodes are supported: )QBT_TR[CONTEXT=AutomatedRssDownloader]\n'
-                + '    ● QBT_TR(Single number: <b>1x25;</b> matches episode 25 of season one)QBT_TR[CONTEXT=AutomatedRssDownloader]\n'
-                + '    ● QBT_TR(Normal range: <b>1x25-40;</b> matches episodes 25 through 40 of season one)QBT_TR[CONTEXT=AutomatedRssDownloader]\n'
-                + '    ● QBT_TR(Infinite range: <b>1x25-;</b> matches episodes 25 and upward of season one, and all episodes of later seasons)QBT_TR[CONTEXT=AutomatedRssDownloader]';
+                + ' will match 2, 5, 8 through 15, 30 and onward episodes of season one\n\n'
+                + 'Episode filter rules: \n\n'
+                + ' ● Season number is a mandatory non-zero value\n'
+                + ' ● Episode number is a mandatory positive value\n'
+                + ' ● Filter must end with semicolon\n'
+                + ' ● Three range types for episodes are supported: \n'
+                + '    ● Single number: <b>1x25;</b> matches episode 25 of season one\n'
+                + '    ● Normal range: <b>1x25-40;</b> matches episodes 25 through 40 of season one\n'
+                + '    ● Infinite range: <b>1x25-;</b> matches episodes 25 and upward of season one, and all episodes of later seasons';
 
             episodeFilterTitle = episodeFilterTitle.replace(/<b>/g, '').replace(/<\/b>/g, '');
             $('episodeFilterText').title = episodeFilterTitle;

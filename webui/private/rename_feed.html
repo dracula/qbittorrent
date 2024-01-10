@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>QBT_TR(Please choose a new name for this RSS feed)QBT_TR[CONTEXT=RSSWidget]</title>
+    <title>Please choose a new name for this RSS feed</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css" />
     <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
     <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
@@ -40,12 +40,12 @@
                 // check field
                 const newPath = $('rename').value.trim();
                 if (newPath === '') {
-                    alert('QBT_TR(Name cannot be empty)QBT_TR[CONTEXT=HttpServer]');
+                    alert('Name cannot be empty');
                     return;
                 }
 
                 if (newPath === oldPath) {
-                    alert('QBT_TR(Name is unchanged)QBT_TR[CONTEXT=HttpServer]');
+                    alert('Name is unchanged');
                     return;
                 }
 
@@ -77,10 +77,10 @@
 
 <body>
     <div style="padding: 10px 10px 0px 10px;">
-        <p style="font-weight: bold;">QBT_TR(New feed name:)QBT_TR[CONTEXT=RSSWidget]</p>
+        <p style="font-weight: bold;">New feed name:</p>
         <input type="text" id="rename" style="width: 320px;" />
         <div style="text-align: center; padding-top: 10px;">
-            <input type="button" value="QBT_TR(Save)QBT_TR[CONTEXT=HttpServer]" id="renameButton" />
+            <input type="button" value="Save" id="renameButton" />
         </div>
     </div>
 </body>

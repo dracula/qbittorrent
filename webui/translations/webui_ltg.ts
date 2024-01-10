@@ -12,1724 +12,1212 @@
     <name>AddNewTorrentDialog</name>
     <message>
         <source>Category:</source>
-        <translation>Kategoreja:</translation>
+        <translation type="vanished">Kategoreja:</translation>
     </message>
     <message>
         <source>Start torrent</source>
-        <translation>Suokt atsasyuteišonu</translation>
+        <translation type="vanished">Suokt atsasyuteišonu</translation>
     </message>
     <message>
         <source>Skip hash check</source>
-        <translation>Izlaist maiseituojkoda puorbaudi</translation>
+        <translation type="vanished">Izlaist maiseituojkoda puorbaudi</translation>
     </message>
     <message>
         <source>Torrent Management Mode:</source>
-        <translation>Torrenta puorvaļdis režims:</translation>
+        <translation type="vanished">Torrenta puorvaļdis režims:</translation>
     </message>
     <message>
         <source>Content layout:</source>
-        <translation>Satvora izlikaliejums:</translation>
-    </message>
-    <message>
-        <source>Original</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Satvora izlikaliejums:</translation>
     </message>
     <message>
         <source>Create subfolder</source>
-        <translation>Radeit zamapvuoci</translation>
+        <translation type="vanished">Radeit zamapvuoci</translation>
     </message>
     <message>
         <source>Don't create subfolder</source>
-        <translation>Naradeit zamapvuoci</translation>
+        <translation type="vanished">Naradeit zamapvuoci</translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation>Rūkvaļde</translation>
+        <translation type="vanished">Rūkvaļde</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Automatiskuo</translation>
-    </message>
-    <message>
-        <source>Metadata received</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Files checked</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Stop condition:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Automatiskuo</translation>
     </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
     <message>
         <source>All</source>
-        <translation>Vysys</translation>
+        <translation type="vanished">Vysys</translation>
     </message>
     <message>
         <source>Uncategorized</source>
-        <translation>Bez kategorejas</translation>
+        <translation type="vanished">Bez kategorejas</translation>
     </message>
 </context>
 <context>
     <name>CategoryFilterWidget</name>
     <message>
         <source>Add category...</source>
-        <translation>Pīlikt kategoreju...</translation>
+        <translation type="vanished">Pīlikt kategoreju...</translation>
     </message>
     <message>
         <source>Remove category</source>
-        <translation>Nūjimt kategoreju</translation>
+        <translation type="vanished">Nūjimt kategoreju</translation>
     </message>
     <message>
         <source>Remove unused categories</source>
-        <translation>Nūjimt nalītuotas kategorejas</translation>
+        <translation type="vanished">Nūjimt nalītuotas kategorejas</translation>
     </message>
     <message>
         <source>Resume torrents</source>
-        <translation>Aizsuokt torrentus</translation>
+        <translation type="vanished">Aizsuokt torrentus</translation>
     </message>
     <message>
         <source>Pause torrents</source>
-        <translation>Nūstuodeit torrentus</translation>
+        <translation type="vanished">Nūstuodeit torrentus</translation>
     </message>
     <message>
         <source>New Category</source>
-        <translation>Jauna kategoreja</translation>
+        <translation type="vanished">Jauna kategoreja</translation>
     </message>
     <message>
         <source>Edit category...</source>
-        <translation>Lobuot kategoreju...</translation>
+        <translation type="vanished">Lobuot kategoreju...</translation>
     </message>
     <message>
-        <source>Remove torrents</source>
-        <translation type="unfinished" />
+        <source>Add subcategory...</source>
+        <translation type="vanished">Pīlikt zamkategoreju...</translation>
     </message>
 </context>
 <context>
     <name>HttpServer</name>
     <message>
         <source>Exit qBittorrent</source>
-        <translation>Aiztaiseit qBittorrent</translation>
+        <translation type="vanished">Aiztaiseit qBittorrent</translation>
     </message>
     <message>
         <source>Only one link per line</source>
-        <translation>Pa vīnai saitai katrā aiļā</translation>
+        <translation type="vanished">Pa vīnai saitai katrā aiļā</translation>
     </message>
     <message>
         <source>Global upload rate limit must be greater than 0 or disabled.</source>
-        <translation>Golvonai kūpeigā nūsasyuteišonas dreizuma rūbežai juoir leluokai par 0 voi arī nūgrīztai. </translation>
+        <translation type="vanished">Golvonai kūpeigā nūsasyuteišonas dreizuma rūbežai juoir leluokai par 0 voi arī nūgrīztai. </translation>
     </message>
     <message>
         <source>Global download rate limit must be greater than 0 or disabled.</source>
-        <translation>Golvonai kūpeigā atsasyuteišonas dreizuma rūbežai juoir leluokai par 0 voi arī nūgrīztai. </translation>
+        <translation type="vanished">Golvonai kūpeigā atsasyuteišonas dreizuma rūbežai juoir leluokai par 0 voi arī nūgrīztai. </translation>
     </message>
     <message>
         <source>Alternative upload rate limit must be greater than 0 or disabled.</source>
-        <translation>Aļternativai kūpeigā nūsasyuteišonas dreizuma rūbežai juoir leluokai par 0 voi arī nūgrīztai. </translation>
+        <translation type="vanished">Aļternativai kūpeigā nūsasyuteišonas dreizuma rūbežai juoir leluokai par 0 voi arī nūgrīztai. </translation>
     </message>
     <message>
         <source>Alternative download rate limit must be greater than 0 or disabled.</source>
-        <translation>Aļternativai kūpeigā atsasyuteišonas dreizuma rūbežai juoir leluokai par 0 voi arī nūgrīztai. </translation>
+        <translation type="vanished">Aļternativai kūpeigā atsasyuteišonas dreizuma rūbežai juoir leluokai par 0 voi arī nūgrīztai. </translation>
     </message>
     <message>
         <source>Maximum active downloads must be greater than -1.</source>
-        <translation>Kūpejam aktivuo atsasyuteišonas torrentu skaitam juoir leluokam par -1.</translation>
+        <translation type="vanished">Kūpejam aktivuo atsasyuteišonas torrentu skaitam juoir leluokam par -1.</translation>
     </message>
     <message>
         <source>Maximum active uploads must be greater than -1.</source>
-        <translation>Kūpejam aktivuo nūsasyuteišonas torrentu skaitam juoir leluokam par -1.</translation>
+        <translation type="vanished">Kūpejam aktivuo nūsasyuteišonas torrentu skaitam juoir leluokam par -1.</translation>
     </message>
     <message>
         <source>Maximum active torrents must be greater than -1.</source>
-        <translation>Kūpejam aktivuo torrentu skaitam juoir leluokam par -1.</translation>
+        <translation type="vanished">Kūpejam aktivuo torrentu skaitam juoir leluokam par -1.</translation>
     </message>
     <message>
         <source>Maximum number of connections limit must be greater than 0 or disabled.</source>
-        <translation>Kūpejam salaidumu skaitam juoir leluokam par 0 voi nikaidam.</translation>
+        <translation type="vanished">Kūpejam salaidumu skaitam juoir leluokam par 0 voi nikaidam.</translation>
     </message>
     <message>
         <source>Maximum number of connections per torrent limit must be greater than 0 or disabled.</source>
-        <translation>Kūpejam salaidumu skaitam uz vīnu torrentu juoir leluokam par 0 voi nikaidam.</translation>
+        <translation type="vanished">Kūpejam salaidumu skaitam uz vīnu torrentu juoir leluokam par 0 voi nikaidam.</translation>
     </message>
     <message>
         <source>Maximum number of upload slots per torrent limit must be greater than 0 or disabled.</source>
-        <translation>Kūpejam nūsasyuteišonas slotu skaitam uz vīnu torrentu juoir leluokam par 0 voi nikaidam.</translation>
+        <translation type="vanished">Kūpejam nūsasyuteišonas slotu skaitam uz vīnu torrentu juoir leluokam par 0 voi nikaidam.</translation>
     </message>
     <message>
         <source>Unable to save program preferences, qBittorrent is probably unreachable.</source>
-        <translation>Nāisadevās saglabuot īstatejumus, varams, ka qBittorrent navā dasnēdzuoms.</translation>
+        <translation type="vanished">Nāisadevās saglabuot īstatejumus, varams, ka qBittorrent navā dasnēdzuoms.</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation>Nazynoms</translation>
+        <translation type="vanished">Nazynoms</translation>
     </message>
     <message>
         <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Kūplītuošonas reitinga rūbēžai juoir nu 0 da 9998.</translation>
+        <translation type="vanished">Kūplītuošonas reitinga rūbēžai juoir nu 0 da 9998.</translation>
     </message>
     <message>
         <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Nūsasyuteišonas laika rūbēžai juoir nu 0 da 525600 mynotu.</translation>
+        <translation type="vanished">Nūsasyuteišonas laika rūbēžai juoir nu 0 da 525600 mynotu.</translation>
     </message>
     <message>
         <source>The port used for the Web UI must be between 1 and 65535.</source>
-        <translation>Portam priekš Tuolvaļdis panela (Web UI) juoir nu 1 da 65535.</translation>
+        <translation type="vanished">Portam priekš Tuolvaļdis panela (Web UI) juoir nu 1 da 65535.</translation>
     </message>
     <message>
         <source>Unable to log in, qBittorrent is probably unreachable.</source>
-        <translation>Dasaslēgšuonās naīsadevās, varams, ka qBittorrent navā dasnēdzuoms.</translation>
+        <translation type="vanished">Dasaslēgšuonās naīsadevās, varams, ka qBittorrent navā dasnēdzuoms.</translation>
     </message>
     <message>
         <source>Invalid Username or Password.</source>
-        <translation>Napareizs slāgvuords voi paroļs</translation>
+        <translation type="vanished">Napareizs slāgvuords voi paroļs</translation>
     </message>
     <message>
         <source>Username</source>
-        <translation>Lītuotuojs</translation>
+        <translation type="vanished">Lītuotuojs</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>Paroļs</translation>
+        <translation type="vanished">Paroļs</translation>
     </message>
     <message>
         <source>Login</source>
-        <translation>Dasaslāgt</translation>
+        <translation type="vanished">Dasaslāgt</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation>Apstyprynuot</translation>
+        <translation type="vanished">Apstyprynuot</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Pīlikt</translation>
+        <translation type="vanished">Pīlikt</translation>
     </message>
     <message>
         <source>Upload Torrents</source>
         <comment>Upload torrent files to qBittorent using WebUI</comment>
-        <translation>Dalikt torrentus</translation>
+        <translation type="vanished">Dalikt torrentus</translation>
     </message>
     <message>
         <source>Save files to location:</source>
-        <translation>Izglobuot failus ite:</translation>
+        <translation type="vanished">Izglobuot failus ite:</translation>
     </message>
     <message>
         <source>Cookie:</source>
-        <translation>Glabiņs:</translation>
+        <translation type="vanished">Glabiņs:</translation>
     </message>
     <message>
         <source>More information</source>
-        <translation>Vaira dazynuošonys</translation>
+        <translation type="vanished">Vaira dazynuošonys</translation>
     </message>
     <message>
         <source>Information about certificates</source>
-        <translation>Inpormaceja par sertifikatim</translation>
+        <translation type="vanished">Inpormaceja par sertifikatim</translation>
     </message>
     <message>
         <source>Set location</source>
-        <translation>Puormeit failu izglobuošonys vītu</translation>
+        <translation type="vanished">Puormeit failu izglobuošonys vītu</translation>
     </message>
     <message>
         <source>Limit upload rate</source>
-        <translation>Aprūbežuot nūsasyuteišonas reitingu</translation>
+        <translation type="vanished">Aprūbežuot nūsasyuteišonas reitingu</translation>
     </message>
     <message>
         <source>Limit download rate</source>
-        <translation>Aprūbežuot atsasyuteišonas reitingu</translation>
+        <translation type="vanished">Aprūbežuot atsasyuteišonas reitingu</translation>
     </message>
     <message>
         <source>Rename torrent</source>
-        <translation>Puorsaukt torrentu</translation>
+        <translation type="vanished">Puorsaukt torrentu</translation>
     </message>
     <message>
         <source>Monday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Pyrmūdīnem</translation>
+        <translation type="vanished">Pyrmūdīnem</translation>
     </message>
     <message>
         <source>Tuesday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Ūtardīnem</translation>
+        <translation type="vanished">Ūtardīnem</translation>
     </message>
     <message>
         <source>Wednesday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Trešdīnem</translation>
+        <translation type="vanished">Trešdīnem</translation>
     </message>
     <message>
         <source>Thursday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Catūrtdīnem</translation>
+        <translation type="vanished">Catūrtdīnem</translation>
     </message>
     <message>
         <source>Friday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Pīktdīnem</translation>
+        <translation type="vanished">Pīktdīnem</translation>
     </message>
     <message>
         <source>Saturday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Sastdīnem</translation>
+        <translation type="vanished">Sastdīnem</translation>
     </message>
     <message>
         <source>Sunday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Svātdīnem</translation>
+        <translation type="vanished">Svātdīnem</translation>
     </message>
     <message>
         <source>Logout</source>
-        <translation>Izīt</translation>
+        <translation type="vanished">Izīt</translation>
     </message>
     <message>
         <source>Download Torrents from their URLs or Magnet links</source>
-        <translation>Atsasyuteit torrentus nū teiklavītuom voi Magnetsaitym</translation>
+        <translation type="vanished">Atsasyuteit torrentus nū teiklavītuom voi Magnetsaitym</translation>
     </message>
     <message>
         <source>Upload local torrent</source>
-        <translation>Dalikt torrentus</translation>
+        <translation type="vanished">Dalikt torrentus</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Izglobuot</translation>
+        <translation type="vanished">Izglobuot</translation>
     </message>
     <message>
         <source>qBittorrent client is not reachable</source>
-        <translation>qBittorrent navā dasnēdzuoms</translation>
+        <translation type="vanished">qBittorrent navā dasnēdzuoms</translation>
     </message>
     <message>
         <source>Global number of upload slots limit must be greater than 0 or disabled.</source>
-        <translation>Kūpejam nūsasyuteišonas slotu skaitam juoir leluokam par 0 voi nikaidam.</translation>
+        <translation type="vanished">Kūpejam nūsasyuteišonas slotu skaitam juoir leluokam par 0 voi nikaidam.</translation>
     </message>
     <message>
         <source>Invalid category name:\nPlease do not use any special characters in the category name.</source>
-        <translation>Nadereiga kategorejas pasauka:\nLyudzu nalītuot specialuos simbolus.</translation>
+        <translation type="vanished">Nadereiga kategorejas pasauka:\nLyudzu nalītuot specialuos simbolus.</translation>
     </message>
     <message>
         <source>Unable to create category</source>
-        <translation>Nāisadevās radeit kategoreju</translation>
-    </message>
-    <message>
-        <source>Upload rate threshold must be greater than 0.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nāisadevās radeit kategoreju</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Lobuot</translation>
+        <translation type="vanished">Lobuot</translation>
     </message>
     <message>
         <source>Free space: %1</source>
-        <translation>Breivas vītas: %1</translation>
+        <translation type="vanished">Breivas vītas: %1</translation>
     </message>
     <message>
         <source>Torrent inactivity timer must be greater than 0.</source>
-        <translation>Torrenta stibniešonys skaiteklim jauoir leluokam par 0.</translation>
+        <translation type="vanished">Torrenta stibniešonys skaiteklim jauoir leluokam par 0.</translation>
     </message>
     <message>
         <source>Saving Management</source>
-        <translation>Saglabuošonas puorvoļds</translation>
-    </message>
-    <message>
-        <source>Download rate threshold must be greater than 0.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Saglabuošonas puorvoļds</translation>
     </message>
     <message>
         <source>qBittorrent has been shutdown</source>
-        <translation>qBittorrent tika nūgrīzts</translation>
+        <translation type="vanished">qBittorrent tika nūgrīzts</translation>
     </message>
     <message>
         <source>Open documentation</source>
-        <translation>Skaiteit dokumentaceju</translation>
+        <translation type="vanished">Skaiteit dokumentaceju</translation>
     </message>
     <message>
         <source>Register to handle magnet links...</source>
-        <translation>Īgrīzt atspaidu magnetsaitym...</translation>
+        <translation type="vanished">Īgrīzt atspaidu magnetsaitym...</translation>
     </message>
     <message>
         <source>Unable to add peers. Please ensure you are adhering to the IP:port format.</source>
-        <translation>Nāisadevās pīlikt kūplītuotuojus. Īsatycynīs, ka pareizi īvoduoji IP:ports.</translation>
+        <translation type="vanished">Nāisadevās pīlikt kūplītuotuojus. Īsatycynīs, ka pareizi īvoduoji IP:ports.</translation>
     </message>
     <message>
         <source>JavaScript Required! You must enable JavaScript for the Web UI to work properly</source>
-        <translation>Vajadzeigs JavaScript! Īgrīzt Javascript, lai Tuolvaļdis panelis (Web UI) dorbuotuos pareizi</translation>
+        <translation type="vanished">Vajadzeigs JavaScript! Īgrīzt Javascript, lai Tuolvaļdis panelis (Web UI) dorbuotuos pareizi</translation>
     </message>
     <message>
         <source>Name cannot be empty</source>
-        <translation>Pasauku navar pamest tukšu</translation>
+        <translation type="vanished">Pasauku navar pamest tukšu</translation>
     </message>
     <message>
         <source>Name is unchanged</source>
-        <translation>Pasauka navā puormeita</translation>
+        <translation type="vanished">Pasauka navā puormeita</translation>
     </message>
     <message>
         <source>Failed to update name</source>
-        <translation>Puorsaukšona nāisadevās</translation>
+        <translation type="vanished">Puorsaukšona nāisadevās</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation>Lobi</translation>
+        <translation type="vanished">Lobi</translation>
     </message>
     <message>
         <source>The port used for incoming connections must be between 0 and 65535.</source>
-        <translation>Portam priekš atīmūšim salaidumim juoir nu 0 leidz 65535.</translation>
+        <translation type="vanished">Portam priekš atīmūšim salaidumim juoir nu 0 leidz 65535.</translation>
     </message>
     <message>
         <source>Original author</source>
-        <translation>Programmas radeituojs</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to remove the selected torrents from the transfer list?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Programmas radeituojs</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <source>Edit</source>
-        <translation>Lobuot</translation>
+        <translation type="vanished">Lobuot</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>Reiki</translation>
+        <translation type="vanished">Reiki</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>Fails</translation>
+        <translation type="vanished">Fails</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>Paleigs</translation>
+        <translation type="vanished">Paleigs</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>Vierīņs</translation>
+        <translation type="vanished">Vierīņs</translation>
     </message>
     <message>
         <source>Options...</source>
-        <translation>Nūstatejumi...</translation>
+        <translation type="vanished">Nūstatejumi...</translation>
     </message>
     <message>
         <source>Resume</source>
-        <translation>Aizsuokt</translation>
+        <translation type="vanished">Aizsuokt</translation>
     </message>
     <message>
         <source>Top Toolbar</source>
-        <translation>Viersejuo reikšveitra</translation>
+        <translation type="vanished">Viersejuo reikšveitra</translation>
     </message>
     <message>
         <source>Status Bar</source>
-        <translation>Statusa jūsta</translation>
+        <translation type="vanished">Statusa jūsta</translation>
     </message>
     <message>
         <source>Speed in Title Bar</source>
-        <translation>Dreizums pasaukys šveitrā</translation>
+        <translation type="vanished">Dreizums pasaukys šveitrā</translation>
     </message>
     <message>
         <source>Donate!</source>
-        <translation>Pazīduot!</translation>
+        <translation type="vanished">Pazīduot!</translation>
     </message>
     <message>
         <source>Resume All</source>
-        <translation>Aizsuokt vysys</translation>
+        <translation type="vanished">Aizsuokt vysys</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation>Statistika</translation>
+        <translation type="vanished">Statistika</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>Par</translation>
+        <translation type="vanished">Par</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation>Nūstateit</translation>
+        <translation type="vanished">Nūstateit</translation>
     </message>
     <message>
         <source>Pause All</source>
-        <translation>Nūstuodeit vysys</translation>
+        <translation type="vanished">Nūstuodeit vysys</translation>
     </message>
     <message>
         <source>Add Torrent File...</source>
-        <translation>Dalikt torrentu failus...</translation>
+        <translation type="vanished">Dalikt torrentu failus...</translation>
     </message>
     <message>
         <source>Documentation</source>
-        <translation>Dokumentaceja</translation>
+        <translation type="vanished">Dokumentaceja</translation>
     </message>
     <message>
         <source>Add Torrent Link...</source>
-        <translation>Dalikt torrentu saitys...</translation>
+        <translation type="vanished">Dalikt torrentu saitys...</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Nui</translation>
+        <translation type="vanished">Nui</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Nā</translation>
+        <translation type="vanished">Nā</translation>
     </message>
     <message>
         <source>Global Upload Speed Limit</source>
-        <translation>Kūpeigā nūsasyuteišonas dreizuma rūbežs</translation>
+        <translation type="vanished">Kūpeigā nūsasyuteišonas dreizuma rūbežs</translation>
     </message>
     <message>
         <source>Global Download Speed Limit</source>
-        <translation>Kūpeigā atsasyuteišonas dreizuma rūbežs</translation>
+        <translation type="vanished">Kūpeigā atsasyuteišonas dreizuma rūbežs</translation>
     </message>
     <message>
         <source>Are you sure you want to quit qBittorrent?</source>
-        <translation>Voi drūši zini, ka gribi nūgrīzt qBittorrent?</translation>
+        <translation type="vanished">Voi drūši zini, ka gribi nūgrīzt qBittorrent?</translation>
     </message>
     <message>
         <source>[D: %1, U: %2] qBittorrent %3</source>
         <comment>D = Download; U = Upload; %3 is qBittorrent version</comment>
-        <translation>[A: %1, N: %2] qBittorrent %3</translation>
+        <translation type="vanished">[A: %1, N: %2] qBittorrent %3</translation>
     </message>
     <message>
         <source>Alternative speed limits</source>
-        <translation>Aļternativie dreizumi</translation>
+        <translation type="vanished">Aļternativie dreizumi</translation>
     </message>
     <message>
         <source>Search Engine</source>
-        <translation>Maklātivs</translation>
+        <translation type="vanished">Maklātivs</translation>
     </message>
     <message>
         <source>Filter torrent list...</source>
-        <translation>Meklēt torrentu sarokstā...</translation>
+        <translation type="vanished">Meklēt torrentu sarokstā...</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Maklātivs</translation>
+        <translation type="vanished">Maklātivs</translation>
     </message>
     <message>
         <source>Transfers</source>
-        <translation>Torrenti</translation>
+        <translation type="vanished">Torrenti</translation>
     </message>
     <message>
         <source>Move up in the queue</source>
-        <translation>Puorceļt augstuok sarokstā</translation>
+        <translation type="vanished">Puorceļt augstuok sarokstā</translation>
     </message>
     <message>
         <source>Move Up Queue</source>
-        <translation>Puorceļt augstuok sarokstā</translation>
+        <translation type="vanished">Puorceļt augstuok sarokstā</translation>
     </message>
     <message>
         <source>Bottom of Queue</source>
-        <translation>Puorceļt saroksta zamoškā</translation>
+        <translation type="vanished">Puorceļt saroksta zamoškā</translation>
     </message>
     <message>
         <source>Move to the bottom of the queue</source>
-        <translation>Puorceļt saroksta zamoškā</translation>
+        <translation type="vanished">Puorceļt saroksta zamoškā</translation>
     </message>
     <message>
         <source>Top of Queue</source>
-        <translation>Puorceļt saroksta viersā</translation>
+        <translation type="vanished">Puorceļt saroksta viersā</translation>
     </message>
     <message>
         <source>Move Down Queue</source>
-        <translation>Puorceļt zamuok sarokstā</translation>
+        <translation type="vanished">Puorceļt zamuok sarokstā</translation>
     </message>
     <message>
         <source>Move down in the queue</source>
-        <translation>Puorceļt zamuok sarokstā</translation>
+        <translation type="vanished">Puorceļt zamuok sarokstā</translation>
     </message>
     <message>
         <source>Move to the top of the queue</source>
-        <translation>Puorceļt saroksta viersā</translation>
-    </message>
-    <message>
-        <source>Your browser does not support this feature</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>To use this feature, the WebUI needs to be accessed over HTTPS</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Puorceļt saroksta viersā</translation>
     </message>
     <message>
         <source>Connection status: Firewalled</source>
-        <translation>Škārsteikla salaiduma statuss: Aiz guņsīnys</translation>
+        <translation type="vanished">Škārsteikla salaiduma statuss: Aiz guņsīnys</translation>
     </message>
     <message>
         <source>Connection status: Connected</source>
-        <translation>Škārsteikla salaiduma statuss: Salaists</translation>
+        <translation type="vanished">Škārsteikla salaiduma statuss: Salaists</translation>
     </message>
     <message>
         <source>Alternative speed limits: Off</source>
-        <translation>Aļternativie dreizumi: Nā</translation>
+        <translation type="vanished">Aļternativie dreizumi: Nā</translation>
     </message>
     <message>
         <source>Download speed icon</source>
-        <translation>Atsasyuteišonas dreizuma atvaigs</translation>
-    </message>
-    <message>
-        <source>Connection status</source>
-        <translation>Škārsteikla salaiduma statuss</translation>
+        <translation type="vanished">Atsasyuteišonas dreizuma atvaigs</translation>
     </message>
     <message>
         <source>Alternative speed limits: On</source>
-        <translation>Aļternativie dreizumi: Nui</translation>
+        <translation type="vanished">Aļternativie dreizumi: Nui</translation>
     </message>
     <message>
         <source>Upload speed icon</source>
-        <translation>Nūsasyuteišonas dreizums atvaigs</translation>
+        <translation type="vanished">Nūsasyuteišonas dreizums atvaigs</translation>
     </message>
     <message>
         <source>Connection status: Disconnected</source>
-        <translation>Škārsteikla salaiduma statuss: Navā salaists</translation>
+        <translation type="vanished">Škārsteikla salaiduma statuss: Navā salaists</translation>
     </message>
     <message>
         <source>RSS Reader</source>
-        <translation>RSS laseituojs</translation>
+        <translation type="vanished">RSS laseituojs</translation>
     </message>
     <message>
         <source>RSS</source>
-        <translation>RSS</translation>
-    </message>
-    <message>
-        <source>Filters Sidebar</source>
-        <translation type="unfinished" />
+        <translation type="vanished">RSS</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Would you like to resume all torrents?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Would you like to pause all torrents?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Atsaukt</translation>
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation>Nūstatejumi</translation>
+        <translation type="vanished">Nūstatejumi</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Atsasyuteišonas</translation>
+        <translation type="vanished">Atsasyuteišonas</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation>Salaidums</translation>
+        <translation type="vanished">Salaidums</translation>
     </message>
     <message>
         <source>Speed</source>
-        <translation>Dreizums</translation>
+        <translation type="vanished">Dreizums</translation>
     </message>
     <message>
         <source>BitTorrent</source>
-        <translation>BitTorrent</translation>
+        <translation type="vanished">BitTorrent</translation>
     </message>
     <message>
         <source>Web UI</source>
-        <translation>Tuolvaļde</translation>
+        <translation type="vanished">Tuolvaļde</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Volūda</translation>
+        <translation type="vanished">Volūda</translation>
     </message>
     <message>
         <source>User Interface Language:</source>
-        <translation>Sadures volūda:</translation>
-    </message>
-    <message>
-        <source>Email notification upon download completion</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>IP Filtering</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Sadures volūda:</translation>
     </message>
     <message>
         <source>Schedule the use of alternative rate limits</source>
-        <translation>Īstateit laiku Aļternativuo kūpeiguo dreizumu lītuošonai</translation>
+        <translation type="vanished">Īstateit laiku Aļternativuo kūpeiguo dreizumu lītuošonai</translation>
     </message>
     <message>
         <source>Torrent Queueing</source>
-        <translation>Torrentu saroksts</translation>
+        <translation type="vanished">Torrentu saroksts</translation>
     </message>
     <message>
         <source>Automatically add these trackers to new downloads:</source>
-        <translation>Automatiski pīlikt šūs trakerus pi jaunīm torrentīm:</translation>
+        <translation type="vanished">Automatiski pīlikt šūs trakerus pi jaunīm torrentīm:</translation>
     </message>
     <message>
         <source>Web User Interface (Remote control)</source>
-        <translation>Tuolvaļdis sadurs (Web UI)</translation>
+        <translation type="vanished">Tuolvaļdis sadurs (Web UI)</translation>
     </message>
     <message>
         <source>IP address:</source>
-        <translation>IP adress:</translation>
+        <translation type="vanished">IP adress:</translation>
     </message>
     <message>
         <source>Server domains:</source>
-        <translation>Servera domeni:</translation>
+        <translation type="vanished">Servera domeni:</translation>
     </message>
     <message>
         <source>Use HTTPS instead of HTTP</source>
-        <translation>HTTP vītā lītuot HTTPS</translation>
-    </message>
-    <message>
-        <source>Bypass authentication for clients on localhost</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Bypass authentication for clients in whitelisted IP subnets</source>
-        <translation type="unfinished" />
+        <translation type="vanished">HTTP vītā lītuot HTTPS</translation>
     </message>
     <message>
         <source>Update my dynamic domain name</source>
-        <translation>Atjaunynuot muna dinamiskuo domena pasauku</translation>
+        <translation type="vanished">Atjaunynuot muna dinamiskuo domena pasauku</translation>
     </message>
     <message>
         <source>Keep incomplete torrents in:</source>
-        <translation>Izglobuot nadabeigtuos torrentus ite:</translation>
+        <translation type="vanished">Izglobuot nadabeigtuos torrentus ite:</translation>
     </message>
     <message>
         <source>Copy .torrent files to:</source>
-        <translation>Radeit .torrent failu puorspīdumu ite:</translation>
+        <translation type="vanished">Radeit .torrent failu puorspīdumu ite:</translation>
     </message>
     <message>
         <source>Copy .torrent files for finished downloads to:</source>
-        <translation>Radeit .torrent failu puorspīdumu dabeigtīm torrentīm ite:</translation>
+        <translation type="vanished">Radeit .torrent failu puorspīdumu dabeigtīm torrentīm ite:</translation>
     </message>
     <message>
         <source>Pre-allocate disk space for all files</source>
-        <translation>Laiceigi puordrūsynuot vītu uz diska jaunīm failīm</translation>
+        <translation type="vanished">Laiceigi puordrūsynuot vītu uz diska jaunīm failīm</translation>
     </message>
     <message>
         <source>Append .!qB extension to incomplete files</source>
-        <translation>Dalikt .!qB golaini nadabeigtīm failīm</translation>
-    </message>
-    <message>
-        <source>Automatically add torrents from:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dalikt .!qB golaini nadabeigtīm failīm</translation>
     </message>
     <message>
         <source>SMTP server:</source>
-        <translation>SMTP servers:</translation>
-    </message>
-    <message>
-        <source>This server requires a secure connection (SSL)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Authentication</source>
-        <translation type="unfinished" />
+        <translation type="vanished">SMTP servers:</translation>
     </message>
     <message>
         <source>Username:</source>
-        <translation>Lītuotuojs:</translation>
+        <translation type="vanished">Lītuotuojs:</translation>
     </message>
     <message>
         <source>Password:</source>
-        <translation>Paroļs:</translation>
+        <translation type="vanished">Paroļs:</translation>
     </message>
     <message>
         <source>TCP and μTP</source>
-        <translation>TCP i μTP</translation>
-    </message>
-    <message>
-        <source>Listening Port</source>
-        <translation type="unfinished" />
+        <translation type="vanished">TCP i μTP</translation>
     </message>
     <message>
         <source>Port used for incoming connections:</source>
-        <translation>Ports priekš atīmūšim salaidumim:</translation>
-    </message>
-    <message>
-        <source>Use UPnP / NAT-PMP port forwarding from my router</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ports priekš atīmūšim salaidumim:</translation>
     </message>
     <message>
         <source>Connections Limits</source>
-        <translation>Salaidumu skaita rūbežas</translation>
+        <translation type="vanished">Salaidumu skaita rūbežas</translation>
     </message>
     <message>
         <source>Maximum number of connections per torrent:</source>
-        <translation>Salaidumu skaits uz vīnu torrentu:</translation>
+        <translation type="vanished">Salaidumu skaits uz vīnu torrentu:</translation>
     </message>
     <message>
         <source>Global maximum number of connections:</source>
-        <translation>Kūpeigais salaidumu skaits:</translation>
+        <translation type="vanished">Kūpeigais salaidumu skaits:</translation>
     </message>
     <message>
         <source>Maximum number of upload slots per torrent:</source>
-        <translation>Nūsasyuteišonas slotu skaits uz vīnu torrentu:</translation>
+        <translation type="vanished">Nūsasyuteišonas slotu skaits uz vīnu torrentu:</translation>
     </message>
     <message>
         <source>Global maximum number of upload slots:</source>
-        <translation>Kūpeigais nūsasyuteišonas slotu skaits:</translation>
+        <translation type="vanished">Kūpeigais nūsasyuteišonas slotu skaits:</translation>
     </message>
     <message>
         <source>Proxy Server</source>
-        <translation>Vidinīkservers</translation>
+        <translation type="vanished">Vidinīkservers</translation>
     </message>
     <message>
         <source>Type:</source>
-        <translation>Lītuot:</translation>
-    </message>
-    <message>
-        <source>(None)</source>
-        <translation>(Nivīnu)</translation>
+        <translation type="vanished">Lītuot:</translation>
     </message>
     <message>
         <source>SOCKS4</source>
-        <translation>SOCKS4</translation>
+        <translation type="vanished">SOCKS4</translation>
     </message>
     <message>
         <source>SOCKS5</source>
-        <translation>SOCKS5</translation>
+        <translation type="vanished">SOCKS5</translation>
     </message>
     <message>
         <source>HTTP</source>
-        <translation>HTTP</translation>
+        <translation type="vanished">HTTP</translation>
     </message>
     <message>
         <source>Host:</source>
-        <translation>Saiminīks:</translation>
+        <translation type="vanished">Saiminīks:</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation>Ports:</translation>
+        <translation type="vanished">Ports:</translation>
     </message>
     <message>
         <source>Use proxy for peer connections</source>
-        <translation>Lītuot vidinīkserveri kūplītuotuoju salaidumim</translation>
-    </message>
-    <message>
-        <source>Use proxy only for torrents</source>
-        <translation>Lītuot vidinīkserveri tikai torrentim</translation>
+        <translation type="vanished">Lītuot vidinīkserveri kūplītuotuoju salaidumim</translation>
     </message>
     <message>
         <source>Filter path (.dat, .p2p, .p2b):</source>
-        <translation>Fiļtrys vīta (.dat, .p2p, .p2b):</translation>
+        <translation type="vanished">Fiļtrys vīta (.dat, .p2p, .p2b):</translation>
     </message>
     <message>
         <source>Manually banned IP addresses...</source>
-        <translation>Nūblokētās IP adresas...</translation>
+        <translation type="vanished">Nūblokētās IP adresas...</translation>
     </message>
     <message>
         <source>Apply to trackers</source>
-        <translation>Lītuot trakerym</translation>
+        <translation type="vanished">Lītuot trakerym</translation>
     </message>
     <message>
         <source>Global Rate Limits</source>
-        <translation>Golvonais kūpeigā dreizuma rūbežs</translation>
+        <translation type="vanished">Golvonais kūpeigā dreizuma rūbežs</translation>
     </message>
     <message>
         <source>Upload:</source>
-        <translation>Nūsasyuteišona:</translation>
+        <translation type="vanished">Nūsasyuteišona:</translation>
     </message>
     <message>
         <source>Download:</source>
-        <translation>Atsasyuteišona:</translation>
+        <translation type="vanished">Atsasyuteišona:</translation>
     </message>
     <message>
         <source>Alternative Rate Limits</source>
-        <translation>Aļternativais kūpeigā dreizuma rūbežs</translation>
+        <translation type="vanished">Aļternativais kūpeigā dreizuma rūbežs</translation>
     </message>
     <message>
         <source>From:</source>
         <extracomment>from (time1 to time2)</extracomment>
-        <translation>Nu:</translation>
+        <translation type="vanished">Nu:</translation>
     </message>
     <message>
         <source>To:</source>
         <extracomment>time1 to time2</extracomment>
-        <translation>Iz:</translation>
+        <translation type="vanished">Iz:</translation>
     </message>
     <message>
         <source>When:</source>
-        <translation>Kod:</translation>
+        <translation type="vanished">Kod:</translation>
     </message>
     <message>
         <source>Every day</source>
-        <translation>Kas dīnys</translation>
+        <translation type="vanished">Kas dīnys</translation>
     </message>
     <message>
         <source>Weekdays</source>
-        <translation>Dorbadīnās</translation>
+        <translation type="vanished">Dorbadīnās</translation>
     </message>
     <message>
         <source>Weekends</source>
-        <translation>Nedeļgolās</translation>
+        <translation type="vanished">Nedeļgolās</translation>
     </message>
     <message>
         <source>Rate Limits Settings</source>
-        <translation>Dreizuma rūbežs īstatejumi</translation>
-    </message>
-    <message>
-        <source>Apply rate limit to transport overhead</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Apply rate limit to µTP protocol</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dreizuma rūbežs īstatejumi</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Privatums</translation>
+        <translation type="vanished">Privatums</translation>
     </message>
     <message>
         <source>Enable DHT (decentralized network) to find more peers</source>
-        <translation>Īgrīzt DHT (nacentralizātū teiklu), lai atrastu vēļ vaira kūplītuotuoju</translation>
+        <translation type="vanished">Īgrīzt DHT (nacentralizātū teiklu), lai atrastu vēļ vaira kūplītuotuoju</translation>
     </message>
     <message>
         <source>Enable Peer Exchange (PeX) to find more peers</source>
-        <translation>Īgrīzt Datu Meitu kūplītuotuoju vydā (PeX), lai atrastu vēļ vaira kūplītuotuoju</translation>
+        <translation type="vanished">Īgrīzt Datu Meitu kūplītuotuoju vydā (PeX), lai atrastu vēļ vaira kūplītuotuoju</translation>
     </message>
     <message>
         <source>Enable Local Peer Discovery to find more peers</source>
-        <translation>Īgrīzt Vītejuo kūplītuotuoju mekliešonu, lai atrastu vēļ vaira kūplītuotuoju</translation>
-    </message>
-    <message>
-        <source>Encryption mode:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Require encryption</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disable encryption</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Īgrīzt Vītejuo kūplītuotuoju mekliešonu, lai atrastu vēļ vaira kūplītuotuoju</translation>
     </message>
     <message>
         <source>Enable anonymous mode</source>
-        <translation>Īgrīzt anonimū režimu</translation>
+        <translation type="vanished">Īgrīzt anonimū režimu</translation>
     </message>
     <message>
         <source>Maximum active downloads:</source>
-        <translation>Kūpegais aktivuo atsasyuteišonu skaits:</translation>
+        <translation type="vanished">Kūpegais aktivuo atsasyuteišonu skaits:</translation>
     </message>
     <message>
         <source>Maximum active uploads:</source>
-        <translation>Kūpegais aktivuo nūsasyuteišonu skaits:</translation>
+        <translation type="vanished">Kūpegais aktivuo nūsasyuteišonu skaits:</translation>
     </message>
     <message>
         <source>Maximum active torrents:</source>
-        <translation>Kūpegais aktivuo torrentu skaits:</translation>
+        <translation type="vanished">Kūpegais aktivuo torrentu skaits:</translation>
     </message>
     <message>
         <source>Do not count slow torrents in these limits</source>
-        <translation>Najimt vārā lānuos torrentus</translation>
+        <translation type="vanished">Najimt vārā lānuos torrentus</translation>
     </message>
     <message>
         <source>then</source>
-        <translation>tod</translation>
-    </message>
-    <message>
-        <source>Use UPnP / NAT-PMP to forward the port from my router</source>
-        <translation type="unfinished" />
+        <translation type="vanished">tod</translation>
     </message>
     <message>
         <source>Certificate:</source>
-        <translation>Sertifikats:</translation>
+        <translation type="vanished">Sertifikats:</translation>
     </message>
     <message>
         <source>Key:</source>
-        <translation>Atslāgs:</translation>
+        <translation type="vanished">Atslāgs:</translation>
     </message>
     <message>
         <source>Register</source>
-        <translation>Registrētīs</translation>
+        <translation type="vanished">Registrētīs</translation>
     </message>
     <message>
         <source>Domain name:</source>
-        <translation>Domena pasauka:</translation>
-    </message>
-    <message>
-        <source>Supported parameters (case sensitive):</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Domena pasauka:</translation>
     </message>
     <message>
         <source>%N: Torrent name</source>
-        <translation>%N: Torrenta pasauka</translation>
+        <translation type="vanished">%N: Torrenta pasauka</translation>
     </message>
     <message>
         <source>%L: Category</source>
-        <translation>%L: Kategoreja</translation>
-    </message>
-    <message>
-        <source>%F: Content path (same as root path for multifile torrent)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>%R: Root path (first torrent subdirectory path)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%L: Kategoreja</translation>
     </message>
     <message>
         <source>%D: Save path</source>
-        <translation>%D: Izglobuošonas vīta</translation>
+        <translation type="vanished">%D: Izglobuošonas vīta</translation>
     </message>
     <message>
         <source>%C: Number of files</source>
-        <translation>%C: Failu skaits</translation>
+        <translation type="vanished">%C: Failu skaits</translation>
     </message>
     <message>
         <source>%Z: Torrent size (bytes)</source>
-        <translation>%Z: Torrenta lelums (baitos)</translation>
+        <translation type="vanished">%Z: Torrenta lelums (baitos)</translation>
     </message>
     <message>
         <source>%T: Current tracker</source>
-        <translation>%T: Niulejais trakeris</translation>
-    </message>
-    <message>
-        <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., "%N")</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>The Web UI username must be at least 3 characters long.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>The Web UI password must be at least 6 characters long.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%T: Niulejais trakeris</translation>
     </message>
     <message>
         <source>minutes</source>
-        <translation>mynotu</translation>
+        <translation type="vanished">mynotu</translation>
     </message>
     <message>
         <source>KiB/s</source>
-        <translation> KiB/s</translation>
+        <translation type="vanished"> KiB/s</translation>
     </message>
     <message>
         <source>Enable clickjacking protection</source>
-        <translation>Īgrīzt apsardzeibu pret clickjacking</translation>
+        <translation type="vanished">Īgrīzt apsardzeibu pret clickjacking</translation>
     </message>
     <message>
         <source>Enable Cross-Site Request Forgery (CSRF) protection</source>
-        <translation>Īgrīzt apsardzeibu pret Cross-Site Request Forgery (CSRF)</translation>
-    </message>
-    <message>
-        <source>Delete .torrent files afterwards</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Download rate threshold:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Upload rate threshold:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Īgrīzt apsardzeibu pret Cross-Site Request Forgery (CSRF)</translation>
     </message>
     <message>
         <source>Change current password</source>
-        <translation>Puormeit niulejuo paroli</translation>
+        <translation type="vanished">Puormeit niulejuo paroli</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Automatiskuo</translation>
+        <translation type="vanished">Automatiskuo</translation>
     </message>
     <message>
         <source>Use alternative Web UI</source>
-        <translation>Lītuot cytu tuolvaļdis paneļa saduri</translation>
+        <translation type="vanished">Lītuot cytu tuolvaļdis paneļa saduri</translation>
     </message>
     <message>
         <source>Default Save Path:</source>
-        <translation>Nūklusiejuma izglobuošonys vīta:</translation>
-    </message>
-    <message>
-        <source>The alternative Web UI files location cannot be blank.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nūklusiejuma izglobuošonys vīta:</translation>
     </message>
     <message>
         <source>Do not start the download automatically</source>
-        <translation>Nasuokt atsasyuteišonu automatiski</translation>
-    </message>
-    <message>
-        <source>Switch torrent to Manual Mode</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>When Torrent Category changed:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Relocate affected torrents</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Apply rate limit to peers on LAN</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nasuokt atsasyuteišonu automatiski</translation>
     </message>
     <message>
         <source>0 means unlimited</source>
-        <translation>0 nūzeimē naaprūbežuots</translation>
+        <translation type="vanished">0 nūzeimē naaprūbežuots</translation>
     </message>
     <message>
         <source>Relocate torrent</source>
-        <translation>Puorceļt torrentu</translation>
-    </message>
-    <message>
-        <source>When Default Save Path changed:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable Host header validation</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Puorceļt torrentu</translation>
     </message>
     <message>
         <source>Security</source>
-        <translation>Drūsums</translation>
-    </message>
-    <message>
-        <source>When Category Save Path changed:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Drūsums</translation>
     </message>
     <message>
         <source>seconds</source>
-        <translation>sekuņdes</translation>
-    </message>
-    <message>
-        <source>Switch affected torrents to Manual Mode</source>
-        <translation type="unfinished" />
+        <translation type="vanished">sekuņdes</translation>
     </message>
     <message>
         <source>Files location:</source>
-        <translation>Failu vīta:</translation>
+        <translation type="vanished">Failu vīta:</translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation>Rūkvaļde</translation>
+        <translation type="vanished">Rūkvaļde</translation>
     </message>
     <message>
         <source>Torrent inactivity timer:</source>
-        <translation>Torrenta stibniešonys skaiteklis:</translation>
+        <translation type="vanished">Torrenta stibniešonys skaiteklis:</translation>
     </message>
     <message>
         <source>Default Torrent Management Mode:</source>
-        <translation>Nūklusiejuma Torrenta puorvaļdis režims:</translation>
-    </message>
-    <message>
-        <source>When adding a torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Info: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>μTP-TCP mixed mode algorithm:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Upload rate based</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nūklusiejuma Torrenta puorvaļdis režims:</translation>
     </message>
     <message>
         <source>%G: Tags (separated by comma)</source>
-        <translation>%G: Byrkas (atdaleitas ar komatu)</translation>
-    </message>
-    <message>
-        <source>Socket backlog size:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%G: Byrkas (atdaleitas ar komatu)</translation>
     </message>
     <message>
         <source>Enable super seeding for torrent</source>
-        <translation>Īgrīzt super-nūsasyuteišonu</translation>
+        <translation type="vanished">Īgrīzt super-nūsasyuteišonu</translation>
     </message>
     <message>
         <source>Prefer TCP</source>
-        <translation>Dūt pyrmaileibu TCP</translation>
-    </message>
-    <message>
-        <source>Outstanding memory when checking torrents:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Anti-leech</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>When ratio reaches</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>When seeding time reaches</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dūt pyrmaileibu TCP</translation>
     </message>
     <message>
         <source>Allow multiple connections from the same IP address:</source>
-        <translation>Atļaut nazcik salaidumus nu vīnas IP adress:</translation>
-    </message>
-    <message>
-        <source>File pool size:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Atļaut nazcik salaidumus nu vīnas IP adress:</translation>
     </message>
     <message>
         <source>Any interface</source>
-        <translation>Automatiski</translation>
+        <translation type="vanished">Automatiski</translation>
     </message>
     <message>
         <source>Always announce to all tiers:</source>
-        <translation>Vysod atjaunynuot datus ar vysim trakeriem vysuos grupās:</translation>
+        <translation type="vanished">Vysod atjaunynuot datus ar vysim trakeriem vysuos grupās:</translation>
     </message>
     <message>
         <source>Embedded tracker port:</source>
-        <translation>Īmontāta trakera ports:</translation>
+        <translation type="vanished">Īmontāta trakera ports:</translation>
     </message>
     <message>
         <source>Fastest upload</source>
-        <translation>Dreižuokā nūsasyuteišona</translation>
+        <translation type="vanished">Dreižuokā nūsasyuteišona</translation>
     </message>
     <message>
         <source>Pause torrent</source>
-        <translation>Nūstuodeit torrentu</translation>
+        <translation type="vanished">Nūstuodeit torrentu</translation>
     </message>
     <message>
         <source>Remove torrent and its files</source>
-        <translation>Nūjimt torrentu i failus</translation>
+        <translation type="vanished">Nūjimt torrentu i failus</translation>
     </message>
     <message>
         <source>qBittorrent Section</source>
-        <translation>qBittorent izdola</translation>
-    </message>
-    <message>
-        <source>Send buffer watermark factor:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">qBittorent izdola</translation>
     </message>
     <message>
         <source>libtorrent Section</source>
-        <translation>libtorrent izdola</translation>
-    </message>
-    <message>
-        <source>Outgoing ports (Min) [0: Disabled]:</source>
-        <translation>Izīmūšie porti (Min) [0: Nūgrīzts]</translation>
+        <translation type="vanished">libtorrent izdola</translation>
     </message>
     <message>
         <source>Recheck torrents on completion:</source>
-        <translation>Atkuortuotai puorsavērt torrentus piec atsasyuteišonas dabeigšonas:</translation>
-    </message>
-    <message>
-        <source>Allow encryption</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Send upload piece suggestions:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Atkuortuotai puorsavērt torrentus piec atsasyuteišonas dabeigšonas:</translation>
     </message>
     <message>
         <source>Enable embedded tracker:</source>
-        <translation>Īgrīzt īmontātuo trakeri:</translation>
+        <translation type="vanished">Īgrīzt īmontātuo trakeri:</translation>
     </message>
     <message>
         <source>Remove torrent</source>
-        <translation>Nūjimt torrentu</translation>
-    </message>
-    <message>
-        <source>Outgoing ports (Max) [0: Disabled]:</source>
-        <translation>Izīmūšie porti (Max) [0: Nūgrīzts]:</translation>
-    </message>
-    <message>
-        <source>Asynchronous I/O threads:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nūjimt torrentu</translation>
     </message>
     <message>
         <source>s</source>
-        <translation>s</translation>
-    </message>
-    <message>
-        <source>Send buffer watermark:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Peer proportional (throttles TCP)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Fixed slots</source>
-        <translation type="unfinished" />
+        <translation type="vanished">s</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>Papyldvareibas</translation>
+        <translation type="vanished">Papyldvareibas</translation>
     </message>
     <message>
         <source>min</source>
-        <translation>myn</translation>
-    </message>
-    <message>
-        <source>Upload choking algorithm:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">myn</translation>
     </message>
     <message>
         <source>Seeding Limits</source>
-        <translation>Nūsasyuteišonas rūbežas</translation>
+        <translation type="vanished">Nūsasyuteišonas rūbežas</translation>
     </message>
     <message>
         <source>KiB</source>
-        <translation>KiB</translation>
-    </message>
-    <message>
-        <source>Round-robin</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Upload slots behavior:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">KiB</translation>
     </message>
     <message>
         <source>MiB</source>
-        <translation>MiB</translation>
-    </message>
-    <message>
-        <source>Send buffer low watermark:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">MiB</translation>
     </message>
     <message>
         <source>Save resume data interval:</source>
-        <translation>Progresa datu izglobuošonas iņtervals:</translation>
+        <translation type="vanished">Progresa datu izglobuošonas iņtervals:</translation>
     </message>
     <message>
         <source>Always announce to all trackers in a tier:</source>
-        <translation>Vysod atjaunynuot datus ar vysim trakeriem grupā:</translation>
-    </message>
-    <message>
-        <source>Session timeout:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Vysod atjaunynuot datus ar vysim trakeriem grupā:</translation>
     </message>
     <message>
         <source>Resolve peer countries:</source>
-        <translation>Ruodeit kūplītuotuoju vaļsteibas:</translation>
+        <translation type="vanished">Ruodeit kūplītuotuoju vaļsteibas:</translation>
     </message>
     <message>
         <source>ban for:</source>
-        <translation>nūlīgt dativi uz:</translation>
-    </message>
-    <message>
-        <source>Stop tracker timeout:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Ban client after consecutive failures:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">nūlīgt dativi uz:</translation>
     </message>
     <message>
         <source>Enable cookie Secure flag (requires HTTPS)</source>
-        <translation>Īgrīzt glabiņu Secure flag (vajadzeigs HTTPS)</translation>
-    </message>
-    <message>
-        <source>UPnP lease duration [0: Permanent lease]:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Header: value pairs, one per line</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Add custom HTTP headers</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Īgrīzt glabiņu Secure flag (vajadzeigs HTTPS)</translation>
     </message>
     <message>
         <source>Filters:</source>
-        <translation>Fiļtri:</translation>
+        <translation type="vanished">Fiļtri:</translation>
     </message>
     <message>
         <source>Enable fetching RSS feeds</source>
-        <translation>Īgrīzt RSS laseituoju</translation>
-    </message>
-    <message>
-        <source>Hashing threads (requires libtorrent &gt;= 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Coalesce reads &amp; writes (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Peer turnover threshold percentage:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Īgrīzt RSS laseituoju</translation>
     </message>
     <message>
         <source>RSS Torrent Auto Downloader</source>
-        <translation>RSS Automatiskys torrentu atsasyuteituojs</translation>
+        <translation type="vanished">RSS Automatiskys torrentu atsasyuteituojs</translation>
     </message>
     <message>
         <source>RSS</source>
-        <translation>RSS</translation>
+        <translation type="vanished">RSS</translation>
     </message>
     <message>
         <source>Network interface:</source>
-        <translation>Škārsteikla sadurs:</translation>
+        <translation type="vanished">Škārsteikla sadurs:</translation>
     </message>
     <message>
         <source>RSS Reader</source>
-        <translation>RSS laseituojs</translation>
+        <translation type="vanished">RSS laseituojs</translation>
     </message>
     <message>
         <source>Edit auto downloading rules...</source>
-        <translation>Labuot RSS Automatiskys atsasyuteišonys īstatejumus...</translation>
+        <translation type="vanished">Labuot RSS Automatiskys atsasyuteišonys īstatejumus...</translation>
     </message>
     <message>
         <source>Download REPACK/PROPER episodes</source>
-        <translation>Atsasyuteit REPACK/PROPER epizodes</translation>
+        <translation type="vanished">Atsasyuteit REPACK/PROPER epizodes</translation>
     </message>
     <message>
         <source>Feeds refresh interval:</source>
-        <translation>Īrokstu atsvīžeišonas iņtervals:</translation>
-    </message>
-    <message>
-        <source>Peer turnover disconnect percentage:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Īrokstu atsvīžeišonas iņtervals:</translation>
     </message>
     <message>
         <source>Maximum number of articles per feed:</source>
-        <translation>Īrokstu skaits uz vīnu kanalu:</translation>
+        <translation type="vanished">Īrokstu skaits uz vīnu kanalu:</translation>
     </message>
     <message>
         <source> min</source>
-        <translation>myn</translation>
-    </message>
-    <message>
-        <source>Peer turnover disconnect interval:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">myn</translation>
     </message>
     <message>
         <source>Optional IP address to bind to:</source>
-        <translation>Dasaisteit papyldoma IP adresi:</translation>
-    </message>
-    <message>
-        <source>Disallow connection to peers on privileged ports:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dasaisteit papyldoma IP adresi:</translation>
     </message>
     <message>
         <source>Enable auto downloading of RSS torrents</source>
-        <translation>Īgrīzt RSS Automatiskuo atsasyuteišonu</translation>
+        <translation type="vanished">Īgrīzt RSS Automatiskuo atsasyuteišonu</translation>
     </message>
     <message>
         <source>RSS Smart Episode Filter</source>
-        <translation>RSS Gudrais epizozu fiļtrys</translation>
-    </message>
-    <message>
-        <source>Disk cache (requires libtorrent &lt; 2.0):</source>
-        <translation>Cītdiska vydatguods (vajadzeigs libtorrent &lt; 2.0):</translation>
-    </message>
-    <message>
-        <source>Disk cache expiry interval (requires libtorrent &lt; 2.0):</source>
-        <translation>Cītdiska vydatguoda dereiguma iņtervals (vajadzeigs libtorrent &lt; 2.0):</translation>
-    </message>
-    <message>
-        <source>Validate HTTPS tracker certificate:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">RSS Gudrais epizozu fiļtrys</translation>
     </message>
     <message>
         <source>Peer connection protocol:</source>
-        <translation>Kūplītuotuoju salaidumu protokols:</translation>
+        <translation type="vanished">Kūplītuotuoju salaidumu protokols:</translation>
     </message>
     <message>
         <source>Torrent content layout:</source>
-        <translation>Torrenta satvora izlikaliejums:</translation>
+        <translation type="vanished">Torrenta satvora izlikaliejums:</translation>
     </message>
     <message>
         <source>Create subfolder</source>
-        <translation>Radeit zamapvuoci</translation>
-    </message>
-    <message>
-        <source>Original</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Radeit zamapvuoci</translation>
     </message>
     <message>
         <source>Don't create subfolder</source>
-        <translation>Naradeit zamapvuoci</translation>
-    </message>
-    <message>
-        <source>Type of service (ToS) for connections to peers</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Outgoing connections per second:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Naradeit zamapvuoci</translation>
     </message>
     <message>
         <source>Random</source>
-        <translation>Navuošai</translation>
+        <translation type="vanished">Navuošai</translation>
     </message>
     <message>
         <source>%K: Torrent ID</source>
-        <translation>%K: Torrenta ID</translation>
-    </message>
-    <message>
-        <source>Reannounce to all trackers when IP or port changed:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Trusted proxies list:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable reverse proxy support</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%K: Torrenta ID</translation>
     </message>
     <message>
         <source>%J: Info hash v2</source>
-        <translation>%J: Maiseituojkods v2</translation>
+        <translation type="vanished">%J: Maiseituojkods v2</translation>
     </message>
     <message>
         <source>%I: Info hash v1</source>
-        <translation>%J: Maiseituojkods v1</translation>
+        <translation type="vanished">%J: Maiseituojkods v1</translation>
     </message>
     <message>
         <source>IP address reported to trackers (requires restart):</source>
-        <translation>IP adress kū paviesteit trakeriem (vajadzeigs restarts):</translation>
-    </message>
-    <message>
-        <source>Set to 0 to let your system pick an unused port</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Server-side request forgery (SSRF) mitigation:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk queue size:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Log performance warnings</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Maximum outstanding requests to a single peer:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Max active checking torrents:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Memory mapped files</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Default</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>POSIX-compliant</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>This option is less effective on Linux</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk IO type (libtorrent &gt;= 2.0; requires restart):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Write-through (requires libtorrent &gt;= 2.0.6)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>It controls the internal state update interval which in turn will affect UI updates</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk IO read mode:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disable OS cache</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk IO write mode:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Use piece extent affinity:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Max concurrent HTTP announces:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">IP adress kū paviesteit trakeriem (vajadzeigs restarts):</translation>
     </message>
     <message>
         <source>Enable OS cache</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Refresh interval:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Physical memory (RAM) usage limit (applied if libtorrent &gt;= 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>ms</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Excluded file names</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Support internationalized domain name (IDN):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Run external program on torrent finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Whitelist for filtering HTTP Host header values.
-In order to defend against DNS rebinding attack,
-you should put in domain names used by WebUI server.
-
-Use ';' to split multiple entries. Can use wildcard '*'.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Run external program on torrent added</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>HTTPS certificate should not be empty</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>HTTPS key should not be empty</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Run external program</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Files checked</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable port forwarding for embedded tracker:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>If checked, hostname lookups are done via the proxy.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Use proxy for hostname lookup</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Metadata received</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent stop condition:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>None</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Lītuot sistemys vydatguodu</translation>
     </message>
     <message>
         <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Pīvadums: 172.17.32.0/24, fdff:ffff:c8::/40</translation>
+    </message>
+    <message>
+        <source>days</source>
+        <translation type="vanished">dīnu</translation>
+    </message>
+    <message>
+        <source>Behavior</source>
+        <translation type="vanished">Izavedīņs</translation>
+    </message>
+    <message>
+        <source>years</source>
+        <translation type="vanished">godim</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation type="vanished">Izglobuošonas vīta:</translation>
+    </message>
+    <message>
+        <source>months</source>
+        <translation type="vanished">mienešīm</translation>
+    </message>
+    <message>
+        <source>Use Subcategories</source>
+        <translation type="vanished">Lītuot zamkategorejas</translation>
+    </message>
+    <message>
+        <source>(None)</source>
+        <translation type="vanished">(Nivīnu)</translation>
     </message>
 </context>
 <context>
     <name>PeerListWidget</name>
     <message>
         <source>IP</source>
-        <translation>IP</translation>
+        <translation type="vanished">IP</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation>Ports</translation>
+        <translation type="vanished">Ports</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>Karūgi</translation>
+        <translation type="vanished">Karūgi</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation>Salaidums:</translation>
+        <translation type="vanished">Salaidums:</translation>
     </message>
     <message>
         <source>Client</source>
         <comment>i.e.: Client application</comment>
-        <translation>Aplikaceja</translation>
+        <translation type="vanished">Aplikaceja</translation>
     </message>
     <message>
         <source>Progress</source>
         <comment>i.e: % downloaded</comment>
-        <translation>Progress</translation>
+        <translation type="vanished">Progress</translation>
     </message>
     <message>
         <source>Down Speed</source>
         <comment>i.e: Download speed</comment>
-        <translation>Atsasyuteišonas dreizums</translation>
+        <translation type="vanished">Atsasyuteišonas dreizums</translation>
     </message>
     <message>
         <source>Up Speed</source>
         <comment>i.e: Upload speed</comment>
-        <translation>Nūsasyuteišonas dreizums</translation>
+        <translation type="vanished">Nūsasyuteišonas dreizums</translation>
     </message>
     <message>
         <source>Downloaded</source>
         <comment>i.e: total data downloaded</comment>
-        <translation>Atsasyuteiti</translation>
+        <translation type="vanished">Atsasyuteiti</translation>
     </message>
     <message>
         <source>Uploaded</source>
         <comment>i.e: total data uploaded</comment>
-        <translation>Nūsasyuteiti</translation>
+        <translation type="vanished">Nūsasyuteiti</translation>
     </message>
     <message>
         <source>Relevance</source>
         <comment>i.e: How relevant this peer is to us. How many pieces it has that we don't.</comment>
-        <translation>Kūplītuotuoja progress</translation>
+        <translation type="vanished">Kūplītuotuoja progress</translation>
     </message>
     <message>
         <source>Files</source>
         <comment>i.e. files that are being downloaded right now</comment>
-        <translation>Faili</translation>
+        <translation type="vanished">Faili</translation>
     </message>
     <message>
         <source>Ban peer permanently</source>
-        <translation>Nūblokēt kūplītuotuoju</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to permanently ban the selected peers?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nūblokēt kūplītuotuoju</translation>
     </message>
     <message>
         <source>Copy IP:port</source>
-        <translation>Puorspīst IP i portu</translation>
+        <translation type="vanished">Puorspīst IP i portu</translation>
     </message>
     <message>
         <source>Country/Region</source>
-        <translation>Vaļsteiba/Apgabaļs</translation>
-    </message>
-    <message>
-        <source>Add peers...</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Peer ID Client</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Vaļsteiba/Apgabaļs</translation>
     </message>
 </context>
 <context>
@@ -1737,328 +1225,304 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Normal</source>
         <comment>Normal (priority)</comment>
-        <translation>Norma</translation>
+        <translation type="vanished">Norma</translation>
     </message>
     <message>
         <source>High</source>
         <comment>High (priority)</comment>
-        <translation>Augsta</translation>
+        <translation type="vanished">Augsta</translation>
     </message>
     <message>
         <source>Maximum</source>
         <comment>Maximum (priority)</comment>
-        <translation>Pošaugstā</translation>
+        <translation type="vanished">Pošaugstā</translation>
     </message>
     <message>
         <source>Mixed</source>
-        <translation>Maiseits</translation>
+        <translation type="vanished">Maiseits</translation>
     </message>
     <message>
         <source>Do not download</source>
-        <translation>Naatsasyuteit</translation>
+        <translation type="vanished">Naatsasyuteit</translation>
     </message>
 </context>
 <context>
     <name>PropTabBar</name>
     <message>
         <source>General</source>
-        <translation>Vyscaureigi</translation>
+        <translation type="vanished">Vyscaureigi</translation>
     </message>
     <message>
         <source>Trackers</source>
-        <translation>Trakeri</translation>
+        <translation type="vanished">Trakeri</translation>
     </message>
     <message>
         <source>Peers</source>
-        <translation>Kūplītuotuoji</translation>
+        <translation type="vanished">Kūplītuotuoji</translation>
     </message>
     <message>
         <source>HTTP Sources</source>
-        <translation>HTTP olūti</translation>
+        <translation type="vanished">HTTP olūti</translation>
     </message>
     <message>
         <source>Content</source>
-        <translation>Satvors:</translation>
+        <translation type="vanished">Satvors:</translation>
     </message>
 </context>
 <context>
     <name>PropertiesWidget</name>
     <message>
         <source>Downloaded:</source>
-        <translation>Atsasyuteiti:</translation>
+        <translation type="vanished">Atsasyuteiti:</translation>
     </message>
     <message>
         <source>Transfer</source>
-        <translation>Kūplītuošanas dati</translation>
+        <translation type="vanished">Kūplītuošanas dati</translation>
     </message>
     <message>
         <source>Time Active:</source>
         <extracomment>Time (duration) the torrent is active (not paused)</extracomment>
-        <translation>Aktivs jau:</translation>
+        <translation type="vanished">Aktivs jau:</translation>
     </message>
     <message>
         <source>ETA:</source>
-        <translation>Palykušais syuteišonys laiks:</translation>
+        <translation type="vanished">Palykušais syuteišonys laiks:</translation>
     </message>
     <message>
         <source>Uploaded:</source>
-        <translation>Nūsasyuteiti:</translation>
+        <translation type="vanished">Nūsasyuteiti:</translation>
     </message>
     <message>
         <source>Seeds:</source>
-        <translation>Devieji:</translation>
+        <translation type="vanished">Devieji:</translation>
     </message>
     <message>
         <source>Download Speed:</source>
-        <translation>Atsasyuteišonas dreizums:</translation>
+        <translation type="vanished">Atsasyuteišonas dreizums:</translation>
     </message>
     <message>
         <source>Upload Speed:</source>
-        <translation>Nūsasyuteišonas dreizums:</translation>
+        <translation type="vanished">Nūsasyuteišonas dreizums:</translation>
     </message>
     <message>
         <source>Peers:</source>
-        <translation>Jāmuoji:</translation>
+        <translation type="vanished">Jāmuoji:</translation>
     </message>
     <message>
         <source>Download Limit:</source>
-        <translation>Atsasyuteišonas limits:</translation>
+        <translation type="vanished">Atsasyuteišonas limits:</translation>
     </message>
     <message>
         <source>Upload Limit:</source>
-        <translation>Nūsasyuteišonas limits:</translation>
+        <translation type="vanished">Nūsasyuteišonas limits:</translation>
     </message>
     <message>
         <source>Wasted:</source>
-        <translation>Izsvīsti:</translation>
+        <translation type="vanished">Izsvīsti:</translation>
     </message>
     <message>
         <source>Connections:</source>
-        <translation>Salaidumi:</translation>
+        <translation type="vanished">Salaidumi:</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Inpormaceja</translation>
+        <translation type="vanished">Inpormaceja</translation>
     </message>
     <message>
         <source>Comment:</source>
-        <translation>Komentars:</translation>
+        <translation type="vanished">Komentars:</translation>
     </message>
     <message>
         <source>Share Ratio:</source>
-        <translation>Kūplītuošonas reitings:</translation>
+        <translation type="vanished">Kūplītuošonas reitings:</translation>
     </message>
     <message>
         <source>Reannounce In:</source>
-        <translation>Kontakts ar trakeri piec:</translation>
+        <translation type="vanished">Kontakts ar trakeri piec:</translation>
     </message>
     <message>
         <source>Last Seen Complete:</source>
-        <translation>Pādejū reizi kūplītuots:</translation>
+        <translation type="vanished">Pādejū reizi kūplītuots:</translation>
     </message>
     <message>
         <source>Total Size:</source>
-        <translation>Kūpeigais lelums:</translation>
+        <translation type="vanished">Kūpeigais lelums:</translation>
     </message>
     <message>
         <source>Pieces:</source>
-        <translation>Dalenis:</translation>
+        <translation type="vanished">Dalenis:</translation>
     </message>
     <message>
         <source>Created By:</source>
-        <translation>Darynuots ar:</translation>
+        <translation type="vanished">Darynuots ar:</translation>
     </message>
     <message>
         <source>Added On:</source>
-        <translation>Dalaists:</translation>
+        <translation type="vanished">Dalaists:</translation>
     </message>
     <message>
         <source>Completed On:</source>
-        <translation>Dabeidza:</translation>
+        <translation type="vanished">Dabeidza:</translation>
     </message>
     <message>
         <source>Created On:</source>
-        <translation>Darynuots:</translation>
+        <translation type="vanished">Darynuots:</translation>
     </message>
     <message>
         <source>Save Path:</source>
-        <translation>Izglobuošonas vīta:</translation>
+        <translation type="vanished">Izglobuošonas vīta:</translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Nikod</translation>
+        <translation type="vanished">Nikod</translation>
     </message>
     <message>
         <source>%1 x %2 (have %3)</source>
         <comment>(torrent pieces) eg 152 x 4MB (have 25)</comment>
-        <translation>%1 x %2 (atsasyuteiti %3)</translation>
+        <translation type="vanished">%1 x %2 (atsasyuteiti %3)</translation>
     </message>
     <message>
         <source>%1 (%2 this session)</source>
-        <translation>%1 (%2 itymā sesejā)</translation>
+        <translation type="vanished">%1 (%2 itymā sesejā)</translation>
     </message>
     <message>
         <source>%1 (%2 max)</source>
         <comment>%1 and %2 are numbers, e.g. 3 (10 max)</comment>
-        <translation>%1 (%2 maks.)</translation>
+        <translation type="vanished">%1 (%2 maks.)</translation>
     </message>
     <message>
         <source>%1 (%2 total)</source>
         <comment>%1 and %2 are numbers, e.g. 3 (10 total)</comment>
-        <translation>%1 (%2 kūpā)</translation>
+        <translation type="vanished">%1 (%2 kūpā)</translation>
     </message>
     <message>
         <source>%1 (%2 avg.)</source>
         <comment>%1 and %2 are speed rates, e.g. 200KiB/s (100KiB/s avg.)</comment>
-        <translation>%1 (%2 videjais)</translation>
+        <translation type="vanished">%1 (%2 videjais)</translation>
     </message>
     <message>
         <source>Download limit:</source>
-        <translation>Atsasyuteišonas limits:</translation>
+        <translation type="vanished">Atsasyuteišonas limits:</translation>
     </message>
     <message>
         <source>Upload limit:</source>
-        <translation>Nūsasyuteišonas limits:</translation>
+        <translation type="vanished">Nūsasyuteišonas limits:</translation>
     </message>
     <message>
         <source>Priority</source>
-        <translation>Prioritets</translation>
+        <translation type="vanished">Prioritets</translation>
     </message>
     <message>
         <source>Filter files...</source>
-        <translation>Meklēt failuos...</translation>
+        <translation type="vanished">Meklēt failuos...</translation>
     </message>
     <message>
         <source>Rename...</source>
-        <translation>Puorsaukt...</translation>
+        <translation type="vanished">Puorsaukt...</translation>
     </message>
     <message>
         <source>%1 (seeded for %2)</source>
-        <translation>%1 (daleits %2)</translation>
+        <translation type="vanished">%1 (daleits %2)</translation>
     </message>
     <message>
         <source>Info Hash v2:</source>
-        <translation>Maiseituojkods v2:</translation>
+        <translation type="vanished">Maiseituojkods v2:</translation>
     </message>
     <message>
         <source>Info Hash v1:</source>
-        <translation>Maiseituojkods v1:</translation>
+        <translation type="vanished">Maiseituojkods v1:</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>Navā zynoms</translation>
+        <translation type="vanished">Navā zynoms</translation>
     </message>
     <message>
         <source>Progress:</source>
-        <translation>Progress</translation>
+        <translation type="vanished">Progress</translation>
+    </message>
+    <message>
+        <source>Use regular expressions</source>
+        <translation type="vanished">Lītuot Reguļaras izsaceibas</translation>
     </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
     <message>
-        <source>Monitored Folder</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Override Save Location</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Monitored folder</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
         <source>Default save location</source>
-        <translation>Nūklusiejuma izglobuošonys vīta</translation>
+        <translation type="vanished">Nūklusiejuma izglobuošonys vīta</translation>
     </message>
     <message>
         <source>Other...</source>
-        <translation>Cytuo...</translation>
+        <translation type="vanished">Cytuo...</translation>
     </message>
     <message>
         <source>Type folder here</source>
-        <translation>Īvoduot apvuoci</translation>
+        <translation type="vanished">Īvoduot apvuoci</translation>
     </message>
 </context>
 <context>
     <name>SpeedLimitDialog</name>
     <message>
         <source>KiB/s</source>
-        <translation> KiB/s</translation>
+        <translation type="vanished"> KiB/s</translation>
     </message>
 </context>
 <context>
     <name>StatsDialog</name>
     <message>
         <source>Statistics</source>
-        <translation>Statistika</translation>
+        <translation type="vanished">Statistika</translation>
     </message>
     <message>
         <source>User statistics</source>
-        <translation>Lītuotuoja statistika</translation>
+        <translation type="vanished">Lītuotuoja statistika</translation>
     </message>
     <message>
         <source>Cache statistics</source>
-        <translation>Vydatguoda statistika</translation>
-    </message>
-    <message>
-        <source>Read cache hits:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Average time in queue:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Vydatguoda statistika</translation>
     </message>
     <message>
         <source>Connected peers:</source>
-        <translation>Daliktie kūplītuotuoji:</translation>
+        <translation type="vanished">Daliktie kūplītuotuoji:</translation>
     </message>
     <message>
         <source>All-time share ratio:</source>
-        <translation>Kūpeigais kūplītuošonas reitings:</translation>
+        <translation type="vanished">Kūpeigais kūplītuošonas reitings:</translation>
     </message>
     <message>
         <source>All-time download:</source>
-        <translation>Kūpeigais atsasyuteišonas daudzums:</translation>
+        <translation type="vanished">Kūpeigais atsasyuteišonas daudzums:</translation>
     </message>
     <message>
         <source>Session waste:</source>
-        <translation>Izsvīsts itymā sesejā:</translation>
+        <translation type="vanished">Izsvīsts itymā sesejā:</translation>
     </message>
     <message>
         <source>All-time upload:</source>
-        <translation>Kūpeigais nūsasyuteišonas daudzums:</translation>
+        <translation type="vanished">Kūpeigais nūsasyuteišonas daudzums:</translation>
     </message>
     <message>
         <source>Total buffer size:</source>
-        <translation>Kūpeigais bufera lelums:</translation>
+        <translation type="vanished">Kūpeigais bufera lelums:</translation>
     </message>
     <message>
         <source>Performance statistics</source>
-        <translation>Dorbuotnuma statistika</translation>
+        <translation type="vanished">Dorbuotnuma statistika</translation>
     </message>
     <message>
         <source>Queued I/O jobs:</source>
-        <translation>I/O darbeibys rindā:</translation>
-    </message>
-    <message>
-        <source>Write cache overload:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Read cache overload:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">I/O darbeibys rindā:</translation>
     </message>
     <message>
         <source>Total queued size:</source>
-        <translation>Kūpeigais rindas lelums:</translation>
+        <translation type="vanished">Kūpeigais rindas lelums:</translation>
     </message>
 </context>
 <context>
     <name>StatusBar</name>
     <message>
         <source>DHT: %1 nodes</source>
-        <translation>DHT: %1 serveri</translation>
+        <translation type="vanished">DHT: %1 serveri</translation>
     </message>
 </context>
 <context>
@@ -2066,107 +1530,107 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>All (0)</source>
         <comment>this is for the status filter</comment>
-        <translation>Vysi (0)</translation>
+        <translation type="vanished">Vysi (0)</translation>
     </message>
     <message>
         <source>Downloading (0)</source>
-        <translation>Atsasyutē (0)</translation>
+        <translation type="vanished">Atsasyutē (0)</translation>
     </message>
     <message>
         <source>Seeding (0)</source>
-        <translation>Nūsasyuta (0)</translation>
+        <translation type="vanished">Nūsasyuta (0)</translation>
     </message>
     <message>
         <source>Completed (0)</source>
-        <translation>Dabeigti (0)</translation>
+        <translation type="vanished">Dabeigti (0)</translation>
     </message>
     <message>
         <source>Resumed (0)</source>
-        <translation>Aizsuoktie (0)</translation>
+        <translation type="vanished">Aizsuoktie (0)</translation>
     </message>
     <message>
         <source>Paused (0)</source>
-        <translation>Nūstuodeiti (0)</translation>
+        <translation type="vanished">Nūstuodeiti (0)</translation>
     </message>
     <message>
         <source>Active (0)</source>
-        <translation>Aktivi (0)</translation>
+        <translation type="vanished">Aktivi (0)</translation>
     </message>
     <message>
         <source>Inactive (0)</source>
-        <translation>Naaktivi (0)</translation>
+        <translation type="vanished">Naaktivi (0)</translation>
     </message>
     <message>
         <source>Errored (0)</source>
-        <translation>Klaideigai (0)</translation>
+        <translation type="vanished">Klaideigai (0)</translation>
     </message>
     <message>
         <source>All (%1)</source>
-        <translation>Vysi (%1)</translation>
+        <translation type="vanished">Vysi (%1)</translation>
     </message>
     <message>
         <source>Downloading (%1)</source>
-        <translation>Atsasyutē (%1)</translation>
+        <translation type="vanished">Atsasyutē (%1)</translation>
     </message>
     <message>
         <source>Seeding (%1)</source>
-        <translation>Nūsasyuta (%1)</translation>
+        <translation type="vanished">Nūsasyuta (%1)</translation>
     </message>
     <message>
         <source>Completed (%1)</source>
-        <translation>Dabeigti (%1)</translation>
+        <translation type="vanished">Dabeigti (%1)</translation>
     </message>
     <message>
         <source>Paused (%1)</source>
-        <translation>Nūstuodeiti (%1)</translation>
+        <translation type="vanished">Nūstuodeiti (%1)</translation>
     </message>
     <message>
         <source>Resumed (%1)</source>
-        <translation>Aizsuoktie (%1)</translation>
+        <translation type="vanished">Aizsuoktie (%1)</translation>
     </message>
     <message>
         <source>Active (%1)</source>
-        <translation>Aktivi (%1)</translation>
+        <translation type="vanished">Aktivi (%1)</translation>
     </message>
     <message>
         <source>Inactive (%1)</source>
-        <translation>Naaktivi (%1)</translation>
+        <translation type="vanished">Naaktivi (%1)</translation>
     </message>
     <message>
         <source>Errored (%1)</source>
-        <translation>Klaideigai (%1)</translation>
+        <translation type="vanished">Klaideigai (%1)</translation>
     </message>
     <message>
         <source>Stalled Uploading (%1)</source>
-        <translation>Nūstuojūšuos Nūsasyuteišonas (%1)</translation>
+        <translation type="vanished">Nūstuojūšuos Nūsasyuteišonas (%1)</translation>
     </message>
     <message>
         <source>Stalled Downloading (%1)</source>
-        <translation>Nūstuojūšuos Atsasyuteišonas (%1)</translation>
+        <translation type="vanished">Nūstuojūšuos Atsasyuteišonas (%1)</translation>
     </message>
     <message>
         <source>Stalled Downloading (0)</source>
-        <translation>Nūstuojūšuos Atsasyuteišonas (0)</translation>
+        <translation type="vanished">Nūstuojūšuos Atsasyuteišonas (0)</translation>
     </message>
     <message>
         <source>Stalled (0)</source>
-        <translation>Nūstuojūšīs (0)</translation>
+        <translation type="vanished">Nūstuojūšīs (0)</translation>
     </message>
     <message>
         <source>Stalled Uploading (0)</source>
-        <translation>Nūstuojūšuos Nūsasyuteišonas (0)</translation>
+        <translation type="vanished">Nūstuojūšuos Nūsasyuteišonas (0)</translation>
     </message>
     <message>
         <source>Stalled (%1)</source>
-        <translation>Nūstuojūšīs (%1)</translation>
+        <translation type="vanished">Nūstuojūšīs (%1)</translation>
     </message>
     <message>
         <source>Checking (%1)</source>
-        <translation>Puorbaud (%1)</translation>
+        <translation type="vanished">Puorbaud (%1)</translation>
     </message>
     <message>
         <source>Checking (0)</source>
-        <translation>Puorbaud (0)</translation>
+        <translation type="vanished">Puorbaud (0)</translation>
     </message>
 </context>
 <context>
@@ -2177,266 +1641,254 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Name</source>
         <comment>i.e: torrent name</comment>
-        <translation>Pasauka</translation>
+        <translation type="vanished">Pasauka</translation>
     </message>
     <message>
         <source>Size</source>
         <comment>i.e: torrent size</comment>
-        <translation>Lelums</translation>
+        <translation type="vanished">Lelums</translation>
     </message>
     <message>
         <source>Done</source>
         <comment>% Done</comment>
-        <translation>Dabeigti</translation>
+        <translation type="vanished">Dabeigti</translation>
     </message>
     <message>
         <source>Status</source>
         <comment>Torrent status (e.g. downloading, seeding, paused)</comment>
-        <translation>Statuss</translation>
+        <translation type="vanished">Statuss</translation>
     </message>
     <message>
         <source>Seeds</source>
         <comment>i.e. full sources (often untranslated)</comment>
-        <translation>Devieji</translation>
+        <translation type="vanished">Devieji</translation>
     </message>
     <message>
         <source>Peers</source>
         <comment>i.e. partial sources (often untranslated)</comment>
-        <translation>Jāmuoji</translation>
+        <translation type="vanished">Jāmuoji</translation>
     </message>
     <message>
         <source>Down Speed</source>
         <comment>i.e: Download speed</comment>
-        <translation>Atsasyuteišonas dreizums</translation>
+        <translation type="vanished">Atsasyuteišonas dreizums</translation>
     </message>
     <message>
         <source>Up Speed</source>
         <comment>i.e: Upload speed</comment>
-        <translation>Nūsasyuteišonas dreizums</translation>
+        <translation type="vanished">Nūsasyuteišonas dreizums</translation>
     </message>
     <message>
         <source>Ratio</source>
         <comment>Share ratio</comment>
-        <translation>Reitings</translation>
+        <translation type="vanished">Reitings</translation>
     </message>
     <message>
         <source>ETA</source>
         <comment>i.e: Estimated Time of Arrival / Time left</comment>
-        <translation>Palyk. syuteišonys laiks</translation>
+        <translation type="vanished">Palyk. syuteišonys laiks</translation>
     </message>
     <message>
         <source>Category</source>
-        <translation>Kategoreja</translation>
+        <translation type="vanished">Kategoreja</translation>
     </message>
     <message>
         <source>Tags</source>
-        <translation>Byrkas</translation>
+        <translation type="vanished">Byrkas</translation>
     </message>
     <message>
         <source>Added On</source>
         <comment>Torrent was added to transfer list on 01/01/2010 08:00</comment>
-        <translation>Dalaists</translation>
+        <translation type="vanished">Dalaists</translation>
     </message>
     <message>
         <source>Completed On</source>
         <comment>Torrent was completed on 01/01/2010 08:00</comment>
-        <translation>Dabeidza</translation>
+        <translation type="vanished">Dabeidza</translation>
     </message>
     <message>
         <source>Tracker</source>
-        <translation>Trakers</translation>
+        <translation type="vanished">Trakers</translation>
     </message>
     <message>
         <source>Down Limit</source>
         <comment>i.e: Download limit</comment>
-        <translation>Atsasyuteišonas limits</translation>
+        <translation type="vanished">Atsasyuteišonas limits</translation>
     </message>
     <message>
         <source>Up Limit</source>
         <comment>i.e: Upload limit</comment>
-        <translation>Nūsasyuteišonas limits</translation>
+        <translation type="vanished">Nūsasyuteišonas limits</translation>
     </message>
     <message>
         <source>Downloaded</source>
         <comment>Amount of data downloaded (e.g. in MB)</comment>
-        <translation>Atsasyuteiti</translation>
+        <translation type="vanished">Atsasyuteiti</translation>
     </message>
     <message>
         <source>Uploaded</source>
         <comment>Amount of data uploaded (e.g. in MB)</comment>
-        <translation>Nūsasyuteiti</translation>
+        <translation type="vanished">Nūsasyuteiti</translation>
     </message>
     <message>
         <source>Session Download</source>
         <comment>Amount of data downloaded since program open (e.g. in MB)</comment>
-        <translation>Atsasyuteiti itymā sesejā</translation>
+        <translation type="vanished">Atsasyuteiti itymā sesejā</translation>
     </message>
     <message>
         <source>Session Upload</source>
         <comment>Amount of data uploaded since program open (e.g. in MB)</comment>
-        <translation>Nūsasyuteiti itymā sesejā</translation>
+        <translation type="vanished">Nūsasyuteiti itymā sesejā</translation>
     </message>
     <message>
         <source>Remaining</source>
         <comment>Amount of data left to download (e.g. in MB)</comment>
-        <translation>Palics</translation>
+        <translation type="vanished">Palics</translation>
     </message>
     <message>
         <source>Time Active</source>
         <comment>Time (duration) the torrent is active (not paused)</comment>
-        <translation>Aktivs jau</translation>
+        <translation type="vanished">Aktivs jau</translation>
     </message>
     <message>
         <source>Save path</source>
         <comment>Torrent save path</comment>
-        <translation>Izglobuošonas vīta</translation>
+        <translation type="vanished">Izglobuošonas vīta</translation>
     </message>
     <message>
         <source>Completed</source>
         <comment>Amount of data completed (e.g. in MB)</comment>
-        <translation>Dabeigti</translation>
+        <translation type="vanished">Dabeigti</translation>
     </message>
     <message>
         <source>Ratio Limit</source>
         <comment>Upload share ratio limit</comment>
-        <translation>Reitinga limits</translation>
+        <translation type="vanished">Reitinga limits</translation>
     </message>
     <message>
         <source>Last Seen Complete</source>
         <comment>Indicates the time when the torrent was last seen complete/whole</comment>
-        <translation>Pādejū reizi dabeigts</translation>
+        <translation type="vanished">Pādejū reizi dabeigts</translation>
     </message>
     <message>
         <source>Last Activity</source>
         <comment>Time passed since a chunk was downloaded/uploaded</comment>
-        <translation>Pādejū reizi kūplītuots</translation>
+        <translation type="vanished">Pādejū reizi kūplītuots</translation>
     </message>
     <message>
         <source>Total Size</source>
         <comment>i.e. Size including unwanted data</comment>
-        <translation>Kūpeigais lelums</translation>
+        <translation type="vanished">Kūpeigais lelums</translation>
     </message>
     <message>
         <source>Availability</source>
-        <translation>Daīmamums</translation>
+        <translation type="vanished">Daīmamums</translation>
     </message>
 </context>
 <context>
     <name>TrackerListWidget</name>
     <message>
         <source>URL</source>
-        <translation>Adress</translation>
+        <translation type="vanished">Adress</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Statuss</translation>
+        <translation type="vanished">Statuss</translation>
     </message>
     <message>
         <source>Peers</source>
-        <translation>Kūplītuotuoji</translation>
+        <translation type="vanished">Kūplītuotuoji</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Viestejums</translation>
+        <translation type="vanished">Viestejums</translation>
     </message>
     <message>
         <source>Tracker URL:</source>
-        <translation>Trakera adress:</translation>
+        <translation type="vanished">Trakera adress:</translation>
     </message>
     <message>
         <source>Updating...</source>
-        <translation>Atjaunynuojas...</translation>
+        <translation type="vanished">Atjaunynuojas...</translation>
     </message>
     <message>
         <source>Working</source>
-        <translation>Lobs</translation>
+        <translation type="vanished">Lobs</translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation>Atslēgts</translation>
+        <translation type="vanished">Atslēgts</translation>
     </message>
     <message>
         <source>Not contacted yet</source>
-        <translation>Vēļ navā salaists</translation>
+        <translation type="vanished">Vēļ navā salaists</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>Navā atrasta</translation>
+        <translation type="vanished">Navā atrasta</translation>
     </message>
     <message>
         <source>Seeds</source>
-        <translation>Devieji</translation>
+        <translation type="vanished">Devieji</translation>
     </message>
     <message>
         <source>Not working</source>
-        <translation>Nalobs</translation>
+        <translation type="vanished">Nalobs</translation>
     </message>
     <message>
         <source>Copy tracker URL</source>
-        <translation>Puorspīst trakera adresi</translation>
+        <translation type="vanished">Puorspīst trakera adresi</translation>
     </message>
     <message>
         <source>Edit tracker URL...</source>
-        <translation>Lobuot trakera adresi...</translation>
+        <translation type="vanished">Lobuot trakera adresi...</translation>
     </message>
     <message>
         <source>Tracker editing</source>
-        <translation>Trakeru lobuošona</translation>
+        <translation type="vanished">Trakeru lobuošona</translation>
     </message>
     <message>
         <source>Leeches</source>
-        <translation>Jāmuoji</translation>
+        <translation type="vanished">Jāmuoji</translation>
     </message>
     <message>
         <source>Remove tracker</source>
-        <translation>Nūjimt trakeri</translation>
+        <translation type="vanished">Nūjimt trakeri</translation>
     </message>
     <message>
         <source>Remaining</source>
-        <translation>Palics</translation>
+        <translation type="vanished">Palics</translation>
     </message>
     <message>
         <source>Availability</source>
-        <translation>Daīmamums</translation>
+        <translation type="vanished">Daīmamums</translation>
     </message>
     <message>
         <source>Tier</source>
-        <translation>Grupa</translation>
+        <translation type="vanished">Grupa</translation>
     </message>
     <message>
         <source>Download Priority</source>
-        <translation>Atsasyuteišonas prioritets</translation>
+        <translation type="vanished">Atsasyuteišonas prioritets</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Pasauka</translation>
+        <translation type="vanished">Pasauka</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation>Progress</translation>
+        <translation type="vanished">Progress</translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Times Downloaded</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Add trackers...</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Kūpeigais lelums</translation>
     </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
     <message>
         <source>List of trackers to add (one per line):</source>
-        <translation>Saroksts ar trakeriem kurus dalikt (pa vīnam katrā aiļā): </translation>
-    </message>
-    <message>
-        <source>Add trackers</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Saroksts ar trakeriem kurus dalikt (pa vīnam katrā aiļā): </translation>
     </message>
 </context>
 <context>
@@ -2444,309 +1896,301 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>%1 ago</source>
         <comment>e.g.: 1h 20m ago</comment>
-        <translation>pyrma %1</translation>
+        <translation type="vanished">pyrma %1</translation>
     </message>
     <message>
         <source>Paused</source>
-        <translation>Nūstuodeits</translation>
+        <translation type="vanished">Nūstuodeits</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Dabeidza</translation>
+        <translation type="vanished">Dabeidza</translation>
     </message>
     <message>
         <source>Moving</source>
-        <translation>Puorceļ</translation>
+        <translation type="vanished">Puorceļ</translation>
     </message>
     <message>
         <source>[F] Seeding</source>
-        <translation>[P] Nūsasyuteišona</translation>
+        <translation type="vanished">[P] Nūsasyuteišona</translation>
     </message>
     <message>
         <source>Seeding</source>
-        <translation>Nūsasyuta</translation>
+        <translation type="vanished">Nūsasyuta</translation>
     </message>
     <message>
         <source>Queued</source>
-        <translation>Rindā</translation>
+        <translation type="vanished">Rindā</translation>
     </message>
     <message>
         <source>Errored</source>
-        <translation>Klaideigai</translation>
+        <translation type="vanished">Klaideigai</translation>
     </message>
     <message>
         <source>[F] Downloading</source>
-        <translation>[P] Atsasyuteišona</translation>
+        <translation type="vanished">[P] Atsasyuteišona</translation>
     </message>
     <message>
         <source>Downloading metadata</source>
-        <translation>Atsasyutē metadatus</translation>
+        <translation type="vanished">Atsasyutē metadatus</translation>
     </message>
     <message>
         <source>Checking</source>
-        <translation>Puorbaud</translation>
+        <translation type="vanished">Puorbaud</translation>
     </message>
     <message>
         <source>Missing Files</source>
-        <translation>Tryukst faili</translation>
+        <translation type="vanished">Tryukst faili</translation>
     </message>
     <message>
         <source>Queued for checking</source>
-        <translation>Rindā iz puorbaud</translation>
+        <translation type="vanished">Rindā iz puorbaud</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation>Atsasyutē</translation>
+        <translation type="vanished">Atsasyutē</translation>
     </message>
     <message>
         <source>Checking resume data</source>
-        <translation>Puorbaud progresa datus</translation>
+        <translation type="vanished">Puorbaud progresa datus</translation>
     </message>
     <message>
         <source>Stalled</source>
-        <translation>Nūstuojīs</translation>
+        <translation type="vanished">Nūstuojīs</translation>
     </message>
     <message>
         <source>%1 (seeded for %2)</source>
-        <translation>%1 (daleits %2)</translation>
+        <translation type="vanished">%1 (daleits %2)</translation>
     </message>
     <message>
         <source>[F] Downloading metadata</source>
-        <translation>[P] Atsasyutē metadatus</translation>
+        <translation type="vanished">[P] Atsasyutē metadatus</translation>
     </message>
 </context>
 <context>
     <name>TransferListFiltersWidget</name>
     <message>
         <source>Status</source>
-        <translation>Statuss</translation>
+        <translation type="vanished">Statuss</translation>
     </message>
     <message>
         <source>Categories</source>
-        <translation>Kategorejas</translation>
+        <translation type="vanished">Kategorejas</translation>
     </message>
     <message>
         <source>Tags</source>
-        <translation>Byrkas</translation>
+        <translation type="vanished">Byrkas</translation>
     </message>
     <message>
         <source>Trackers</source>
-        <translation>Trakeri</translation>
+        <translation type="vanished">Trakeri</translation>
     </message>
 </context>
 <context>
     <name>TransferListWidget</name>
     <message>
         <source>Torrent Download Speed Limiting</source>
-        <translation>Torrenta atsasyuteišonas dreizuma aprūbežuošona</translation>
+        <translation type="vanished">Torrenta atsasyuteišonas dreizuma aprūbežuošona</translation>
     </message>
     <message>
         <source>Torrent Upload Speed Limiting</source>
-        <translation>Torrenta nūsasyuteišonas dreizuma aprūbežuošona</translation>
+        <translation type="vanished">Torrenta nūsasyuteišonas dreizuma aprūbežuošona</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation>Puorsaukt</translation>
+        <translation type="vanished">Puorsaukt</translation>
     </message>
     <message>
         <source>Resume</source>
         <comment>Resume/start the torrent</comment>
-        <translation>Aizsuokt</translation>
+        <translation type="vanished">Aizsuokt</translation>
     </message>
     <message>
         <source>Force Resume</source>
         <comment>Force Resume/start the torrent</comment>
-        <translation>Dastateiga aizsuoksona</translation>
+        <translation type="vanished">Dastateiga aizsuoksona</translation>
     </message>
     <message>
         <source>Pause</source>
         <comment>Pause the torrent</comment>
-        <translation>Nūstateit</translation>
+        <translation type="vanished">Nūstateit</translation>
     </message>
     <message>
         <source>Limit share ratio...</source>
-        <translation>Aprūbežuot kūplītuošonas reitingu...</translation>
+        <translation type="vanished">Aprūbežuot kūplītuošonas reitingu...</translation>
     </message>
     <message>
         <source>Limit upload rate...</source>
-        <translation>Aprūbežuot nūsasyuteišonas dreizumu...</translation>
+        <translation type="vanished">Aprūbežuot nūsasyuteišonas dreizumu...</translation>
     </message>
     <message>
         <source>Limit download rate...</source>
-        <translation>Aprūbežuot atsasyuteišonas dreizumu...</translation>
+        <translation type="vanished">Aprūbežuot atsasyuteišonas dreizumu...</translation>
     </message>
     <message>
         <source>Move up</source>
         <comment>i.e. move up in the queue</comment>
-        <translation>Puorceļt augstuok</translation>
+        <translation type="vanished">Puorceļt augstuok</translation>
     </message>
     <message>
         <source>Move down</source>
         <comment>i.e. Move down in the queue</comment>
-        <translation>Puorceļt zamuok</translation>
+        <translation type="vanished">Puorceļt zamuok</translation>
     </message>
     <message>
         <source>Move to top</source>
         <comment>i.e. Move to top of the queue</comment>
-        <translation>Puorceļt saroksta viersā</translation>
+        <translation type="vanished">Puorceļt saroksta viersā</translation>
     </message>
     <message>
         <source>Move to bottom</source>
         <comment>i.e. Move to bottom of the queue</comment>
-        <translation>Puorceļt saroksta zamoškā</translation>
+        <translation type="vanished">Puorceļt saroksta zamoškā</translation>
     </message>
     <message>
         <source>Set location...</source>
-        <translation>Puormeit failu izglobuošonys vītu...</translation>
+        <translation type="vanished">Puormeit failu izglobuošonys vītu...</translation>
     </message>
     <message>
         <source>Download first and last pieces first</source>
-        <translation>Paprīšķu atsasyuteit pyrmuos i pādejuos dalenis</translation>
+        <translation type="vanished">Paprīšķu atsasyuteit pyrmuos i pādejuos dalenis</translation>
     </message>
     <message>
         <source>Automatic Torrent Management</source>
-        <translation>Automatisks torrentu puorvaļds</translation>
+        <translation type="vanished">Automatisks torrentu puorvaļds</translation>
     </message>
     <message>
         <source>Category</source>
-        <translation>Kategoreja</translation>
+        <translation type="vanished">Kategoreja</translation>
     </message>
     <message>
         <source>New...</source>
         <comment>New category...</comment>
-        <translation>Jauna...</translation>
+        <translation type="vanished">Jauna...</translation>
     </message>
     <message>
         <source>Reset</source>
         <comment>Reset category</comment>
-        <translation>Atstateit</translation>
+        <translation type="vanished">Atstateit</translation>
     </message>
     <message>
         <source>Force recheck</source>
-        <translation>Dastateiga puorvēre</translation>
+        <translation type="vanished">Dastateiga puorvēre</translation>
     </message>
     <message>
         <source>Super seeding mode</source>
-        <translation>Super nūsasyuteišonas režims</translation>
+        <translation type="vanished">Super nūsasyuteišonas režims</translation>
     </message>
     <message>
         <source>Rename...</source>
-        <translation>Puorsaukt...</translation>
+        <translation type="vanished">Puorsaukt...</translation>
     </message>
     <message>
         <source>Download in sequential order</source>
-        <translation>Atsasyuteit saksteiguo parādā</translation>
+        <translation type="vanished">Atsasyuteit saksteiguo parādā</translation>
     </message>
     <message>
         <source>New Category</source>
-        <translation>Jauna kategoreja</translation>
+        <translation type="vanished">Jauna kategoreja</translation>
     </message>
     <message>
         <source>Location</source>
-        <translation>Vīta</translation>
+        <translation type="vanished">Vīta</translation>
     </message>
     <message>
         <source>New name</source>
-        <translation>Jauna pasauka</translation>
+        <translation type="vanished">Jauna pasauka</translation>
     </message>
     <message>
         <source>Set location</source>
-        <translation>Puormeit izglobuošonys vītu</translation>
+        <translation type="vanished">Puormeit izglobuošonys vītu</translation>
     </message>
     <message>
         <source>Force reannounce</source>
-        <translation>Dastateigs kontakts</translation>
+        <translation type="vanished">Dastateigs kontakts</translation>
     </message>
     <message>
         <source>Edit Category</source>
-        <translation>Lobuot kategoreju</translation>
+        <translation type="vanished">Lobuot kategoreju</translation>
     </message>
     <message>
         <source>Save path</source>
-        <translation>Izglobuošonas vīta</translation>
+        <translation type="vanished">Izglobuošonas vīta</translation>
     </message>
     <message>
         <source>Comma-separated tags:</source>
-        <translation>Atdaleit byrkas ar komatu:</translation>
+        <translation type="vanished">Atdaleit byrkas ar komatu:</translation>
     </message>
     <message>
         <source>Add Tags</source>
-        <translation>Pīlikt byrkas</translation>
+        <translation type="vanished">Pīlikt byrkas</translation>
     </message>
     <message>
         <source>Tags</source>
-        <translation>Byrkas</translation>
+        <translation type="vanished">Byrkas</translation>
     </message>
     <message>
         <source>Magnet link</source>
-        <translation>Magnetsaita</translation>
+        <translation type="vanished">Magnetsaita</translation>
     </message>
     <message>
         <source>Remove All</source>
-        <translation>Nūjimt vysys</translation>
+        <translation type="vanished">Nūjimt vysys</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Pasauka</translation>
+        <translation type="vanished">Pasauka</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Puorspīst</translation>
+        <translation type="vanished">Puorspīst</translation>
     </message>
     <message>
         <source>Queue</source>
-        <translation>Sarokstā</translation>
+        <translation type="vanished">Sarokstā</translation>
     </message>
     <message>
         <source>Add...</source>
-        <translation>Pīlikt byrku...</translation>
+        <translation type="vanished">Pīlikt byrku...</translation>
     </message>
     <message>
         <source>Info hash v1</source>
-        <translation>Maiseituojkods v1</translation>
+        <translation type="vanished">Maiseituojkods v1</translation>
     </message>
     <message>
         <source>Info hash v2</source>
-        <translation>Maiseituojkods v2</translation>
+        <translation type="vanished">Maiseituojkods v2</translation>
     </message>
     <message>
         <source>Torrent ID</source>
-        <translation>Torrenta ID</translation>
+        <translation type="vanished">Torrenta ID</translation>
     </message>
     <message>
-        <source>Export .torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Remove</source>
-        <translation type="unfinished" />
+        <source>Renaming</source>
+        <translation type="vanished">Puorsaukšona</translation>
     </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
     <message>
         <source>Torrent Upload/Download Ratio Limiting</source>
-        <translation>Torrenta Nūsasyuteišonas/Atsasyuteišonas reitinga aprūbežuošona</translation>
+        <translation type="vanished">Torrenta Nūsasyuteišonas/Atsasyuteišonas reitinga aprūbežuošona</translation>
     </message>
     <message>
         <source>Use global share limit</source>
-        <translation>Lītuot globaluos īstatejumus</translation>
+        <translation type="vanished">Lītuot globaluos īstatejumus</translation>
     </message>
     <message>
         <source>Set no share limit</source>
-        <translation>Nav rūbežs</translation>
+        <translation type="vanished">Nav rūbežs</translation>
     </message>
     <message>
         <source>Set share limit to</source>
-        <translation>Reitinga rūbežs</translation>
+        <translation type="vanished">Reitinga rūbežs</translation>
     </message>
     <message>
         <source>ratio</source>
-        <translation>reitings</translation>
-    </message>
-    <message>
-        <source>minutes</source>
-        <translation>mynotu</translation>
+        <translation type="vanished">reitings</translation>
     </message>
 </context>
 <context>
@@ -2754,28 +2198,20 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </context>
 <context>
     <name>confirmDeletionDlg</name>
-    <message>
-        <source>Also permanently delete the files</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Remove torrent(s)</source>
-        <translation type="unfinished" />
-    </message>
-</context>
+    </context>
 <context>
     <name>downloadFromURL</name>
     <message>
         <source>Download from URLs</source>
-        <translation>Atsasyuteit nu saita</translation>
+        <translation type="vanished">Atsasyuteit nu saita</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Atsasyuteit</translation>
+        <translation type="vanished">Atsasyuteit</translation>
     </message>
     <message>
         <source>Add Torrent Links</source>
-        <translation>Dalikt torrentu saitys</translation>
+        <translation type="vanished">Dalikt torrentu saitys</translation>
     </message>
 </context>
 <context>
@@ -2783,864 +2219,783 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>B</source>
         <comment>bytes</comment>
-        <translation>B</translation>
+        <translation type="vanished">B</translation>
     </message>
     <message>
         <source>KiB</source>
         <comment>kibibytes (1024 bytes)</comment>
-        <translation>KiB</translation>
+        <translation type="vanished">KiB</translation>
     </message>
     <message>
         <source>MiB</source>
         <comment>mebibytes (1024 kibibytes)</comment>
-        <translation>MiB</translation>
+        <translation type="vanished">MiB</translation>
     </message>
     <message>
         <source>GiB</source>
         <comment>gibibytes (1024 mibibytes)</comment>
-        <translation>GiB</translation>
+        <translation type="vanished">GiB</translation>
     </message>
     <message>
         <source>TiB</source>
         <comment>tebibytes (1024 gibibytes)</comment>
-        <translation>TiB</translation>
+        <translation type="vanished">TiB</translation>
     </message>
     <message>
         <source>PiB</source>
         <comment>pebibytes (1024 tebibytes)</comment>
-        <translation>PiB</translation>
+        <translation type="vanished">PiB</translation>
     </message>
     <message>
         <source>EiB</source>
         <comment>exbibytes (1024 pebibytes)</comment>
-        <translation>EiB</translation>
+        <translation type="vanished">EiB</translation>
     </message>
     <message>
         <source>/s</source>
         <comment>per second</comment>
-        <translation>/s</translation>
+        <translation type="vanished">/s</translation>
     </message>
     <message>
         <source>%1h %2m</source>
         <comment>e.g: 3hours 5minutes</comment>
-        <translation>%1st %2m</translation>
+        <translation type="vanished">%1st %2m</translation>
     </message>
     <message>
         <source>%1d %2h</source>
         <comment>e.g: 2days 10hours</comment>
-        <translation>%1d %2st</translation>
+        <translation type="vanished">%1d %2st</translation>
     </message>
     <message>
         <source>Unknown</source>
         <comment>Unknown (size)</comment>
-        <translation>Nazynoms</translation>
+        <translation type="vanished">Nazynoms</translation>
     </message>
     <message>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
-        <translation>&lt; 1m</translation>
+        <translation type="vanished">&lt; 1m</translation>
     </message>
     <message>
         <source>%1m</source>
         <comment>e.g: 10minutes</comment>
-        <translation>%1m</translation>
+        <translation type="vanished">%1m</translation>
     </message>
     <message>
         <source>%1y %2d</source>
-        <translation>%1g %2d</translation>
+        <translation type="vanished">%1g %2d</translation>
     </message>
 </context>
 <context>
     <name>TorrentsController</name>
     <message>
         <source>Save path is empty</source>
-        <translation>Izglobuošonas vīta ir tukša</translation>
+        <translation type="vanished">Izglobuošonas vīta ir tukša</translation>
     </message>
 </context>
 <context>
     <name>PluginSourceDlg</name>
     <message>
         <source>Cancel</source>
-        <translation>Atsaukt</translation>
+        <translation type="vanished">Atsaukt</translation>
     </message>
     <message>
         <source>Plugin path:</source>
-        <translation>Dapylda vīta:</translation>
+        <translation type="vanished">Dapylda vīta:</translation>
     </message>
     <message>
         <source>URL or local directory</source>
-        <translation>Teiklavīta voi vīta datorī</translation>
+        <translation type="vanished">Teiklavīta voi vīta datorī</translation>
     </message>
     <message>
         <source>Install plugin</source>
-        <translation>Iņstalēt dapyldu</translation>
+        <translation type="vanished">Iņstalēt dapyldu</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation>Apstyprynuot</translation>
+        <translation type="vanished">Apstyprynuot</translation>
     </message>
 </context>
 <context>
     <name>SearchEngineWidget</name>
     <message>
         <source>Seeds:</source>
-        <translation>Devieji:</translation>
+        <translation type="vanished">Devieji:</translation>
     </message>
     <message>
         <source>All plugins</source>
-        <translation>Vysi dapyldi</translation>
+        <translation type="vanished">Vysi dapyldi</translation>
     </message>
     <message>
         <source>Size:</source>
-        <translation>Lelums:</translation>
+        <translation type="vanished">Lelums:</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation>Puortraukt</translation>
+        <translation type="vanished">Puortraukt</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Meklēt</translation>
+        <translation type="vanished">Meklēt</translation>
     </message>
     <message>
         <source>Search plugins...</source>
-        <translation>Maklātivu dapyldi...</translation>
+        <translation type="vanished">Maklātivu dapyldi...</translation>
     </message>
     <message>
         <source>All categories</source>
-        <translation>Vysys kategorejas</translation>
+        <translation type="vanished">Vysys kategorejas</translation>
     </message>
     <message>
         <source>Search in:</source>
-        <translation>Meklēt:</translation>
+        <translation type="vanished">Meklēt:</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Meklēt rezultatūs</translation>
+        <translation type="vanished">Meklēt rezultatūs</translation>
     </message>
     <message>
         <source>Torrent names only</source>
-        <translation>Tik torrentu pasaukuos</translation>
+        <translation type="vanished">Tik torrentu pasaukuos</translation>
     </message>
     <message>
         <source>Only enabled</source>
-        <translation>Īgrīztī dapyldi</translation>
+        <translation type="vanished">Īgrīztī dapyldi</translation>
     </message>
     <message>
         <source>out of</source>
-        <translation>nu</translation>
+        <translation type="vanished">nu</translation>
     </message>
     <message>
         <source>Everywhere</source>
-        <translation>Vysur</translation>
+        <translation type="vanished">Vysur</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation>Viereibu</translation>
-    </message>
-    <message>
-        <source>Increase window width to display additional filters</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Viereibu</translation>
     </message>
     <message>
         <source>to</source>
-        <translation>leidz</translation>
-    </message>
-    <message>
-        <source>Results</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>showing</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Click the "Search plugins..." button at the bottom right of the window to install some.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>There aren't any search plugins installed.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">leidz</translation>
     </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
     <message>
         <source>Uninstall</source>
-        <translation>Atiņstalēt</translation>
+        <translation type="vanished">Atiņstalēt</translation>
     </message>
     <message>
         <source>Install new plugin</source>
-        <translation>Iņstalēt jaunu dapyldu</translation>
+        <translation type="vanished">Iņstalēt jaunu dapyldu</translation>
     </message>
     <message>
         <source>You can get new search engine plugins here:</source>
-        <translation>Jaunus maklātiva dapyldus var dabuot ite:</translation>
+        <translation type="vanished">Jaunus maklātiva dapyldus var dabuot ite:</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Aiztaiseit</translation>
+        <translation type="vanished">Aiztaiseit</translation>
     </message>
     <message>
         <source>Installed search plugins:</source>
-        <translation>Iņstalēti dapyldi:</translation>
+        <translation type="vanished">Iņstalēti dapyldi:</translation>
     </message>
     <message>
         <source>Enabled</source>
-        <translation>Īgrīzts</translation>
-    </message>
-    <message>
-        <source>Warning: Be sure to comply with your country's copyright laws when downloading torrents from any of these search engines.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Īgrīzts</translation>
     </message>
     <message>
         <source>Check for updates</source>
-        <translation>Meklēt atjaunynuojumus</translation>
+        <translation type="vanished">Meklēt atjaunynuojumus</translation>
     </message>
     <message>
         <source>Search plugins</source>
-        <translation>Maklātivu dapyldi</translation>
+        <translation type="vanished">Maklātivu dapyldi</translation>
     </message>
 </context>
 <context>
     <name>SearchResultsTable</name>
     <message>
         <source>Name</source>
-        <translation>Pasauka</translation>
+        <translation type="vanished">Pasauka</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation>Lelums</translation>
+        <translation type="vanished">Lelums</translation>
     </message>
     <message>
         <source>Leechers</source>
-        <translation>Jāmuoji</translation>
+        <translation type="vanished">Jāmuoji</translation>
     </message>
     <message>
         <source>Search engine</source>
-        <translation>Maklātivs</translation>
+        <translation type="vanished">Maklātivs</translation>
     </message>
     <message>
         <source>Seeders</source>
-        <translation>Devieji</translation>
+        <translation type="vanished">Devieji</translation>
     </message>
 </context>
 <context>
     <name>SearchPluginsTable</name>
     <message>
         <source>Name</source>
-        <translation>Pasauka</translation>
+        <translation type="vanished">Pasauka</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation>Teiklavīta</translation>
+        <translation type="vanished">Teiklavīta</translation>
     </message>
     <message>
         <source>Enabled</source>
-        <translation>Īgrīzts</translation>
+        <translation type="vanished">Īgrīzts</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation>Verseja</translation>
+        <translation type="vanished">Verseja</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Nui</translation>
+        <translation type="vanished">Nui</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Nā</translation>
+        <translation type="vanished">Nā</translation>
     </message>
 </context>
 <context>
     <name>PeersAdditionDialog</name>
     <message>
         <source>Cancel</source>
-        <translation>Atsaukt</translation>
+        <translation type="vanished">Atsaukt</translation>
     </message>
     <message>
         <source>Add Peers</source>
-        <translation>Dalikt kūplītuotuojus</translation>
+        <translation type="vanished">Dalikt kūplītuotuojus</translation>
     </message>
     <message>
         <source>List of peers to add (one IP per line):</source>
-        <translation>Saroksts ar kūplītuotuojīm kurus dalikt (pa vīnam katrā aiļā): </translation>
+        <translation type="vanished">Saroksts ar kūplītuotuojīm kurus dalikt (pa vīnam katrā aiļā): </translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation>Apstyprynuot</translation>
+        <translation type="vanished">Apstyprynuot</translation>
     </message>
     <message>
         <source>Format: IPv4:port / [IPv6]:port</source>
-        <translation>Formats: IPv4:ports / [IPv6]:ports</translation>
+        <translation type="vanished">Formats: IPv4:ports / [IPv6]:ports</translation>
     </message>
 </context>
 <context>
     <name>TagFilterWidget</name>
     <message>
         <source>New Tag</source>
-        <translation>Jauna byrka</translation>
+        <translation type="vanished">Jauna byrka</translation>
     </message>
     <message>
         <source>Add tag...</source>
-        <translation>Pīlikt byrku...</translation>
+        <translation type="vanished">Pīlikt byrku...</translation>
     </message>
     <message>
         <source>Tag:</source>
-        <translation>Byrka:</translation>
+        <translation type="vanished">Byrka:</translation>
     </message>
     <message>
         <source>Pause torrents</source>
-        <translation>Nūstuodeit torrentus</translation>
+        <translation type="vanished">Nūstuodeit torrentus</translation>
     </message>
     <message>
         <source>Resume torrents</source>
-        <translation>Aizsuokt torrentus</translation>
+        <translation type="vanished">Aizsuokt torrentus</translation>
     </message>
     <message>
         <source>Remove unused tags</source>
-        <translation>Nūjimt nalītuotas byrkas</translation>
+        <translation type="vanished">Nūjimt nalītuotas byrkas</translation>
     </message>
     <message>
         <source>Invalid tag name</source>
-        <translation>Nadereiga byrkas pasauka</translation>
+        <translation type="vanished">Nadereiga byrkas pasauka</translation>
     </message>
     <message>
         <source>Remove tag</source>
-        <translation>Nūjimt byrku</translation>
-    </message>
-    <message>
-        <source>Remove torrents</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nūjimt byrku</translation>
     </message>
 </context>
 <context>
     <name>TagFilterModel</name>
     <message>
         <source>All</source>
-        <translation>Vysys</translation>
+        <translation type="vanished">Vysys</translation>
     </message>
     <message>
         <source>Untagged</source>
-        <translation>Bez byrkas</translation>
+        <translation type="vanished">Bez byrkas</translation>
     </message>
 </context>
 <context>
     <name>AboutDialog</name>
     <message>
         <source>Bug Tracker:</source>
-        <translation>Par klaidom:</translation>
+        <translation type="vanished">Par klaidom:</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>Par</translation>
+        <translation type="vanished">Par</translation>
     </message>
     <message>
         <source>Forum:</source>
-        <translation>Forums:</translation>
+        <translation type="vanished">Forums:</translation>
     </message>
     <message>
         <source>E-mail:</source>
-        <translation>E-posts:</translation>
+        <translation type="vanished">E-posts:</translation>
     </message>
     <message>
         <source>Current maintainer</source>
-        <translation>Niulejais saiminīks</translation>
+        <translation type="vanished">Niulejais saiminīks</translation>
     </message>
     <message>
         <source>Home Page:</source>
-        <translation>Sātyslopa:</translation>
+        <translation type="vanished">Sātyslopa:</translation>
     </message>
     <message>
         <source>Greece</source>
-        <translation>Grekeja</translation>
+        <translation type="vanished">Grekeja</translation>
     </message>
     <message>
         <source>Special Thanks</source>
-        <translation>Cīši paļdis</translation>
+        <translation type="vanished">Cīši paļdis</translation>
     </message>
     <message>
         <source>An advanced BitTorrent client programmed in C++, based on Qt toolkit and libtorrent-rasterbar.</source>
-        <translation>Izraisteita BitTorrent aplikaceja programeta C++ volūdā iz Qt toolkit i libtorrent-rasterbar bazas.</translation>
+        <translation type="vanished">Izraisteita BitTorrent aplikaceja programeta C++ volūdā iz Qt toolkit i libtorrent-rasterbar bazas.</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>Vuords:</translation>
+        <translation type="vanished">Vuords:</translation>
     </message>
     <message>
         <source>About qBittorrent</source>
-        <translation>Par qBittorrent</translation>
+        <translation type="vanished">Par qBittorrent</translation>
     </message>
     <message>
         <source>License</source>
-        <translation>Liceņceja</translation>
+        <translation type="vanished">Liceņceja</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation>Puorvārsuoji</translation>
+        <translation type="vanished">Puorvārsuoji</translation>
     </message>
     <message>
         <source>qBittorrent was built with the following libraries:</source>
-        <translation>qBittorrent tika sastateits lītojūt ituos bibliotekas</translation>
+        <translation type="vanished">qBittorrent tika sastateits lītojūt ituos bibliotekas</translation>
     </message>
     <message>
         <source>Nationality:</source>
-        <translation>Piļsuoneiba:</translation>
+        <translation type="vanished">Piļsuoneiba:</translation>
     </message>
     <message>
         <source>Software Used</source>
-        <translation>Programatura</translation>
-    </message>
-    <message>
-        <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Programatura</translation>
     </message>
     <message>
         <source>Authors</source>
-        <translation>Autori</translation>
+        <translation type="vanished">Autori</translation>
     </message>
     <message>
         <source>France</source>
-        <translation>Praņceja</translation>
-    </message>
-    <message>
-        <source>qBittorrent Mascot</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>qBittorrent icon</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Praņceja</translation>
     </message>
 </context>
 <context>
     <name>OptionDialog</name>
     <message>
         <source>All addresses</source>
-        <translation>Vysas adresas</translation>
+        <translation type="vanished">Vysas adresas</translation>
     </message>
     <message>
         <source>All IPv6 addresses</source>
-        <translation>Vysas IPv6 adresas</translation>
+        <translation type="vanished">Vysas IPv6 adresas</translation>
     </message>
     <message>
         <source>All IPv4 addresses</source>
-        <translation>Vysas IPv4 adresas</translation>
+        <translation type="vanished">Vysas IPv4 adresas</translation>
     </message>
 </context>
 <context>
     <name>SearchJobWidget</name>
     <message>
         <source>Copy</source>
-        <translation>Puorspīst</translation>
+        <translation type="vanished">Puorspīst</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Atsasyuteit</translation>
+        <translation type="vanished">Atsasyuteit</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Pasauka</translation>
+        <translation type="vanished">Pasauka</translation>
     </message>
     <message>
         <source>Description page URL</source>
-        <translation>Aprakstejuma teiklavīta</translation>
+        <translation type="vanished">Aprakstejuma teiklavīta</translation>
     </message>
     <message>
         <source>Open description page</source>
-        <translation>Atdareit aprakstejuma teiklavītu</translation>
+        <translation type="vanished">Atdareit aprakstejuma teiklavītu</translation>
     </message>
     <message>
         <source>Download link</source>
-        <translation>Atsasyuteišonys saita</translation>
+        <translation type="vanished">Atsasyuteišonys saita</translation>
     </message>
 </context>
 <context>
     <name>TorrentContentTreeView</name>
     <message>
         <source>Renaming</source>
-        <translation>Puorsaukšona</translation>
+        <translation type="vanished">Puorsaukšona</translation>
     </message>
     <message>
         <source>New name:</source>
-        <translation>Jauna pasauka:</translation>
+        <translation type="vanished">Jauna pasauka:</translation>
     </message>
 </context>
 <context>
     <name>RSSWidget</name>
     <message>
         <source>Date: </source>
-        <translation>Data:</translation>
-    </message>
-    <message>
-        <source>Please choose a new name for this RSS feed</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Data:</translation>
     </message>
     <message>
         <source>Please choose a folder name</source>
-        <translation>Lyudzu izalaseit apvuoča pasauku</translation>
+        <translation type="vanished">Lyudzu izalaseit apvuoča pasauku</translation>
     </message>
     <message>
         <source>New feed name:</source>
-        <translation>Jauna kanala pasauka:</translation>
-    </message>
-    <message>
-        <source>Update all</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Jauna kanala pasauka:</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Iztreit</translation>
+        <translation type="vanished">Iztreit</translation>
     </message>
     <message>
         <source>RSS Downloader...</source>
-        <translation>RSS atsasyuteituojs</translation>
-    </message>
-    <message>
-        <source>Mark items read</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Update all feeds</source>
-        <translation type="unfinished" />
+        <translation type="vanished">RSS atsasyuteituojs</translation>
     </message>
     <message>
         <source>Copy feed URL</source>
-        <translation>Puorspīst kanāla adresi</translation>
-    </message>
-    <message>
-        <source>Torrents: (double-click to download)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Puorspīst kanāla adresi</translation>
     </message>
     <message>
         <source>Open news URL</source>
-        <translation>Atkluot teiklavītu</translation>
+        <translation type="vanished">Atkluot teiklavītu</translation>
     </message>
     <message>
         <source>Rename...</source>
-        <translation>Puorsaukt...</translation>
+        <translation type="vanished">Puorsaukt...</translation>
     </message>
     <message>
         <source>Feed URL:</source>
-        <translation>Kanala adress</translation>
+        <translation type="vanished">Kanala adress</translation>
     </message>
     <message>
         <source>New folder...</source>
-        <translation>Jauns apvuocis...</translation>
+        <translation type="vanished">Jauns apvuocis...</translation>
     </message>
     <message>
         <source>New subscription</source>
-        <translation>Dalikt kanalu</translation>
-    </message>
-    <message>
-        <source>Update</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dalikt kanalu</translation>
     </message>
     <message>
         <source>Folder name:</source>
-        <translation>Apvuoča pasauka:</translation>
+        <translation type="vanished">Apvuoča pasauka:</translation>
     </message>
     <message>
         <source>Please type a RSS feed URL</source>
-        <translation>Lyudzu īvoduot RSS kanala adresi</translation>
+        <translation type="vanished">Lyudzu īvoduot RSS kanala adresi</translation>
     </message>
     <message>
         <source>Fetching of RSS feeds is disabled now! You can enable it in application settings.</source>
-        <translation>RSS laseituojs ir izslēgts! Jius tū varāt īslēgt programys īstatejumuos.</translation>
+        <translation type="vanished">RSS laseituojs ir izslēgts! Jius tū varāt īslēgt programys īstatejumuos.</translation>
     </message>
     <message>
         <source>Deletion confirmation</source>
-        <translation>Apstyprynuot iztreišonu</translation>
+        <translation type="vanished">Apstyprynuot iztreišonu</translation>
     </message>
     <message>
         <source>Are you sure you want to delete the selected RSS feeds?</source>
-        <translation>Voi drūši zini, ka gribi nūteireit izalaseituos RSS kanalus?</translation>
+        <translation type="vanished">Voi drūši zini, ka gribi nūteireit izalaseituos RSS kanalus?</translation>
     </message>
     <message>
         <source>New subscription...</source>
-        <translation>Dalikt kanalu...</translation>
+        <translation type="vanished">Dalikt kanalu...</translation>
     </message>
     <message>
         <source>Download torrent</source>
-        <translation>Atsasyuteit torrentu</translation>
+        <translation type="vanished">Atsasyuteit torrentu</translation>
     </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
     <message>
         <source>Download Rules</source>
-        <translation>Atsasyuteišonas fiļtris</translation>
+        <translation type="vanished">Atsasyuteišonas fiļtris</translation>
     </message>
     <message>
         <source>Matching RSS Articles</source>
-        <translation>Fiļtra dabuotie rezultati</translation>
-    </message>
-    <message>
-        <source>* to match zero or more of any characters</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source> will match all articles.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Fiļtra dabuotie rezultati</translation>
     </message>
     <message>
         <source>Episode filter rules: </source>
-        <translation>Epizozu filtrys:</translation>
+        <translation type="vanished">Epizozu filtrys:</translation>
     </message>
     <message>
         <source>Auto downloading of RSS torrents is disabled now! You can enable it in application settings.</source>
-        <translation>RSS automatiskais atsasyuteituojs ir izslēgts! Jius tū varāt īslēgt programys īstatejumuos.</translation>
+        <translation type="vanished">RSS automatiskais atsasyuteituojs ir izslēgts! Jius tū varāt īslēgt programys īstatejumuos.</translation>
     </message>
     <message>
         <source>Rule Definition</source>
-        <translation>Fiļtru koņfiguraceja</translation>
+        <translation type="vanished">Fiļtru koņfiguraceja</translation>
     </message>
     <message>
         <source>Save to:</source>
-        <translation>Izglobuot ite:</translation>
+        <translation type="vanished">Izglobuot ite:</translation>
     </message>
     <message>
         <source>Use Regular Expressions</source>
-        <translation>Lītuot Reguļaras izsaceibas</translation>
+        <translation type="vanished">Lītuot Reguļaras izsaceibas</translation>
     </message>
     <message>
         <source>New rule name</source>
-        <translation>Jauna fiļtra pasauka</translation>
+        <translation type="vanished">Jauna fiļtra pasauka</translation>
     </message>
     <message>
         <source>Filter must end with semicolon</source>
-        <translation>Filtri vajag dabeigt ar komatpunkti</translation>
-    </message>
-    <message>
-        <source>? to match any single character</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Filtri vajag dabeigt ar komatpunkti</translation>
     </message>
     <message>
         <source>Matches articles based on episode filter.</source>
-        <translation>Meklej rezultatus piec epizozu fiļtra.</translation>
+        <translation type="vanished">Meklej rezultatus piec epizozu fiļtra.</translation>
     </message>
     <message>
         <source>Assign Category:</source>
-        <translation>Daškiert kategoreju:</translation>
-    </message>
-    <message>
-        <source>Regex mode: use Perl-compatible regular expressions</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>| is used as OR operator</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Clear downloaded episodes</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Whitespaces count as AND operators (all words, any order)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>An expression with an empty %1 clause (e.g. %2)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Daškiert kategoreju:</translation>
     </message>
     <message>
         <source>Example: </source>
-        <translation>Pīvadums:</translation>
+        <translation type="vanished">Pīvadums:</translation>
     </message>
     <message>
         <source>Add new rule...</source>
-        <translation>Pīlikt jaunu fiļtri...</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to clear the list of downloaded episodes for the selected rule?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Pīlikt jaunu fiļtri...</translation>
     </message>
     <message>
         <source>Must Contain:</source>
-        <translation>Īlikt:</translation>
+        <translation type="vanished">Īlikt:</translation>
     </message>
     <message>
         <source>Infinite range: &lt;b&gt;1x25-;&lt;/b&gt; matches episodes 25 and upward of season one, and all episodes of later seasons</source>
-        <translation>Parametris: &lt;b&gt;1x25-;&lt;/b&gt; atlaseis vysas sezonas i epizodes, suokot ar 1. sezonas 25. epizodi.</translation>
+        <translation type="vanished">Parametris: &lt;b&gt;1x25-;&lt;/b&gt; atlaseis vysas sezonas i epizodes, suokot ar 1. sezonas 25. epizodi.</translation>
     </message>
     <message>
         <source>Save to a Different Directory</source>
-        <translation>Izglobuot cytā apvuocī</translation>
+        <translation type="vanished">Izglobuot cytā apvuocī</translation>
     </message>
     <message>
         <source>Must Not Contain:</source>
-        <translation>Naīlikt:</translation>
+        <translation type="vanished">Naīlikt:</translation>
     </message>
     <message>
         <source>Single number: &lt;b&gt;1x25;&lt;/b&gt; matches episode 25 of season one</source>
-        <translation>Parametris: &lt;b&gt;1x25;&lt;/b&gt; atlaseis tik 1. sezonys 25. epizodi</translation>
+        <translation type="vanished">Parametris: &lt;b&gt;1x25;&lt;/b&gt; atlaseis tik 1. sezonys 25. epizodi</translation>
     </message>
     <message>
         <source>Three range types for episodes are supported: </source>
-        <translation>Filtrym lītojami 3 parametri:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to remove the selected download rules?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Filtrym lītojami 3 parametri:</translation>
     </message>
     <message>
         <source>Use global settings</source>
-        <translation>Lītuot globaluos īstatejumus</translation>
+        <translation type="vanished">Lītuot globaluos īstatejumus</translation>
     </message>
     <message>
         <source>Normal range: &lt;b&gt;1x25-40;&lt;/b&gt; matches episodes 25 through 40 of season one</source>
-        <translation>Parametris: &lt;b&gt;1x25-40;&lt;/b&gt; atlaseis tik 1. sezonys epizodes, nū 25. leidz 40.</translation>
+        <translation type="vanished">Parametris: &lt;b&gt;1x25-40;&lt;/b&gt; atlaseis tik 1. sezonys epizodes, nū 25. leidz 40.</translation>
     </message>
     <message>
         <source>Please type the new rule name</source>
-        <translation>Lyudzu Īvoduot jauna fiļtra pasauku</translation>
+        <translation type="vanished">Lyudzu Īvoduot jauna fiļtra pasauku</translation>
     </message>
     <message>
         <source>Rule renaming</source>
-        <translation>Fiļtra puorsaukšona</translation>
+        <translation type="vanished">Fiļtra puorsaukšona</translation>
     </message>
     <message>
         <source>Always</source>
-        <translation>Vysod</translation>
+        <translation type="vanished">Vysod</translation>
     </message>
     <message>
         <source>Episode number is a mandatory positive value</source>
-        <translation>Epizodys numurs navar byut negativs</translation>
+        <translation type="vanished">Epizodys numurs navar byut negativs</translation>
     </message>
     <message>
         <source> will match 2, 5, 8 through 15, 30 and onward episodes of season one</source>
-        <translation>filtrys atlaseis 2., 5., nū 8. leidz 15., 30. i tuoluokās pirmous sezonys epizozes. </translation>
+        <translation type="vanished">filtrys atlaseis 2., 5., nū 8. leidz 15., 30. i tuoluokās pirmous sezonys epizozes. </translation>
     </message>
     <message>
         <source>Rule deletion confirmation</source>
-        <translation>Apstyprynuot iztreišonu</translation>
+        <translation type="vanished">Apstyprynuot iztreišonu</translation>
     </message>
     <message>
         <source>Last Match: %1 days ago</source>
-        <translation>Pādejī rezultati: pyrms %1 dīnu</translation>
+        <translation type="vanished">Pādejī rezultati: pyrms %1 dīnu</translation>
     </message>
     <message>
         <source>Episode Filter:</source>
-        <translation>Epizozu filtrys:</translation>
+        <translation type="vanished">Epizozu filtrys:</translation>
     </message>
     <message>
         <source>Rss Downloader</source>
-        <translation>RSS atsasyuteituojs</translation>
+        <translation type="vanished">RSS atsasyuteituojs</translation>
     </message>
     <message>
         <source>Season number is a mandatory non-zero value</source>
-        <translation>Sezonys numurs navar byut 0</translation>
+        <translation type="vanished">Sezonys numurs navar byut 0</translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Nikod</translation>
+        <translation type="vanished">Nikod</translation>
     </message>
     <message>
         <source>Apply Rule to Feeds:</source>
-        <translation>Damāruot filtrys itim kanalim</translation>
+        <translation type="vanished">Damāruot filtrys itim kanalim</translation>
     </message>
     <message>
         <source> days</source>
-        <translation>dīnu</translation>
+        <translation type="vanished">dīnu</translation>
     </message>
     <message>
         <source>Use Smart Episode Filter</source>
-        <translation>Lītuot Gudro epizozu fiļtry</translation>
-    </message>
-    <message>
-        <source>If word order is important use * instead of whitespace.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Lītuot Gudro epizozu fiļtry</translation>
     </message>
     <message>
         <source>Add Paused:</source>
-        <translation>Dalikt nūstuodeitu:</translation>
+        <translation type="vanished">Dalikt nūstuodeitu:</translation>
     </message>
     <message>
         <source>Please type the name of the new download rule.</source>
-        <translation>Lyudzu Īvoduot jauna fiļtra pasauku.</translation>
-    </message>
-    <message>
-        <source>Wildcard mode: you can use</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source> will exclude all articles.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Lyudzu Īvoduot jauna fiļtra pasauku.</translation>
     </message>
     <message>
         <source>Delete rule</source>
-        <translation>Iztreit fiļtri</translation>
+        <translation type="vanished">Iztreit fiļtri</translation>
     </message>
     <message>
         <source>Ignore Subsequent Matches for (0 to Disable)</source>
-        <translation>Izlaist fiļtra rezultatus uz (0 atslēgt)</translation>
+        <translation type="vanished">Izlaist fiļtra rezultatus uz (0 atslēgt)</translation>
     </message>
     <message>
         <source>Rename rule...</source>
-        <translation>Puorsaukt fiļtri</translation>
+        <translation type="vanished">Puorsaukt fiļtri</translation>
     </message>
     <message>
         <source>Last Match: Unknown</source>
-        <translation>Pādejī rezultati: nav</translation>
-    </message>
-    <message>
-        <source>Clear downloaded episodes...</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Pādejī rezultati: nav</translation>
     </message>
     <message>
         <source>Smart Episode Filter will check the episode number to prevent downloading of duplicates.
 Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also support - as a separator)</source>
-        <translation>Gudrais epizozu filtrys izraudzeis epizozu numerus, lai nūgrīztu divkuorteigu atsasyuteišonu.
+        <translation type="vanished">Gudrais epizozu filtrys izraudzeis epizozu numerus, lai nūgrīztu divkuorteigu atsasyuteišonu.
 Formats: S01E01, 1x1, 2017.12.31 i 31.12.2017 (Datam škiramsimbola "." vītā var lītuot arī "-")</translation>
     </message>
     <message>
         <source>Torrent content layout:</source>
-        <translation>Torrenta satvora izlikaliejums:</translation>
+        <translation type="vanished">Torrenta satvora izlikaliejums:</translation>
     </message>
     <message>
         <source>Create subfolder</source>
-        <translation>Radeit zamapvuoci</translation>
-    </message>
-    <message>
-        <source>Original</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Radeit zamapvuoci</translation>
     </message>
     <message>
         <source>Don't create subfolder</source>
-        <translation>Naradeit zamapvuoci</translation>
+        <translation type="vanished">Naradeit zamapvuoci</translation>
     </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
     <message>
         <source>Resume torrents</source>
-        <translation>Aizsuokt torrentus</translation>
+        <translation type="vanished">Aizsuokt torrentus</translation>
     </message>
     <message>
         <source>All (%1)</source>
-        <translation>Vysi (%1)</translation>
+        <translation type="vanished">Vysi (%1)</translation>
     </message>
     <message>
         <source>Trackerless (%1)</source>
-        <translation>Bez trakera (%1)</translation>
+        <translation type="vanished">Bez trakera (%1)</translation>
     </message>
     <message>
         <source>Pause torrents</source>
-        <translation>Nūstuodeit torrentus</translation>
-    </message>
-    <message>
-        <source>Remove torrents</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nūstuodeit torrentus</translation>
     </message>
 </context>
 <context>
     <name>FeedListWidget</name>
     <message>
         <source>RSS feeds</source>
-        <translation>RSS kanali</translation>
+        <translation type="vanished">RSS kanali</translation>
+    </message>
+</context>
+<context>
+    <name>ExecutionLogWidget</name>
+    <message>
+        <source>General</source>
+        <translation type="vanished">Vyscaureigi</translation>
     </message>
     <message>
-        <source>Unread</source>
-        <translation type="unfinished" />
+        <source>Unknown</source>
+        <translation type="vanished">Nazynoms</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation type="vanished">Vysys</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="vanished">Puorspīst</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation type="vanished">Izlaseit vysys</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation type="vanished">Viereibu</translation>
+    </message>
+    <message>
+        <source>Blocked IPs</source>
+        <translation type="vanished">Nūblokētās IP</translation>
+    </message>
+    <message>
+        <source>out of</source>
+        <translation type="vanished">nu</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation type="vanished">Statuss</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation type="vanished">Viestejums</translation>
+    </message>
+    <message>
+        <source>IP</source>
+        <translation type="vanished">IP</translation>
+    </message>
+    <message>
+        <source>Normal</source>
+        <translation type="vanished">Norma</translation>
     </message>
 </context>
 </TS>

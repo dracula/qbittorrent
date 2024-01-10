@@ -173,7 +173,7 @@ window.qBittorrent.PropFiles = (function() {
         elem.set('value', priority.toString());
         elem.set('html', html);
         if (selected)
-            elem.setAttribute('selected', '');
+            elem.selected = true;
         return elem;
     };
 
@@ -185,13 +185,13 @@ window.qBittorrent.PropFiles = (function() {
         select.addClass('combo_priority');
         select.addEvent('change', fileComboboxChanged);
 
-        createPriorityOptionElement(FilePriority.Ignored, (FilePriority.Ignored === selectedPriority), 'QBT_TR(Do not download)QBT_TR[CONTEXT=PropListDelegate]').injectInside(select);
-        createPriorityOptionElement(FilePriority.Normal, (FilePriority.Normal === selectedPriority), 'QBT_TR(Normal)QBT_TR[CONTEXT=PropListDelegate]').injectInside(select);
-        createPriorityOptionElement(FilePriority.High, (FilePriority.High === selectedPriority), 'QBT_TR(High)QBT_TR[CONTEXT=PropListDelegate]').injectInside(select);
-        createPriorityOptionElement(FilePriority.Maximum, (FilePriority.Maximum === selectedPriority), 'QBT_TR(Maximum)QBT_TR[CONTEXT=PropListDelegate]').injectInside(select);
+        createPriorityOptionElement(FilePriority.Ignored, (FilePriority.Ignored === selectedPriority), 'Do not download').injectInside(select);
+        createPriorityOptionElement(FilePriority.Normal, (FilePriority.Normal === selectedPriority), 'Normal').injectInside(select);
+        createPriorityOptionElement(FilePriority.High, (FilePriority.High === selectedPriority), 'High').injectInside(select);
+        createPriorityOptionElement(FilePriority.Maximum, (FilePriority.Maximum === selectedPriority), 'Maximum').injectInside(select);
 
         // "Mixed" priority is for display only; it shouldn't be selectable
-        const mixedPriorityOption = createPriorityOptionElement(FilePriority.Mixed, (FilePriority.Mixed === selectedPriority), 'QBT_TR(Mixed)QBT_TR[CONTEXT=PropListDelegate]');
+        const mixedPriorityOption = createPriorityOptionElement(FilePriority.Mixed, (FilePriority.Mixed === selectedPriority), 'Mixed');
         mixedPriorityOption.set('disabled', true);
         mixedPriorityOption.injectInside(select);
 
@@ -210,9 +210,9 @@ window.qBittorrent.PropFiles = (function() {
         for (let i = 0; i < options.length; ++i) {
             const option = options[i];
             if (parseInt(option.value) === priority)
-                option.setAttribute('selected', '');
+                option.selected = true;
             else
-                option.removeAttribute('selected');
+                option.selected = false;
         }
 
         combobox.value = priority;
@@ -536,6 +536,51 @@ window.qBittorrent.PropFiles = (function() {
         setFilePriority(Object.keys(uniqueRowIds), Object.keys(uniqueFileIds), priority);
     };
 
+    const singleFileRename = function(hash) {
+        const rowId = torrentFilesTable.selectedRowsIds()[0];
+        if (rowId === undefined)
+            return;
+        const row = torrentFilesTable.rows[rowId];
+        if (!row)
+            return;
+
+        const node = torrentFilesTable.getNode(rowId);
+        const path = node.path;
+
+        new MochaUI.Window({
+            id: 'renamePage',
+            title: "Renaming",
+            loadMethod: 'iframe',
+            contentURL: 'rename_file.html?hash=' + hash + '&isFolder=' + node.isFolder
+                + '&path=' + encodeURIComponent(path),
+            scrollbars: false,
+            resizable: true,
+            maximizable: false,
+            paddingVertical: 0,
+            paddingHorizontal: 0,
+            width: 400,
+            height: 100
+        });
+    };
+
+    const multiFileRename = function(hash) {
+        new MochaUI.Window({
+            id: 'multiRenamePage',
+            title: "Renaming",
+            data: { hash: hash, selectedRows: torrentFilesTable.selectedRows },
+            loadMethod: 'xhr',
+            contentURL: 'rename_files.html',
+            scrollbars: false,
+            resizable: true,
+            maximizable: false,
+            paddingVertical: 0,
+            paddingHorizontal: 0,
+            width: 800,
+            height: 420,
+            resizeLimit: { 'x': [800], 'y': [420] }
+        });
+    };
+
     const torrentFilesContextMenu = new window.qBittorrent.ContextMenu.ContextMenu({
         targets: '#torrentFilesTableDiv tr',
         menu: 'torrentFilesMenu',
@@ -544,30 +589,13 @@ window.qBittorrent.PropFiles = (function() {
                 const hash = torrentsTable.getCurrentTorrentID();
                 if (!hash)
                     return;
-                const rowId = torrentFilesTable.selectedRowsIds()[0];
-                if (rowId === undefined)
-                    return;
-                const row = torrentFilesTable.rows[rowId];
-                if (!row)
-                    return;
 
-                const node = torrentFilesTable.getNode(rowId);
-                const path = node.path;
-
-                new MochaUI.Window({
-                    id: 'renamePage',
-                    title: "QBT_TR(Renaming)QBT_TR[CONTEXT=TorrentContentTreeView]",
-                    loadMethod: 'iframe',
-                    contentURL: 'rename_file.html?hash=' + hash + '&isFolder=' + node.isFolder
-                        + '&path=' + encodeURIComponent(path),
-                    scrollbars: false,
-                    resizable: false,
-                    maximizable: false,
-                    paddingVertical: 0,
-                    paddingHorizontal: 0,
-                    width: 250,
-                    height: 100
-                });
+                if (torrentFilesTable.selectedRowsIds().length > 1) {
+                    multiFileRename(hash);
+                }
+                else {
+                    singleFileRename(hash);
+                }
             },
 
             FilePrioIgnore: function(element, ref) {

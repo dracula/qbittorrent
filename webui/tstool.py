@@ -45,7 +45,7 @@ def parseSource(filename, sources):
     print("Parsing %s..." % (os.path.normpath(filename)))
     with open(filename, encoding = 'utf-8', mode = 'r') as file:
         regex = re.compile(
-            r"QBT_TR\((([^\)]|\)(?!QBT_TR))+)\)QBT_TR\[CONTEXT=([a-zA-Z_][a-zA-Z0-9_]*)\]")
+            r"$1")
         for match in regex.finditer(file.read()):
             string = match.group(1)
             context = match.group(3)

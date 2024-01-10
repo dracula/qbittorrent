@@ -12,1581 +12,1537 @@
     <name>AddNewTorrentDialog</name>
     <message>
         <source>Category:</source>
-        <translation>Kategorija:</translation>
+        <translation type="vanished">Kategorija:</translation>
     </message>
     <message>
         <source>Start torrent</source>
-        <translation>Započni torrent</translation>
+        <translation type="vanished">Započni torrent</translation>
     </message>
     <message>
         <source>Skip hash check</source>
-        <translation>Preskoči hash provjeru</translation>
+        <translation type="vanished">Preskoči hash provjeru</translation>
     </message>
     <message>
         <source>Torrent Management Mode:</source>
-        <translation>Način upravljanja torrent-om:</translation>
+        <translation type="vanished">Način upravljanja torrent-om:</translation>
     </message>
     <message>
         <source>Content layout:</source>
-        <translation>Izgled sadržaja:</translation>
+        <translation type="vanished">Izgled sadržaja:</translation>
     </message>
     <message>
         <source>Original</source>
-        <translation>Original</translation>
+        <translation type="vanished">Original</translation>
     </message>
     <message>
         <source>Create subfolder</source>
-        <translation>Stvori podmapu</translation>
+        <translation type="vanished">Stvori podmapu</translation>
     </message>
     <message>
         <source>Don't create subfolder</source>
-        <translation>Ne stvaraj podmapu</translation>
+        <translation type="vanished">Ne stvaraj podmapu</translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation>Ručno</translation>
+        <translation type="vanished">Ručno</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Automatski</translation>
+        <translation type="vanished">Automatski</translation>
     </message>
     <message>
         <source>Metadata received</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Metapodaci primljeni</translation>
     </message>
     <message>
         <source>Files checked</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Provjerene datoteke</translation>
     </message>
     <message>
         <source>Stop condition:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Uvjet zaustavljanja:</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nijedno</translation>
+    </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation type="vanished">Dodaj na vrh reda čekanja</translation>
     </message>
 </context>
 <context>
     <name>CategoryFilterModel</name>
     <message>
         <source>All</source>
-        <translation>Sve</translation>
+        <translation type="vanished">Sve</translation>
     </message>
     <message>
         <source>Uncategorized</source>
-        <translation>Nekategorizirano</translation>
+        <translation type="vanished">Nekategorizirano</translation>
     </message>
 </context>
 <context>
     <name>CategoryFilterWidget</name>
     <message>
         <source>Add category...</source>
-        <translation>Dodaj kategoriju...</translation>
+        <translation type="vanished">Dodaj kategoriju...</translation>
     </message>
     <message>
         <source>Remove category</source>
-        <translation>Ukloni kategoriju</translation>
+        <translation type="vanished">Ukloni kategoriju</translation>
     </message>
     <message>
         <source>Remove unused categories</source>
-        <translation>Uklonite kategorije koje se ne koriste</translation>
+        <translation type="vanished">Uklonite kategorije koje se ne koriste</translation>
     </message>
     <message>
         <source>Resume torrents</source>
-        <translation>Nastavi torrente</translation>
+        <translation type="vanished">Nastavi torrente</translation>
     </message>
     <message>
         <source>Pause torrents</source>
-        <translation>Pauziraj torrente</translation>
+        <translation type="vanished">Pauziraj torrente</translation>
     </message>
     <message>
         <source>New Category</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nova kategorija</translation>
     </message>
     <message>
         <source>Edit category...</source>
-        <translation>Uredi kategoriju...</translation>
+        <translation type="vanished">Uredi kategoriju...</translation>
     </message>
     <message>
         <source>Remove torrents</source>
-        <translation>Ukloni torrente</translation>
+        <translation type="vanished">Ukloni torrente</translation>
+    </message>
+    <message>
+        <source>Add subcategory...</source>
+        <translation type="vanished">Dodaj podkategoriju...</translation>
     </message>
 </context>
 <context>
     <name>HttpServer</name>
     <message>
         <source>Exit qBittorrent</source>
-        <translation>Zatvorite qBittorrent</translation>
+        <translation type="vanished">Zatvorite qBittorrent</translation>
     </message>
     <message>
         <source>Only one link per line</source>
-        <translation>Samo jedna poveznica po liniji</translation>
+        <translation type="vanished">Samo jedna poveznica po liniji</translation>
     </message>
     <message>
         <source>Global upload rate limit must be greater than 0 or disabled.</source>
-        <translation>Globalno ograničenje brzine slanja mora biti veće od 0 ili onemogućeno.</translation>
+        <translation type="vanished">Globalno ograničenje brzine slanja mora biti veće od 0 ili onemogućeno.</translation>
     </message>
     <message>
         <source>Global download rate limit must be greater than 0 or disabled.</source>
-        <translation>Globalno ograničenje brzine preuzimanja mora biti veće od 0 ili onemogućeno.</translation>
+        <translation type="vanished">Globalno ograničenje brzine preuzimanja mora biti veće od 0 ili onemogućeno.</translation>
     </message>
     <message>
         <source>Alternative upload rate limit must be greater than 0 or disabled.</source>
-        <translation>Alternativno ograničenje brzine slanja mora biti veće od 0 ili onemogućeno.</translation>
+        <translation type="vanished">Alternativno ograničenje brzine slanja mora biti veće od 0 ili onemogućeno.</translation>
     </message>
     <message>
         <source>Alternative download rate limit must be greater than 0 or disabled.</source>
-        <translation>Alternativno ograničenje brzine preuzimanja mora biti veće od 0 ili onemogućeno.</translation>
+        <translation type="vanished">Alternativno ograničenje brzine preuzimanja mora biti veće od 0 ili onemogućeno.</translation>
     </message>
     <message>
         <source>Maximum active downloads must be greater than -1.</source>
-        <translation>Maksimalan broj aktivnih preuzimanja mora biti veći od -1.</translation>
+        <translation type="vanished">Maksimalan broj aktivnih preuzimanja mora biti veći od -1.</translation>
     </message>
     <message>
         <source>Maximum active uploads must be greater than -1.</source>
-        <translation>Maksimalan broj aktivnih slanja mora biti veći od -1.</translation>
+        <translation type="vanished">Maksimalan broj aktivnih slanja mora biti veći od -1.</translation>
     </message>
     <message>
         <source>Maximum active torrents must be greater than -1.</source>
-        <translation>Maksimalan broj aktivnih torrenata mora biti veći od -1.</translation>
+        <translation type="vanished">Maksimalan broj aktivnih torrenata mora biti veći od -1.</translation>
     </message>
     <message>
         <source>Maximum number of connections limit must be greater than 0 or disabled.</source>
-        <translation>Ograničenje najvećeg broja spajanja mora biti veći od 0 ili onemogućeno.</translation>
+        <translation type="vanished">Ograničenje najvećeg broja spajanja mora biti veći od 0 ili onemogućeno.</translation>
     </message>
     <message>
         <source>Maximum number of connections per torrent limit must be greater than 0 or disabled.</source>
-        <translation>Ograničenje najvećeg broja spajanja po torrentu mora biti veće od 0 ili onemogućeno.</translation>
+        <translation type="vanished">Ograničenje najvećeg broja spajanja po torrentu mora biti veće od 0 ili onemogućeno.</translation>
     </message>
     <message>
         <source>Maximum number of upload slots per torrent limit must be greater than 0 or disabled.</source>
-        <translation>Ograničenje najvećeg broja mjesta za slanje po torrentu mora biti veći od 0 ili onemogućeno.</translation>
+        <translation type="vanished">Ograničenje najvećeg broja mjesta za slanje po torrentu mora biti veći od 0 ili onemogućeno.</translation>
     </message>
     <message>
         <source>Unable to save program preferences, qBittorrent is probably unreachable.</source>
-        <translation>Nije moguće spremiti postavke programa. qBittorrent je vjerojatno nedostupan.</translation>
+        <translation type="vanished">Nije moguće spremiti postavke programa. qBittorrent je vjerojatno nedostupan.</translation>
     </message>
     <message>
         <source>Unknown</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nepoznato</translation>
     </message>
     <message>
         <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ograničenje omjera dijeljenja mora biti između 0 i 9998.</translation>
     </message>
     <message>
         <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Vremensko ograničenje 'seedinga' mora biti između 0 i 525600 minuta.</translation>
     </message>
     <message>
         <source>The port used for the Web UI must be between 1 and 65535.</source>
-        <translation>Port korišten za web sučelje mora biti između  1 i 65535.</translation>
+        <translation type="vanished">Port korišten za web sučelje mora biti između  1 i 65535.</translation>
     </message>
     <message>
         <source>Unable to log in, qBittorrent is probably unreachable.</source>
-        <translation>Nije moguća prijava. qBittorrent je vjerojatno nedostupan.</translation>
+        <translation type="vanished">Nije moguća prijava. qBittorrent je vjerojatno nedostupan.</translation>
     </message>
     <message>
         <source>Invalid Username or Password.</source>
-        <translation>Neispravno korisničko ime ili lozinka</translation>
+        <translation type="vanished">Neispravno korisničko ime ili lozinka</translation>
     </message>
     <message>
         <source>Username</source>
-        <translation>Korisničko ime</translation>
+        <translation type="vanished">Korisničko ime</translation>
     </message>
     <message>
         <source>Password</source>
-        <translation>Lozinka</translation>
+        <translation type="vanished">Lozinka</translation>
     </message>
     <message>
         <source>Login</source>
-        <translation>Prijava</translation>
+        <translation type="vanished">Prijava</translation>
     </message>
     <message>
         <source>Apply</source>
-        <translation>Primjeni</translation>
+        <translation type="vanished">Primjeni</translation>
     </message>
     <message>
         <source>Add</source>
-        <translation>Dodaj</translation>
+        <translation type="vanished">Dodaj</translation>
     </message>
     <message>
         <source>Upload Torrents</source>
         <comment>Upload torrent files to qBittorent using WebUI</comment>
-        <translation>Prenesi torrente</translation>
+        <translation type="vanished">Prenesi torrente</translation>
     </message>
     <message>
         <source>Save files to location:</source>
-        <translation>Spremi datoteke na lokaciju:</translation>
+        <translation type="vanished">Spremi datoteke na lokaciju:</translation>
     </message>
     <message>
         <source>Cookie:</source>
-        <translation>Kolačić:</translation>
+        <translation type="vanished">Kolačić:</translation>
     </message>
     <message>
         <source>More information</source>
-        <translation>Više informacija</translation>
+        <translation type="vanished">Više informacija</translation>
     </message>
     <message>
         <source>Information about certificates</source>
-        <translation>Informacije o certifikatima</translation>
+        <translation type="vanished">Informacije o certifikatima</translation>
     </message>
     <message>
         <source>Set location</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Postavi lokaciju</translation>
     </message>
     <message>
         <source>Limit upload rate</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ograniči brzinu slanja</translation>
     </message>
     <message>
         <source>Limit download rate</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ograniči stopu preuzimanja</translation>
     </message>
     <message>
         <source>Rename torrent</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Preimenuj torrent</translation>
     </message>
     <message>
         <source>Monday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Ponedjeljak</translation>
+        <translation type="vanished">Ponedjeljak</translation>
     </message>
     <message>
         <source>Tuesday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Utorak</translation>
+        <translation type="vanished">Utorak</translation>
     </message>
     <message>
         <source>Wednesday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Srijeda</translation>
+        <translation type="vanished">Srijeda</translation>
     </message>
     <message>
         <source>Thursday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Četvrtak</translation>
+        <translation type="vanished">Četvrtak</translation>
     </message>
     <message>
         <source>Friday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Petak</translation>
+        <translation type="vanished">Petak</translation>
     </message>
     <message>
         <source>Saturday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Subota</translation>
+        <translation type="vanished">Subota</translation>
     </message>
     <message>
         <source>Sunday</source>
         <comment>Schedule the use of alternative rate limits on ...</comment>
-        <translation>Nedjelja</translation>
+        <translation type="vanished">Nedjelja</translation>
     </message>
     <message>
         <source>Logout</source>
-        <translation>Odjava</translation>
+        <translation type="vanished">Odjava</translation>
     </message>
     <message>
         <source>Download Torrents from their URLs or Magnet links</source>
-        <translation>Preuzmi torrente sa njegovih URLova ili Magnet linkova</translation>
+        <translation type="vanished">Preuzmi torrente sa njegovih URLova ili Magnet linkova</translation>
     </message>
     <message>
         <source>Upload local torrent</source>
-        <translation>Slanje lokalnog torrenta</translation>
+        <translation type="vanished">Slanje lokalnog torrenta</translation>
     </message>
     <message>
         <source>Save</source>
-        <translation>Spremi</translation>
+        <translation type="vanished">Spremi</translation>
     </message>
     <message>
         <source>qBittorrent client is not reachable</source>
-        <translation>qBittorrent klijent nije dostupan</translation>
+        <translation type="vanished">qBittorrent klijent nije dostupan</translation>
     </message>
     <message>
         <source>Global number of upload slots limit must be greater than 0 or disabled.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ograničenje ukupnog broja utora za učitavanje mora biti veće od 0 ili biti onemogućeno.</translation>
     </message>
     <message>
         <source>Invalid category name:\nPlease do not use any special characters in the category name.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Neispravno ime kategorije:\nNe koristite posebne znakove u imenu kategorije.</translation>
     </message>
     <message>
         <source>Unable to create category</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nije moguće stvoriti kategoriju</translation>
     </message>
     <message>
         <source>Upload rate threshold must be greater than 0.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Prag brzine slanja mora biti veći od 0.</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Uredi</translation>
+        <translation type="vanished">Uredi</translation>
     </message>
     <message>
         <source>Free space: %1</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Slobodan prostor: %1</translation>
     </message>
     <message>
         <source>Torrent inactivity timer must be greater than 0.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Mjerač vremena neaktivnosti torrenta mora biti veći od 0.</translation>
     </message>
     <message>
         <source>Saving Management</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Upravljanje spremanjem</translation>
     </message>
     <message>
         <source>Download rate threshold must be greater than 0.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Prag stope preuzimanja mora biti veći od 0.</translation>
     </message>
     <message>
         <source>qBittorrent has been shutdown</source>
-        <translation type="unfinished" />
+        <translation type="vanished">qBittorrent je ugašen</translation>
     </message>
     <message>
         <source>Open documentation</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Otvori dokumentaciju</translation>
     </message>
     <message>
         <source>Register to handle magnet links...</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Registrirajte se za rukovanje magnet vezama...</translation>
     </message>
     <message>
         <source>Unable to add peers. Please ensure you are adhering to the IP:port format.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nije moguće dodati peerove. Provjerite pridržavate li se IP:format porta.</translation>
     </message>
     <message>
         <source>JavaScript Required! You must enable JavaScript for the Web UI to work properly</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Potreban je JavaScript! Morate omogućiti JavaScript kako bi web sučelje ispravno radilo</translation>
     </message>
     <message>
         <source>Name cannot be empty</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ime ne može biti prazno</translation>
     </message>
     <message>
         <source>Name is unchanged</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ime je nepromijenjeno</translation>
     </message>
     <message>
         <source>Failed to update name</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ažuriranje imena nije uspjelo</translation>
     </message>
     <message>
         <source>OK</source>
-        <translation type="unfinished" />
+        <translation type="vanished">U redu</translation>
     </message>
     <message>
         <source>The port used for incoming connections must be between 0 and 65535.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Port koji se koristi za dolazne veze mora biti između 0 i 65535.</translation>
     </message>
     <message>
         <source>Original author</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Izvorni autor</translation>
     </message>
     <message>
         <source>Are you sure you want to remove the selected torrents from the transfer list?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Jeste li sigurni da želite ukloniti odabrane torrente s popisa prijenosa?</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <source>Edit</source>
-        <translation>Uredi</translation>
+        <translation type="vanished">Uredi</translation>
     </message>
     <message>
         <source>Tools</source>
-        <translation>Alati</translation>
+        <translation type="vanished">Alati</translation>
     </message>
     <message>
         <source>File</source>
-        <translation>Datoteka</translation>
+        <translation type="vanished">Datoteka</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>Pomoć</translation>
+        <translation type="vanished">Pomoć</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>Pogled</translation>
+        <translation type="vanished">Pogled</translation>
     </message>
     <message>
         <source>Options...</source>
-        <translation>Opcije...</translation>
+        <translation type="vanished">Opcije...</translation>
     </message>
     <message>
         <source>Resume</source>
-        <translation>Nastavi</translation>
+        <translation type="vanished">Nastavi</translation>
     </message>
     <message>
         <source>Top Toolbar</source>
-        <translation>Gornja alatna traka</translation>
+        <translation type="vanished">Gornja alatna traka</translation>
     </message>
     <message>
         <source>Status Bar</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Statusna traka</translation>
     </message>
     <message>
         <source>Speed in Title Bar</source>
-        <translation>Brzina u naslovnoj traci</translation>
+        <translation type="vanished">Brzina u naslovnoj traci</translation>
     </message>
     <message>
         <source>Donate!</source>
-        <translation>Doniraj!</translation>
+        <translation type="vanished">Doniraj!</translation>
     </message>
     <message>
         <source>Resume All</source>
-        <translation>Nastavi sve</translation>
+        <translation type="vanished">Nastavi sve</translation>
     </message>
     <message>
         <source>Statistics</source>
-        <translation>Statistika</translation>
+        <translation type="vanished">Statistika</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>O programu</translation>
+        <translation type="vanished">O programu</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation>Pauziraj</translation>
+        <translation type="vanished">Pauziraj</translation>
     </message>
     <message>
         <source>Pause All</source>
-        <translation>Pauziraj sve</translation>
+        <translation type="vanished">Pauziraj sve</translation>
     </message>
     <message>
         <source>Add Torrent File...</source>
-        <translation>Dodaj torrent datoteku...</translation>
+        <translation type="vanished">Dodaj torrent datoteku...</translation>
     </message>
     <message>
         <source>Documentation</source>
-        <translation>Dokumentacija</translation>
+        <translation type="vanished">Dokumentacija</translation>
     </message>
     <message>
         <source>Add Torrent Link...</source>
-        <translation>Dodaj torrent poveznicu...</translation>
+        <translation type="vanished">Dodaj torrent poveznicu...</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation>Da</translation>
+        <translation type="vanished">Da</translation>
     </message>
     <message>
         <source>No</source>
-        <translation>Ne</translation>
+        <translation type="vanished">Ne</translation>
     </message>
     <message>
         <source>Global Upload Speed Limit</source>
-        <translation>Globalno ograničenje brzine slanja</translation>
+        <translation type="vanished">Globalno ograničenje brzine slanja</translation>
     </message>
     <message>
         <source>Global Download Speed Limit</source>
-        <translation>Globalno ograničenje brzine preuzimanja</translation>
+        <translation type="vanished">Globalno ograničenje brzine preuzimanja</translation>
     </message>
     <message>
         <source>Are you sure you want to quit qBittorrent?</source>
-        <translation>Jeste li sigurni da želite napustiti qBittorrent?</translation>
+        <translation type="vanished">Jeste li sigurni da želite napustiti qBittorrent?</translation>
     </message>
     <message>
         <source>[D: %1, U: %2] qBittorrent %3</source>
         <comment>D = Download; U = Upload; %3 is qBittorrent version</comment>
-        <translation>[P: %1, S: %2] qBittorrent %3</translation>
+        <translation type="vanished">[P: %1, S: %2] qBittorrent %3</translation>
     </message>
     <message>
         <source>Alternative speed limits</source>
-        <translation>Alternativni limiti brzine</translation>
+        <translation type="vanished">Alternativni limiti brzine</translation>
     </message>
     <message>
         <source>Search Engine</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dodaci za pretraživanje</translation>
     </message>
     <message>
         <source>Filter torrent list...</source>
-        <translation>Filtriraj popis torrenta...</translation>
+        <translation type="vanished">Filtriraj popis torrenta...</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Traži</translation>
+        <translation type="vanished">Traži</translation>
     </message>
     <message>
         <source>Transfers</source>
-        <translation>Prijenosi</translation>
+        <translation type="vanished">Prijenosi</translation>
     </message>
     <message>
         <source>Move up in the queue</source>
-        <translation>Pomaknite gore u redu čekanja</translation>
+        <translation type="vanished">Pomaknite gore u redu čekanja</translation>
     </message>
     <message>
         <source>Move Up Queue</source>
-        <translation>Pomaknite gore u redu čekanja</translation>
+        <translation type="vanished">Pomaknite gore u redu čekanja</translation>
     </message>
     <message>
         <source>Bottom of Queue</source>
-        <translation>Dno reda čekanja</translation>
+        <translation type="vanished">Dno reda čekanja</translation>
     </message>
     <message>
         <source>Move to the bottom of the queue</source>
-        <translation>Pomaknite na dno reda čekanja</translation>
+        <translation type="vanished">Pomaknite na dno reda čekanja</translation>
     </message>
     <message>
         <source>Top of Queue</source>
-        <translation>Vrh reda čekanja</translation>
+        <translation type="vanished">Vrh reda čekanja</translation>
     </message>
     <message>
         <source>Move Down Queue</source>
-        <translation>Pomaknite dolje u redu čekanja</translation>
+        <translation type="vanished">Pomaknite dolje u redu čekanja</translation>
     </message>
     <message>
         <source>Move down in the queue</source>
-        <translation>Pomaknite dolje u redu čekanja</translation>
+        <translation type="vanished">Pomaknite dolje u redu čekanja</translation>
     </message>
     <message>
         <source>Move to the top of the queue</source>
-        <translation>Pomaknite na vrh reda čekanja</translation>
+        <translation type="vanished">Pomaknite na vrh reda čekanja</translation>
     </message>
     <message>
         <source>Your browser does not support this feature</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Vaš preglednik ne podržava ovu značajku</translation>
     </message>
     <message>
         <source>To use this feature, the WebUI needs to be accessed over HTTPS</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Za korištenje ove značajke potrebno je pristupiti WebUI-ju preko HTTPS-a</translation>
     </message>
     <message>
         <source>Connection status: Firewalled</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Status veze: Vatrozid</translation>
     </message>
     <message>
         <source>Connection status: Connected</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Status veze: Povezano</translation>
     </message>
     <message>
         <source>Alternative speed limits: Off</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Alternativna ograničenja brzine: Isklj</translation>
     </message>
     <message>
         <source>Download speed icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Connection status</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ikona brzine preuzimanja</translation>
     </message>
     <message>
         <source>Alternative speed limits: On</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Alternativna ograničenja brzine: Uklj</translation>
     </message>
     <message>
         <source>Upload speed icon</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ikona brzine slanja</translation>
     </message>
     <message>
         <source>Connection status: Disconnected</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Status veze: Prekinuta</translation>
     </message>
     <message>
         <source>RSS Reader</source>
-        <translation type="unfinished" />
+        <translation type="vanished">RSS čitač</translation>
     </message>
     <message>
         <source>RSS</source>
-        <translation>RSS</translation>
+        <translation type="vanished">RSS</translation>
     </message>
     <message>
         <source>Filters Sidebar</source>
-        <translation>Bočna traka filtera</translation>
+        <translation type="vanished">Bočna traka filtera</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Odustani</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ukloni</translation>
     </message>
     <message>
         <source>Would you like to resume all torrents?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Želite li nastaviti sa svim torrentima?</translation>
     </message>
     <message>
         <source>Would you like to pause all torrents?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Želite li pauzirati sve torrente?</translation>
+    </message>
+    <message>
+        <source>Execution Log</source>
+        <translation type="vanished">Dnevnik izvršavanja</translation>
+    </message>
+    <message>
+        <source>Log</source>
+        <translation type="vanished">Zapis</translation>
     </message>
 </context>
 <context>
     <name>OptionsDialog</name>
     <message>
         <source>Options</source>
-        <translation>Opcije</translation>
+        <translation type="vanished">Opcije</translation>
     </message>
     <message>
         <source>Downloads</source>
-        <translation>Preuzimanja</translation>
+        <translation type="vanished">Preuzimanja</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation>Spajanje</translation>
+        <translation type="vanished">Spajanje</translation>
     </message>
     <message>
         <source>Speed</source>
-        <translation>Brzina</translation>
+        <translation type="vanished">Brzina</translation>
     </message>
     <message>
         <source>BitTorrent</source>
-        <translation>BitTorrent</translation>
+        <translation type="vanished">BitTorrent</translation>
     </message>
     <message>
         <source>Web UI</source>
-        <translation>Web UI</translation>
+        <translation type="vanished">Web UI</translation>
     </message>
     <message>
         <source>Language</source>
-        <translation>Jezik</translation>
+        <translation type="vanished">Jezik</translation>
     </message>
     <message>
         <source>User Interface Language:</source>
-        <translation>Jezik korisničkog sučelja:</translation>
+        <translation type="vanished">Jezik korisničkog sučelja:</translation>
     </message>
     <message>
         <source>Email notification upon download completion</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Obavijesti e-poštom prilikom završetka preuzimanja</translation>
     </message>
     <message>
         <source>IP Filtering</source>
-        <translation>IP filtriranje</translation>
+        <translation type="vanished">IP filtriranje</translation>
     </message>
     <message>
         <source>Schedule the use of alternative rate limits</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Planiraj korištenje alternativnih ograničenja brzine</translation>
     </message>
     <message>
         <source>Torrent Queueing</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Red čekanja torrenta</translation>
     </message>
     <message>
         <source>Automatically add these trackers to new downloads:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Automatski dodaj ove trackere za nova preuzimanja:</translation>
     </message>
     <message>
         <source>Web User Interface (Remote control)</source>
-        <translation>Web korisničko sučelje (daljinsko upravljanje)</translation>
+        <translation type="vanished">Web korisničko sučelje (daljinsko upravljanje)</translation>
     </message>
     <message>
         <source>IP address:</source>
-        <translation>IP addresa:</translation>
+        <translation type="vanished">IP addresa:</translation>
     </message>
     <message>
         <source>Server domains:</source>
-        <translation>Domene poslužitelja:</translation>
+        <translation type="vanished">Domene poslužitelja:</translation>
     </message>
     <message>
         <source>Use HTTPS instead of HTTP</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Koristi HTTPS umjesto HTTP-a</translation>
     </message>
     <message>
         <source>Bypass authentication for clients on localhost</source>
-        <translation>Zaobilaženje autentifikacije za klijente na lokalnom hostu</translation>
+        <translation type="vanished">Zaobilaženje autentifikacije za klijente na lokalnom hostu</translation>
     </message>
     <message>
         <source>Bypass authentication for clients in whitelisted IP subnets</source>
-        <translation>Zaobilaženje autentifikacije za klijente u IP podmrežama na popisu dopuštenih</translation>
+        <translation type="vanished">Zaobilaženje autentifikacije za klijente u IP podmrežama na popisu dopuštenih</translation>
     </message>
     <message>
         <source>Update my dynamic domain name</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ažuriraj moj dinamički naziv domene</translation>
     </message>
     <message>
         <source>Keep incomplete torrents in:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Drži nedovršene torrente u:</translation>
     </message>
     <message>
         <source>Copy .torrent files to:</source>
-        <translation>Kopiraj .torrent datoteke u:</translation>
+        <translation type="vanished">Kopiraj .torrent datoteke u:</translation>
     </message>
     <message>
         <source>Copy .torrent files for finished downloads to:</source>
-        <translation>Kopirajte .torrent datoteke za završena preuzimanja u:</translation>
+        <translation type="vanished">Kopirajte .torrent datoteke za završena preuzimanja u:</translation>
     </message>
     <message>
         <source>Pre-allocate disk space for all files</source>
-        <translation>Prethodno dodijelite prostor na disku za sve datoteke</translation>
+        <translation type="vanished">Prethodno dodijelite prostor na disku za sve datoteke</translation>
     </message>
     <message>
         <source>Append .!qB extension to incomplete files</source>
-        <translation>Dodajte ekstenziju .!qB nepotpunim datotekama</translation>
+        <translation type="vanished">Dodajte ekstenziju .!qB nepotpunim datotekama</translation>
     </message>
     <message>
         <source>Automatically add torrents from:</source>
-        <translation>Automatski dodaj torrente iz:</translation>
+        <translation type="vanished">Automatski dodaj torrente iz:</translation>
     </message>
     <message>
         <source>SMTP server:</source>
-        <translation>SMTP poslužitelj:</translation>
+        <translation type="vanished">SMTP poslužitelj:</translation>
     </message>
     <message>
         <source>This server requires a secure connection (SSL)</source>
-        <translation>Ovaj poslužitelj zahtijeva sigurnu vezu (SSL)</translation>
+        <translation type="vanished">Ovaj poslužitelj zahtijeva sigurnu vezu (SSL)</translation>
     </message>
     <message>
         <source>Authentication</source>
-        <translation>Autentifikacija</translation>
+        <translation type="vanished">Autentifikacija</translation>
     </message>
     <message>
         <source>Username:</source>
-        <translation>Korisničko ime:</translation>
+        <translation type="vanished">Korisničko ime:</translation>
     </message>
     <message>
         <source>Password:</source>
-        <translation>Lozinka:</translation>
+        <translation type="vanished">Lozinka:</translation>
     </message>
     <message>
         <source>TCP and μTP</source>
-        <translation>TCP i μTP</translation>
+        <translation type="vanished">TCP i μTP</translation>
     </message>
     <message>
         <source>Listening Port</source>
-        <translation>Port za slušanje</translation>
+        <translation type="vanished">Port za slušanje</translation>
     </message>
     <message>
         <source>Port used for incoming connections:</source>
-        <translation>Port koji se koristi za dolazne veze:</translation>
+        <translation type="vanished">Port koji se koristi za dolazne veze:</translation>
     </message>
     <message>
         <source>Use UPnP / NAT-PMP port forwarding from my router</source>
-        <translation>Koristi UPnP / NAT-PMP prosljeđivanje portova s ​​mog usmjerivača</translation>
+        <translation type="vanished">Koristi UPnP / NAT-PMP prosljeđivanje portova s ​​mog usmjerivača</translation>
     </message>
     <message>
         <source>Connections Limits</source>
-        <translation>Ograničenja veza</translation>
+        <translation type="vanished">Ograničenja veza</translation>
     </message>
     <message>
         <source>Maximum number of connections per torrent:</source>
-        <translation>Maksimalan broj veza po torrentu:</translation>
+        <translation type="vanished">Maksimalan broj veza po torrentu:</translation>
     </message>
     <message>
         <source>Global maximum number of connections:</source>
-        <translation>Ukupno najveći broj veza:</translation>
+        <translation type="vanished">Ukupno najveći broj veza:</translation>
     </message>
     <message>
         <source>Maximum number of upload slots per torrent:</source>
-        <translation>Maksimalan broj utora za učitavanje po torrentu:</translation>
+        <translation type="vanished">Maksimalan broj utora za učitavanje po torrentu:</translation>
     </message>
     <message>
         <source>Global maximum number of upload slots:</source>
-        <translation>Globalno najveći broj slotova za učitavanje:</translation>
+        <translation type="vanished">Globalno najveći broj slotova za učitavanje:</translation>
     </message>
     <message>
         <source>Proxy Server</source>
-        <translation>Proxy poslužitelj</translation>
+        <translation type="vanished">Proxy poslužitelj</translation>
     </message>
     <message>
         <source>Type:</source>
-        <translation>Vrsta:</translation>
-    </message>
-    <message>
-        <source>(None)</source>
-        <translation>(Nijedno)</translation>
+        <translation type="vanished">Vrsta:</translation>
     </message>
     <message>
         <source>SOCKS4</source>
-        <translation>SOCKS4</translation>
+        <translation type="vanished">SOCKS4</translation>
     </message>
     <message>
         <source>SOCKS5</source>
-        <translation>SOCKS5</translation>
+        <translation type="vanished">SOCKS5</translation>
     </message>
     <message>
         <source>HTTP</source>
-        <translation>HTTP</translation>
+        <translation type="vanished">HTTP</translation>
     </message>
     <message>
         <source>Host:</source>
-        <translation>Host:</translation>
+        <translation type="vanished">Host:</translation>
     </message>
     <message>
         <source>Port:</source>
-        <translation>Port:</translation>
+        <translation type="vanished">Port:</translation>
     </message>
     <message>
         <source>Use proxy for peer connections</source>
-        <translation>Koristite proxy za peer veze</translation>
-    </message>
-    <message>
-        <source>Use proxy only for torrents</source>
-        <translation>Koristite proxy samo za torrente</translation>
+        <translation type="vanished">Koristite proxy za peer veze</translation>
     </message>
     <message>
         <source>Filter path (.dat, .p2p, .p2b):</source>
-        <translation>Putanja filtera (.dat, .p2p, .p2b):</translation>
+        <translation type="vanished">Putanja filtera (.dat, .p2p, .p2b):</translation>
     </message>
     <message>
         <source>Manually banned IP addresses...</source>
-        <translation>Ručno zabranjene IP adrese...</translation>
+        <translation type="vanished">Ručno zabranjene IP adrese...</translation>
     </message>
     <message>
         <source>Apply to trackers</source>
-        <translation>Primjeni na trackere</translation>
+        <translation type="vanished">Primjeni na trackere</translation>
     </message>
     <message>
         <source>Global Rate Limits</source>
-        <translation>Globalno ograničenje brzine</translation>
+        <translation type="vanished">Globalno ograničenje brzine</translation>
     </message>
     <message>
         <source>Upload:</source>
-        <translation>Slanje:</translation>
+        <translation type="vanished">Slanje:</translation>
     </message>
     <message>
         <source>Download:</source>
-        <translation>Preuzimanje:</translation>
+        <translation type="vanished">Preuzimanje:</translation>
     </message>
     <message>
         <source>Alternative Rate Limits</source>
-        <translation>Alternativno ograničenje brzine</translation>
+        <translation type="vanished">Alternativno ograničenje brzine</translation>
     </message>
     <message>
         <source>From:</source>
         <extracomment>from (time1 to time2)</extracomment>
-        <translation type="unfinished" />
+        <translation type="vanished">Od:</translation>
     </message>
     <message>
         <source>To:</source>
         <extracomment>time1 to time2</extracomment>
-        <translation type="unfinished" />
+        <translation type="vanished">Za:</translation>
     </message>
     <message>
         <source>When:</source>
-        <translation>Kada:</translation>
+        <translation type="vanished">Kada:</translation>
     </message>
     <message>
         <source>Every day</source>
-        <translation>Svaki dan</translation>
+        <translation type="vanished">Svaki dan</translation>
     </message>
     <message>
         <source>Weekdays</source>
-        <translation>Radni dani</translation>
+        <translation type="vanished">Radni dani</translation>
     </message>
     <message>
         <source>Weekends</source>
-        <translation>Vikend</translation>
+        <translation type="vanished">Vikend</translation>
     </message>
     <message>
         <source>Rate Limits Settings</source>
-        <translation>Postavke ograničenja brzine</translation>
+        <translation type="vanished">Postavke ograničenja brzine</translation>
     </message>
     <message>
         <source>Apply rate limit to transport overhead</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Primijeni ograničenje stope na troškove prijenosa</translation>
     </message>
     <message>
         <source>Apply rate limit to µTP protocol</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Primijeni ograničenje brzine na µTP protokol</translation>
     </message>
     <message>
         <source>Privacy</source>
-        <translation>Privatnost</translation>
+        <translation type="vanished">Privatnost</translation>
     </message>
     <message>
         <source>Enable DHT (decentralized network) to find more peers</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogućite DHT (decentraliziranu mrežu) za pronalaženje više peerova</translation>
     </message>
     <message>
         <source>Enable Peer Exchange (PeX) to find more peers</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogućite Peer Exchange (PeX) da pronađete više peerova</translation>
     </message>
     <message>
         <source>Enable Local Peer Discovery to find more peers</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogućite Local Peer Discovery za pronalaženje više peerova</translation>
     </message>
     <message>
         <source>Encryption mode:</source>
-        <translation>Način kriptiranja:</translation>
+        <translation type="vanished">Način kriptiranja:</translation>
     </message>
     <message>
         <source>Require encryption</source>
-        <translation>Zahtjevaj kriptiranje</translation>
+        <translation type="vanished">Zahtjevaj kriptiranje</translation>
     </message>
     <message>
         <source>Disable encryption</source>
-        <translation>Onemogući kriptiranje</translation>
+        <translation type="vanished">Onemogući kriptiranje</translation>
     </message>
     <message>
         <source>Enable anonymous mode</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogući anonimni način rada</translation>
     </message>
     <message>
         <source>Maximum active downloads:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Maksimalan broj aktivnih preuzimanja:</translation>
     </message>
     <message>
         <source>Maximum active uploads:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Maksimalan broj aktivnih slanja:</translation>
     </message>
     <message>
         <source>Maximum active torrents:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Maksimalni broj aktivnih torrenta:</translation>
     </message>
     <message>
         <source>Do not count slow torrents in these limits</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ne ubrajajte spore torrente u ova ograničenja</translation>
     </message>
     <message>
         <source>then</source>
-        <translation>tada</translation>
+        <translation type="vanished">tada</translation>
     </message>
     <message>
         <source>Use UPnP / NAT-PMP to forward the port from my router</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Koristite UPnP / NAT-PMP za prosljeđivanje porta s mog usmjerivača</translation>
     </message>
     <message>
         <source>Certificate:</source>
-        <translation>Certifikat:</translation>
+        <translation type="vanished">Certifikat:</translation>
     </message>
     <message>
         <source>Key:</source>
-        <translation>Ključ:</translation>
+        <translation type="vanished">Ključ:</translation>
     </message>
     <message>
         <source>Register</source>
-        <translation>Registar</translation>
+        <translation type="vanished">Registar</translation>
     </message>
     <message>
         <source>Domain name:</source>
-        <translation>Naziv domene:</translation>
+        <translation type="vanished">Naziv domene:</translation>
     </message>
     <message>
         <source>Supported parameters (case sensitive):</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Podržani parametri (razlikuje velika i mala slova):</translation>
     </message>
     <message>
         <source>%N: Torrent name</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%N: Ime torrenta</translation>
     </message>
     <message>
         <source>%L: Category</source>
-        <translation>%L: Kategorija</translation>
+        <translation type="vanished">%L: Kategorija</translation>
     </message>
     <message>
         <source>%F: Content path (same as root path for multifile torrent)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%F: Putanja sadržaja (isto kao korijenska putanja za torrent s više datoteka)</translation>
     </message>
     <message>
         <source>%R: Root path (first torrent subdirectory path)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%R: korijenska putanja (putnja prvog torrent poddirektorija)</translation>
     </message>
     <message>
         <source>%D: Save path</source>
-        <translation>%D: Putanja za spremanje</translation>
+        <translation type="vanished">%D: Putanja za spremanje</translation>
     </message>
     <message>
         <source>%C: Number of files</source>
-        <translation>%C: Broj datoteka</translation>
+        <translation type="vanished">%C: Broj datoteka</translation>
     </message>
     <message>
         <source>%Z: Torrent size (bytes)</source>
-        <translation>%Z: Veličina torrenta (bajtovi)</translation>
+        <translation type="vanished">%Z: Veličina torrenta (bajtovi)</translation>
     </message>
     <message>
         <source>%T: Current tracker</source>
-        <translation>%T: Trenutni tracker</translation>
+        <translation type="vanished">%T: Trenutni tracker</translation>
     </message>
     <message>
         <source>Tip: Encapsulate parameter with quotation marks to avoid text being cut off at whitespace (e.g., "%N")</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Savjet: Enkapsulirajte parametar s navodnicima kako biste izbjegli odsijecanje teksta na razmaku (npr. "%N")</translation>
     </message>
     <message>
         <source>The Web UI username must be at least 3 characters long.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Korisničko ime web sučelja mora imati najmanje 3 znaka.</translation>
     </message>
     <message>
         <source>The Web UI password must be at least 6 characters long.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Korisničko ime web sučelja mora imati najmanje 6 znakova.</translation>
     </message>
     <message>
         <source>minutes</source>
-        <translation type="unfinished" />
+        <translation type="vanished">minuta</translation>
     </message>
     <message>
         <source>KiB/s</source>
-        <translation type="unfinished" />
+        <translation type="vanished">KiB/s</translation>
     </message>
     <message>
         <source>Enable clickjacking protection</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogući zaštitu od clickjackinga</translation>
     </message>
     <message>
         <source>Enable Cross-Site Request Forgery (CSRF) protection</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogućite Cross-Site Request Forgery (CSRF) zaštitu</translation>
     </message>
     <message>
         <source>Delete .torrent files afterwards</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nakon toga izbrišite .torrent datoteke</translation>
     </message>
     <message>
         <source>Download rate threshold:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Prag brzine preuzimanja:</translation>
     </message>
     <message>
         <source>Upload rate threshold:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Prag brzine slanja:</translation>
     </message>
     <message>
         <source>Change current password</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Promjena trenutne lozinke</translation>
     </message>
     <message>
         <source>Automatic</source>
-        <translation>Automatski</translation>
+        <translation type="vanished">Automatski</translation>
     </message>
     <message>
         <source>Use alternative Web UI</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Koristite alternativno web sučelje</translation>
     </message>
     <message>
         <source>Default Save Path:</source>
-        <translation>Zadana putanja spremanja:</translation>
+        <translation type="vanished">Zadana putanja spremanja:</translation>
     </message>
     <message>
         <source>The alternative Web UI files location cannot be blank.</source>
-        <translation>Alternativna lokacija datoteka web sučelja ne može biti prazna.</translation>
+        <translation type="vanished">Alternativna lokacija datoteka web sučelja ne može biti prazna.</translation>
     </message>
     <message>
         <source>Do not start the download automatically</source>
-        <translation>Nemojte automatski pokretati preuzimanje</translation>
+        <translation type="vanished">Nemojte automatski pokretati preuzimanje</translation>
     </message>
     <message>
         <source>Switch torrent to Manual Mode</source>
-        <translation>Prebaci torrent u ručni način rada</translation>
+        <translation type="vanished">Prebaci torrent u ručni način rada</translation>
     </message>
     <message>
         <source>When Torrent Category changed:</source>
-        <translation>Kada se promjeni torrent kategorija:</translation>
+        <translation type="vanished">Kada se promjeni torrent kategorija:</translation>
     </message>
     <message>
         <source>Relocate affected torrents</source>
-        <translation>Premjestite pogođene torrente</translation>
+        <translation type="vanished">Premjestite pogođene torrente</translation>
     </message>
     <message>
         <source>Apply rate limit to peers on LAN</source>
-        <translation>Primijeni ograničenje brzine na peerove na LAN-u</translation>
+        <translation type="vanished">Primijeni ograničenje brzine na peerove na LAN-u</translation>
     </message>
     <message>
         <source>0 means unlimited</source>
-        <translation type="unfinished" />
+        <translation type="vanished">0 znači neograničeno</translation>
     </message>
     <message>
         <source>Relocate torrent</source>
-        <translation>Premjesti torrent</translation>
+        <translation type="vanished">Premjesti torrent</translation>
     </message>
     <message>
         <source>When Default Save Path changed:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Kada se promijenila zadana putanja spremanja:</translation>
     </message>
     <message>
         <source>Enable Host header validation</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogući provjeru valjanosti zaglavlja hosta</translation>
     </message>
     <message>
         <source>Security</source>
-        <translation>Sigurnost</translation>
+        <translation type="vanished">Sigurnost</translation>
     </message>
     <message>
         <source>When Category Save Path changed:</source>
-        <translation>Kada se putanja spremanja kategorije promijenila:</translation>
+        <translation type="vanished">Kada se putanja spremanja kategorije promijenila:</translation>
     </message>
     <message>
         <source>seconds</source>
-        <translation type="unfinished" />
+        <translation type="vanished">sekundi</translation>
     </message>
     <message>
         <source>Switch affected torrents to Manual Mode</source>
-        <translation>Prebacite pogođene torrente u ručni način rada</translation>
+        <translation type="vanished">Prebacite pogođene torrente u ručni način rada</translation>
     </message>
     <message>
         <source>Files location:</source>
-        <translation>Lokacija datoteka:</translation>
+        <translation type="vanished">Lokacija datoteka:</translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation>Ručno</translation>
+        <translation type="vanished">Ručno</translation>
     </message>
     <message>
         <source>Torrent inactivity timer:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Odbrojavanje vremena neaktivnosti torrenta:</translation>
     </message>
     <message>
         <source>Default Torrent Management Mode:</source>
-        <translation>Zadani način upravljanja torrentom:</translation>
+        <translation type="vanished">Zadani način upravljanja torrentom:</translation>
     </message>
     <message>
         <source>When adding a torrent</source>
-        <translation>Prilikom dodavanja torrenta</translation>
+        <translation type="vanished">Prilikom dodavanja torrenta</translation>
     </message>
     <message>
         <source>Info: The password is saved unencrypted</source>
-        <translation>Info: Lozinka je spremljena nekriptirana</translation>
+        <translation type="vanished">Info: Lozinka je spremljena nekriptirana</translation>
     </message>
     <message>
         <source>μTP-TCP mixed mode algorithm:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">μTP-TCP algoritam mješovitog načina rada:</translation>
     </message>
     <message>
         <source>Upload rate based</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Na temelju brzine prijenosa</translation>
     </message>
     <message>
         <source>%G: Tags (separated by comma)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%G: Oznake (odvojene zarezom)</translation>
     </message>
     <message>
         <source>Socket backlog size:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Veličina zaostatka priključka:</translation>
     </message>
     <message>
         <source>Enable super seeding for torrent</source>
-        <translation>Omogući super dijeljenje za torrent</translation>
+        <translation type="vanished">Omogući super dijeljenje za torrent</translation>
     </message>
     <message>
         <source>Prefer TCP</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Preferiraj TCP</translation>
     </message>
     <message>
         <source>Outstanding memory when checking torrents:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Izvanredna memorija prilikom provjere torrenta:</translation>
     </message>
     <message>
         <source>Anti-leech</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Anti-leech</translation>
     </message>
     <message>
         <source>When ratio reaches</source>
-        <translation>Kada se dosegne omjer</translation>
-    </message>
-    <message>
-        <source>When seeding time reaches</source>
-        <translation>Kada se dosegne vrijeme dijeljenja</translation>
+        <translation type="vanished">Kada se dosegne omjer</translation>
     </message>
     <message>
         <source>Allow multiple connections from the same IP address:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dopusti višestruke veze s iste IP adrese:</translation>
     </message>
     <message>
         <source>File pool size:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Veličina skupa datoteka:</translation>
     </message>
     <message>
         <source>Any interface</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Bilo koje sučelje</translation>
     </message>
     <message>
         <source>Always announce to all tiers:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Uvijek objavi svim razinama:</translation>
     </message>
     <message>
         <source>Embedded tracker port:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ugrađeni port trackera:</translation>
     </message>
     <message>
         <source>Fastest upload</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Najbrže učitavanje</translation>
     </message>
     <message>
         <source>Pause torrent</source>
-        <translation>Pauziraj torrente</translation>
+        <translation type="vanished">Pauziraj torrente</translation>
     </message>
     <message>
         <source>Remove torrent and its files</source>
-        <translation>Ukloni torrent i njegove datoteke</translation>
+        <translation type="vanished">Ukloni torrent i njegove datoteke</translation>
     </message>
     <message>
         <source>qBittorrent Section</source>
-        <translation type="unfinished" />
+        <translation type="vanished">qBittorrent dio</translation>
     </message>
     <message>
         <source>Send buffer watermark factor:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Faktor vodenog žiga međuspremnika:</translation>
     </message>
     <message>
         <source>libtorrent Section</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Outgoing ports (Min) [0: Disabled]:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">libtorrent dio</translation>
     </message>
     <message>
         <source>Recheck torrents on completion:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ponovno provjerite torrente po završetku:</translation>
     </message>
     <message>
         <source>Allow encryption</source>
-        <translation>Dopusti enkripciju</translation>
+        <translation type="vanished">Dopusti enkripciju</translation>
     </message>
     <message>
         <source>Send upload piece suggestions:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Pošaljite prijedloge za učitavanje:</translation>
     </message>
     <message>
         <source>Enable embedded tracker:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogući ugrađeno praćenje:</translation>
     </message>
     <message>
         <source>Remove torrent</source>
-        <translation>Ukloni torrente</translation>
-    </message>
-    <message>
-        <source>Outgoing ports (Max) [0: Disabled]:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ukloni torrente</translation>
     </message>
     <message>
         <source>Asynchronous I/O threads:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Asinkrone I/O niti:</translation>
     </message>
     <message>
         <source>s</source>
-        <translation type="unfinished" />
+        <translation type="vanished">s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Pošalji međuspremnik vodenog žiga</translation>
     </message>
     <message>
         <source>Peer proportional (throttles TCP)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Proporcionalno peer (prigušuje TCP)</translation>
     </message>
     <message>
         <source>Fixed slots</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Fiksni slotovi</translation>
     </message>
     <message>
         <source>Advanced</source>
-        <translation>Napredno</translation>
+        <translation type="vanished">Napredno</translation>
     </message>
     <message>
         <source>min</source>
-        <translation type="unfinished" />
+        <translation type="vanished">min</translation>
     </message>
     <message>
         <source>Upload choking algorithm:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Prenesi algoritam gušenja:</translation>
     </message>
     <message>
         <source>Seeding Limits</source>
-        <translation>Ograničenja dijeljenja</translation>
+        <translation type="vanished">Ograničenja dijeljenja</translation>
     </message>
     <message>
         <source>KiB</source>
-        <translation type="unfinished" />
+        <translation type="vanished">KiB</translation>
     </message>
     <message>
         <source>Round-robin</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Okruglo</translation>
     </message>
     <message>
         <source>Upload slots behavior:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ponašanje slota učitavanja:</translation>
     </message>
     <message>
         <source>MiB</source>
-        <translation type="unfinished" />
+        <translation type="vanished">MiB</translation>
     </message>
     <message>
         <source>Send buffer low watermark:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Slanje međuspremnika niskog vodenog žiga:</translation>
     </message>
     <message>
         <source>Save resume data interval:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Interval podataka o nastavku snimanja:</translation>
     </message>
     <message>
         <source>Always announce to all trackers in a tier:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Uvijek objavi svim trackerima na razini:</translation>
     </message>
     <message>
         <source>Session timeout:</source>
-        <translation>Istek sesije:</translation>
+        <translation type="vanished">Istek sesije:</translation>
     </message>
     <message>
         <source>Resolve peer countries:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Razriješi peerove zemlje:</translation>
     </message>
     <message>
         <source>ban for:</source>
-        <translation>zabrana za:</translation>
-    </message>
-    <message>
-        <source>Stop tracker timeout:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">zabrana za:</translation>
     </message>
     <message>
         <source>Ban client after consecutive failures:</source>
-        <translation>Ban klijenta nakon uzastopnih neuspjeha:</translation>
+        <translation type="vanished">Ban klijenta nakon uzastopnih neuspjeha:</translation>
     </message>
     <message>
         <source>Enable cookie Secure flag (requires HTTPS)</source>
-        <translation>Omogući sigurnu oznaku kolačića (zahtijeva HTTPS)</translation>
-    </message>
-    <message>
-        <source>UPnP lease duration [0: Permanent lease]:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogući sigurnu oznaku kolačića (zahtijeva HTTPS)</translation>
     </message>
     <message>
         <source>Header: value pairs, one per line</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Zaglavlje: parovi vrijednosti, jedan po retku</translation>
     </message>
     <message>
         <source>Add custom HTTP headers</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dodajte prilagođena HTTP zaglavlja</translation>
     </message>
     <message>
         <source>Filters:</source>
-        <translation>Filteri:</translation>
+        <translation type="vanished">Filteri:</translation>
     </message>
     <message>
         <source>Enable fetching RSS feeds</source>
-        <translation>Omogući dohvaćanje RSS izvora</translation>
-    </message>
-    <message>
-        <source>Hashing threads (requires libtorrent &gt;= 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Coalesce reads &amp; writes (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogući dohvaćanje RSS izvora</translation>
     </message>
     <message>
         <source>Peer turnover threshold percentage:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Postotak praga fluktuacije među peerovima:</translation>
     </message>
     <message>
         <source>RSS Torrent Auto Downloader</source>
-        <translation>RSS Torrent Auto Downloader</translation>
+        <translation type="vanished">RSS Torrent Auto Downloader</translation>
     </message>
     <message>
         <source>RSS</source>
-        <translation>RSS</translation>
+        <translation type="vanished">RSS</translation>
     </message>
     <message>
         <source>Network interface:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Mrežno sučelje:</translation>
     </message>
     <message>
         <source>RSS Reader</source>
-        <translation>RSS čitač</translation>
+        <translation type="vanished">RSS čitač</translation>
     </message>
     <message>
         <source>Edit auto downloading rules...</source>
-        <translation>Uredi pravila automatskog preuzimanja...</translation>
+        <translation type="vanished">Uredi pravila automatskog preuzimanja...</translation>
     </message>
     <message>
         <source>Download REPACK/PROPER episodes</source>
-        <translation>Preuzmite REPACK/PROPER epizode</translation>
+        <translation type="vanished">Preuzmite REPACK/PROPER epizode</translation>
     </message>
     <message>
         <source>Feeds refresh interval:</source>
-        <translation>Interval osvježavanja feedova:</translation>
+        <translation type="vanished">Interval osvježavanja feedova:</translation>
     </message>
     <message>
         <source>Peer turnover disconnect percentage:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Postotak prekida veze među peerovima:</translation>
     </message>
     <message>
         <source>Maximum number of articles per feed:</source>
-        <translation>Najveći broj članaka po kanalu:</translation>
+        <translation type="vanished">Najveći broj članaka po kanalu:</translation>
     </message>
     <message>
         <source> min</source>
-        <translation> min</translation>
+        <translation type="vanished"> min</translation>
     </message>
     <message>
         <source>Peer turnover disconnect interval:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Interval isključenja peer prometa:</translation>
     </message>
     <message>
         <source>Optional IP address to bind to:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Izborna IP adresa za vezanje:</translation>
     </message>
     <message>
         <source>Disallow connection to peers on privileged ports:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Zabrani povezivanje s ravnopravnim uređajima na privilegiranim portovima:</translation>
     </message>
     <message>
         <source>Enable auto downloading of RSS torrents</source>
-        <translation>Omogući automatsko preuzimanje RSS torrenta</translation>
+        <translation type="vanished">Omogući automatsko preuzimanje RSS torrenta</translation>
     </message>
     <message>
         <source>RSS Smart Episode Filter</source>
-        <translation>RSS pametni filtar epizoda</translation>
-    </message>
-    <message>
-        <source>Disk cache (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk cache expiry interval (requires libtorrent &lt; 2.0):</source>
-        <translation type="unfinished" />
+        <translation type="vanished">RSS pametni filtar epizoda</translation>
     </message>
     <message>
         <source>Validate HTTPS tracker certificate:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Potvrdite certifikate HTTPS trackera:</translation>
     </message>
     <message>
         <source>Peer connection protocol:</source>
-        <translation>Peer protokol povezivanja:</translation>
+        <translation type="vanished">Peer protokol povezivanja:</translation>
     </message>
     <message>
         <source>Torrent content layout:</source>
-        <translation>Izgled sadržaja torrenta:</translation>
+        <translation type="vanished">Izgled sadržaja torrenta:</translation>
     </message>
     <message>
         <source>Create subfolder</source>
-        <translation>Stvori podmapu</translation>
+        <translation type="vanished">Stvori podmapu</translation>
     </message>
     <message>
         <source>Original</source>
-        <translation>Original</translation>
+        <translation type="vanished">Original</translation>
     </message>
     <message>
         <source>Don't create subfolder</source>
-        <translation>Nemoj stvarati podmapu</translation>
+        <translation type="vanished">Nemoj stvarati podmapu</translation>
     </message>
     <message>
         <source>Type of service (ToS) for connections to peers</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Vrsta usluge (ToS) za veze s peerovima</translation>
     </message>
     <message>
         <source>Outgoing connections per second:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Odlazne veze po sekundi:</translation>
     </message>
     <message>
         <source>Random</source>
-        <translation>Nasumičan</translation>
+        <translation type="vanished">Nasumičan</translation>
     </message>
     <message>
         <source>%K: Torrent ID</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%K: Torrent ID</translation>
     </message>
     <message>
         <source>Reannounce to all trackers when IP or port changed:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ponovno najavite svim trackerima kada se IP ili port promijeni:</translation>
     </message>
     <message>
         <source>Trusted proxies list:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Popis pouzdanih proxyja:</translation>
     </message>
     <message>
         <source>Enable reverse proxy support</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogući podršku za obrnuti proxy</translation>
     </message>
     <message>
         <source>%J: Info hash v2</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%J: Info hash v2</translation>
     </message>
     <message>
         <source>%I: Info hash v1</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%I: Info hash v1</translation>
     </message>
     <message>
         <source>IP address reported to trackers (requires restart):</source>
-        <translation type="unfinished" />
+        <translation type="vanished">IP adresa prijavljena trackerima (zahtijeva ponovno pokretanje):</translation>
     </message>
     <message>
         <source>Set to 0 to let your system pick an unused port</source>
-        <translation>Postavite na 0 kako bi vaš sustav odabrao neiskorišteni port</translation>
+        <translation type="vanished">Postavite na 0 kako bi vaš sustav odabrao neiskorišteni port</translation>
     </message>
     <message>
         <source>Server-side request forgery (SSRF) mitigation:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ublažavanje krivotvorenja zahtjeva na strani poslužitelja (SSRF):</translation>
     </message>
     <message>
         <source>Disk queue size:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Veličina reda čekanja na disku:</translation>
     </message>
     <message>
         <source>Log performance warnings</source>
-        <translation>Zapišite upozorenja o performansama</translation>
+        <translation type="vanished">Zapišite upozorenja o performansama</translation>
     </message>
     <message>
         <source>Maximum outstanding requests to a single peer:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Maksimalan broj neriješenih zahtjeva za jednog ravnopravnog korisnika:</translation>
     </message>
     <message>
         <source>Max active checking torrents:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Najviše aktivnih torrenta:</translation>
     </message>
     <message>
         <source>Memory mapped files</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Memorijski mapirane datoteke</translation>
     </message>
     <message>
         <source>Default</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Zadano</translation>
     </message>
     <message>
         <source>POSIX-compliant</source>
-        <translation type="unfinished" />
+        <translation type="vanished">POSIX-compliant</translation>
     </message>
     <message>
         <source>This option is less effective on Linux</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Disk IO type (libtorrent &gt;= 2.0; requires restart):</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Write-through (requires libtorrent &gt;= 2.0.6)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ova je opcija manje učinkovita na Linuxu</translation>
     </message>
     <message>
         <source>It controls the internal state update interval which in turn will affect UI updates</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Kontrolira interni interval ažuriranja stanja koji će zauzvrat utjecati na ažuriranja korisničkog sučelja</translation>
     </message>
     <message>
         <source>Disk IO read mode:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Disk IO način čitanja:</translation>
     </message>
     <message>
         <source>Disable OS cache</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Onemogući predmemoriju OS-a</translation>
     </message>
     <message>
         <source>Disk IO write mode:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Disk IO način pisanja:</translation>
     </message>
     <message>
         <source>Use piece extent affinity:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Koristite komade srodnosti opsega:</translation>
     </message>
     <message>
         <source>Max concurrent HTTP announces:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Maksimalan broj istodobnih HTTP najava:</translation>
     </message>
     <message>
         <source>Enable OS cache</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogući OS predmemoriju</translation>
     </message>
     <message>
         <source>Refresh interval:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Physical memory (RAM) usage limit (applied if libtorrent &gt;= 2.0):</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Interval osvježavanja:</translation>
     </message>
     <message>
         <source>ms</source>
-        <translation type="unfinished" />
+        <translation type="vanished">ms</translation>
     </message>
     <message>
         <source>Excluded file names</source>
-        <translation>Izuzeti nazivi datoteka</translation>
+        <translation type="vanished">Izuzeti nazivi datoteka</translation>
     </message>
     <message>
         <source>Support internationalized domain name (IDN):</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Podrška internacionaliziranom nazivu domene (IDN):</translation>
     </message>
     <message>
         <source>Run external program on torrent finished</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Pokretanje vanjskog programa kod završenog torrenta</translation>
     </message>
     <message>
         <source>Whitelist for filtering HTTP Host header values.
@@ -1594,7 +1550,7 @@ In order to defend against DNS rebinding attack,
 you should put in domain names used by WebUI server.
 
 Use ';' to split multiple entries. Can use wildcard '*'.</source>
-        <translation>Popis dopuštenih za filtriranje vrijednosti zaglavlja HTTP hosta.
+        <translation type="vanished">Popis dopuštenih za filtriranje vrijednosti zaglavlja HTTP hosta.
 U svrhu obrane od napada ponovnog povezivanja DNS-a,
 trebali biste unijeti nazive domena koje koristi WebUI poslužitelj.
 
@@ -1602,138 +1558,326 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     </message>
     <message>
         <source>Run external program on torrent added</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Pokretanje vanjskog programa kod dodanog torrenta</translation>
     </message>
     <message>
         <source>HTTPS certificate should not be empty</source>
-        <translation type="unfinished" />
+        <translation type="vanished">HTTPS certifikat ne smije biti prazan</translation>
     </message>
     <message>
         <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.</source>
-        <translation>Navedite obrnute proxy IP adrese (ili podmreže, npr. 0.0.0.0/24) kako biste koristili prosljeđenu adresu klijenta (X-Prosljeđeno-Za zaglavlje). Koristite ';' za razdvajanje više unosa.</translation>
+        <translation type="vanished">Navedite obrnute proxy IP adrese (ili podmreže, npr. 0.0.0.0/24) kako biste koristili prosljeđenu adresu klijenta (X-Prosljeđeno-Za zaglavlje). Koristite ';' za razdvajanje više unosa.</translation>
     </message>
     <message>
         <source>HTTPS key should not be empty</source>
-        <translation type="unfinished" />
+        <translation type="vanished">HTTPS ključ ne smije biti prazan</translation>
     </message>
     <message>
         <source>Run external program</source>
-        <translation>Pokrenite vanjski program</translation>
+        <translation type="vanished">Pokrenite vanjski program</translation>
     </message>
     <message>
         <source>Files checked</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Provjerene datoteke</translation>
     </message>
     <message>
         <source>Enable port forwarding for embedded tracker:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogući prosljeđivanje priključka za ugrađeni alat za praćenje:</translation>
     </message>
     <message>
         <source>If checked, hostname lookups are done via the proxy.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Use proxy for hostname lookup</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ako je označeno, traženje naziva hosta vrši se putem proxyja.</translation>
     </message>
     <message>
         <source>Metadata received</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Metapodaci primljeni</translation>
     </message>
     <message>
         <source>Torrent stop condition:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Uvjet zaustavljanja torrenta:</translation>
     </message>
     <message>
         <source>None</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nijedno</translation>
     </message>
     <message>
         <source>Example: 172.17.32.0/24, fdff:ffff:c8::/40</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Primjer: 172.17.32.0/24, fdff:ffff:c8::/40 </translation>
+    </message>
+    <message>
+        <source>SQLite database (experimental)</source>
+        <translation type="vanished">SQLite baza podataka (experimentalno)</translation>
+    </message>
+    <message>
+        <source>Resume data storage type (requires restart):</source>
+        <translation type="vanished">Nastavi vrstu pohrane podataka (zahtijeva ponovno pokretanje):</translation>
+    </message>
+    <message>
+        <source>Fastresume files</source>
+        <translation type="vanished">Fastresume datoteke</translation>
+    </message>
+    <message>
+        <source>Backup the log file after:</source>
+        <translation type="vanished">Sigurnosno kopiraj datoteku zapisa nakon:</translation>
+    </message>
+    <message>
+        <source>days</source>
+        <translation type="vanished">dana</translation>
+    </message>
+    <message>
+        <source>Log file</source>
+        <translation type="vanished">Datoteka zapisa</translation>
+    </message>
+    <message>
+        <source>Behavior</source>
+        <translation type="vanished">Ponašanje</translation>
+    </message>
+    <message>
+        <source>Delete backup logs older than:</source>
+        <translation type="vanished">Izbriši sigurnosne zapisnike starije od:</translation>
+    </message>
+    <message>
+        <source>Use proxy for BitTorrent purposes</source>
+        <translation type="vanished">Koristite proxy za BitTorrent svrhe</translation>
+    </message>
+    <message>
+        <source>years</source>
+        <translation type="vanished">godine</translation>
+    </message>
+    <message>
+        <source>Save path:</source>
+        <translation type="vanished">Putanja spremanja:</translation>
+    </message>
+    <message>
+        <source>months</source>
+        <translation type="vanished">mjeseci</translation>
+    </message>
+    <message>
+        <source>Remember Multi-Rename settings</source>
+        <translation type="vanished">Zapamtite postavke Višestrukog preimenovanja</translation>
+    </message>
+    <message>
+        <source>Use proxy for general purposes</source>
+        <translation type="vanished">Koristite proxy za općenite svrhe</translation>
+    </message>
+    <message>
+        <source>Use proxy for RSS purposes</source>
+        <translation type="vanished">Koristite proxy za RSS svrhe</translation>
+    </message>
+    <message>
+        <source>Disk cache expiry interval (requires libtorrent &amp;lt; 2.0):</source>
+        <translation type="vanished">Interval isteka predmemorije diska (zahtijeva libtorren &amp;lt; 2.0):</translation>
+    </message>
+    <message>
+        <source>Physical memory (RAM) usage limit (applied if libtorrent &amp;gt;= 2.0):</source>
+        <translation type="vanished">Ograničenje upotrebe fizičke memorije (RAM) (primjenjuje se ako je libtorrent &amp;gt;= 2.0):</translation>
+    </message>
+    <message>
+        <source>Disk cache (requires libtorrent &amp;lt; 2.0):</source>
+        <translation type="vanished">Disk cache (zahtijeva libtorrent &amp;lt; 2.0):</translation>
+    </message>
+    <message>
+        <source>Socket send buffer size [0: system default]:</source>
+        <translation type="vanished">Veličina međuspremnika za priključak slanja [0: zadano za sustav]:</translation>
+    </message>
+    <message>
+        <source>Coalesce reads &amp;amp; writes (requires libtorrent &amp;lt; 2.0):</source>
+        <translation type="vanished">Spajanje čitanja i pisanja (zahtijeva libtorrent &amp;lt; 2.0):</translation>
+    </message>
+    <message>
+        <source>Outgoing ports (Max) [0: disabled]:</source>
+        <translation type="vanished">Izlazni portovi (Maks.) [0: Omogućeni]:</translation>
+    </message>
+    <message>
+        <source>Socket receive buffer size [0: system default]:</source>
+        <translation type="vanished">Veličina međuspremnika priključak primanja [0: zadano za sustav]:</translation>
+    </message>
+    <message>
+        <source>Use Subcategories</source>
+        <translation type="vanished">Koristite potkategorije</translation>
+    </message>
+    <message>
+        <source>Disk IO type (libtorrent &amp;gt;= 2.0; requires restart):</source>
+        <translation type="vanished">Vrsta IO diska (libtorrent &amp;gt;= 2.0; zahtijeva ponovno pokretanje):</translation>
+    </message>
+    <message>
+        <source>Add to top of queue</source>
+        <translation type="vanished">Dodaj na vrh reda čekanja</translation>
+    </message>
+    <message>
+        <source>Write-through (requires libtorrent &amp;gt;= 2.0.6)</source>
+        <translation type="vanished">Pisanje kroz (zahtijeva libtorrent &amp;gt;= 2.0.6)</translation>
+    </message>
+    <message>
+        <source>Stop tracker timeout [0: disabled]:</source>
+        <translation type="vanished">Istek vremena trackera [0: onemogućeno]:</translation>
+    </message>
+    <message>
+        <source>Outgoing ports (Min) [0: disabled]:</source>
+        <translation type="vanished">Izlazni portovi (Min) [0: Onemogućeni]:</translation>
+    </message>
+    <message>
+        <source>Hashing threads (requires libtorrent &amp;gt;= 2.0):</source>
+        <translation type="vanished">Haširanje threadova (zahtijeva libtorrent &amp;gt;= 2.0):</translation>
+    </message>
+    <message>
+        <source>UPnP lease duration [0: permanent lease]:</source>
+        <translation type="vanished">Trajanje zakupa UPnP-a [0: trajni zakup]:</translation>
+    </message>
+    <message>
+        <source>Bdecode depth limit:</source>
+        <translation type="vanished">Ograničenje dubine Bdecode-a:</translation>
+    </message>
+    <message>
+        <source>Bdecode token limit:</source>
+        <translation type="vanished">Ograničenje Bdecode tokena:</translation>
+    </message>
+    <message>
+        <source>When total seeding time reaches</source>
+        <translation type="vanished">Kada ukupno vrijeme seedanja dosegne</translation>
+    </message>
+    <message>
+        <source>(None)</source>
+        <translation type="vanished">(Nijedno)</translation>
+    </message>
+    <message>
+        <source>I2P inbound length (requires libtorrent &amp;gt;= 2.0):</source>
+        <translation type="vanished">I2P ulazna duljina (zahtijeva libtorrent &amp;gt;= 2.0):</translation>
+    </message>
+    <message>
+        <source>Python executable path (may require restart):</source>
+        <translation type="vanished">Python izvršna putanja (možda će zahtijevati ponovno pokretanje):</translation>
+    </message>
+    <message>
+        <source>Resets to default if empty</source>
+        <translation type="vanished">Vraća se na zadano ako je prazno</translation>
+    </message>
+    <message>
+        <source>Perform hostname lookup via proxy</source>
+        <translation type="vanished">Izvršite traženje naziva hosta putem proxyja</translation>
+    </message>
+    <message>
+        <source>If &amp;quot;mixed mode&amp;quot; is enabled, I2P torrents are allowed to also get peers from other sources than the tracker, and connect to regular IPs, not providing any anonymization. This may be useful if the user is not interested in the anonymization of I2P, but still wants to be able to connect to I2P peers.</source>
+        <translation type="vanished">Ako je omogućen &amp;quot;mješoviti način&amp;quot;, I2P torrentima je dopušteno također dobivati peerove iz drugih izvora osim trackera, i povezivati se na uobičajene IP adrese, ne pružajući nikakvu anonimizaciju. Ovo može biti korisno ako korisnik nije zainteresiran za anonimizaciju I2P-a, ali i dalje želi imati mogućnost povezivanja s I2P peerovima.</translation>
+    </message>
+    <message>
+        <source>I2P inbound quantity (requires libtorrent &amp;gt;= 2.0):</source>
+        <translation type="vanished">I2P ulazna količina (zahtijeva libtorrent &amp;gt;= 2.0):</translation>
+    </message>
+    <message>
+        <source>I2P outbound length (requires libtorrent &amp;gt;= 2.0):</source>
+        <translation type="vanished">I2P izlazna duljina (zahtijeva libtorrent &amp;gt;= 2.0):</translation>
+    </message>
+    <message>
+        <source>I2P outbound quantity (requires libtorrent &amp;gt;= 2.0):</source>
+        <translation type="vanished">I2P izlazna količina (zahtijeva libtorrent &amp;gt;= 2.0):</translation>
+    </message>
+    <message>
+        <source>I2P (Experimental) (requires libtorrent &amp;gt;= 2.0)</source>
+        <translation type="vanished">I2P (eksperimentalno) (zahtijeva libtorrent &amp;gt;= 2.0)</translation>
+    </message>
+    <message>
+        <source>DHT bootstrap nodes:</source>
+        <translation type="vanished">DHT čvorovi za pokretanje:</translation>
+    </message>
+    <message>
+        <source>When inactive seeding time reaches</source>
+        <translation type="vanished">Kada neaktivno vrijeme seedanja dosegne</translation>
+    </message>
+    <message>
+        <source>Mixed mode</source>
+        <translation type="vanished">Mješoviti način rada</translation>
+    </message>
+    <message>
+        <source>.torrent file size limit:</source>
+        <translation type="vanished">Ograničenje veličine .torrent datoteke:</translation>
+    </message>
+    <message>
+        <source>(Auto detect if empty)</source>
+        <translation type="vanished">(Automatsko otkrivanje ako je prazno)</translation>
     </message>
 </context>
 <context>
     <name>PeerListWidget</name>
     <message>
         <source>IP</source>
-        <translation>IP</translation>
+        <translation type="vanished">IP</translation>
     </message>
     <message>
         <source>Port</source>
-        <translation>Port</translation>
+        <translation type="vanished">Port</translation>
     </message>
     <message>
         <source>Flags</source>
-        <translation>Zastave</translation>
+        <translation type="vanished">Zastave</translation>
     </message>
     <message>
         <source>Connection</source>
-        <translation>Spajanje</translation>
+        <translation type="vanished">Spajanje</translation>
     </message>
     <message>
         <source>Client</source>
         <comment>i.e.: Client application</comment>
-        <translation>Klijent</translation>
+        <translation type="vanished">Klijent</translation>
     </message>
     <message>
         <source>Progress</source>
         <comment>i.e: % downloaded</comment>
-        <translation>Napredak</translation>
+        <translation type="vanished">Napredak</translation>
     </message>
     <message>
         <source>Down Speed</source>
         <comment>i.e: Download speed</comment>
-        <translation>Brzina preuzimanja</translation>
+        <translation type="vanished">Brzina preuzimanja</translation>
     </message>
     <message>
         <source>Up Speed</source>
         <comment>i.e: Upload speed</comment>
-        <translation>Brzina slanja</translation>
+        <translation type="vanished">Brzina slanja</translation>
     </message>
     <message>
         <source>Downloaded</source>
         <comment>i.e: total data downloaded</comment>
-        <translation>Preuzeto</translation>
+        <translation type="vanished">Preuzeto</translation>
     </message>
     <message>
         <source>Uploaded</source>
         <comment>i.e: total data uploaded</comment>
-        <translation>Poslano</translation>
+        <translation type="vanished">Poslano</translation>
     </message>
     <message>
         <source>Relevance</source>
         <comment>i.e: How relevant this peer is to us. How many pieces it has that we don't.</comment>
-        <translation>Relevantnost</translation>
+        <translation type="vanished">Relevantnost</translation>
     </message>
     <message>
         <source>Files</source>
         <comment>i.e. files that are being downloaded right now</comment>
-        <translation>Datoteke</translation>
+        <translation type="vanished">Datoteke</translation>
     </message>
     <message>
         <source>Ban peer permanently</source>
-        <translation>Trajno isključi peer</translation>
+        <translation type="vanished">Trajno isključi peer</translation>
     </message>
     <message>
         <source>Are you sure you want to permanently ban the selected peers?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Jeste li sigurni da želite trajno zabraniti odabrane peerove?</translation>
     </message>
     <message>
         <source>Copy IP:port</source>
-        <translation>Kopiraj IP:port</translation>
+        <translation type="vanished">Kopiraj IP:port</translation>
     </message>
     <message>
         <source>Country/Region</source>
-        <translation>Država/regija</translation>
+        <translation type="vanished">Država/regija</translation>
     </message>
     <message>
         <source>Add peers...</source>
-        <translation>Dodaj peerove...</translation>
+        <translation type="vanished">Dodaj peerove...</translation>
     </message>
     <message>
         <source>Peer ID Client</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Peer ID klijent</translation>
     </message>
 </context>
 <context>
@@ -1741,328 +1885,388 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>Normal</source>
         <comment>Normal (priority)</comment>
-        <translation>Uobičajen</translation>
+        <translation type="vanished">Uobičajen</translation>
     </message>
     <message>
         <source>High</source>
         <comment>High (priority)</comment>
-        <translation>Visok</translation>
+        <translation type="vanished">Visok</translation>
     </message>
     <message>
         <source>Maximum</source>
         <comment>Maximum (priority)</comment>
-        <translation>Najviši</translation>
+        <translation type="vanished">Najviši</translation>
     </message>
     <message>
         <source>Mixed</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Miješan</translation>
     </message>
     <message>
         <source>Do not download</source>
-        <translation>Ne preuzimaj</translation>
+        <translation type="vanished">Ne preuzimaj</translation>
     </message>
 </context>
 <context>
     <name>PropTabBar</name>
     <message>
         <source>General</source>
-        <translation>Općenito</translation>
+        <translation type="vanished">Općenito</translation>
     </message>
     <message>
         <source>Trackers</source>
-        <translation>Trackeri</translation>
+        <translation type="vanished">Trackeri</translation>
     </message>
     <message>
         <source>Peers</source>
-        <translation>Peerovi</translation>
+        <translation type="vanished">Peerovi</translation>
     </message>
     <message>
         <source>HTTP Sources</source>
-        <translation>HTTP izvori</translation>
+        <translation type="vanished">HTTP izvori</translation>
     </message>
     <message>
         <source>Content</source>
-        <translation>Sadržaj</translation>
+        <translation type="vanished">Sadržaj</translation>
     </message>
 </context>
 <context>
     <name>PropertiesWidget</name>
     <message>
         <source>Downloaded:</source>
-        <translation>Preuzeto:</translation>
+        <translation type="vanished">Preuzeto:</translation>
     </message>
     <message>
         <source>Transfer</source>
-        <translation>Prijenos</translation>
+        <translation type="vanished">Prijenos</translation>
     </message>
     <message>
         <source>Time Active:</source>
         <extracomment>Time (duration) the torrent is active (not paused)</extracomment>
-        <translation>Aktivno vrijeme:</translation>
+        <translation type="vanished">Aktivno vrijeme:</translation>
     </message>
     <message>
         <source>ETA:</source>
-        <translation>ETA:</translation>
+        <translation type="vanished">ETA:</translation>
     </message>
     <message>
         <source>Uploaded:</source>
-        <translation>Poslano:</translation>
+        <translation type="vanished">Poslano:</translation>
     </message>
     <message>
         <source>Seeds:</source>
-        <translation>Seederi:</translation>
+        <translation type="vanished">Seederi:</translation>
     </message>
     <message>
         <source>Download Speed:</source>
-        <translation>Brzina preuzimanja:</translation>
+        <translation type="vanished">Brzina preuzimanja:</translation>
     </message>
     <message>
         <source>Upload Speed:</source>
-        <translation>Brzina slanja:</translation>
+        <translation type="vanished">Brzina slanja:</translation>
     </message>
     <message>
         <source>Peers:</source>
-        <translation>Peerovi:</translation>
+        <translation type="vanished">Peerovi:</translation>
     </message>
     <message>
         <source>Download Limit:</source>
-        <translation>Ograničenje preuzimanja:</translation>
+        <translation type="vanished">Ograničenje preuzimanja:</translation>
     </message>
     <message>
         <source>Upload Limit:</source>
-        <translation>Ograničenje slanja:</translation>
+        <translation type="vanished">Ograničenje slanja:</translation>
     </message>
     <message>
         <source>Wasted:</source>
-        <translation>Izgubljeno:</translation>
+        <translation type="vanished">Izgubljeno:</translation>
     </message>
     <message>
         <source>Connections:</source>
-        <translation>Spajanja:</translation>
+        <translation type="vanished">Spajanja:</translation>
     </message>
     <message>
         <source>Information</source>
-        <translation>Informacija</translation>
+        <translation type="vanished">Informacija</translation>
     </message>
     <message>
         <source>Comment:</source>
-        <translation>Komentar:</translation>
+        <translation type="vanished">Komentar:</translation>
     </message>
     <message>
         <source>Share Ratio:</source>
-        <translation>Omjer dijeljenja:</translation>
+        <translation type="vanished">Omjer dijeljenja:</translation>
     </message>
     <message>
         <source>Reannounce In:</source>
-        <translation>Ponovno najavi za:</translation>
+        <translation type="vanished">Ponovno najavi za:</translation>
     </message>
     <message>
         <source>Last Seen Complete:</source>
-        <translation>Zadnje viđen završeni:</translation>
+        <translation type="vanished">Zadnje viđen završeni:</translation>
     </message>
     <message>
         <source>Total Size:</source>
-        <translation>Ukupna veličina:</translation>
+        <translation type="vanished">Ukupna veličina:</translation>
     </message>
     <message>
         <source>Pieces:</source>
-        <translation>Dijelovi:</translation>
+        <translation type="vanished">Dijelovi:</translation>
     </message>
     <message>
         <source>Created By:</source>
-        <translation>Stvorio:</translation>
+        <translation type="vanished">Stvorio:</translation>
     </message>
     <message>
         <source>Added On:</source>
-        <translation>Dodan:</translation>
+        <translation type="vanished">Dodan:</translation>
     </message>
     <message>
         <source>Completed On:</source>
-        <translation>Završen:</translation>
+        <translation type="vanished">Završen:</translation>
     </message>
     <message>
         <source>Created On:</source>
-        <translation>Napravljan:</translation>
+        <translation type="vanished">Napravljan:</translation>
     </message>
     <message>
         <source>Save Path:</source>
-        <translation>Putanja spremanja:</translation>
+        <translation type="vanished">Putanja spremanja:</translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Nikada</translation>
+        <translation type="vanished">Nikada</translation>
     </message>
     <message>
         <source>%1 x %2 (have %3)</source>
         <comment>(torrent pieces) eg 152 x 4MB (have 25)</comment>
-        <translation>%1 x %2 (ima %3)</translation>
+        <translation type="vanished">%1 x %2 (ima %3)</translation>
     </message>
     <message>
         <source>%1 (%2 this session)</source>
-        <translation>%1 (%2 ove sesije)</translation>
+        <translation type="vanished">%1 (%2 ove sesije)</translation>
     </message>
     <message>
         <source>%1 (%2 max)</source>
         <comment>%1 and %2 are numbers, e.g. 3 (10 max)</comment>
-        <translation>%1 (%2 max)</translation>
+        <translation type="vanished">%1 (%2 max)</translation>
     </message>
     <message>
         <source>%1 (%2 total)</source>
         <comment>%1 and %2 are numbers, e.g. 3 (10 total)</comment>
-        <translation>%1 (%2 ukupno)</translation>
+        <translation type="vanished">%1 (%2 ukupno)</translation>
     </message>
     <message>
         <source>%1 (%2 avg.)</source>
         <comment>%1 and %2 are speed rates, e.g. 200KiB/s (100KiB/s avg.)</comment>
-        <translation>%1 (%2 prosj.)</translation>
+        <translation type="vanished">%1 (%2 prosj.)</translation>
     </message>
     <message>
         <source>Download limit:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ograničenje preuzimanja:</translation>
     </message>
     <message>
         <source>Upload limit:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ograničenje slanja:</translation>
     </message>
     <message>
         <source>Priority</source>
-        <translation>Prioritet</translation>
+        <translation type="vanished">Prioritet</translation>
     </message>
     <message>
         <source>Filter files...</source>
-        <translation>Filtriraj datoteke...</translation>
+        <translation type="vanished">Filtriraj datoteke...</translation>
     </message>
     <message>
         <source>Rename...</source>
-        <translation>Preimenuj...</translation>
+        <translation type="vanished">Preimenuj...</translation>
     </message>
     <message>
         <source>%1 (seeded for %2)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%1 (seedano za %2)</translation>
     </message>
     <message>
         <source>Info Hash v2:</source>
-        <translation>Info hash v2:</translation>
+        <translation type="vanished">Info hash v2:</translation>
     </message>
     <message>
         <source>Info Hash v1:</source>
-        <translation>Info hash v1:</translation>
+        <translation type="vanished">Info hash v1:</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>N/A </translation>
+        <translation type="vanished">N/A </translation>
     </message>
     <message>
         <source>Progress:</source>
-        <translation>Napredak:</translation>
+        <translation type="vanished">Napredak:</translation>
+    </message>
+    <message>
+        <source>Use regular expressions</source>
+        <translation type="vanished">Koristite regularne izraze</translation>
+    </message>
+    <message>
+        <source>Filename</source>
+        <translation type="vanished">Naziv datoteke</translation>
+    </message>
+    <message>
+        <source>Filename + Extension</source>
+        <translation type="vanished">Naziv datoteke + proširenje</translation>
+    </message>
+    <message>
+        <source>Enumerate Files</source>
+        <translation type="vanished">Nabroji datoteke</translation>
+    </message>
+    <message>
+        <source>Rename failed: file or folder already exists</source>
+        <translation type="vanished">Preimenovanje nije uspjelo: datoteka ili mapa već postoji</translation>
+    </message>
+    <message>
+        <source>Toggle Selection</source>
+        <translation type="vanished">Prebaci odabir</translation>
+    </message>
+    <message>
+        <source>Replacement Input</source>
+        <translation type="vanished">Zamjenski ulaz</translation>
+    </message>
+    <message>
+        <source>Replace</source>
+        <translation type="vanished">Zamijeni</translation>
+    </message>
+    <message>
+        <source>Extension</source>
+        <translation type="vanished">Proširenje</translation>
+    </message>
+    <message>
+        <source>Replace All</source>
+        <translation type="vanished">Zamjeni sve</translation>
+    </message>
+    <message>
+        <source>Include files</source>
+        <translation type="vanished">Uključi datoteke</translation>
+    </message>
+    <message>
+        <source>Include folders</source>
+        <translation type="vanished">Uključi mape</translation>
+    </message>
+    <message>
+        <source>Search Files</source>
+        <translation type="vanished">Traži datoteke</translation>
+    </message>
+    <message>
+        <source>Case sensitive</source>
+        <translation type="vanished">Osjetljivo na velika i mala slova</translation>
+    </message>
+    <message>
+        <source>Match all occurrences</source>
+        <translation type="vanished">Spoji sve pojave</translation>
     </message>
 </context>
 <context>
     <name>ScanFoldersModel</name>
     <message>
         <source>Monitored Folder</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nadzirana mapa</translation>
     </message>
     <message>
         <source>Override Save Location</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nadjačaj lokaciju spremanja</translation>
     </message>
     <message>
         <source>Monitored folder</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nadzirana mapa</translation>
     </message>
     <message>
         <source>Default save location</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Zadana lokacija spremanja</translation>
     </message>
     <message>
         <source>Other...</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Drugi...</translation>
     </message>
     <message>
         <source>Type folder here</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Upišite mapu ovdje</translation>
     </message>
 </context>
 <context>
     <name>SpeedLimitDialog</name>
     <message>
         <source>KiB/s</source>
-        <translation>KiB/s</translation>
+        <translation type="vanished">KiB/s</translation>
     </message>
 </context>
 <context>
     <name>StatsDialog</name>
     <message>
         <source>Statistics</source>
-        <translation>Statistike</translation>
+        <translation type="vanished">Statistike</translation>
     </message>
     <message>
         <source>User statistics</source>
-        <translation>Korisničke statistike</translation>
+        <translation type="vanished">Korisničke statistike</translation>
     </message>
     <message>
         <source>Cache statistics</source>
-        <translation>Statistika predmemorije</translation>
+        <translation type="vanished">Statistika predmemorije</translation>
     </message>
     <message>
         <source>Read cache hits:</source>
-        <translation>Čitaj brojeve predmemorije:</translation>
+        <translation type="vanished">Čitaj brojeve predmemorije:</translation>
     </message>
     <message>
         <source>Average time in queue:</source>
-        <translation>Prosječno vrijeme u redu čekanja:</translation>
+        <translation type="vanished">Prosječno vrijeme u redu čekanja:</translation>
     </message>
     <message>
         <source>Connected peers:</source>
-        <translation>Povezanih peerova:</translation>
+        <translation type="vanished">Povezanih peerova:</translation>
     </message>
     <message>
         <source>All-time share ratio:</source>
-        <translation>Omjer udjela svih vremena:</translation>
+        <translation type="vanished">Omjer udjela svih vremena:</translation>
     </message>
     <message>
         <source>All-time download:</source>
-        <translation>Sveukupno preuzimanje:</translation>
+        <translation type="vanished">Sveukupno preuzimanje:</translation>
     </message>
     <message>
         <source>Session waste:</source>
-        <translation>Gubitak sesije:</translation>
+        <translation type="vanished">Gubitak sesije:</translation>
     </message>
     <message>
         <source>All-time upload:</source>
-        <translation>Sveukupno slanje:</translation>
+        <translation type="vanished">Sveukupno slanje:</translation>
     </message>
     <message>
         <source>Total buffer size:</source>
-        <translation>Ukupna veličina međumemorije:</translation>
+        <translation type="vanished">Ukupna veličina međumemorije:</translation>
     </message>
     <message>
         <source>Performance statistics</source>
-        <translation>Statistika performansi</translation>
+        <translation type="vanished">Statistika performansi</translation>
     </message>
     <message>
         <source>Queued I/O jobs:</source>
-        <translation>Poslova I/O u redu:</translation>
+        <translation type="vanished">Poslova I/O u redu:</translation>
     </message>
     <message>
         <source>Write cache overload:</source>
-        <translation>Preopterećenje pisanja predmemorije:</translation>
+        <translation type="vanished">Preopterećenje pisanja predmemorije:</translation>
     </message>
     <message>
         <source>Read cache overload:</source>
-        <translation>Preopterećenje čitanja predmemorije:</translation>
+        <translation type="vanished">Preopterećenje čitanja predmemorije:</translation>
     </message>
     <message>
         <source>Total queued size:</source>
-        <translation>Ukupna veličina čekanja u redu:</translation>
+        <translation type="vanished">Ukupna veličina čekanja u redu:</translation>
     </message>
 </context>
 <context>
     <name>StatusBar</name>
     <message>
         <source>DHT: %1 nodes</source>
-        <translation>DHT: %1 čvorova</translation>
+        <translation type="vanished">DHT: %1 čvorova</translation>
     </message>
 </context>
 <context>
@@ -2070,107 +2274,107 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>All (0)</source>
         <comment>this is for the status filter</comment>
-        <translation>Sve (0)</translation>
+        <translation type="vanished">Sve (0)</translation>
     </message>
     <message>
         <source>Downloading (0)</source>
-        <translation>Preuzimanje (0)</translation>
+        <translation type="vanished">Preuzimanje (0)</translation>
     </message>
     <message>
         <source>Seeding (0)</source>
-        <translation>Seedanje (0)</translation>
+        <translation type="vanished">Seedanje (0)</translation>
     </message>
     <message>
         <source>Completed (0)</source>
-        <translation>Završeno (0)</translation>
+        <translation type="vanished">Završeno (0)</translation>
     </message>
     <message>
         <source>Resumed (0)</source>
-        <translation>Nastavljeno (0)</translation>
+        <translation type="vanished">Nastavljeno (0)</translation>
     </message>
     <message>
         <source>Paused (0)</source>
-        <translation>Pauzirano (0)</translation>
+        <translation type="vanished">Pauzirano (0)</translation>
     </message>
     <message>
         <source>Active (0)</source>
-        <translation>Aktivno (0)</translation>
+        <translation type="vanished">Aktivno (0)</translation>
     </message>
     <message>
         <source>Inactive (0)</source>
-        <translation>Neaktivno (0)</translation>
+        <translation type="vanished">Neaktivno (0)</translation>
     </message>
     <message>
         <source>Errored (0)</source>
-        <translation>S greškom (0)</translation>
+        <translation type="vanished">S greškom (0)</translation>
     </message>
     <message>
         <source>All (%1)</source>
-        <translation>Sve (%1)</translation>
+        <translation type="vanished">Sve (%1)</translation>
     </message>
     <message>
         <source>Downloading (%1)</source>
-        <translation>Preuzimanje (%1)</translation>
+        <translation type="vanished">Preuzimanje (%1)</translation>
     </message>
     <message>
         <source>Seeding (%1)</source>
-        <translation>Seedanje (%1)</translation>
+        <translation type="vanished">Seedanje (%1)</translation>
     </message>
     <message>
         <source>Completed (%1)</source>
-        <translation>Završeno (%1)</translation>
+        <translation type="vanished">Završeno (%1)</translation>
     </message>
     <message>
         <source>Paused (%1)</source>
-        <translation>Pauzirano (%1)</translation>
+        <translation type="vanished">Pauzirano (%1)</translation>
     </message>
     <message>
         <source>Resumed (%1)</source>
-        <translation>Nastavljeno (%1)</translation>
+        <translation type="vanished">Nastavljeno (%1)</translation>
     </message>
     <message>
         <source>Active (%1)</source>
-        <translation>Aktivno (%1)</translation>
+        <translation type="vanished">Aktivno (%1)</translation>
     </message>
     <message>
         <source>Inactive (%1)</source>
-        <translation>Neaktivno (%1)</translation>
+        <translation type="vanished">Neaktivno (%1)</translation>
     </message>
     <message>
         <source>Errored (%1)</source>
-        <translation>S greškom (%1)</translation>
+        <translation type="vanished">S greškom (%1)</translation>
     </message>
     <message>
         <source>Stalled Uploading (%1)</source>
-        <translation>Zaustavljeno slanje (%1)</translation>
+        <translation type="vanished">Zaustavljeno slanje (%1)</translation>
     </message>
     <message>
         <source>Stalled Downloading (%1)</source>
-        <translation>Zaustavljeno preuzimanje (%1)</translation>
+        <translation type="vanished">Zaustavljeno preuzimanje (%1)</translation>
     </message>
     <message>
         <source>Stalled Downloading (0)</source>
-        <translation>Zaustavljeno preuzimanje (0)</translation>
+        <translation type="vanished">Zaustavljeno preuzimanje (0)</translation>
     </message>
     <message>
         <source>Stalled (0)</source>
-        <translation>Zaustavljeno (0)</translation>
+        <translation type="vanished">Zaustavljeno (0)</translation>
     </message>
     <message>
         <source>Stalled Uploading (0)</source>
-        <translation>Zaustavljeno slanje (0)</translation>
+        <translation type="vanished">Zaustavljeno slanje (0)</translation>
     </message>
     <message>
         <source>Stalled (%1)</source>
-        <translation>Zaustavljeno (%1)</translation>
+        <translation type="vanished">Zaustavljeno (%1)</translation>
     </message>
     <message>
         <source>Checking (%1)</source>
-        <translation>Provjera (%1)</translation>
+        <translation type="vanished">Provjera (%1)</translation>
     </message>
     <message>
         <source>Checking (0)</source>
-        <translation>Provjera (0)</translation>
+        <translation type="vanished">Provjera (0)</translation>
     </message>
 </context>
 <context>
@@ -2181,266 +2385,278 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>Name</source>
         <comment>i.e: torrent name</comment>
-        <translation>Naziv</translation>
+        <translation type="vanished">Naziv</translation>
     </message>
     <message>
         <source>Size</source>
         <comment>i.e: torrent size</comment>
-        <translation>Veličina</translation>
+        <translation type="vanished">Veličina</translation>
     </message>
     <message>
         <source>Done</source>
         <comment>% Done</comment>
-        <translation>Napredak</translation>
+        <translation type="vanished">Napredak</translation>
     </message>
     <message>
         <source>Status</source>
         <comment>Torrent status (e.g. downloading, seeding, paused)</comment>
-        <translation>Status</translation>
+        <translation type="vanished">Status</translation>
     </message>
     <message>
         <source>Seeds</source>
         <comment>i.e. full sources (often untranslated)</comment>
-        <translation>Seedovi</translation>
+        <translation type="vanished">Seedovi</translation>
     </message>
     <message>
         <source>Peers</source>
         <comment>i.e. partial sources (often untranslated)</comment>
-        <translation>Peerovi</translation>
+        <translation type="vanished">Peerovi</translation>
     </message>
     <message>
         <source>Down Speed</source>
         <comment>i.e: Download speed</comment>
-        <translation>Brzina preuzimanja</translation>
+        <translation type="vanished">Brzina preuzimanja</translation>
     </message>
     <message>
         <source>Up Speed</source>
         <comment>i.e: Upload speed</comment>
-        <translation>Brzina slanja</translation>
+        <translation type="vanished">Brzina slanja</translation>
     </message>
     <message>
         <source>Ratio</source>
         <comment>Share ratio</comment>
-        <translation>Omjer</translation>
+        <translation type="vanished">Omjer</translation>
     </message>
     <message>
         <source>ETA</source>
         <comment>i.e: Estimated Time of Arrival / Time left</comment>
-        <translation>Preostalo vrijeme</translation>
+        <translation type="vanished">Preostalo vrijeme</translation>
     </message>
     <message>
         <source>Category</source>
-        <translation>Kategorija</translation>
+        <translation type="vanished">Kategorija</translation>
     </message>
     <message>
         <source>Tags</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Oznake</translation>
     </message>
     <message>
         <source>Added On</source>
         <comment>Torrent was added to transfer list on 01/01/2010 08:00</comment>
-        <translation>Dodano</translation>
+        <translation type="vanished">Dodano</translation>
     </message>
     <message>
         <source>Completed On</source>
         <comment>Torrent was completed on 01/01/2010 08:00</comment>
-        <translation>Dovršeno</translation>
+        <translation type="vanished">Dovršeno</translation>
     </message>
     <message>
         <source>Tracker</source>
-        <translation>Tracker</translation>
+        <translation type="vanished">Tracker</translation>
     </message>
     <message>
         <source>Down Limit</source>
         <comment>i.e: Download limit</comment>
-        <translation>Ograničenje preuzimanja</translation>
+        <translation type="vanished">Ograničenje preuzimanja</translation>
     </message>
     <message>
         <source>Up Limit</source>
         <comment>i.e: Upload limit</comment>
-        <translation>Ograničenje slanja</translation>
+        <translation type="vanished">Ograničenje slanja</translation>
     </message>
     <message>
         <source>Downloaded</source>
         <comment>Amount of data downloaded (e.g. in MB)</comment>
-        <translation>Preuzeto</translation>
+        <translation type="vanished">Preuzeto</translation>
     </message>
     <message>
         <source>Uploaded</source>
         <comment>Amount of data uploaded (e.g. in MB)</comment>
-        <translation>Poslano</translation>
+        <translation type="vanished">Poslano</translation>
     </message>
     <message>
         <source>Session Download</source>
         <comment>Amount of data downloaded since program open (e.g. in MB)</comment>
-        <translation>Preuzmanje u sesiji</translation>
+        <translation type="vanished">Preuzmanje u sesiji</translation>
     </message>
     <message>
         <source>Session Upload</source>
         <comment>Amount of data uploaded since program open (e.g. in MB)</comment>
-        <translation>Slanje u sesiji</translation>
+        <translation type="vanished">Slanje u sesiji</translation>
     </message>
     <message>
         <source>Remaining</source>
         <comment>Amount of data left to download (e.g. in MB)</comment>
-        <translation>Preostalo</translation>
+        <translation type="vanished">Preostalo</translation>
     </message>
     <message>
         <source>Time Active</source>
         <comment>Time (duration) the torrent is active (not paused)</comment>
-        <translation>Vrijeme aktivnosti</translation>
+        <translation type="vanished">Vrijeme aktivnosti</translation>
     </message>
     <message>
         <source>Save path</source>
         <comment>Torrent save path</comment>
-        <translation>Putanja za spremanje</translation>
+        <translation type="vanished">Putanja za spremanje</translation>
     </message>
     <message>
         <source>Completed</source>
         <comment>Amount of data completed (e.g. in MB)</comment>
-        <translation>Završeno</translation>
+        <translation type="vanished">Završeno</translation>
     </message>
     <message>
         <source>Ratio Limit</source>
         <comment>Upload share ratio limit</comment>
-        <translation>Ograničenje omjera</translation>
+        <translation type="vanished">Ograničenje omjera</translation>
     </message>
     <message>
         <source>Last Seen Complete</source>
         <comment>Indicates the time when the torrent was last seen complete/whole</comment>
-        <translation>Zadnje viđen završeni</translation>
+        <translation type="vanished">Zadnje viđen završeni</translation>
     </message>
     <message>
         <source>Last Activity</source>
         <comment>Time passed since a chunk was downloaded/uploaded</comment>
-        <translation>Posljednja aktivnost</translation>
+        <translation type="vanished">Posljednja aktivnost</translation>
     </message>
     <message>
         <source>Total Size</source>
         <comment>i.e. Size including unwanted data</comment>
-        <translation>Ukupna veličina</translation>
+        <translation type="vanished">Ukupna veličina</translation>
     </message>
     <message>
         <source>Availability</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dostupnost</translation>
+    </message>
+    <message>
+        <source>Reannounce In</source>
+        <translation type="vanished">Ponovno najavi za</translation>
     </message>
 </context>
 <context>
     <name>TrackerListWidget</name>
     <message>
         <source>URL</source>
-        <translation>URL</translation>
+        <translation type="vanished">URL</translation>
     </message>
     <message>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation type="vanished">Status</translation>
     </message>
     <message>
         <source>Peers</source>
-        <translation>Peerovi</translation>
+        <translation type="vanished">Peerovi</translation>
     </message>
     <message>
         <source>Message</source>
-        <translation>Poruka</translation>
+        <translation type="vanished">Poruka</translation>
     </message>
     <message>
         <source>Tracker URL:</source>
-        <translation>URL trackera:</translation>
+        <translation type="vanished">URL trackera:</translation>
     </message>
     <message>
         <source>Updating...</source>
-        <translation>Ažuriranje...</translation>
+        <translation type="vanished">Ažuriranje...</translation>
     </message>
     <message>
         <source>Working</source>
-        <translation>Radi</translation>
+        <translation type="vanished">Radi</translation>
     </message>
     <message>
         <source>Disabled</source>
-        <translation>Onemogućeno</translation>
+        <translation type="vanished">Onemogućeno</translation>
     </message>
     <message>
         <source>Not contacted yet</source>
-        <translation>Još nije kontaktirano</translation>
+        <translation type="vanished">Još nije kontaktirano</translation>
     </message>
     <message>
         <source>N/A</source>
-        <translation>N/A </translation>
+        <translation type="vanished">N/A </translation>
     </message>
     <message>
         <source>Seeds</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Seedovi</translation>
     </message>
     <message>
         <source>Not working</source>
-        <translation>Ne radi</translation>
+        <translation type="vanished">Ne radi</translation>
     </message>
     <message>
         <source>Copy tracker URL</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Kopiraj URL trackera</translation>
     </message>
     <message>
         <source>Edit tracker URL...</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Uredi URL trackera...</translation>
     </message>
     <message>
         <source>Tracker editing</source>
-        <translation>Uređivanje trackera</translation>
+        <translation type="vanished">Uređivanje trackera</translation>
     </message>
     <message>
         <source>Leeches</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Leechevi</translation>
     </message>
     <message>
         <source>Remove tracker</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ukloni trackera</translation>
     </message>
     <message>
         <source>Remaining</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Preostalo</translation>
     </message>
     <message>
         <source>Availability</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dostupnost</translation>
     </message>
     <message>
         <source>Tier</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Razina</translation>
     </message>
     <message>
         <source>Download Priority</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Prioritet preuzimanja</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ime</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Napredak</translation>
     </message>
     <message>
         <source>Total Size</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ukupna veličina</translation>
     </message>
     <message>
         <source>Times Downloaded</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Broj preuzimanja</translation>
     </message>
     <message>
         <source>Add trackers...</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dodaj trackere...</translation>
+    </message>
+    <message>
+        <source>Renamed</source>
+        <translation type="vanished">Preimenovano</translation>
+    </message>
+    <message>
+        <source>Original</source>
+        <translation type="vanished">Original</translation>
     </message>
 </context>
 <context>
     <name>TrackersAdditionDialog</name>
     <message>
         <source>List of trackers to add (one per line):</source>
-        <translation>Popis trackera za dodati (jedan po liniji):</translation>
+        <translation type="vanished">Popis trackera za dodati (jedan po liniji):</translation>
     </message>
     <message>
         <source>Add trackers</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dodaj trackere</translation>
     </message>
 </context>
 <context>
@@ -2448,309 +2664,325 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>%1 ago</source>
         <comment>e.g.: 1h 20m ago</comment>
-        <translation>prije %1</translation>
+        <translation type="vanished">prije %1</translation>
     </message>
     <message>
         <source>Paused</source>
-        <translation>Pauzirano</translation>
+        <translation type="vanished">Pauzirano</translation>
     </message>
     <message>
         <source>Completed</source>
-        <translation>Završeno</translation>
+        <translation type="vanished">Završeno</translation>
     </message>
     <message>
         <source>Moving</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Premještanje</translation>
     </message>
     <message>
         <source>[F] Seeding</source>
-        <translation type="unfinished" />
+        <translation type="vanished">[F] Seedanje</translation>
     </message>
     <message>
         <source>Seeding</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Seedanje</translation>
     </message>
     <message>
         <source>Queued</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Na čekanju</translation>
     </message>
     <message>
         <source>Errored</source>
-        <translation type="unfinished" />
+        <translation type="vanished">S greškom</translation>
     </message>
     <message>
         <source>[F] Downloading</source>
-        <translation type="unfinished" />
+        <translation type="vanished">[F] Preuzimanje</translation>
     </message>
     <message>
         <source>Downloading metadata</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Preuzimanje metapodataka</translation>
     </message>
     <message>
         <source>Checking</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Provjeravanje</translation>
     </message>
     <message>
         <source>Missing Files</source>
-        <translation>Nedostajuće datoteke</translation>
+        <translation type="vanished">Nedostajuće datoteke</translation>
     </message>
     <message>
         <source>Queued for checking</source>
-        <translation type="unfinished" />
+        <translation type="vanished">U redu za provjeru</translation>
     </message>
     <message>
         <source>Downloading</source>
-        <translation>Preuzimanje</translation>
+        <translation type="vanished">Preuzimanje</translation>
     </message>
     <message>
         <source>Checking resume data</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Provjera podataka nastavka</translation>
     </message>
     <message>
         <source>Stalled</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Zastoj</translation>
     </message>
     <message>
         <source>%1 (seeded for %2)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%1 (seedano za %2)</translation>
     </message>
     <message>
         <source>[F] Downloading metadata</source>
-        <translation type="unfinished" />
+        <translation type="vanished">[F] Preuzimanje metapodataka</translation>
     </message>
 </context>
 <context>
     <name>TransferListFiltersWidget</name>
     <message>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation type="vanished">Status</translation>
     </message>
     <message>
         <source>Categories</source>
-        <translation>Kategorije</translation>
+        <translation type="vanished">Kategorije</translation>
     </message>
     <message>
         <source>Tags</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Oznake</translation>
     </message>
     <message>
         <source>Trackers</source>
-        <translation>Trackeri</translation>
+        <translation type="vanished">Trackeri</translation>
+    </message>
+    <message>
+        <source>Collapse/expand</source>
+        <translation type="vanished">Sažmi/proširi</translation>
     </message>
 </context>
 <context>
     <name>TransferListWidget</name>
     <message>
         <source>Torrent Download Speed Limiting</source>
-        <translation>Ograničenje brzine preuzimanja torrenta</translation>
+        <translation type="vanished">Ograničenje brzine preuzimanja torrenta</translation>
     </message>
     <message>
         <source>Torrent Upload Speed Limiting</source>
-        <translation>Ograničenje brzine slanja torrenta</translation>
+        <translation type="vanished">Ograničenje brzine slanja torrenta</translation>
     </message>
     <message>
         <source>Rename</source>
-        <translation>Preimenovanje</translation>
+        <translation type="vanished">Preimenovanje</translation>
     </message>
     <message>
         <source>Resume</source>
         <comment>Resume/start the torrent</comment>
-        <translation>Nastavi</translation>
+        <translation type="vanished">Nastavi</translation>
     </message>
     <message>
         <source>Force Resume</source>
         <comment>Force Resume/start the torrent</comment>
-        <translation>Prisili nastavak</translation>
+        <translation type="vanished">Prisili nastavak</translation>
     </message>
     <message>
         <source>Pause</source>
         <comment>Pause the torrent</comment>
-        <translation>Pauziraj</translation>
+        <translation type="vanished">Pauziraj</translation>
     </message>
     <message>
         <source>Limit share ratio...</source>
-        <translation>Ograničenje omjera djeljenja</translation>
+        <translation type="vanished">Ograničenje omjera djeljenja</translation>
     </message>
     <message>
         <source>Limit upload rate...</source>
-        <translation>Ograničeni brzinu slanja...</translation>
+        <translation type="vanished">Ograničeni brzinu slanja...</translation>
     </message>
     <message>
         <source>Limit download rate...</source>
-        <translation>Ograniči brzinu preuzimanja...</translation>
+        <translation type="vanished">Ograniči brzinu preuzimanja...</translation>
     </message>
     <message>
         <source>Move up</source>
         <comment>i.e. move up in the queue</comment>
-        <translation>Pomakni gore</translation>
+        <translation type="vanished">Pomakni gore</translation>
     </message>
     <message>
         <source>Move down</source>
         <comment>i.e. Move down in the queue</comment>
-        <translation>Pomakni dolje</translation>
+        <translation type="vanished">Pomakni dolje</translation>
     </message>
     <message>
         <source>Move to top</source>
         <comment>i.e. Move to top of the queue</comment>
-        <translation>Na vrh</translation>
+        <translation type="vanished">Na vrh</translation>
     </message>
     <message>
         <source>Move to bottom</source>
         <comment>i.e. Move to bottom of the queue</comment>
-        <translation>Na dno</translation>
+        <translation type="vanished">Na dno</translation>
     </message>
     <message>
         <source>Set location...</source>
-        <translation>Postavi mjesto...</translation>
+        <translation type="vanished">Postavi mjesto...</translation>
     </message>
     <message>
         <source>Download first and last pieces first</source>
-        <translation>Preuzmi prve i zadnje dijelove prije drugih.</translation>
+        <translation type="vanished">Preuzmi prve i zadnje dijelove prije drugih.</translation>
     </message>
     <message>
         <source>Automatic Torrent Management</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Automatsko upravljanje torrentima</translation>
     </message>
     <message>
         <source>Category</source>
-        <translation>Kategorija</translation>
+        <translation type="vanished">Kategorija</translation>
     </message>
     <message>
         <source>New...</source>
         <comment>New category...</comment>
-        <translation>Novo...</translation>
+        <translation type="vanished">Novo...</translation>
     </message>
     <message>
         <source>Reset</source>
         <comment>Reset category</comment>
-        <translation>Poništi</translation>
+        <translation type="vanished">Poništi</translation>
     </message>
     <message>
         <source>Force recheck</source>
-        <translation>Prisili ponovnu provjeru</translation>
+        <translation type="vanished">Prisili ponovnu provjeru</translation>
     </message>
     <message>
         <source>Super seeding mode</source>
-        <translation>Način superseedanja</translation>
+        <translation type="vanished">Način superseedanja</translation>
     </message>
     <message>
         <source>Rename...</source>
-        <translation>Preimenuj...</translation>
+        <translation type="vanished">Preimenuj...</translation>
     </message>
     <message>
         <source>Download in sequential order</source>
-        <translation>Preuzmi u sekvencijskom poretku</translation>
+        <translation type="vanished">Preuzmi u sekvencijskom poretku</translation>
     </message>
     <message>
         <source>New Category</source>
-        <translation>Nove kategorije</translation>
+        <translation type="vanished">Nove kategorije</translation>
     </message>
     <message>
         <source>Location</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Lokacija</translation>
     </message>
     <message>
         <source>New name</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Novi naziv</translation>
     </message>
     <message>
         <source>Set location</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Postavi lokaciju</translation>
     </message>
     <message>
         <source>Force reannounce</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Prisilno ponovna najava</translation>
     </message>
     <message>
         <source>Edit Category</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Uredi kategoriju</translation>
     </message>
     <message>
         <source>Save path</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Putanja za spremanje</translation>
     </message>
     <message>
         <source>Comma-separated tags:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Oznake odvojene zarezima:</translation>
     </message>
     <message>
         <source>Add Tags</source>
-        <translation>Dodaj oznake</translation>
+        <translation type="vanished">Dodaj oznake</translation>
     </message>
     <message>
         <source>Tags</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Oznake</translation>
     </message>
     <message>
         <source>Magnet link</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Magnet poveznica</translation>
     </message>
     <message>
         <source>Remove All</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ukloni sve</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation>Naziv</translation>
+        <translation type="vanished">Naziv</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Kopiraj</translation>
+        <translation type="vanished">Kopiraj</translation>
     </message>
     <message>
         <source>Queue</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Red čekanja</translation>
     </message>
     <message>
         <source>Add...</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dodaj...</translation>
     </message>
     <message>
         <source>Info hash v1</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Info hash v1</translation>
     </message>
     <message>
         <source>Info hash v2</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Info hash v2</translation>
     </message>
     <message>
         <source>Torrent ID</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Torrent ID</translation>
     </message>
     <message>
         <source>Export .torrent</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Izvezi .torrent</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ukloni</translation>
+    </message>
+    <message>
+        <source>Rename Files...</source>
+        <translation type="vanished">Preimenuj datoteke...</translation>
+    </message>
+    <message>
+        <source>Renaming</source>
+        <translation type="vanished">Preimenovanje</translation>
     </message>
 </context>
 <context>
     <name>UpDownRatioDialog</name>
     <message>
         <source>Torrent Upload/Download Ratio Limiting</source>
-        <translation>Ograniči omjer slanja/preuzimanja torrenta</translation>
+        <translation type="vanished">Ograniči omjer slanja/preuzimanja torrenta</translation>
     </message>
     <message>
         <source>Use global share limit</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Koristite globalno ograničenje dijeljenja</translation>
     </message>
     <message>
         <source>Set no share limit</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Postavi ograničenje nedijeljenja</translation>
     </message>
     <message>
         <source>Set share limit to</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Postavi ograničenje dijeljenja na</translation>
     </message>
     <message>
         <source>ratio</source>
-        <translation type="unfinished" />
+        <translation type="vanished">omjer</translation>
     </message>
     <message>
-        <source>minutes</source>
-        <translation type="unfinished" />
+        <source>total minutes</source>
+        <translation type="vanished">ukupno minuta</translation>
+    </message>
+    <message>
+        <source>inactive minutes</source>
+        <translation type="vanished">neaktivnih minuta</translation>
     </message>
 </context>
 <context>
@@ -2760,26 +2992,26 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <name>confirmDeletionDlg</name>
     <message>
         <source>Also permanently delete the files</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Također trajno izbrišite datoteke</translation>
     </message>
     <message>
         <source>Remove torrent(s)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ukloni torrent(e)</translation>
     </message>
 </context>
 <context>
     <name>downloadFromURL</name>
     <message>
         <source>Download from URLs</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Preuzimanje s URL-ova</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Preuzmi</translation>
+        <translation type="vanished">Preuzmi</translation>
     </message>
     <message>
         <source>Add Torrent Links</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dodaj poveznice torrenta</translation>
     </message>
 </context>
 <context>
@@ -2787,863 +3019,1006 @@ Koristite ';' za razdvajanje više unosa. Može koristiti zamjenski znak '*'.</t
     <message>
         <source>B</source>
         <comment>bytes</comment>
-        <translation>B</translation>
+        <translation type="vanished">B</translation>
     </message>
     <message>
         <source>KiB</source>
         <comment>kibibytes (1024 bytes)</comment>
-        <translation>KiB</translation>
+        <translation type="vanished">KiB</translation>
     </message>
     <message>
         <source>MiB</source>
         <comment>mebibytes (1024 kibibytes)</comment>
-        <translation>MiB</translation>
+        <translation type="vanished">MiB</translation>
     </message>
     <message>
         <source>GiB</source>
         <comment>gibibytes (1024 mibibytes)</comment>
-        <translation>GiB</translation>
+        <translation type="vanished">GiB</translation>
     </message>
     <message>
         <source>TiB</source>
         <comment>tebibytes (1024 gibibytes)</comment>
-        <translation>TiB</translation>
+        <translation type="vanished">TiB</translation>
     </message>
     <message>
         <source>PiB</source>
         <comment>pebibytes (1024 tebibytes)</comment>
-        <translation>PiB</translation>
+        <translation type="vanished">PiB</translation>
     </message>
     <message>
         <source>EiB</source>
         <comment>exbibytes (1024 pebibytes)</comment>
-        <translation>EiB</translation>
+        <translation type="vanished">EiB</translation>
     </message>
     <message>
         <source>/s</source>
         <comment>per second</comment>
-        <translation>/s</translation>
+        <translation type="vanished">/s</translation>
     </message>
     <message>
         <source>%1h %2m</source>
         <comment>e.g: 3hours 5minutes</comment>
-        <translation>%1s %2m</translation>
+        <translation type="vanished">%1s %2m</translation>
     </message>
     <message>
         <source>%1d %2h</source>
         <comment>e.g: 2days 10hours</comment>
-        <translation>%1d %2s</translation>
+        <translation type="vanished">%1d %2s</translation>
     </message>
     <message>
         <source>Unknown</source>
         <comment>Unknown (size)</comment>
-        <translation>Nije poznato</translation>
+        <translation type="vanished">Nije poznato</translation>
     </message>
     <message>
         <source>&lt; 1m</source>
         <comment>&lt; 1 minute</comment>
-        <translation>&lt; 1m</translation>
+        <translation type="vanished">&lt; 1m</translation>
     </message>
     <message>
         <source>%1m</source>
         <comment>e.g: 10minutes</comment>
-        <translation>%1m</translation>
+        <translation type="vanished">%1m</translation>
     </message>
     <message>
         <source>%1y %2d</source>
-        <translation type="unfinished" />
+        <translation type="vanished">%1g %2d</translation>
     </message>
 </context>
 <context>
     <name>TorrentsController</name>
     <message>
         <source>Save path is empty</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Putanja za spremanje je prazna</translation>
     </message>
 </context>
 <context>
     <name>PluginSourceDlg</name>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Odustani</translation>
     </message>
     <message>
         <source>Plugin path:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Putanja dodatka:</translation>
     </message>
     <message>
         <source>URL or local directory</source>
-        <translation type="unfinished" />
+        <translation type="vanished">URL ili lokalni direktorij</translation>
     </message>
     <message>
         <source>Install plugin</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Instaliraj dodatak</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="unfinished" />
+        <translation type="vanished">U redu</translation>
     </message>
 </context>
 <context>
     <name>SearchEngineWidget</name>
     <message>
         <source>Seeds:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Seedova:</translation>
     </message>
     <message>
         <source>All plugins</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Svi dodaci</translation>
     </message>
     <message>
         <source>Size:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Veličina:</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Zaustavi</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Traži</translation>
     </message>
     <message>
         <source>Search plugins...</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dodaci za pretraživanje...</translation>
     </message>
     <message>
         <source>All categories</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Sve kategorije</translation>
     </message>
     <message>
         <source>Search in:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Traži u:</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Filter</translation>
     </message>
     <message>
         <source>Torrent names only</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Samo nazivi torrenta</translation>
     </message>
     <message>
         <source>Only enabled</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Samo omogućeno</translation>
     </message>
     <message>
         <source>out of</source>
-        <translation type="unfinished" />
+        <translation type="vanished">od</translation>
     </message>
     <message>
         <source>Everywhere</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Svugdje</translation>
     </message>
     <message>
         <source>Warning</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Upozorenje</translation>
     </message>
     <message>
         <source>Increase window width to display additional filters</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Povećajte širinu prozora za prikaz dodatnih filtera</translation>
     </message>
     <message>
         <source>to</source>
-        <translation type="unfinished" />
+        <translation type="vanished">prema</translation>
     </message>
     <message>
         <source>Results</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Rezultati</translation>
     </message>
     <message>
         <source>showing</source>
-        <translation type="unfinished" />
+        <translation type="vanished">pokazivanje</translation>
     </message>
     <message>
         <source>Click the "Search plugins..." button at the bottom right of the window to install some.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Pritisnite gumb "Traži dodatke..." u donjem desnom kutu prozora da biste instalirali neke.</translation>
     </message>
     <message>
         <source>There aren't any search plugins installed.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nema instaliranih dodataka za pretraživanje.</translation>
     </message>
 </context>
 <context>
     <name>PluginSelectDlg</name>
     <message>
         <source>Uninstall</source>
-        <translation>Uklonite</translation>
+        <translation type="vanished">Uklonite</translation>
     </message>
     <message>
         <source>Install new plugin</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Instaliraj novi dodatak</translation>
     </message>
     <message>
         <source>You can get new search engine plugins here:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Nove dodatke za tražilice možete preuzeti ovdje:</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Zatvori</translation>
+        <translation type="vanished">Zatvori</translation>
     </message>
     <message>
         <source>Installed search plugins:</source>
-        <translation>Instalirani dodaci za pretraživanje:</translation>
+        <translation type="vanished">Instalirani dodaci za pretraživanje:</translation>
     </message>
     <message>
         <source>Enabled</source>
-        <translation>Omogućeno</translation>
+        <translation type="vanished">Omogućeno</translation>
     </message>
     <message>
         <source>Warning: Be sure to comply with your country's copyright laws when downloading torrents from any of these search engines.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Upozorenje: Budite u skladu sa zakonima o autorskim pravima vaše zemlje kada preuzimate torrente s bilo koje od ovih tražilica.</translation>
     </message>
     <message>
         <source>Check for updates</source>
-        <translation>Provjerite ažuriranja</translation>
+        <translation type="vanished">Provjerite ažuriranja</translation>
     </message>
     <message>
         <source>Search plugins</source>
-        <translation>Dodaci za traženje</translation>
+        <translation type="vanished">Dodaci za traženje</translation>
     </message>
 </context>
 <context>
     <name>SearchResultsTable</name>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Naziv</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Veličina</translation>
     </message>
     <message>
         <source>Leechers</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Leecheri</translation>
     </message>
     <message>
         <source>Search engine</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Pretraživač</translation>
     </message>
     <message>
         <source>Seeders</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Seederi</translation>
     </message>
 </context>
 <context>
     <name>SearchPluginsTable</name>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Naziv</translation>
     </message>
     <message>
         <source>Url</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Url</translation>
     </message>
     <message>
         <source>Enabled</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Omogućeno</translation>
     </message>
     <message>
         <source>Version</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Verzija</translation>
     </message>
     <message>
         <source>Yes</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Da</translation>
     </message>
     <message>
         <source>No</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ne</translation>
     </message>
 </context>
 <context>
     <name>PeersAdditionDialog</name>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Odustani</translation>
     </message>
     <message>
         <source>Add Peers</source>
-        <translation>Dodaj peerove</translation>
+        <translation type="vanished">Dodaj peerove</translation>
     </message>
     <message>
         <source>List of peers to add (one IP per line):</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Popis peerova za dodavanje (jedan IP po retku):</translation>
     </message>
     <message>
         <source>Ok</source>
-        <translation type="unfinished" />
+        <translation type="vanished">U redu</translation>
     </message>
     <message>
         <source>Format: IPv4:port / [IPv6]:port</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Format: IPv4:port / [IPv6]:port</translation>
     </message>
 </context>
 <context>
     <name>TagFilterWidget</name>
     <message>
         <source>New Tag</source>
-        <translation>Nova oznaka</translation>
+        <translation type="vanished">Nova oznaka</translation>
     </message>
     <message>
         <source>Add tag...</source>
-        <translation>Dodaj oznaku...</translation>
+        <translation type="vanished">Dodaj oznaku...</translation>
     </message>
     <message>
         <source>Tag:</source>
-        <translation>Oznaka:</translation>
+        <translation type="vanished">Oznaka:</translation>
     </message>
     <message>
         <source>Pause torrents</source>
-        <translation>Pauziraj torrente</translation>
+        <translation type="vanished">Pauziraj torrente</translation>
     </message>
     <message>
         <source>Resume torrents</source>
-        <translation>Nastavi torrente</translation>
+        <translation type="vanished">Nastavi torrente</translation>
     </message>
     <message>
         <source>Remove unused tags</source>
-        <translation>Ukloni nekorištene oznake</translation>
+        <translation type="vanished">Ukloni nekorištene oznake</translation>
     </message>
     <message>
         <source>Invalid tag name</source>
-        <translation>Nevažeći naziv oznake</translation>
+        <translation type="vanished">Nevažeći naziv oznake</translation>
     </message>
     <message>
         <source>Remove tag</source>
-        <translation>Ukloni oznaku</translation>
+        <translation type="vanished">Ukloni oznaku</translation>
     </message>
     <message>
         <source>Remove torrents</source>
-        <translation>Ukloni torrente</translation>
+        <translation type="vanished">Ukloni torrente</translation>
     </message>
 </context>
 <context>
     <name>TagFilterModel</name>
     <message>
         <source>All</source>
-        <translation>Sve</translation>
+        <translation type="vanished">Sve</translation>
     </message>
     <message>
         <source>Untagged</source>
-        <translation>Neoznačeno</translation>
+        <translation type="vanished">Neoznačeno</translation>
     </message>
 </context>
 <context>
     <name>AboutDialog</name>
     <message>
         <source>Bug Tracker:</source>
-        <translation>Praćenje grešaka:</translation>
+        <translation type="vanished">Praćenje grešaka:</translation>
     </message>
     <message>
         <source>About</source>
-        <translation>O programu</translation>
+        <translation type="vanished">O programu</translation>
     </message>
     <message>
         <source>Forum:</source>
-        <translation>Forum:</translation>
+        <translation type="vanished">Forum:</translation>
     </message>
     <message>
         <source>E-mail:</source>
-        <translation>E-pošta:</translation>
+        <translation type="vanished">E-pošta:</translation>
     </message>
     <message>
         <source>Current maintainer</source>
-        <translation>Trenutni održavatelj</translation>
+        <translation type="vanished">Trenutni održavatelj</translation>
     </message>
     <message>
         <source>Home Page:</source>
-        <translation>Početna stranica:</translation>
+        <translation type="vanished">Početna stranica:</translation>
     </message>
     <message>
         <source>Greece</source>
-        <translation>Grčka</translation>
+        <translation type="vanished">Grčka</translation>
     </message>
     <message>
         <source>Special Thanks</source>
-        <translation>Posebne Zahvale</translation>
+        <translation type="vanished">Posebne Zahvale</translation>
     </message>
     <message>
         <source>An advanced BitTorrent client programmed in C++, based on Qt toolkit and libtorrent-rasterbar.</source>
-        <translation>Napredni BitTorrent klijent programiran u C++, baziran na Qt alatima i libtorrent-rasterbaru.</translation>
+        <translation type="vanished">Napredni BitTorrent klijent programiran u C++, baziran na Qt alatima i libtorrent-rasterbaru.</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>Ime:</translation>
+        <translation type="vanished">Ime:</translation>
     </message>
     <message>
         <source>About qBittorrent</source>
-        <translation>O qBittorrent-u</translation>
+        <translation type="vanished">O qBittorrent-u</translation>
     </message>
     <message>
         <source>License</source>
-        <translation>Licenca</translation>
+        <translation type="vanished">Licenca</translation>
     </message>
     <message>
         <source>Translators</source>
-        <translation>Prevoditelji</translation>
+        <translation type="vanished">Prevoditelji</translation>
     </message>
     <message>
         <source>qBittorrent was built with the following libraries:</source>
-        <translation>qBittorrent je napravljen pomoću sljedećh biblioteka:</translation>
+        <translation type="vanished">qBittorrent je napravljen pomoću sljedećh biblioteka:</translation>
     </message>
     <message>
         <source>Nationality:</source>
-        <translation>Nacionalnost:</translation>
+        <translation type="vanished">Nacionalnost:</translation>
     </message>
     <message>
         <source>Software Used</source>
-        <translation>Korišteni softver</translation>
+        <translation type="vanished">Korišteni softver</translation>
     </message>
     <message>
         <source>The free IP to Country Lite database by DB-IP is used for resolving the countries of peers. The database is licensed under the Creative Commons Attribution 4.0 International License</source>
-        <translation>Besplatna baza podataka IP to Country Lite od strane DB-IP-a koristi se za razrješavanje zemalja peerova. Baza podataka je licencirana pod međunarodnom licencom Creative Commons Attribution 4.0</translation>
+        <translation type="vanished">Besplatna baza podataka IP to Country Lite od strane DB-IP-a koristi se za razrješavanje zemalja peerova. Baza podataka je licencirana pod međunarodnom licencom Creative Commons Attribution 4.0</translation>
     </message>
     <message>
         <source>Authors</source>
-        <translation>Autori</translation>
+        <translation type="vanished">Autori</translation>
     </message>
     <message>
         <source>France</source>
-        <translation>Francuska</translation>
+        <translation type="vanished">Francuska</translation>
     </message>
     <message>
         <source>qBittorrent Mascot</source>
-        <translation type="unfinished" />
+        <translation type="vanished">qBittorrent maskota</translation>
     </message>
     <message>
         <source>qBittorrent icon</source>
-        <translation type="unfinished" />
+        <translation type="vanished">qBittorrent ikona</translation>
     </message>
 </context>
 <context>
     <name>OptionDialog</name>
     <message>
         <source>All addresses</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Sve adrese</translation>
     </message>
     <message>
         <source>All IPv6 addresses</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Sve IPv6 adrese</translation>
     </message>
     <message>
         <source>All IPv4 addresses</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Sve IPv4 adrese</translation>
     </message>
 </context>
 <context>
     <name>SearchJobWidget</name>
     <message>
         <source>Copy</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Kopiraj</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Preuzimanje</translation>
+        <translation type="vanished">Preuzimanje</translation>
     </message>
     <message>
         <source>Name</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Ime</translation>
     </message>
     <message>
         <source>Description page URL</source>
-        <translation type="unfinished" />
+        <translation type="vanished">URL stranice opisa</translation>
     </message>
     <message>
         <source>Open description page</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Otvaranje stranice opisa</translation>
     </message>
     <message>
         <source>Download link</source>
-        <translation>Link preuzimanja</translation>
+        <translation type="vanished">Link preuzimanja</translation>
     </message>
 </context>
 <context>
     <name>TorrentContentTreeView</name>
     <message>
         <source>Renaming</source>
-        <translation>Preimenovanje</translation>
+        <translation type="vanished">Preimenovanje</translation>
     </message>
     <message>
         <source>New name:</source>
-        <translation>Novi naziv:</translation>
+        <translation type="vanished">Novi naziv:</translation>
+    </message>
+    <message>
+        <source>Renaming)</source>
+        <translation type="vanished">Preimenovanje)</translation>
     </message>
 </context>
 <context>
     <name>RSSWidget</name>
     <message>
         <source>Date: </source>
-        <translation>Datum: </translation>
+        <translation type="vanished">Datum: </translation>
     </message>
     <message>
         <source>Please choose a new name for this RSS feed</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Odaberite novi naziv za ovaj RSS kanal</translation>
     </message>
     <message>
         <source>Please choose a folder name</source>
-        <translation>Izaberite naziv mape</translation>
+        <translation type="vanished">Izaberite naziv mape</translation>
     </message>
     <message>
         <source>New feed name:</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Novi naziv kanala:</translation>
     </message>
     <message>
         <source>Update all</source>
-        <translation>Ažuriraj sve</translation>
+        <translation type="vanished">Ažuriraj sve</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ukloni</translation>
+        <translation type="vanished">Ukloni</translation>
     </message>
     <message>
         <source>RSS Downloader...</source>
-        <translation>RSS Downloader... </translation>
+        <translation type="vanished">RSS Downloader... </translation>
     </message>
     <message>
         <source>Mark items read</source>
-        <translation>Označi stavke kao pročitane</translation>
+        <translation type="vanished">Označi stavke kao pročitane</translation>
     </message>
     <message>
         <source>Update all feeds</source>
-        <translation>Ažuriraj sve kanale</translation>
+        <translation type="vanished">Ažuriraj sve kanale</translation>
     </message>
     <message>
         <source>Copy feed URL</source>
-        <translation>Kopiraj URL kanala</translation>
+        <translation type="vanished">Kopiraj URL kanala</translation>
     </message>
     <message>
         <source>Torrents: (double-click to download)</source>
-        <translation>Torrenti: (dupli klik za preuzimanje)</translation>
+        <translation type="vanished">Torrenti: (dupli klik za preuzimanje)</translation>
     </message>
     <message>
         <source>Open news URL</source>
-        <translation>Otvori URL vijesti</translation>
+        <translation type="vanished">Otvori URL vijesti</translation>
     </message>
     <message>
         <source>Rename...</source>
-        <translation>Preimenuj...</translation>
+        <translation type="vanished">Preimenuj...</translation>
     </message>
     <message>
         <source>Feed URL:</source>
-        <translation>URL kanala:</translation>
+        <translation type="vanished">URL kanala:</translation>
     </message>
     <message>
         <source>New folder...</source>
-        <translation>Nova mapa...</translation>
+        <translation type="vanished">Nova mapa...</translation>
     </message>
     <message>
         <source>New subscription</source>
-        <translation>Nova preplata</translation>
+        <translation type="vanished">Nova preplata</translation>
     </message>
     <message>
         <source>Update</source>
-        <translation>Ažuriraj</translation>
+        <translation type="vanished">Ažuriraj</translation>
     </message>
     <message>
         <source>Folder name:</source>
-        <translation>Naziv mape:</translation>
+        <translation type="vanished">Naziv mape:</translation>
     </message>
     <message>
         <source>Please type a RSS feed URL</source>
-        <translation>Molimo upišite URL RSS kanala</translation>
+        <translation type="vanished">Molimo upišite URL RSS kanala</translation>
     </message>
     <message>
         <source>Fetching of RSS feeds is disabled now! You can enable it in application settings.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Dohvaćanje RSS kanala sada je onemogućeno! Možete ga omogućiti u postavkama aplikacije.</translation>
     </message>
     <message>
         <source>Deletion confirmation</source>
-        <translation>Potvrda brisanja</translation>
+        <translation type="vanished">Potvrda brisanja</translation>
     </message>
     <message>
         <source>Are you sure you want to delete the selected RSS feeds?</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Jeste li sigurni da želite izbrisati odabrane RSS kanale?</translation>
     </message>
     <message>
         <source>New subscription...</source>
-        <translation>Nova pretplata...</translation>
+        <translation type="vanished">Nova pretplata...</translation>
     </message>
     <message>
         <source>Download torrent</source>
-        <translation>Preuzimanje torrenta</translation>
+        <translation type="vanished">Preuzimanje torrenta</translation>
     </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
     <message>
         <source>Download Rules</source>
-        <translation>Pravila preuzimanja</translation>
+        <translation type="vanished">Pravila preuzimanja</translation>
     </message>
     <message>
         <source>Matching RSS Articles</source>
-        <translation>Podudarajući RSS članci</translation>
+        <translation type="vanished">Podudarajući RSS članci</translation>
     </message>
     <message>
         <source>* to match zero or more of any characters</source>
-        <translation>* za podudaranje s nula ili više bilo kojih znakova</translation>
+        <translation type="vanished">* za podudaranje s nula ili više bilo kojih znakova</translation>
     </message>
     <message>
         <source> will match all articles.</source>
-        <translation>će odgovarati svim artiklima.</translation>
+        <translation type="vanished">će odgovarati svim artiklima.</translation>
     </message>
     <message>
         <source>Episode filter rules: </source>
-        <translation>Pravila za filtriranje epizoda:</translation>
+        <translation type="vanished">Pravila za filtriranje epizoda:</translation>
     </message>
     <message>
         <source>Auto downloading of RSS torrents is disabled now! You can enable it in application settings.</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Automatsko preuzimanje RSS torrenta sada je onemogućeno! Možete ga omogućiti u postavkama aplikacije.</translation>
     </message>
     <message>
         <source>Rule Definition</source>
-        <translation>Definicija pravila</translation>
+        <translation type="vanished">Definicija pravila</translation>
     </message>
     <message>
         <source>Save to:</source>
-        <translation>Spremi u:</translation>
+        <translation type="vanished">Spremi u:</translation>
     </message>
     <message>
         <source>Use Regular Expressions</source>
-        <translation>Koristi regularne izraze</translation>
+        <translation type="vanished">Koristi regularne izraze</translation>
     </message>
     <message>
         <source>New rule name</source>
-        <translation>Naziv novog pravila</translation>
+        <translation type="vanished">Naziv novog pravila</translation>
     </message>
     <message>
         <source>Filter must end with semicolon</source>
-        <translation>Filter mora završavati točka-zarezom</translation>
+        <translation type="vanished">Filter mora završavati točka-zarezom</translation>
     </message>
     <message>
         <source>? to match any single character</source>
-        <translation>? odgovarati bilo kojem pojedinačnom znaku</translation>
+        <translation type="vanished">? odgovarati bilo kojem pojedinačnom znaku</translation>
     </message>
     <message>
         <source>Matches articles based on episode filter.</source>
-        <translation>Podudarnosti članaka su na osnovi epizodnog filtera.</translation>
+        <translation type="vanished">Podudarnosti članaka su na osnovi epizodnog filtera.</translation>
     </message>
     <message>
         <source>Assign Category:</source>
-        <translation>Pridruži kategoriju:</translation>
+        <translation type="vanished">Pridruži kategoriju:</translation>
     </message>
     <message>
         <source>Regex mode: use Perl-compatible regular expressions</source>
-        <translation>Regex mod: koristite Perl-kompatibilne regularne izraze</translation>
+        <translation type="vanished">Regex mod: koristite Perl-kompatibilne regularne izraze</translation>
     </message>
     <message>
         <source>| is used as OR operator</source>
-        <translation>| se koristi kao ILI operator</translation>
+        <translation type="vanished">| se koristi kao ILI operator</translation>
     </message>
     <message>
         <source>Clear downloaded episodes</source>
-        <translation>Brisanje preuzetih epizoda</translation>
+        <translation type="vanished">Brisanje preuzetih epizoda</translation>
     </message>
     <message>
         <source>Whitespaces count as AND operators (all words, any order)</source>
-        <translation>Razmaci se računaju kao operatori I (sve riječi, bilo kojim redoslijedom)</translation>
+        <translation type="vanished">Razmaci se računaju kao operatori I (sve riječi, bilo kojim redoslijedom)</translation>
     </message>
     <message>
         <source>An expression with an empty %1 clause (e.g. %2)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Izraz s praznom klauzulom %1 (npr. %2)</translation>
     </message>
     <message>
         <source>Example: </source>
-        <translation>Primjer:</translation>
+        <translation type="vanished">Primjer:</translation>
     </message>
     <message>
         <source>Add new rule...</source>
-        <translation>Dodaj novo pravilo...</translation>
+        <translation type="vanished">Dodaj novo pravilo...</translation>
     </message>
     <message>
         <source>Are you sure you want to clear the list of downloaded episodes for the selected rule?</source>
-        <translation>Jeste li sigurni da želite obrisati popis preuzetih epizoda za odabrano pravilo?</translation>
+        <translation type="vanished">Jeste li sigurni da želite obrisati popis preuzetih epizoda za odabrano pravilo?</translation>
     </message>
     <message>
         <source>Must Contain:</source>
-        <translation>Mora sadržavati:</translation>
+        <translation type="vanished">Mora sadržavati:</translation>
     </message>
     <message>
         <source>Infinite range: &lt;b&gt;1x25-;&lt;/b&gt; matches episodes 25 and upward of season one, and all episodes of later seasons</source>
-        <translation>Beskonačni domet: 1x25-; odgovara epizodama 25 i više od prve sezone i svim epizodama kasnijih sezona</translation>
+        <translation type="vanished">Beskonačni domet: 1x25-; odgovara epizodama 25 i više od prve sezone i svim epizodama kasnijih sezona</translation>
     </message>
     <message>
         <source>Save to a Different Directory</source>
-        <translation>Spremi u drugu mapu</translation>
+        <translation type="vanished">Spremi u drugu mapu</translation>
     </message>
     <message>
         <source>Must Not Contain:</source>
-        <translation>Ne smije sadržavati:</translation>
+        <translation type="vanished">Ne smije sadržavati:</translation>
     </message>
     <message>
         <source>Single number: &lt;b&gt;1x25;&lt;/b&gt; matches episode 25 of season one</source>
-        <translation>Pojedinačni broj:&lt;b&gt;1x25;&lt;/b&gt; označava 25. epizodu prve sezone</translation>
+        <translation type="vanished">Pojedinačni broj:&lt;b&gt;1x25;&lt;/b&gt; označava 25. epizodu prve sezone</translation>
     </message>
     <message>
         <source>Three range types for episodes are supported: </source>
-        <translation>Podržane su tri vrste poretka epizoda:</translation>
+        <translation type="vanished">Podržane su tri vrste poretka epizoda:</translation>
     </message>
     <message>
         <source>Are you sure you want to remove the selected download rules?</source>
-        <translation>Jeste li sigurni da želite ukloniti odabrana pravila preuzimanja?</translation>
+        <translation type="vanished">Jeste li sigurni da želite ukloniti odabrana pravila preuzimanja?</translation>
     </message>
     <message>
         <source>Use global settings</source>
-        <translation>Koristi globalne postavke</translation>
+        <translation type="vanished">Koristi globalne postavke</translation>
     </message>
     <message>
         <source>Normal range: &lt;b&gt;1x25-40;&lt;/b&gt; matches episodes 25 through 40 of season one</source>
-        <translation>Uobičajen raspon: &lt;b&gt;1x25-40;&lt;/b&gt; označava epizode od 25. do 40. prve sezone</translation>
+        <translation type="vanished">Uobičajen raspon: &lt;b&gt;1x25-40;&lt;/b&gt; označava epizode od 25. do 40. prve sezone</translation>
     </message>
     <message>
         <source>Please type the new rule name</source>
-        <translation>Upišite naziv novog pravila</translation>
+        <translation type="vanished">Upišite naziv novog pravila</translation>
     </message>
     <message>
         <source>Rule renaming</source>
-        <translation>Preimenovanje pravila</translation>
+        <translation type="vanished">Preimenovanje pravila</translation>
     </message>
     <message>
         <source>Always</source>
-        <translation>Uvijek</translation>
+        <translation type="vanished">Uvijek</translation>
     </message>
     <message>
         <source>Episode number is a mandatory positive value</source>
-        <translation>Broj epizode je obavezna pozitivna vrijednost</translation>
+        <translation type="vanished">Broj epizode je obavezna pozitivna vrijednost</translation>
     </message>
     <message>
         <source> will match 2, 5, 8 through 15, 30 and onward episodes of season one</source>
-        <translation type="unfinished" />
+        <translation type="vanished">epizode 2, 5, 8 odgovaraju epizodama 15, 30 i sljedećim epizodama prve sezone</translation>
     </message>
     <message>
         <source>Rule deletion confirmation</source>
-        <translation>Pravilo potvrđivanja brisanja</translation>
+        <translation type="vanished">Pravilo potvrđivanja brisanja</translation>
     </message>
     <message>
         <source>Last Match: %1 days ago</source>
-        <translation>Posljednje podudaranje: prije %1 dan(a)</translation>
+        <translation type="vanished">Posljednje podudaranje: prije %1 dan(a)</translation>
     </message>
     <message>
         <source>Episode Filter:</source>
-        <translation>Filter epizoda:</translation>
+        <translation type="vanished">Filter epizoda:</translation>
     </message>
     <message>
         <source>Rss Downloader</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Rss preuzimatelj</translation>
     </message>
     <message>
         <source>Season number is a mandatory non-zero value</source>
-        <translation>Broj sezone je neophodan</translation>
+        <translation type="vanished">Broj sezone je neophodan</translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Nikada</translation>
+        <translation type="vanished">Nikada</translation>
     </message>
     <message>
         <source>Apply Rule to Feeds:</source>
-        <translation>Primjeni pravilo na kanale:</translation>
+        <translation type="vanished">Primjeni pravilo na kanale:</translation>
     </message>
     <message>
         <source> days</source>
-        <translation>dani</translation>
+        <translation type="vanished">dani</translation>
     </message>
     <message>
         <source>Use Smart Episode Filter</source>
-        <translation>Koristite pametni filter epizoda</translation>
+        <translation type="vanished">Koristite pametni filter epizoda</translation>
     </message>
     <message>
         <source>If word order is important use * instead of whitespace.</source>
-        <translation>Ako je redoslijed riječi važan, koristite * umjesto razmaka.</translation>
+        <translation type="vanished">Ako je redoslijed riječi važan, koristite * umjesto razmaka.</translation>
     </message>
     <message>
         <source>Add Paused:</source>
-        <translation>Dodaj pauzirano:</translation>
+        <translation type="vanished">Dodaj pauzirano:</translation>
     </message>
     <message>
         <source>Please type the name of the new download rule.</source>
-        <translation>Upišite naziv novog pravila preuzimanja.</translation>
+        <translation type="vanished">Upišite naziv novog pravila preuzimanja.</translation>
     </message>
     <message>
         <source>Wildcard mode: you can use</source>
-        <translation>Način zamjenskog znaka: možete koristiti</translation>
+        <translation type="vanished">Način zamjenskog znaka: možete koristiti</translation>
     </message>
     <message>
         <source> will exclude all articles.</source>
-        <translation>isključit će sve artikle.</translation>
+        <translation type="vanished">isključit će sve artikle.</translation>
     </message>
     <message>
         <source>Delete rule</source>
-        <translation>Ukloni pravilo</translation>
+        <translation type="vanished">Ukloni pravilo</translation>
     </message>
     <message>
         <source>Ignore Subsequent Matches for (0 to Disable)</source>
-        <translation>Ignoriraj naredna podudaranja za (0 za onemogućiti)</translation>
+        <translation type="vanished">Ignoriraj naredna podudaranja za (0 za onemogućiti)</translation>
     </message>
     <message>
         <source>Rename rule...</source>
-        <translation>Preimenuj pravilo...</translation>
+        <translation type="vanished">Preimenuj pravilo...</translation>
     </message>
     <message>
         <source>Last Match: Unknown</source>
-        <translation>Posljednje podudaranje: Nepoznato</translation>
+        <translation type="vanished">Posljednje podudaranje: Nepoznato</translation>
     </message>
     <message>
         <source>Clear downloaded episodes...</source>
-        <translation>Obriši preuzete epizode...</translation>
+        <translation type="vanished">Obriši preuzete epizode...</translation>
     </message>
     <message>
         <source>Smart Episode Filter will check the episode number to prevent downloading of duplicates.
 Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also support - as a separator)</source>
-        <translation>Pametni filtar epizoda provjerit će broj epizode kako bi spriječio preuzimanje duplikata. Podržava formate: S01E01, 1x1, 2017.12.31 i 31.12.2017 (Formati datuma također podržavaju - kao separator)</translation>
+        <translation type="vanished">Pametni filtar epizoda provjerit će broj epizode kako bi spriječio preuzimanje duplikata. Podržava formate: S01E01, 1x1, 2017.12.31 i 31.12.2017 (Formati datuma također podržavaju - kao separator)</translation>
     </message>
     <message>
         <source>Torrent content layout:</source>
-        <translation>Izgled sadržaja torrenta:</translation>
+        <translation type="vanished">Izgled sadržaja torrenta:</translation>
     </message>
     <message>
         <source>Create subfolder</source>
-        <translation>Stvori podmapu</translation>
+        <translation type="vanished">Stvori podmapu</translation>
     </message>
     <message>
         <source>Original</source>
-        <translation>Original</translation>
+        <translation type="vanished">Original</translation>
     </message>
     <message>
         <source>Don't create subfolder</source>
-        <translation>Nemoj stvarati podmapu</translation>
+        <translation type="vanished">Nemoj stvarati podmapu</translation>
+    </message>
+    <message>
+        <source>Add Tags:</source>
+        <translation type="vanished">Dodaj oznake:</translation>
     </message>
 </context>
 <context>
     <name>TrackerFiltersList</name>
     <message>
         <source>Resume torrents</source>
-        <translation>Nastavi torrente</translation>
+        <translation type="vanished">Nastavi torrente</translation>
     </message>
     <message>
         <source>All (%1)</source>
-        <translation type="unfinished" />
+        <translation type="vanished">Sve (%1)</translation>
     </message>
     <message>
         <source>Trackerless (%1)</source>
-        <translation>Bez trackera (%1)</translation>
+        <translation type="vanished">Bez trackera (%1)</translation>
     </message>
     <message>
         <source>Pause torrents</source>
-        <translation>Pauziraj torrente</translation>
+        <translation type="vanished">Pauziraj torrente</translation>
     </message>
     <message>
         <source>Remove torrents</source>
-        <translation>Ukloni torrente</translation>
+        <translation type="vanished">Ukloni torrente</translation>
     </message>
 </context>
 <context>
     <name>FeedListWidget</name>
     <message>
         <source>RSS feeds</source>
-        <translation>RSS kanali</translation>
+        <translation type="vanished">RSS kanali</translation>
     </message>
     <message>
         <source>Unread</source>
-        <translation>Nepročitano</translation>
+        <translation type="vanished">Nepročitano</translation>
+    </message>
+</context>
+<context>
+    <name>ExecutionLogWidget</name>
+    <message>
+        <source>General</source>
+        <translation type="vanished">Općenito</translation>
+    </message>
+    <message>
+        <source>Blocked</source>
+        <translation type="vanished">Blokirano</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation type="vanished">Nije poznato</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation type="vanished">Sve</translation>
+    </message>
+    <message>
+        <source>showing</source>
+        <translation type="vanished">pokazivanje</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation type="vanished">Kopiraj</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation type="vanished">Odaberi sve</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation type="vanished">ID</translation>
+    </message>
+    <message>
+        <source>Log Type</source>
+        <translation type="vanished">Vrsta zapisa</translation>
+    </message>
+    <message>
+        <source>Clear</source>
+        <translation type="vanished">Očisti</translation>
+    </message>
+    <message>
+        <source>Warning</source>
+        <translation type="vanished">Upozorenje</translation>
+    </message>
+    <message>
+        <source>Information Messages</source>
+        <translation type="vanished">Informacijske poruke</translation>
+    </message>
+    <message>
+        <source>Warning Messages</source>
+        <translation type="vanished">Poruke upozorenja</translation>
+    </message>
+    <message>
+        <source>Filter logs</source>
+        <translation type="vanished">Filter zapisa</translation>
+    </message>
+    <message>
+        <source>Blocked IPs</source>
+        <translation type="vanished">Blokirane IP adrese</translation>
+    </message>
+    <message>
+        <source>out of</source>
+        <translation type="vanished">od</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation type="vanished">Status</translation>
+    </message>
+    <message>
+        <source>Timestamp</source>
+        <translation type="vanished">Vremenska oznaka</translation>
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation type="vanished">Očisti sve</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation type="vanished">Poruka</translation>
+    </message>
+    <message>
+        <source>Log Levels:</source>
+        <translation type="vanished">Razine zapisnika:</translation>
+    </message>
+    <message>
+        <source>Reason</source>
+        <translation type="vanished">Razlog</translation>
+    </message>
+    <message>
+        <source>item</source>
+        <translation type="vanished">stavka</translation>
+    </message>
+    <message>
+        <source>IP</source>
+        <translation type="vanished">IP</translation>
+    </message>
+    <message>
+        <source>Banned</source>
+        <translation type="vanished">Banano</translation>
+    </message>
+    <message>
+        <source>Normal Messages</source>
+        <translation type="vanished">Normalne poruke</translation>
+    </message>
+    <message>
+        <source>Critical</source>
+        <translation type="vanished">Kritično</translation>
+    </message>
+    <message>
+        <source>Critical Messages</source>
+        <translation type="vanished">Kritične poruke</translation>
+    </message>
+    <message>
+        <source>Normal</source>
+        <translation type="vanished">Normalno</translation>
+    </message>
+    <message>
+        <source>items</source>
+        <translation type="vanished">stavke</translation>
+    </message>
+    <message>
+        <source>Results</source>
+        <translation type="vanished">Rezultati</translation>
+    </message>
+    <message>
+        <source>Info</source>
+        <translation type="vanished">Info</translation>
+    </message>
+    <message>
+        <source>Choose a log level...</source>
+        <translation type="vanished">Odaberite razinu zapisnika...</translation>
     </message>
 </context>
 </TS>

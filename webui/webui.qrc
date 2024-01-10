@@ -10,8 +10,10 @@
         <file>private/css/dynamicTable.css</file>
         <file>private/css/Layout.css</file>
         <file>private/css/noscript.css</file>
+        <file>private/css/palette.css</file>
         <file>private/css/style.css</file>
         <file>private/css/Tabs.css</file>
+        <file>private/css/vanillaSelectBox.css</file>
         <file>private/css/Window.css</file>
         <file>private/download.html</file>
         <file>private/downloadlimit.html</file>
@@ -21,17 +23,13 @@
         <file>private/images/application-rss.svg</file>
         <file>private/images/application-url.svg</file>
         <file>private/images/arrow-right.gif</file>
-        <file>private/images/bg-dropdown.gif</file>
-        <file>private/images/bg-handle-horizontal.gif</file>
-        <file>private/images/bg-header.gif</file>
-        <file>private/images/bg-panel-header.gif</file>
         <file>private/images/checked-completed.svg</file>
         <file>private/images/collapse.svg</file>
         <file>private/images/configure.svg</file>
         <file>private/images/connected.svg</file>
         <file>private/images/dialog-warning.svg</file>
-        <file>private/images/disconnected.svg</file>
         <file>private/images/directory.svg</file>
+        <file>private/images/disconnected.svg</file>
         <file>private/images/download.svg</file>
         <file>private/images/downloading.svg</file>
         <file>private/images/edit-clear.svg</file>
@@ -55,6 +53,7 @@
         <file>private/images/flags/ao.svg</file>
         <file>private/images/flags/aq.svg</file>
         <file>private/images/flags/ar.svg</file>
+        <file>private/images/flags/arab.svg</file>
         <file>private/images/flags/as.svg</file>
         <file>private/images/flags/at.svg</file>
         <file>private/images/flags/au.svg</file>
@@ -85,6 +84,7 @@
         <file>private/images/flags/ca.svg</file>
         <file>private/images/flags/cc.svg</file>
         <file>private/images/flags/cd.svg</file>
+        <file>private/images/flags/cefta.svg</file>
         <file>private/images/flags/cf.svg</file>
         <file>private/images/flags/cg.svg</file>
         <file>private/images/flags/ch.svg</file>
@@ -109,7 +109,7 @@
         <file>private/images/flags/dm.svg</file>
         <file>private/images/flags/do.svg</file>
         <file>private/images/flags/dz.svg</file>
-        <file>private/images/flags/ea.svg</file>
+        <file>private/images/flags/eac.svg</file>
         <file>private/images/flags/ec.svg</file>
         <file>private/images/flags/ee.svg</file>
         <file>private/images/flags/eg.svg</file>
@@ -117,6 +117,7 @@
         <file>private/images/flags/er.svg</file>
         <file>private/images/flags/es-ct.svg</file>
         <file>private/images/flags/es-ga.svg</file>
+        <file>private/images/flags/es-pv.svg</file>
         <file>private/images/flags/es.svg</file>
         <file>private/images/flags/et.svg</file>
         <file>private/images/flags/eu.svg</file>
@@ -309,6 +310,7 @@
         <file>private/images/flags/za.svg</file>
         <file>private/images/flags/zm.svg</file>
         <file>private/images/flags/zw.svg</file>
+        <file>private/images/folder-documents.svg</file>
         <file>private/images/folder-new.svg</file>
         <file>private/images/force-recheck.svg</file>
         <file>private/images/go-bottom.svg</file>
@@ -330,6 +332,7 @@
         <file>private/images/mail-inbox.svg</file>
         <file>private/images/mascot.png</file>
         <file>private/images/name.svg</file>
+        <file>private/images/object-locked.svg</file>
         <file>private/images/peers-add.svg</file>
         <file>private/images/peers-remove.svg</file>
         <file>private/images/queued.svg</file>
@@ -344,10 +347,11 @@
         <file>private/images/spinner.gif</file>
         <file>private/images/stalledDL.svg</file>
         <file>private/images/stalledUP.svg</file>
+        <file>private/images/stopped.svg</file>
         <file>private/images/system-log-out.svg</file>
-        <file>private/images/tabs.gif</file>
         <file>private/images/tags.svg</file>
         <file>private/images/task-complete.svg</file>
+        <file>private/images/task-reject.svg</file>
         <file>private/images/toolbox-divider.gif</file>
         <file>private/images/torrent-magnet.svg</file>
         <file>private/images/torrent-start-forced.svg</file>
@@ -368,6 +372,7 @@
         <file>private/rename.html</file>
         <file>private/rename_feed.html</file>
         <file>private/rename_file.html</file>
+        <file>private/rename_files.html</file>
         <file>private/rename_rule.html</file>
         <file>private/scripts/client.js</file>
         <file>private/scripts/contextmenu.js</file>
@@ -379,6 +384,7 @@
         <file>private/scripts/lib/mocha.min.js</file>
         <file>private/scripts/lib/MooTools-Core-1.6.0-compat-compressed.js</file>
         <file>private/scripts/lib/MooTools-More-1.6.0-compat-compressed.js</file>
+        <file>private/scripts/lib/vanillaSelectBox.js</file>
         <file>private/scripts/misc.js</file>
         <file>private/scripts/mocha-init.js</file>
         <file>private/scripts/piecesbar.js</file>
@@ -389,6 +395,7 @@
         <file>private/scripts/prop-peers.js</file>
         <file>private/scripts/prop-trackers.js</file>
         <file>private/scripts/prop-webseeds.js</file>
+        <file>private/scripts/rename-files.js</file>
         <file>private/scripts/speedslider.js</file>
         <file>private/setlocation.html</file>
         <file>private/shareratio.html</file>
@@ -398,6 +405,8 @@
         <file>private/views/aboutToolbar.html</file>
         <file>private/views/filters.html</file>
         <file>private/views/installsearchplugin.html</file>
+        <file>private/views/log.html</file>
+        <file>private/views/logTabs.html</file>
         <file>private/views/preferences.html</file>
         <file>private/views/preferencesToolbar.html</file>
         <file>private/views/properties.html</file>

@@ -93,7 +93,7 @@ window.qBittorrent.PropGeneral = (function() {
             noCache: true,
             method: 'get',
             onFailure: function() {
-                $('error_div').set('html', 'QBT_TR(qBittorrent client is not reachable)QBT_TR[CONTEXT=HttpServer]');
+                $('error_div').set('html', 'qBittorrent client is not reachable');
                 clearTimeout(loadTorrentDataTimer);
                 loadTorrentDataTimer = loadTorrentData.delay(10000);
             },
@@ -103,7 +103,7 @@ window.qBittorrent.PropGeneral = (function() {
                     let temp;
                     // Update Torrent data
                     if (data.seeding_time > 0)
-                        temp = "QBT_TR(%1 (seeded for %2))QBT_TR[CONTEXT=PropertiesWidget]"
+                        temp = "%1 (seeded for %2)"
                         .replace("%1", window.qBittorrent.Misc.friendlyDuration(data.time_elapsed))
                         .replace("%2", window.qBittorrent.Misc.friendlyDuration(data.seeding_time));
                     else
@@ -112,27 +112,27 @@ window.qBittorrent.PropGeneral = (function() {
 
                     $('eta').set('html', window.qBittorrent.Misc.friendlyDuration(data.eta, window.qBittorrent.Misc.MAX_ETA));
 
-                    temp = "QBT_TR(%1 (%2 max))QBT_TR[CONTEXT=PropertiesWidget]"
+                    temp = "%1 (%2 max)"
                         .replace("%1", data.nb_connections)
                         .replace("%2", data.nb_connections_limit < 0 ? "∞" : data.nb_connections_limit);
                     $('nb_connections').set('html', temp);
 
-                    temp = "QBT_TR(%1 (%2 this session))QBT_TR[CONTEXT=PropertiesWidget]"
+                    temp = "%1 (%2 this session)"
                         .replace("%1", window.qBittorrent.Misc.friendlyUnit(data.total_downloaded))
                         .replace("%2", window.qBittorrent.Misc.friendlyUnit(data.total_downloaded_session));
                     $('total_downloaded').set('html', temp);
 
-                    temp = "QBT_TR(%1 (%2 this session))QBT_TR[CONTEXT=PropertiesWidget]"
+                    temp = "%1 (%2 this session)"
                         .replace("%1", window.qBittorrent.Misc.friendlyUnit(data.total_uploaded))
                         .replace("%2", window.qBittorrent.Misc.friendlyUnit(data.total_uploaded_session));
                     $('total_uploaded').set('html', temp);
 
-                    temp = "QBT_TR(%1 (%2 avg.))QBT_TR[CONTEXT=PropertiesWidget]"
+                    temp = "%1 (%2 avg.)"
                         .replace("%1", window.qBittorrent.Misc.friendlyUnit(data.dl_speed, true))
                         .replace("%2", window.qBittorrent.Misc.friendlyUnit(data.dl_speed_avg, true));
                     $('dl_speed').set('html', temp);
 
-                    temp = "QBT_TR(%1 (%2 avg.))QBT_TR[CONTEXT=PropertiesWidget]"
+                    temp = "%1 (%2 avg.)"
                         .replace("%1", window.qBittorrent.Misc.friendlyUnit(data.up_speed, true))
                         .replace("%2", window.qBittorrent.Misc.friendlyUnit(data.up_speed_avg, true));
                     $('up_speed').set('html', temp);
@@ -145,12 +145,12 @@ window.qBittorrent.PropGeneral = (function() {
 
                     $('total_wasted').set('html', window.qBittorrent.Misc.friendlyUnit(data.total_wasted));
 
-                    temp = "QBT_TR(%1 (%2 total))QBT_TR[CONTEXT=PropertiesWidget]"
+                    temp = "%1 (%2 total)"
                         .replace("%1", data.seeds)
                         .replace("%2", data.seeds_total);
                     $('seeds').set('html', temp);
 
-                    temp = "QBT_TR(%1 (%2 total))QBT_TR[CONTEXT=PropertiesWidget]"
+                    temp = "%1 (%2 total)"
                         .replace("%1", data.peers)
                         .replace("%2", data.peers_total);
                     $('peers').set('html', temp);
@@ -162,48 +162,48 @@ window.qBittorrent.PropGeneral = (function() {
                     if (data.last_seen != -1)
                         temp = new Date(data.last_seen * 1000).toLocaleString();
                     else
-                        temp = "QBT_TR(Never)QBT_TR[CONTEXT=PropertiesWidget]";
+                        temp = "Never";
                     $('last_seen').set('html', temp);
 
-                    $('total_size').set('html', window.qBittorrent.Misc.friendlyUnit(data.total_size));
+                    temp = (data.total_size >= 0) ? window.qBittorrent.Misc.friendlyUnit(data.total_size) : "";
+                    $('total_size').set('html', temp);
 
-                    if (data.pieces_num != -1)
-                        temp = "QBT_TR(%1 x %2 (have %3))QBT_TR[CONTEXT=PropertiesWidget]"
-                        .replace("%1", data.pieces_num)
-                        .replace("%2", window.qBittorrent.Misc.friendlyUnit(data.piece_size))
-                        .replace("%3", data.pieces_have);
-                    else
-                        temp = "QBT_TR(Unknown)QBT_TR[CONTEXT=HttpServer]";
+                    if (data.pieces_num >= 0) {
+                        temp = "%1 x %2 (have %3)"
+                            .replace("%1", data.pieces_num)
+                            .replace("%2", window.qBittorrent.Misc.friendlyUnit(data.piece_size))
+                            .replace("%3", data.pieces_have);
+                    }
+                    else {
+                        temp = "";
+                    }
                     $('pieces').set('html', temp);
 
                     $('created_by').set('text', data.created_by);
+
                     if (data.addition_date != -1)
                         temp = new Date(data.addition_date * 1000).toLocaleString();
                     else
-                        temp = "QBT_TR(Unknown)QBT_TR[CONTEXT=HttpServer]";
-
+                        temp = "Unknown";
                     $('addition_date').set('html', temp);
+
                     if (data.completion_date != -1)
                         temp = new Date(data.completion_date * 1000).toLocaleString();
                     else
                         temp = "";
-
                     $('completion_date').set('html', temp);
 
-                    if (data.creation_date != -1)
-                        temp = new Date(data.creation_date * 1000).toLocaleString();
-                    else
-                        temp = "QBT_TR(Unknown)QBT_TR[CONTEXT=HttpServer]";
+                    temp = (data.creation_date >= 0) ? (new Date(data.creation_date * 1000).toLocaleString()) : "";
                     $('creation_date').set('html', temp);
 
                     if (data.infohash_v1 === "")
-                        temp = "QBT_TR(N/A)QBT_TR[CONTEXT=PropertiesWidget]";
+                        temp = "N/A";
                     else
                         temp = data.infohash_v1;
                     $('torrent_hash_v1').set('html', temp);
 
                     if (data.infohash_v2 === "")
-                        temp = "QBT_TR(N/A)QBT_TR[CONTEXT=PropertiesWidget]";
+                        temp = "N/A";
                     else
                         temp = data.infohash_v2;
                     $('torrent_hash_v2').set('html', temp);
@@ -226,7 +226,7 @@ window.qBittorrent.PropGeneral = (function() {
             noCache: true,
             method: 'get',
             onFailure: function() {
-                $('error_div').set('html', 'QBT_TR(qBittorrent client is not reachable)QBT_TR[CONTEXT=HttpServer]');
+                $('error_div').set('html', 'qBittorrent client is not reachable');
                 clearTimeout(loadTorrentDataTimer);
                 loadTorrentDataTimer = loadTorrentData.delay(10000);
             },

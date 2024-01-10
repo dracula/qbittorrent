@@ -1,12 +1,13 @@
 <style>
     #searchPattern {
         width: 300px;
-        line-height: 2em;
-        padding: 1px 5px 1px 2em;
         background-image: url("images/edit-find.svg");
         background-repeat: no-repeat;
         background-size: 1.5em;
         background-position: left;
+        border: 1px solid var(--color-border-default);
+        border-radius: 3px;
+        padding: 4px 2px 4px 25px;
     }
 
     #categorySelect {
@@ -15,10 +16,6 @@
 
     #pluginsSelect {
         width: 150px;
-    }
-
-    #startSearchButton {
-        width: 90px;
     }
 
     #searchResultsNoPlugins {
@@ -80,10 +77,10 @@
 <div id="searchResults">
     <div style="overflow: hidden; height: 70px;">
         <div style="margin: 20px 0; height: 30px;">
-            <input type="text" id="searchPattern" class="searchInputField" placeholder="QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]" autocorrect="off" autocapitalize="none" />
+            <input type="text" id="searchPattern" class="searchInputField" placeholder="Search" autocorrect="off" autocomplete="off" autocapitalize="none" />
             <select id="categorySelect" class="searchInputField" onchange="qBittorrent.Search.categorySelected()"></select>
             <select id="pluginsSelect" class="searchInputField" onchange="qBittorrent.Search.pluginSelected()"></select>
-            <button id="startSearchButton" class="searchInputField" onclick="qBittorrent.Search.startStopSearch()">QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]</button>
+            <button type="button" id="startSearchButton" class="searchInputField" onclick="qBittorrent.Search.startStopSearch()">Search</button>
         </div>
     </div>
 
@@ -92,9 +89,9 @@
             <tbody>
                 <tr>
                     <td>
-                        QBT_TR(There aren't any search plugins installed.)QBT_TR[CONTEXT=SearchEngineWidget]
+                        There aren't any search plugins installed.
                         <br />
-                        QBT_TR(Click the "Search plugins..." button at the bottom right of the window to install some.)QBT_TR[CONTEXT=SearchEngineWidget]
+                        Click the "Search plugins..." button at the bottom right of the window to install some.
                     </td>
                 </tr>
             </tbody>
@@ -103,46 +100,46 @@
     </div>
 
     <div id="searchResultsFilters">
-        <input type="text" id="searchInNameFilter" placeholder="QBT_TR(Filter)QBT_TR[CONTEXT=SearchEngineWidget]" autocorrect="off" autocapitalize="none" />
+        <input type="text" id="searchInNameFilter" placeholder="Filter" autocorrect="off" autocapitalize="none" />
 
-        <span>QBT_TR(Results)QBT_TR[CONTEXT=SearchEngineWidget] (QBT_TR(showing)QBT_TR[CONTEXT=SearchEngineWidget] <span id="numSearchResultsVisible" class="numSearchResults">0</span> QBT_TR(out of)QBT_TR[CONTEXT=SearchEngineWidget] <span id="numSearchResultsTotal" class="numSearchResults">0</span>):</span>
+        <span>Results (showing <span id="numSearchResultsVisible" class="numSearchResults">0</span> out of <span id="numSearchResultsTotal" class="numSearchResults">0</span>):</span>
 
         <div style="display: inline-block; float: right;">
-            <label for="searchInTorrentName" style="margin-left: 15px;">QBT_TR(Search in:)QBT_TR[CONTEXT=SearchEngineWidget]</label>
+            <label for="searchInTorrentName" style="margin-left: 15px;">Search in:</label>
             <select id="searchInTorrentName" onchange="qBittorrent.Search.searchInTorrentName()">
-                <option value="names">QBT_TR(Torrent names only)QBT_TR[CONTEXT=SearchEngineWidget]</option>
-                <option value="everywhere">QBT_TR(Everywhere)QBT_TR[CONTEXT=SearchEngineWidget]</option>
+                <option value="names">Torrent names only</option>
+                <option value="everywhere">Everywhere</option>
             </select>
 
-            <img id="searchResultsGranularFiltersWarning" src="images/dialog-warning.svg" title="QBT_TR(Increase window width to display additional filters)QBT_TR[CONTEXT=SearchEngineWidget]" alt="QBT_TR(Warning)QBT_TR[CONTEXT=SearchEngineWidget]" width="24" height="24">
+            <img id="searchResultsGranularFiltersWarning" src="images/dialog-warning.svg" title="Increase window width to display additional filters" alt="Warning" width="24" height="24">
 
             <div id="searchResultsGranularFilters">
-                <span style="margin-left: 15px;">QBT_TR(Seeds:)QBT_TR[CONTEXT=SearchEngineWidget]</span>
+                <span style="margin-left: 15px;">Seeds:</span>
                 <input type="number" min="0" max="1000" id="searchMinSeedsFilter" value="0" onchange="qBittorrent.Search.searchSeedsFilterChanged()">
-                <span>QBT_TR(to)QBT_TR[CONTEXT=SearchEngineWidget]</span>
+                <span>to</span>
                 <input type="number" min="0" max="1000" id="searchMaxSeedsFilter" value="0" onchange="qBittorrent.Search.searchSeedsFilterChanged()">
 
-                <span style="margin-left: 15px;">QBT_TR(Size:)QBT_TR[CONTEXT=SearchEngineWidget]</span>
+                <span style="margin-left: 15px;">Size:</span>
                 <input type="number" min="0" max="1000" step=".01" value="0.00" id="searchMinSizeFilter" onchange="qBittorrent.Search.searchSizeFilterChanged()">
                 <select id="searchMinSizePrefix" onchange="qBittorrent.Search.searchSizeFilterPrefixChanged()">
-                    <option value="0">QBT_TR(B)QBT_TR[CONTEXT=misc]</option>
-                    <option value="1">QBT_TR(KiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="2" selected>QBT_TR(MiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="3">QBT_TR(GiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="4">QBT_TR(TiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="5">QBT_TR(PiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="6">QBT_TR(EiB)QBT_TR[CONTEXT=misc]</option>
+                    <option value="0">B</option>
+                    <option value="1">KiB</option>
+                    <option value="2" selected>MiB</option>
+                    <option value="3">GiB</option>
+                    <option value="4">TiB</option>
+                    <option value="5">PiB</option>
+                    <option value="6">EiB</option>
                 </select>
-                <span>QBT_TR(to)QBT_TR[CONTEXT=SearchEngineWidget]</span>
+                <span>to</span>
                 <input type="number" min="0" max="1000" step=".01" value="0.00" id="searchMaxSizeFilter" onchange="qBittorrent.Search.searchSizeFilterChanged()">
                 <select id="searchMaxSizePrefix" onchange="qBittorrent.Search.searchSizeFilterPrefixChanged()">
-                    <option value="0">QBT_TR(B)QBT_TR[CONTEXT=misc]</option>
-                    <option value="1">QBT_TR(KiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="2" selected>QBT_TR(MiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="3">QBT_TR(GiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="4">QBT_TR(TiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="5">QBT_TR(PiB)QBT_TR[CONTEXT=misc]</option>
-                    <option value="6">QBT_TR(EiB)QBT_TR[CONTEXT=misc]</option>
+                    <option value="0">B</option>
+                    <option value="1">KiB</option>
+                    <option value="2" selected>MiB</option>
+                    <option value="3">GiB</option>
+                    <option value="4">TiB</option>
+                    <option value="5">PiB</option>
+                    <option value="6">EiB</option>
                 </select>
             </div>
         </div>
@@ -167,19 +164,19 @@
     </div>
 
     <div style="height: 30px; padding-top: 10px;">
-        <button id="manageSearchPlugins" onclick="qBittorrent.Search.manageSearchPlugins()">QBT_TR(Search plugins...)QBT_TR[CONTEXT=SearchEngineWidget]</button>
+        <button type="button" id="manageSearchPlugins" onclick="qBittorrent.Search.manageSearchPlugins()">Search plugins...</button>
     </div>
 </div>
 
 <ul id="searchResultsTableMenu" class="contextMenu">
-    <li><a href="#Download"><img src="images/downloading.svg" alt="QBT_TR(Download)QBT_TR[CONTEXT=SearchJobWidget]" /> QBT_TR(Download)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
-    <li class="separator"><a href="#OpenDescriptionUrl"><img src="images/application-url.svg" alt="QBT_TR(Open description page)QBT_TR[CONTEXT=SearchJobWidget]" /> QBT_TR(Open description page)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
+    <li><a href="#Download"><img src="images/downloading.svg" alt="Download" /> Download</a></li>
+    <li class="separator"><a href="#OpenDescriptionUrl"><img src="images/application-url.svg" alt="Open description page" /> Open description page</a></li>
     <li>
-        <a href="#" class="arrow-right"><img src="images/edit-copy.svg" alt="QBT_TR(Copy)QBT_TR[CONTEXT=SearchJobWidget]" /> QBT_TR(Copy)QBT_TR[CONTEXT=SearchJobWidget]</a>
+        <a href="#" class="arrow-right"><img src="images/edit-copy.svg" alt="Copy" /> Copy</a>
         <ul>
-            <li><a href="#" id="copySearchTorrentName" class="copySearchDataToClipboard"><img src="images/name.svg" alt="QBT_TR(Name)QBT_TR[CONTEXT=SearchJobWidget]" /> QBT_TR(Name)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
-            <li><a href="#" id="copySearchTorrentDownloadLink" class="copySearchDataToClipboard"><img src="images/insert-link.svg" alt="QBT_TR(Download link)QBT_TR[CONTEXT=SearchJobWidget]" /> QBT_TR(Download link)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
-            <li><a href="#" id="copySearchTorrentDescriptionUrl" class="copySearchDataToClipboard"><img src="images/application-url.svg" alt="QBT_TR(Description page URL)QBT_TR[CONTEXT=SearchJobWidget]" /> QBT_TR(Description page URL)QBT_TR[CONTEXT=SearchJobWidget]</a></li>
+            <li><a href="#" id="copySearchTorrentName" class="copySearchDataToClipboard"><img src="images/name.svg" alt="Name" /> Name</a></li>
+            <li><a href="#" id="copySearchTorrentDownloadLink" class="copySearchDataToClipboard"><img src="images/insert-link.svg" alt="Download link" /> Download link</a></li>
+            <li><a href="#" id="copySearchTorrentDescriptionUrl" class="copySearchDataToClipboard"><img src="images/application-url.svg" alt="Description page URL" /> Description page URL</a></li>
         </ul>
     </li>
 </ul>
@@ -234,7 +231,7 @@
             maxUnit: 3
         };
         let prevNameFilterValue;
-        let selectedCategory = "QBT_TR(All categories)QBT_TR[CONTEXT=SearchEngineWidget]";
+        let selectedCategory = "All categories";
         let selectedPlugin = "all";
         let prevSelectedPlugin;
         let activeSearchId = null;
@@ -314,7 +311,7 @@
                     plugins: plugins
                 },
                 onSuccess: function(response) {
-                    $('startSearchButton').set('text', 'QBT_TR(Stop)QBT_TR[CONTEXT=SearchEngineWidget]');
+                    $('startSearchButton').set('text', 'Stop');
                     searchRunning = true;
                     activeSearchId = response.id;
                     updateSearchResultsData();
@@ -404,7 +401,7 @@
             if (!$(id))
                 new MochaUI.Window({
                     id: id,
-                    title: "QBT_TR(Search plugins)QBT_TR[CONTEXT=PluginSelectDlg]",
+                    title: "Search plugins",
                     loadMethod: 'xhr',
                     contentURL: 'views/searchplugins.html',
                     scrollbars: false,
@@ -461,7 +458,7 @@
 
         const resetSearchState = function() {
             clearTimeout(loadSearchResultsTimer);
-            $('startSearchButton').set('text', 'QBT_TR(Search)QBT_TR[CONTEXT=SearchEngineWidget]');
+            $('startSearchButton').set('text', 'Search');
             searchResultsRowId = 0;
             searchRunning = false;
             activeSearchId = null;
@@ -529,8 +526,8 @@
                         });
 
                         const pluginsHtml = [];
-                        pluginsHtml.push('<option value="enabled">QBT_TR(Only enabled)QBT_TR[CONTEXT=SearchEngineWidget]</option>');
-                        pluginsHtml.push('<option value="all">QBT_TR(All plugins)QBT_TR[CONTEXT=SearchEngineWidget]</option>');
+                        pluginsHtml.push('<option value="enabled">Only enabled</option>');
+                        pluginsHtml.push('<option value="all">All plugins</option>');
 
                         const searchPluginsEmpty = (searchPlugins.length === 0);
                         if (searchPluginsEmpty) {

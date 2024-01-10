@@ -50,8 +50,7 @@ window.qBittorrent.PropWebseeds = (function() {
 
         removeRow: function(url) {
             if (this.rows.has(url)) {
-                const tr = this.rows.get(url);
-                tr.dispose();
+                this.rows.get(url).destroy();
                 this.rows.erase(url);
                 return true;
             }
@@ -117,7 +116,7 @@ window.qBittorrent.PropWebseeds = (function() {
             noCache: true,
             method: 'get',
             onFailure: function() {
-                $('error_div').set('html', 'QBT_TR(qBittorrent client is not reachable)QBT_TR[CONTEXT=HttpServer]');
+                $('error_div').set('html', 'qBittorrent client is not reachable');
                 clearTimeout(loadWebSeedsDataTimer);
                 loadWebSeedsDataTimer = loadWebSeedsData.delay(20000);
             },

@@ -124,7 +124,7 @@ window.qBittorrent.PropPeers = (function() {
 
                 new MochaUI.Window({
                     id: 'addPeersPage',
-                    title: "QBT_TR(Add Peers)QBT_TR[CONTEXT=PeersAdditionDialog]",
+                    title: "Add Peers",
                     loadMethod: 'iframe',
                     contentURL: 'addpeers.html?hash=' + hash,
                     scrollbars: false,
@@ -141,7 +141,7 @@ window.qBittorrent.PropPeers = (function() {
                 if (selectedPeers.length === 0)
                     return;
 
-                if (confirm('QBT_TR(Are you sure you want to permanently ban the selected peers?)QBT_TR[CONTEXT=PeerListWidget]')) {
+                if (confirm('Are you sure you want to permanently ban the selected peers?')) {
                     new Request({
                         url: 'api/v2/transfer/banPeers',
                         noCache: true,

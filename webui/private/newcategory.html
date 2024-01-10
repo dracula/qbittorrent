@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>QBT_TR(New Category)QBT_TR[CONTEXT=TransferListWidget]</title>
+    <title>New Category</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css" />
     <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
     <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
@@ -44,6 +44,10 @@
                 $('savePath').set('value', window.qBittorrent.Misc.escapeHtml(uriSavePath));
                 $('savePath').focus();
             }
+            else if (uriAction === "createSubcategory") {
+                $('categoryName').set('value', window.qBittorrent.Misc.escapeHtml(uriCategoryName));
+                $('categoryName').focus();
+            }
             else {
                 $('categoryName').focus();
             }
@@ -58,7 +62,7 @@
                     if ((name === null) || (name === ""))
                         return false;
                     if (name.match("^([^\\\\\\/]|[^\\\\\\/]([^\\\\\\/]|\\/(?=[^\\/]))*[^\\\\\\/])$") === null) {
-                        alert("QBT_TR(Invalid category name:\nPlease do not use any special characters in the category name.)QBT_TR[CONTEXT=HttpServer]");
+                        alert("Invalid category name:\nPlease do not use any special characters in the category name.");
                         return false;
                     }
                     return true;
@@ -90,11 +94,12 @@
                                 }).send();
                             },
                             onFailure: function() {
-                                alert("QBT_TR(Unable to create category)QBT_TR[CONTEXT=HttpServer] " + window.qBittorrent.Misc.escapeHtml(categoryName));
+                                alert("Unable to create category " + window.qBittorrent.Misc.escapeHtml(categoryName));
                             }
                         }).send();
                         break;
                     case "create":
+                    case "createSubcategory":
                         if (!verifyCategoryName(categoryName))
                             return;
 
@@ -131,12 +136,12 @@
 
 <body>
     <div style="padding: 10px 10px 0px 10px;">
-        <p style="font-weight: bold;">QBT_TR(Category)QBT_TR[CONTEXT=TransferListWidget]:</p>
+        <p style="font-weight: bold;">Category:</p>
         <input type="text" id="categoryName" style="width: 99%;" />
-        <p style="font-weight: bold;">QBT_TR(Save path)QBT_TR[CONTEXT=TransferListWidget]:</p>
+        <p style="font-weight: bold;">Save path:</p>
         <input type="text" id="savePath" style="width: 99%;" />
         <div style="text-align: center; padding-top: 10px;">
-            <input type="button" value="QBT_TR(Add)QBT_TR[CONTEXT=HttpServer]" id="categoryNameButton" />
+            <input type="button" value="Add" id="categoryNameButton" />
         </div>
     </div>
 </body>

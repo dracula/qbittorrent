@@ -41,9 +41,11 @@ window.qBittorrent.Misc = (function() {
             friendlyFloat: friendlyFloat,
             parseHtmlLinks: parseHtmlLinks,
             escapeHtml: escapeHtml,
+            naturalSortCollator: naturalSortCollator,
             safeTrim: safeTrim,
             toFixedPointString: toFixedPointString,
             containsAllTerms: containsAllTerms,
+            sleep: sleep,
             MAX_ETA: 8640000
         };
     };
@@ -53,17 +55,17 @@ window.qBittorrent.Misc = (function() {
      */
     const friendlyUnit = function(value, isSpeed) {
         const units = [
-            "QBT_TR(B)QBT_TR[CONTEXT=misc]",
-            "QBT_TR(KiB)QBT_TR[CONTEXT=misc]",
-            "QBT_TR(MiB)QBT_TR[CONTEXT=misc]",
-            "QBT_TR(GiB)QBT_TR[CONTEXT=misc]",
-            "QBT_TR(TiB)QBT_TR[CONTEXT=misc]",
-            "QBT_TR(PiB)QBT_TR[CONTEXT=misc]",
-            "QBT_TR(EiB)QBT_TR[CONTEXT=misc]"
+            "B",
+            "KiB",
+            "MiB",
+            "GiB",
+            "TiB",
+            "PiB",
+            "EiB"
         ];
 
         if ((value === undefined) || (value === null) || (value < 0))
-            return "QBT_TR(Unknown)QBT_TR[CONTEXT=misc]";
+            return "Unknown";
 
         let i = 0;
         while (value >= 1024.0 && i < 6) {
@@ -91,7 +93,7 @@ window.qBittorrent.Misc = (function() {
         }
 
         if (isSpeed)
-            ret += "QBT_TR(/s)QBT_TR[CONTEXT=misc]";
+            ret += "/s";
         return ret;
     };
 
@@ -104,21 +106,21 @@ window.qBittorrent.Misc = (function() {
         if (seconds === 0)
             return "0";
         if (seconds < 60)
-            return "QBT_TR(< 1m)QBT_TR[CONTEXT=misc]";
+            return "< 1m";
         let minutes = seconds / 60;
         if (minutes < 60)
-            return "QBT_TR(%1m)QBT_TR[CONTEXT=misc]".replace("%1", parseInt(minutes));
+            return "%1m".replace("%1", parseInt(minutes));
         let hours = minutes / 60;
         minutes = minutes % 60;
         if (hours < 24)
-            return "QBT_TR(%1h %2m)QBT_TR[CONTEXT=misc]".replace("%1", parseInt(hours)).replace("%2", parseInt(minutes));
+            return "%1h %2m".replace("%1", parseInt(hours)).replace("%2", parseInt(minutes));
         let days = hours / 24;
         hours = hours % 24;
         if (days < 365)
-            return "QBT_TR(%1d %2h)QBT_TR[CONTEXT=misc]".replace("%1", parseInt(days)).replace("%2", parseInt(hours));
+            return "%1d %2h".replace("%1", parseInt(days)).replace("%2", parseInt(hours));
         const years = days / 365;
         days = days % 365;
-        return "QBT_TR(%1y %2d)QBT_TR[CONTEXT=misc]".replace("%1", parseInt(years)).replace("%2", parseInt(days));
+        return "%1y %2d".replace("%1", parseInt(years)).replace("%2", parseInt(days));
     };
 
     const friendlyPercentage = function(value) {
@@ -177,6 +179,8 @@ window.qBittorrent.Misc = (function() {
         return escapedString;
     };
 
+    const naturalSortCollator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
+
     const safeTrim = function(value) {
         try {
             return value.trim();
@@ -215,6 +219,12 @@ window.qBittorrent.Misc = (function() {
 
             const textContainsTerm = (textToSearch.indexOf(term) !== -1);
             return isTermExcluded ? !textContainsTerm : textContainsTerm;
+        });
+    };
+
+    const sleep = (ms) => {
+        return new Promise((resolve) => {
+            setTimeout(resolve, ms);
         });
     };
 

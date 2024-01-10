@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>QBT_TR(Torrent Upload Speed Limiting)QBT_TR[CONTEXT=TransferListWidget]</title>
+    <title>Torrent Upload Speed Limiting</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css" />
     <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
     <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
@@ -14,7 +14,7 @@
 <body>
     <div style="width: 100%; text-align: center; margin: 0 auto; overflow: hidden">
         <div id="uplimitSlider" class="slider">
-            <div id="uplimitUpdate" class="update">QBT_TR(Upload limit:)QBT_TR[CONTEXT=PropertiesWidget] <input id="uplimitUpdatevalue" size="6" placeholder="∞" style="text-align: center;"> <span id="upLimitUnit">QBT_TR(KiB/s)QBT_TR[CONTEXT=SpeedLimitDialog]</span></div>
+            <div id="uplimitUpdate" class="update">Upload limit: <input type="text" id="uplimitUpdatevalue" size="6" placeholder="∞" style="text-align: center;"> <span id="upLimitUnit">KiB/s</span></div>
             <div class="sliderWrapper">
                 <div id="uplimitSliderknob" class="sliderknob"></div>
                 <div id="uplimitSliderarea" class="sliderarea"></div>
@@ -55,7 +55,7 @@
                 }
             };
         </script>
-        <input type="button" id="applyButton" value="QBT_TR(Apply)QBT_TR[CONTEXT=HttpServer]" onclick="setUpLimit()" />
+        <input type="button" id="applyButton" value="Apply" onclick="setUpLimit()" />
     </div>
 
     <script>
