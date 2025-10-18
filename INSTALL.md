@@ -24,7 +24,7 @@ In order to fix this issue:
 **Method 3.** Use the [MicaForEveryone](https://github.com/minusium/MicaForEveryone) (Windows 11 only)
 
 #### WebUI Theme (Server)
-![qbittorrent dracula theme (webui)](https://raw.githubusercontent.com/dracula/qbittorrent/master/screenshots/screenshot.webui.png)
+![qbittorrent dracula theme (webui)](https://raw.githubusercontent.com/dracula/qbittorrent/master/screenshots/webui-dracula.webp)
 
 1. Clone the repository:
     ```

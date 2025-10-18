@@ -1,6 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2019  Thomas Piccirello <thomas.piccirello@gmail.com>
+ * Copyright (C) 2019  Thomas Piccirello <thomas@piccirello.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -26,14 +26,11 @@
  * exception statement from your version.
  */
 
-'use strict';
+"use strict";
 
-if (window.qBittorrent === undefined) {
-    window.qBittorrent = {};
-}
-
-window.qBittorrent.FileTree = (function() {
-    const exports = function() {
+window.qBittorrent ??= {};
+window.qBittorrent.FileTree ??= (() => {
+    const exports = () => {
         return {
             FilePriority: FilePriority,
             TriState: TriState,
@@ -44,154 +41,198 @@ window.qBittorrent.FileTree = (function() {
     };
 
     const FilePriority = {
-        "Ignored": 0,
-        "Normal": 1,
-        "High": 6,
-        "Maximum": 7,
-        "Mixed": -1
+        Ignored: 0,
+        Normal: 1,
+        High: 6,
+        Maximum: 7,
+        Mixed: -1
     };
     Object.freeze(FilePriority);
 
     const TriState = {
-        "Unchecked": 0,
-        "Checked": 1,
-        "Partial": 2
+        Unchecked: 0,
+        Checked: 1,
+        Partial: 2
     };
     Object.freeze(TriState);
 
-    const FileTree = new Class({
-        root: null,
-        nodeMap: {},
+    class FileTree {
+        #root = null;
+        #nodeMap = {}; // Object with Number as keys is faster than anything
 
-        setRoot: function(root) {
-            this.root = root;
-            this.generateNodeMap(root);
+        setRoot(root) {
+            this.#root = root;
+            this.#generateNodeMap(root);
 
-            if (this.root.isFolder)
-                this.root.calculateSize();
-        },
+            if (this.#root.isFolder)
+                this.#root.calculateSize();
+        }
 
-        getRoot: function() {
-            return this.root;
-        },
+        getRoot() {
+            return this.#root;
+        }
 
-        generateNodeMap: function(node) {
-            // don't store root node in map
-            if (node.root !== null) {
-                this.nodeMap[node.rowId] = node;
+        #generateNodeMap(root) {
+            const stack = [root];
+            while (stack.length > 0) {
+                const node = stack.pop();
+
+                // don't store root node in map
+                if (node.root !== null)
+                    this.#nodeMap[node.rowId] = node;
+
+                stack.push(...node.children);
             }
+        }
 
-            node.children.each(function(child) {
-                this.generateNodeMap(child);
-            }.bind(this));
-        },
+        getNode(rowId) {
+            // TODO: enforce caller sites to pass `rowId` as number and not string
+            const value = this.#nodeMap[Number(rowId)];
+            return (value !== undefined) ? value : null;
+        }
 
-        getNode: function(rowId) {
-            return (this.nodeMap[rowId] === undefined)
-                ? null
-                : this.nodeMap[rowId];
-        },
-
-        getRowId: function(node) {
+        getRowId(node) {
             return node.rowId;
-        },
+        }
 
         /**
-         * Returns the nodes in dfs order
+         * Returns the nodes in DFS in-order
          */
-        toArray: function() {
-            const nodes = [];
-            this.root.children.each(function(node) {
-                this._getArrayOfNodes(node, nodes);
-            }.bind(this));
-            return nodes;
-        },
-
-        _getArrayOfNodes: function(node, array) {
-            array.push(node);
-            node.children.each(function(child) {
-                this._getArrayOfNodes(child, array);
-            }.bind(this));
+        toArray() {
+            const ret = [];
+            const stack = this.#root.children.toReversed();
+            while (stack.length > 0) {
+                const node = stack.pop();
+                ret.push(node);
+                stack.push(...node.children.toReversed());
+            }
+            return ret;
         }
-    });
+    }
 
-    const FileNode = new Class({
-        name: "",
-        path: "",
-        rowId: null,
-        size: 0,
-        checked: TriState.Unchecked,
-        remaining: 0,
-        progress: 0,
-        priority: FilePriority.Normal,
-        availability: 0,
-        depth: 0,
-        root: null,
-        data: null,
-        isFolder: false,
-        children: [],
-    });
+    class FileNode {
+        name = "";
+        path = "";
+        rowId = null;
+        fileId = null;
+        size = 0;
+        checked = TriState.Unchecked;
+        remaining = 0;
+        progress = 0;
+        priority = FilePriority.Normal;
+        availability = 0;
+        depth = 0;
+        root = null;
+        isFolder = false;
+        children = [];
 
-    const FolderNode = new Class({
-        Extends: FileNode,
+        isIgnored() {
+            return this.priority === FilePriority.Ignored;
+        }
 
-        initialize: function() {
-            this.isFolder = true;
-        },
+        calculateRemaining() {
+            this.remaining = this.isIgnored() ? 0 : (this.size * (1 - (this.progress / 100)));
+        }
+
+        serialize() {
+            return {
+                name: this.name,
+                path: this.path,
+                fileId: this.fileId,
+                size: this.size,
+                checked: this.checked,
+                remaining: this.remaining,
+                progress: this.progress,
+                priority: this.priority,
+                availability: this.availability
+            };
+        }
+    }
+
+    class FolderNode extends FileNode {
+        /**
+         * When true, the folder's `checked` state will be calculately automatically based on its children
+         */
+        autoCalculateCheckedState = true;
+        isFolder = true;
+        fileId = -1;
 
         addChild(node) {
+            node.calculateRemaining();
             this.children.push(node);
-        },
+        }
 
         /**
-         * Recursively calculate size of node and its children
+         * Calculate size of node and its children
          */
-        calculateSize: function() {
-            let size = 0;
-            let remaining = 0;
-            let progress = 0;
-            let availability = 0;
-            let checked = TriState.Unchecked;
-            let priority = FilePriority.Normal;
+        calculateSize() {
+            const stack = [this];
+            const visited = [];
 
-            let isFirstFile = true;
+            while (stack.length > 0) {
+                const root = stack.at(-1);
 
-            this.children.each(function(node) {
-                if (node.isFolder)
-                    node.calculateSize();
+                if (root.isFolder) {
+                    if (visited.at(-1) !== root) {
+                        visited.push(root);
+                        stack.push(...root.children);
+                        continue;
+                    }
 
-                size += node.size;
+                    visited.pop();
 
-                if (isFirstFile) {
-                    priority = node.priority;
-                    checked = node.checked;
-                    isFirstFile = false;
+                    // process children
+                    root.size = 0;
+                    root.remaining = 0;
+                    root.progress = 0;
+                    root.availability = 0;
+                    root.checked = TriState.Unchecked;
+                    root.priority = FilePriority.Normal;
+                    let isFirstFile = true;
+
+                    for (const child of root.children) {
+                        root.size += child.size;
+
+                        if (isFirstFile) {
+                            root.priority = child.priority;
+                            root.checked = child.checked;
+                            isFirstFile = false;
+                        }
+                        else {
+                            if (root.priority !== child.priority)
+                                root.priority = FilePriority.Mixed;
+                            if (root.checked !== child.checked)
+                                root.checked = TriState.Partial;
+                        }
+
+                        if (!child.isIgnored()) {
+                            root.remaining += child.remaining;
+                            root.progress += (child.progress * child.size);
+                            root.availability += (child.availability * child.size);
+                        }
+                    }
+
+                    root.checked = root.autoCalculateCheckedState ? root.checked : TriState.Checked;
+                    root.progress = (root.size > 0) ? (root.progress / root.size) : 0;
+                    root.availability = (root.size > 0) ? (root.availability / root.size) : 0;
                 }
-                else {
-                    if (priority !== node.priority)
-                        priority = FilePriority.Mixed;
-                    if (checked !== node.checked)
-                        checked = TriState.Partial;
-                }
 
-                const isIgnored = (node.priority === FilePriority.Ignored);
-                if (!isIgnored) {
-                    remaining += node.remaining;
-                    progress += (node.progress * node.size);
-                    availability += (node.availability * node.size);
-                }
-            }.bind(this));
-
-            this.size = size;
-            this.remaining = remaining;
-            this.checked = checked;
-            this.progress = (progress / size);
-            this.priority = priority;
-            this.availability = (availability / size);
+                stack.pop();
+            }
         }
-    });
+
+        /**
+         * Recursively recalculate the amount of data remaining to be downloaded.
+         * This is useful for updating a folder's "remaining" size as files are unchecked/ignored.
+         */
+        calculateRemaining() {
+            this.remaining = this.children.reduce((sum, node) => {
+                node.calculateRemaining();
+                return sum + node.remaining;
+            }, 0);
+        }
+    }
 
     return exports();
 })();
-
 Object.freeze(window.qBittorrent.FileTree);

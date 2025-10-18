@@ -19,12 +19,17 @@ Required by:
 ---------------------------------------------------------------- */
 
 .mocha {
-    background-color: #e5e5e5;
+    background-color: var(--color-background-default);
+    border-radius: 5px;
+    box-shadow: rgb(51 51 51) 0 1px 5px;
     display: none;
     overflow: hidden;
 }
 
 .mochaOverlay {
+    background-color: var(--color-background-default);
+    border-radius: 5px;
+    height: auto !important; /* also fixes out of block issue */
     left: 0;
     position: absolute; /* This is also set in theme.js in order to make theme transitions smoother */
     top: 0;
@@ -42,28 +47,26 @@ Required by:
 */
 
 .mochaTitlebar {
-    background: url("../images/spacer.gif?from=fafafa&to=e5e5e5");
+    background-color: var(--color-background-default);
+    border-radius: 5px;
     overflow: hidden;
     width: 100%;
 }
 
 .mochaTitlebar h3 {
-    color: #888;
+    background-size: 16px !important; /* override mocha titlebar logo inline style */
     font-size: 12px;
     font-weight: bold;
     line-height: 15px;
-    margin: 0;
+    overflow: hidden;
     padding: 5px 10px 4px 12px;
-}
-
-.mocha.isFocused .mochaTitlebar h3 {
-    color: #181818;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .mochaToolbarWrapper {
-    background: #f1f1f1;
-    border-top: 1px solid #d9d9d9;
-    height: 29px;
+    background-color: var(--color-background-popup);
+    height: auto !important;
     overflow: hidden;
     position: relative;
     width: 100%; /* For IE */
@@ -71,22 +74,24 @@ Required by:
 
 div.mochaToolbarWrapper.bottom {
     border: 0;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid var(--color-border-default);
 }
 
 .mochaToolbar {
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--color-border-default);
+    height: auto !important;
+    padding-top: 4px;
     width: 100%; /* For IE */
 }
 
 .mochaContentBorder {
-    border-bottom: 1px solid #dadada;
-    border-top: 1px solid #dadada;
+    border-bottom: 1px solid var(--color-border-default);
+    border-top: 1px solid var(--color-border-default);
 }
 
 /* Has a fixed height and scrollbars if required. */
 .mochaContentWrapper {
-    background: #fff;
+    background-color: var(--color-background-popup);
     font-size: 12px;
     overflow: auto;
 }
@@ -96,7 +101,7 @@ div.mochaToolbarWrapper.bottom {
 }
 
 .mocha .handle {
-    background: #0f0;
+    background: #00ff00;
     font-size: 1px; /* For IE6 */
     height: 3px;
     opacity: 0;
@@ -108,44 +113,25 @@ div.mochaToolbarWrapper.bottom {
 
 /* Corner resize handles */
 .mocha .corner {
-    background: #f00;
+    background: #ff0000;
     height: 10px;
     width: 10px;
 }
 
 /* Bottom right resize handle */
 .mocha .cornerSE {
-    background: #fefefe; /* This is the color of the visible resize handle */
+    background-color: var(--color-background-default);
     height: 20px;
     width: 20px;
 }
 
-.mochaCanvasHeader {
-    background: transparent;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    visibility: hidden;
-    z-index: -1;
-}
-
 .mochaControls {
-    background: transparent;
     height: 14px;
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 6px;
+    top: 6px;
     width: 52px;
     z-index: 4;
-}
-
-.mochaCanvasControls {
-    background: transparent;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    z-index: 3;
 }
 
 /*
@@ -159,15 +145,42 @@ div.mochaToolbarWrapper.bottom {
 .mochaMinimizeButton,
 .mochaMaximizeButton,
 .mochaCloseButton {
-    background-color: #fff;
-    color: #666;
     cursor: pointer;
     float: right;
-    font-size: 1px;
     height: 14px;
     margin-left: 5px;
+    position: relative;
     width: 14px;
     z-index: 4;
+}
+
+.mochaMaximizeButton::before,
+.mochaMaximizeButton::after,
+.mochaMinimizeButton::before,
+.mochaCloseButton::before,
+.mochaCloseButton::after {
+    background-color: var(--color-text-default);
+    border-radius: 1px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+}
+
+.mochaMaximizeButton::after {
+    height: 9px;
+    width: 2px;
+}
+
+.mochaCloseButton::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.mochaCloseButton::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .mochaMinimizeButton {
@@ -175,9 +188,19 @@ div.mochaToolbarWrapper.bottom {
 }
 
 .mochaSpinner {
-    background: url("../images/spinner.gif") no-repeat;
+    background: url("../images/spinner.svg") no-repeat;
     bottom: 7px;
     display: none;
+    height: 16px;
+    left: 6px;
+    position: absolute;
+    width: 16px;
+}
+
+.mochaErrorIcon {
+    background: url("../images/error.svg") no-repeat;
+    background-size: 16px;
+    bottom: 7px;
     height: 16px;
     left: 6px;
     position: absolute;
@@ -205,7 +228,7 @@ div.mochaToolbarWrapper.bottom {
 ---------------------------------------------------------------- */
 
 #modalOverlay {
-    background: #000;
+    background: hsl(0deg 0% 0% / 30%);
     display: none;
     left: 0;
     opacity: 0;
@@ -229,7 +252,7 @@ div.mochaToolbarWrapper.bottom {
 /* Underlay */
 
 #windowUnderlay {
-    background: #fff;
+    background: #ffffff;
     left: 0;
     position: fixed;
     top: 0;
@@ -238,16 +261,6 @@ div.mochaToolbarWrapper.bottom {
 
 * html #windowUnderlay {
     position: absolute;
-}
-
-/* The replaced class is used internally when converting CSS values to Canvas. These classes should not be removed. */
-
-.mocha.replaced,
-.mochaTitlebar.replaced,
-.mochaMinimizeButton.replaced,
-.mochaMaximizeButton.replaced,
-.mochaCloseButton.replaced {
-    background-color: transparent !important;
 }
 
 .windowClosed {
@@ -263,8 +276,7 @@ div.mochaToolbarWrapper.bottom {
 .windowClosed .mochaContentBorder,
 .windowClosed .mochaToolbarWrapper,
 .windowClosed .mochaTitlebar,
-.windowClosed .mochaControls,
-.windowClosed .mochaCanvasControls {
+.windowClosed .mochaControls {
     display: none;
     left: 0;
     position: absolute;
@@ -276,18 +288,18 @@ div.mochaToolbarWrapper.bottom {
 /* Modals */
 
 .modal2 {
-    border: 8px solid #fff;
+    border: 8px solid #ffffff;
 }
 
 .modal2 .mochaContentBorder {
-    border-width: 0px;
+    border-width: 0;
 }
 
 /* Window Themes */
 
 .mocha.no-canvas {
     background: #e5e5e5;
-    border: 1px solid #555;
+    border: 1px solid #555555;
 }
 
 .mocha.no-canvas .mochaTitlebar {
@@ -295,7 +307,7 @@ div.mochaToolbarWrapper.bottom {
 }
 
 .mocha.transparent .mochaTitlebar h3 {
-    color: #fff;
+    color: #ffffff;
     display: none;
 }
 
@@ -312,7 +324,7 @@ div.mochaToolbarWrapper.bottom {
 }
 
 .mocha.notification .mochaContentBorder {
-    border-width: 0px;
+    border-width: 0;
 }
 
 .mocha.notification .mochaContentWrapper {
@@ -322,35 +334,9 @@ div.mochaToolbarWrapper.bottom {
     text-align: center;
 }
 
-/* Example Window Themes */
-
-#about_contentWrapper {
-    background: #e5e5e5 url("../images/logo2.gif") 3px 3px no-repeat;
-}
-
-#builder_contentWrapper {
-    background: #f5f5f7;
-}
-
-#json01 .mochaTitlebar {
-    background: #6dd2db;
-}
-
-#json02 .mochaTitlebar {
-    background: #6db6db;
-}
-
-#json03 .mochaTitlebar {
-    background: #6d92db;
-}
-
-.jsonExample .mochaTitlebar h3 {
-    color: #ddd;
-}
-
 /* This does not work in IE6. */
 .isFocused.jsonExample .mochaTitlebar h3 {
-    color: #fff;
+    color: #ffffff;
 }
 
 #fxmorpherExample .mochaContentWrapper {
@@ -358,15 +344,7 @@ div.mochaToolbarWrapper.bottom {
 }
 
 #clock {
-    background: #fff;
-}
-
-/* Workaround to make invisible buttons clickable */
-
-.mochaMinimizeButton.replaced,
-.mochaMaximizeButton.replaced,
-.mochaCloseButton.replaced {
-    background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7") !important;
+    background: #ffffff;
 }
 
 /* iOS iframe scrolling */

@@ -2,15 +2,15 @@
 
 > A dark theme for [QBittorent](https://www.qbittorrent.org/).
 
-For more information about theme development and structure, [click here](https://github.com/MahdiMirzade/qbittorrent).
+For more information about theme development, structure and other awesome themes you can [click here](https://github.com/MahdiMirzadeh/qbittorrent).
 
 Application theme:
 
-![Screenshot](./screenshot.png)
+![Qt Client Theme Screenshot](./screenshots/qt-dracula.webp)
 
 WebUI theme:
 
-![WebUI Screenshot](./screenshots/screenshot.webui.png)
+![WebUI Theme Screenshot](./screenshots/webui-dracula.webp)
 
 ## Install
 
@@ -20,9 +20,9 @@ All instructions can be found at [draculatheme.com/qbittorrent](https://draculat
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/qbittorrent/graphs/contributors).
 
-| [![Mahdi Mirzade](https://github.com/mahdimirzade.png?size=100)](https://github.com/mahdimirzade) |
-| ------------------------------------------------------------------------------------------------- |
-| [Mahdi Mirzade](https://github.com/mahdimirzade)                                                  |
+| [![Mahdi Mirzadeh](https://github.com/mahdimirzadeh.png?size=100)](https://github.com/mahdimirzadeh) | [![zenorocha](https://github.com/zenorocha.png?size=100)](https://github.com/zenorocha) | [![Steccah](https://github.com/Steccah.png?size=100)](https://github.com/Steccah) | [![Cornul11](https://github.com/Cornul11.png?size=100)](https://github.com/Cornul11) | [![krashanoff](https://github.com/krashanoff.png?size=100)](https://github.com/krashanoff) | [![luxonauta](https://github.com/luxonauta)](https://github.com/luxonauta)
+| --- | --- | --- | --- | --- | --- |
+| [Mahdi Mirzadeh](https://github.com/mahdimirzadeh) | [zenorocha](https://github.com/zenorocha) | [Steccah](https://github.com/Steccah) | [Cornul11](https://github.con/Cornul11) | [krashanoff](https://github.com/krashanoff) | [luxonauta](https://github.com/luxonauta)
 
 ## Community
 

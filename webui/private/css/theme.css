@@ -1,0 +1,184 @@
+/*
+  qBittorrent WebUI Theme Template (overrides load last)
+  Tokens are substituted from theme JSON via gen.sh (same keys as Qt theme)
+*/
+
+:root {
+  /* Core palette */
+  --bg-primary: #282A36;
+  --bg-secondary: #44475A;
+  --bg-selected: #44475A;
+  --bg-table: #1E1F29;
+  --bg-header: #21222C;
+  --bg-progress: #191A21;
+  --fg-primary: #F8F8F2;
+  --fg-disabled: #6272A4;
+  --border: #44475A;
+  --accent: #BD93F9;
+  --accent-dim: #8B6BB7;
+
+  /* Bridge WebUI variables to theme tokens for full coverage */
+  --color-accent-blue: #BD93F9;
+  --color-text-blue: #BD93F9;
+  --color-text-orange: #BD93F9;
+  --color-text-red: #FF5555;
+  --color-text-green: #50FA7B;
+  --color-text-white: #FFFFFF;
+  --color-text-disabled: #6272A4;
+  --color-text-default: #F8F8F2;
+  --color-background-primary: #282A36;
+  --color-background-blue: #BD93F9;
+  --color-background-popup: #282A36;
+  --color-background-default: #44475A;
+  --color-background-hover: #383A59;
+  --color-border-blue: #BD93F9;
+  --color-border-default: #44475A;
+
+  /* Components */
+  --button-bg: #2B2D3A;
+  --button-fg: #F8F8F2;
+  --button-border: #3A3C4E;
+  --button-bg-pressed: #21222C;
+  --button-border-pressed: #6272A4;
+  --tab-indicator: #BD93F9;
+
+  /* Optional design tokens for consistency with Qt */
+  --radius: 3px;
+  --radius-lg: 6px;
+  --border-width: 1px;
+  --focus-ring: 0 0 0 2px color-mix(in srgb, var(--accent) 40%, transparent);
+  --font-ui: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
+}
+
+/* Tracker state colors alignment */
+#torrentTrackersTableDiv tr {
+  --color-tracker-disabled: #6272A4;
+  --color-tracker-not-contacted: #F1FA8C;
+  --color-tracker-working: #50FA7B;
+  --color-tracker-updating: #BD93F9;
+  --color-tracker-not-working: #FF5555;
+}
+
+html, body { background: var(--bg-primary) !important; color: var(--fg-primary) !important; font-family: var(--font-ui); }
+
+/* Global links */
+a { color: var(--accent) !important; }
+a:hover, a:focus { color: var(--accent-dim) !important; }
+
+/* Layout containers */
+#desktopHeader, #pageWrapper, .mocha, .panel, .window { background: var(--bg-primary) !important; color: var(--fg-primary) !important; }
+
+/* Top bars */
+#desktopNavbar, #mochaToolbar { background: var(--bg-header) !important; border-bottom: var(--border-width) solid var(--border) !important; }
+#desktopNavbar ul li > a, #mochaToolbar a { color: var(--fg-primary) !important; }
+#desktopNavbar ul li > a:hover, #mochaToolbar a:hover { color: var(--accent) !important; }
+
+/* Tabs */
+.tab-menu li a { 
+  color: var(--fg-primary) !important; 
+  background: var(--button-bg) !important;
+}
+.tab-menu li a:hover { 
+  background: var(--bg-selected) !important;
+}
+.tab-menu li.selected a { 
+  color: var(--accent) !important; 
+  background: var(--bg-primary) !important;
+  border-bottom: 2px solid var(--tab-indicator) !important; 
+}
+
+/* Sidebars and panels */
+#filtersSideBar, #PropertiesPanel, #rssPanel, #logPanel { background: var(--bg-primary) !important; color: var(--fg-primary) !important; border-color: var(--border) !important; }
+
+/* Tables */
+.table, table, #torrentsTable { background: var(--bg-table) !important; color: var(--fg-primary) !important; border-color: var(--border) !important; }
+.table thead th, #torrentsTable thead th { background: var(--bg-header) !important; color: var(--fg-primary) !important; border-color: var(--border) !important; }
+.table tr:hover, #torrentsTable tr:hover { background: var(--bg-secondary) !important; }
+.table tr.selected, #torrentsTable tr.selected { background: var(--bg-selected) !important; color: var(--fg-primary) !important; }
+.table td, .table th, #torrentsTable td, #torrentsTable th { border-color: var(--border) !important; }
+
+/* Context menus */
+.contextMenu, .contextMenu ul, #desktopNavbar ul ul { background: var(--bg-secondary) !important; border: var(--border-width) solid var(--border) !important; color: var(--fg-primary) !important; }
+.contextMenu a, #desktopNavbar ul ul a { color: var(--fg-primary) !important; text-decoration: none !important; }
+.contextMenu li:hover > a, #desktopNavbar ul ul li:hover > a { background: var(--bg-selected) !important; color: var(--fg-primary) !important; }
+.contextMenu .separator, #desktopNavbar ul ul .divider { border-top: var(--border-width) solid var(--border) !important; }
+
+/* Buttons */
+button, .button, input[type="button"], input[type="submit"], .toolbar button, .toolbar .button {
+  background: var(--button-bg) !important;
+  color: var(--button-fg) !important;
+  border: var(--border-width) solid var(--button-border) !important;
+  border-radius: var(--radius) !important;
+}
+button:hover, .button:hover, input[type="button"]:hover, input[type="submit"]:hover { border-color: var(--accent) !important; }
+button:active, .button:active, input[type="button"]:active, input[type="submit"]:active { background: var(--button-bg-pressed) !important; border-color: var(--button-border-pressed) !important; }
+button:focus-visible, .button:focus-visible { outline: none !important; box-shadow: var(--focus-ring) !important; }
+button:disabled, .button:disabled, input[disabled] { color: var(--fg-disabled) !important; opacity: .6 !important; }
+
+/* Inputs */
+input, select, textarea { background: var(--bg-primary) !important; color: var(--fg-primary) !important; border: var(--border-width) solid var(--border) !important; border-radius: var(--radius) !important; }
+input:focus-visible, select:focus-visible, textarea:focus-visible { outline: none !important; box-shadow: var(--focus-ring) !important; border-color: var(--accent) !important; }
+input::placeholder, textarea::placeholder { color: var(--fg-disabled) !important; }
+input[type="checkbox"], input[type="radio"] { accent-color: var(--accent); }
+
+/* Progress */
+.progress, .piecebar, .progressbar { background: var(--bg-progress) !important; border: var(--border-width) solid var(--border) !important; }
+.progress .bar, .progressbar .bar { background: var(--accent) !important; }
+
+/* Status colors */
+tr.downloading, [data-state="downloading"], .status-downloading { color: var(--status-downloading) !important; }
+tr.uploading, [data-state="uploading"], .status-uploading { color: var(--status-uploading) !important; }
+tr.stalled, [data-state="stalled"], .status-stalled { color: var(--status-stalled) !important; }
+tr.paused, [data-state="paused"], .status-paused { color: var(--status-paused) !important; }
+tr.error, [data-state="error"], .status-error { color: var(--status-error) !important; }
+tr.queued, [data-state="queued"], .status-queued { color: var(--status-queued) !important; }
+
+/* Dividers & misc */
+hr { border-color: var(--border) !important; }
+
+/* Scrollbars (supported browsers) */
+* { scrollbar-color: var(--accent) var(--bg-secondary); }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: var(--bg-secondary); }
+*::-webkit-scrollbar-thumb { background: var(--accent); border-radius: var(--radius-lg); border: 2px solid var(--bg-secondary); }
+
+/* Mocha (dialog) overrides */
+.mochaOverlay, .mochaTitlebar, .mochaToolbarWrapper, .mochaContentWrapper, .mochaContentBorder {
+  background: var(--bg-primary) !important;
+  color: var(--fg-primary) !important;
+  border-color: var(--border) !important;
+}
+.mochaTitlebar { background: var(--bg-header) !important; }
+.mochaTitlebar h3 { color: var(--fg-primary) !important; }
+.mochaToolbarWrapper { background: var(--bg-header) !important; }
+
+/* Fieldsets in preferences */
+fieldset.settings { background: var(--bg-primary) !important; border: var(--border-width) solid var(--border) !important; }
+fieldset.settings legend { color: var(--fg-primary) !important; }
+fieldset.settings table, fieldset.settings td, fieldset.settings th { background: var(--bg-primary) !important; color: var(--fg-primary) !important; border-color: var(--border) !important; }
+
+/* Form controls */
+select option { background: var(--bg-primary); color: var(--fg-primary); }
+input[type="text"], input[type="number"], input[type="password"], textarea { background: var(--bg-primary) !important; color: var(--fg-primary) !important; }
+
+/* Toolbar tabs and buttons */
+#mochaToolbar a, #mochaToolbar button, #mochaToolbar .button,
+.toolbar a, .toolbar button, .toolbar .button {
+  background: var(--button-bg) !important;
+  color: var(--button-fg) !important;
+  border: var(--border-width) solid var(--button-border) !important;
+}
+#mochaToolbar a:hover, #mochaToolbar button:hover,
+.toolbar a:hover, .toolbar button:hover {
+  background: var(--bg-selected) !important;
+  border-color: var(--accent) !important;
+}
+#mochaToolbar a.selected, #mochaToolbar button.selected,
+.toolbar a.selected, .toolbar button.selected,
+#preferencesTabs li.selected a,
+.tab-menu li.selected a {
+  background: var(--bg-primary) !important;
+  color: var(--accent) !important;
+  border: var(--border-width) solid var(--border) !important;
+  border-bottom: 2px solid var(--tab-indicator) !important;
+}

@@ -11,39 +11,33 @@
 </div>
 
 <script>
-    'use strict';
+    "use strict";
 
-    (function() {
-        MochaUI.initializeTabs('aboutTabs');
+    (() => {
+        MochaUI.initializeTabs("aboutTabs");
 
-        $('aboutAboutLink').addEvent('click', function() {
-            $$('.aboutTabContent').addClass('invisible');
-            $('aboutAboutContent').removeClass('invisible');
+        const showContent = (element) => {
+            for (const content of document.querySelectorAll(".aboutTabContent"))
+                content.classList.toggle("invisible", (content !== element));
+        };
+
+        document.getElementById("aboutAboutLink").addEventListener("click", (event) => {
+            showContent(document.getElementById("aboutAboutContent"));
         });
-
-        $('aboutAuthorLink').addEvent('click', function() {
-            $$('.aboutTabContent').addClass('invisible');
-            $('aboutAuthorContent').removeClass('invisible');
+        document.getElementById("aboutAuthorLink").addEventListener("click", (event) => {
+            showContent(document.getElementById("aboutAuthorContent"));
         });
-
-        $('aboutSpecialThanksLink').addEvent('click', function() {
-            $$('.aboutTabContent').addClass('invisible');
-            $('aboutSpecialThanksContent').removeClass('invisible');
+        document.getElementById("aboutSpecialThanksLink").addEventListener("click", (event) => {
+            showContent(document.getElementById("aboutSpecialThanksContent"));
         });
-
-        $('aboutTranslatorsLink').addEvent('click', function() {
-            $$('.aboutTabContent').addClass('invisible');
-            $('aboutTranslatorsContent').removeClass('invisible');
+        document.getElementById("aboutTranslatorsLink").addEventListener("click", (event) => {
+            showContent(document.getElementById("aboutTranslatorsContent"));
         });
-
-        $('aboutLicenseLink').addEvent('click', function() {
-            $$('.aboutTabContent').addClass('invisible');
-            $('aboutLicenseContent').removeClass('invisible');
+        document.getElementById("aboutLicenseLink").addEventListener("click", (event) => {
+            showContent(document.getElementById("aboutLicenseContent"));
         });
-
-        $('aboutSoftwareUsedLink').addEvent('click', function() {
-            $$('.aboutTabContent').addClass('invisible');
-            $('aboutSoftwareUsedContent').removeClass('invisible');
+        document.getElementById("aboutSoftwareUsedLink").addEventListener("click", (event) => {
+            showContent(document.getElementById("aboutSoftwareUsedContent"));
         });
     })();
 </script>
