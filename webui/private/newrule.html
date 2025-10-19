@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <title>QBT_TR(New rule name)QBT_TR[CONTEXT=AutomatedRssDownloader]</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
-    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
-    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
     <script>
         "use strict";
 
-        window.addEventListener("DOMContentLoaded", (event) => {
+        window.addEventListener("DOMContentLoaded", () => {
             window.addEventListener("keydown", (event) => {
                 switch (event.key) {
                     case "Enter":
                         event.preventDefault();
-                        document.getElementById("submitButton").click();
+                        $("submitButton").click();
                         break;
                     case "Escape":
                         event.preventDefault();
@@ -24,18 +27,18 @@
                 }
             });
 
-            document.getElementById("name").focus();
-            document.getElementById("submitButton").addEventListener("click", (e) => {
+            $("name").focus();
+            $("submitButton").addEventListener("click", (e) => {
                 e.preventDefault();
                 e.stopPropagation();
 
                 // check field
-                const name = document.getElementById("name").value.trim();
+                const name = $("name").value.trim();
                 if (name === "") {
                     alert("QBT_TR(Name cannot be empty)QBT_TR[CONTEXT=HttpServer]");
                     return;
                 }
-                document.getElementById("submitButton").disabled = true;
+                $("submitButton").disabled = true;
 
                 fetch("api/v2/rss/setRule", {
                         method: "POST",

@@ -80,11 +80,11 @@
     </message>
     <message>
         <source>Select .torrent files</source>
-        <translation type="unfinished" />
+        <translation>.torrent-bestanden kiezen</translation>
     </message>
     <message>
         <source>Torrent options</source>
-        <translation type="unfinished" />
+        <translation>Torrent-opties</translation>
     </message>
 </context>
 <context>
@@ -190,14 +190,6 @@
     <message>
         <source>Unknown</source>
         <translation>Onbekend</translation>
-    </message>
-    <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Begrenzing voor deelverhouding moet tussen 0 en 9998 liggen.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Begrenzing voor seed-tijd moet liggen tussen 0 en 525 600 minuten.</translation>
     </message>
     <message>
         <source>Apply</source>
@@ -373,7 +365,7 @@
     </message>
     <message>
         <source>External IP: N/A</source>
-        <translation type="unfinished" />
+        <translation>Externe IP: N/B</translation>
     </message>
     <message>
         <source>Reverse proxy setup examples</source>
@@ -401,11 +393,11 @@
     </message>
     <message>
         <source>External IP: %1%2</source>
-        <translation type="unfinished" />
+        <translation>Externe IP: %1%2</translation>
     </message>
     <message>
         <source>Edit web seed</source>
-        <translation type="unfinished" />
+        <translation>Webseed bewerken</translation>
     </message>
     <message>
         <source>Are you sure you want to remove %1 from the transfer list?</source>
@@ -425,7 +417,7 @@
     </message>
     <message>
         <source>External IPs: %1, %2</source>
-        <translation type="unfinished" />
+        <translation>Externe IPs: %1, %2</translation>
     </message>
     <message>
         <source>Unable to recheck torrents.</source>
@@ -441,6 +433,14 @@
     </message>
     <message>
         <source>Add web seeds</source>
+        <translation>Webseeds toevoegen</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -660,7 +660,7 @@
     </message>
     <message>
         <source>Use regular expression</source>
-        <translation type="unfinished" />
+        <translation>Reguliere expressie gebruiken</translation>
     </message>
     <message>
         <source>Would you like to start all torrents?</source>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Alles stoppen</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrent aanmaken</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Bij toevoegen torrent</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Info: het wachtwoord wordt onversleuteld opgeslagen</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>µTP-TCP gemengde modus algoritme</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Asynchrone I/O-threads:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1865,11 +1869,11 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Show external IP in status bar</source>
-        <translation type="unfinished" />
+        <translation>Externe IP in statusbalk weergeven</translation>
     </message>
     <message>
         <source>Fetched trackers</source>
-        <translation type="unfinished" />
+        <translation>Opgehaalde trackers</translation>
     </message>
     <message>
         <source>Confirm when deleting torrents</source>
@@ -1925,7 +1929,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Start / stop torrent</source>
-        <translation type="unfinished" />
+        <translation>Torrent starten / stoppen</translation>
     </message>
     <message>
         <source>Send test email</source>
@@ -1957,7 +1961,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Run on torrent finished:</source>
-        <translation type="unfinished" />
+        <translation>Uitvoeren na voltooien van torrent:</translation>
     </message>
     <message>
         <source>Attempted to send email. Check your inbox to confirm success</source>
@@ -1989,7 +1993,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Run on torrent added:</source>
-        <translation type="unfinished" />
+        <translation>Uitvoeren wanneer torrent toegevoegd wordt:</translation>
     </message>
     <message>
         <source>Port reported to trackers (requires restart) [0: listening port]:</source>
@@ -2038,22 +2042,6 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     <message>
         <source>Log Files</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation>s</translation>
     </message>
 </context>
 <context>
@@ -2421,7 +2409,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Copy web seed URL</source>
-        <translation type="unfinished" />
+        <translation>Webseed-URL kopiëren</translation>
     </message>
     <message>
         <source>Replace option</source>
@@ -2429,7 +2417,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Edit web seed URL...</source>
-        <translation type="unfinished" />
+        <translation>Webseed-URL bewerken...</translation>
     </message>
     <message>
         <source>Web seed URL:</source>
@@ -2457,7 +2445,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Remove web seed</source>
-        <translation type="unfinished" />
+        <translation>Webseed verwijderen</translation>
     </message>
     <message>
         <source>Web seed editing</source>
@@ -2465,7 +2453,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Add web seeds...</source>
-        <translation type="unfinished" />
+        <translation>Webseeds toevoegen...</translation>
     </message>
     <message>
         <source>Private:</source>
@@ -3298,7 +3286,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Location:</source>
-        <translation type="unfinished" />
+        <translation>Locatie:</translation>
     </message>
     <message>
         <source>Stop</source>
@@ -3318,7 +3306,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Add tags</source>
-        <translation type="unfinished" />
+        <translation>Labels toevoegen</translation>
     </message>
     <message>
         <source>Category:</source>
@@ -3575,7 +3563,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Select category</source>
-        <translation type="unfinished" />
+        <translation>Categorie kiezen</translation>
     </message>
     <message>
         <source>Min size prefix</source>
@@ -3591,7 +3579,7 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     </message>
     <message>
         <source>Select plugins</source>
-        <translation type="unfinished" />
+        <translation>Plugins kiezen</translation>
     </message>
 </context>
 <context>
@@ -4041,14 +4029,6 @@ Gebruik ';' om meerdere items te splitsen. Jokerteken '*' kan gebruikt worden.</
     <message>
         <source>URL cannot be empty</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Auteur: </translation>
     </message>
 </context>
 <context>
@@ -4519,7 +4499,7 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished" />
+        <translation>Cookie toevoegen</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -4604,198 +4584,6 @@ Ondersteunt de formaten:  S01E01, 1x1, 2017.12.31 en 31.12.2017 (datumformaten o
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Ongeldige gebruikersnaam of wachtwoord.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Privé</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>In wachtrij</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Opmerkingen:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>Webseed-URL's:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Opmerking</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Instellingen</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Status</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Voortgang</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Voltooid op</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hybride</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/B</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>Tracker-URL's:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Pad:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Torrent aanmaken</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Automatisch</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Torrentformaat:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Toegevoegd op</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrent aanmaken</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Bron:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Trackers</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Grootte deeltjes:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Velden</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

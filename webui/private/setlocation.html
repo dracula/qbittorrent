@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <title>QBT_TR(Set location)QBT_TR[CONTEXT=HttpServer]</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
-    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
-    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
-    <script defer src="scripts/pathAutofill.js?v=${CACHEID}"></script>
+    <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
+    <script src="scripts/pathAutofill.js?v=${CACHEID}"></script>
     <script>
         "use strict";
 
-        window.addEventListener("DOMContentLoaded", (event) => {
+        window.addEventListener("DOMContentLoaded", () => {
             window.addEventListener("keydown", (event) => {
                 switch (event.key) {
                     case "Enter":
                         event.preventDefault();
-                        document.getElementById("setLocationButton").click();
+                        $("setLocationButton").click();
                         break;
                     case "Escape":
                         event.preventDefault();
@@ -30,17 +33,17 @@
 
             // set text field to current value
             if (path !== null)
-                document.getElementById("setLocation").value = decodeURIComponent(path);
+                $("setLocation").value = decodeURIComponent(path);
 
-            document.getElementById("setLocation").focus();
-            document.getElementById("setLocationButton").addEventListener("click", (e) => {
+            $("setLocation").focus();
+            $("setLocationButton").addEventListener("click", (e) => {
                 e.preventDefault();
                 e.stopPropagation();
 
                 // check field
-                const location = document.getElementById("setLocation").value.trim();
+                const location = $("setLocation").value.trim();
                 if ((location === null) || (location === "")) {
-                    document.getElementById("error_div").textContent = "QBT_TR(Save path is empty)QBT_TR[CONTEXT=TorrentsController]";
+                    $("error_div").textContent = "QBT_TR(Save path is empty)QBT_TR[CONTEXT=TorrentsController]";
                     return;
                 }
 
@@ -53,7 +56,7 @@
                     })
                     .then(async (response) => {
                         if (!response.ok) {
-                            document.getElementById("error_div").textContent = await response.text();
+                            $("error_div").textContent = await response.text();
                             return;
                         }
 

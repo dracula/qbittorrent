@@ -192,14 +192,6 @@
         <translation>Tuntematon</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Jakosuhderajoituksen on oltava väliltä 0–9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Jakoajan aikarajan pitää olla 0 ja 525600 minuutin väliltä.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Toteuta</translation>
     </message>
@@ -441,6 +433,14 @@
     </message>
     <message>
         <source>Add web seeds</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Pysäytä kaikki</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrentin luonti</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Kun lisätään torrent-tiedostoa</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Tärkeää: Salasana tallennetaan salaamattomana</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation type="unfinished" />
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Asynkroniset I/O-säikeet:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation type="unfinished" />
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -2033,22 +2037,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Log Files</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -4038,14 +4026,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>URL cannot be empty</source>
         <translation>URL-osoite ei voi olla tyhjä</translation>
     </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Tekijä: </translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4600,198 +4580,6 @@ Nämä muodot ovat tuetut: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (päiväysmuodo
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Virheellinen käyttäjätunnus tai salasana.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Yksityinen</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>Jonossa</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Kommentit:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>Web-jaot:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Kommentti</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Asetukset</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Tila</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Edistyminen</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Valmistunut</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hybridi</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Ei saatavilla</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>Seurantapalvelimien osoitteet:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Sijainti:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Luo torrent</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Automaattinen</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Torrentin muoto:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Lisätty</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrentin luonti</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Lähde:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Seurantapalvelimet</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Osakoko:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Kentät</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

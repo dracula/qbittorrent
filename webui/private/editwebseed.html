@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <title>QBT_TR(Edit web seed)QBT_TR[CONTEXT=HttpServer]</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
-    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
-    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
     <script>
         "use strict";
 
-        window.addEventListener("DOMContentLoaded", (event) => {
+        window.addEventListener("DOMContentLoaded", () => {
             window.addEventListener("keydown", (event) => {
                 switch (event.key) {
                     case "Enter":
                         event.preventDefault();
-                        document.getElementById("editWebSeedButton").click();
+                        $("editWebSeedButton").click();
                         break;
                     case "Escape":
                         event.preventDefault();
@@ -26,10 +28,10 @@
 
             const searchParams = new URLSearchParams(window.location.search);
             const origUrl = searchParams.get("url");
-            document.getElementById("url").value = decodeURIComponent(origUrl);
-            document.getElementById("url").focus();
+            $("url").value = decodeURIComponent(origUrl);
+            $("url").focus();
 
-            document.getElementById("editWebSeedButton").addEventListener("click", (e) => {
+            $("editWebSeedButton").addEventListener("click", (e) => {
                 e.stopPropagation();
 
                 fetch("api/v2/torrents/editWebSeed", {
@@ -37,7 +39,7 @@
                         body: new URLSearchParams({
                             hash: searchParams.get("hash"),
                             origUrl: origUrl,
-                            newUrl: encodeURIComponent(document.getElementById("url").value.trim())
+                            newUrl: encodeURIComponent($("url").value.trim())
                         })
                     })
                     .then((response) => {

@@ -192,14 +192,6 @@
         <translation>Bilinmiyor</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Paylaşma oranı sınırı 0 ve 9998 arasında olmak zorundadır.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Gönderim süresi sınırı 0 ve 525600 dakika arasında olmak zorundadır.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Uygula</translation>
     </message>
@@ -443,6 +435,14 @@
         <source>Add web seeds</source>
         <translation>Web gönderimleri ekle</translation>
     </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation>Paylaşım oranı sınırı negatif bir değer olmamak zorundadır.</translation>
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation>Gönderim süresi sınırı negatif bir değer olmamak zorundadır.</translation>
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -540,7 +540,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Ara</translation>
+        <translation>Arama</translation>
     </message>
     <message>
         <source>Transfers</source>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Tümünü Durdur</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrent Oluşturucu</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Bir torrent eklerken</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Bilgi: Parola şifrelenmeden kaydedilir</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>μTP-TCP karışık kip algoritması:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Eşzamansız G/Ç iş parçaları:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1985,7 +1989,7 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
     </message>
     <message>
         <source>List of alternative WebUI</source>
-        <translation>Alternatif Web Arayüzü listesi</translation>
+        <translation>Alternatif Web arayüzü listesi</translation>
     </message>
     <message>
         <source>Run on torrent added:</source>
@@ -2038,22 +2042,6 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
     <message>
         <source>Log Files</source>
         <translation>Günlük Dosyaları</translation>
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation>İyileştirilmiş tablo işlemeyi etkinleştir (deneysel)</translation>
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation>Not: Parola şifrelenmeden kaydedilir</translation>
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation>Dahili anamakine adı çözücü önbelleği sona erme aralığı</translation>
-    </message>
-    <message>
-        <source>sec</source>
-        <translation>san</translation>
     </message>
 </context>
 <context>
@@ -3579,7 +3567,7 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
     </message>
     <message>
         <source>Min size prefix</source>
-        <translation>En az boyut öneki</translation>
+        <translation>En düşük boyut öneki</translation>
     </message>
     <message>
         <source>Start a search above.</source>
@@ -4041,14 +4029,6 @@ sunucusu tarafından kullanılan etki alanı adlarına eklemelisiniz.
     <message>
         <source>URL cannot be empty</source>
         <translation>URL boş olamaz</translation>
-    </message>
-    <message>
-        <source>Open link</source>
-        <translation>Bağlantıyı aç</translation>
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Hazırlayan: </translation>
     </message>
 </context>
 <context>
@@ -4604,203 +4584,6 @@ Desteklenen biçimler: S01E01, 1x1, 2017.12.31 ve 31.12.2017 (Tarih biçimleri d
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Geçersiz Kullanıcı Adı veya Parola.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Özel</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation>Kaynak</translation>
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>Kuyruğa Alındı</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation>Torrent oluşturulamıyor.</translation>
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation>Özel
-                torrent (DHT ağında dağıtılmayacak)</translation>
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>Torrent dosyası dışa aktarılamıyor</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation>Yeni Torrent Oluştur</translation>
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Açıklamalar:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation>Torrent'i İndir</translation>
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation>Durum Simgesi</translation>
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>Web gönderim URL'leri:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation>Başarısız oldu</translation>
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Açıklama</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation>Tamamlandı</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Ayarlar</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation>Hata İletisi</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Durum</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation>Şundan daha büyük dosyaları parça sınırına
-                hizala:</translation>
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation>Paylaşmak için dosya/klasör seçin:</translation>
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation>Parça Boyutu</translation>
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>İlerleme</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Tamamlanma</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hibrit</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation>Torrent oluşturma görevleri yüklenemiyor</translation>
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation>Hizalamayı
-                    iyileştir</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Yok</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>İzleyici URL'leri:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation>Seçilen görevleri silmek istediğinize emin misiniz?</translation>
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Yol:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Torrent Oluştur</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Otomatik</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation>Başlatılma</translation>
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation>Web Gönderimleri</translation>
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation>Gönderimi 
-                hemen
-                başlat</translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>Biçim</translation>
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Torrent biçimi:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation>Kaynak Yolu</translation>
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Eklenme</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation>Çalışıyor</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrent Oluşturucu</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Kaynak:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>İzleyiciler</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Parça boyutu:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Alanlar</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation>Görevi Kaldır</translation>
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation>Torrent'i Dışa Aktar</translation>
     </message>
 </context>
 </TS>

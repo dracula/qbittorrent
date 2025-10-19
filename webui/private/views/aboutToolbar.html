@@ -16,28 +16,34 @@
     (() => {
         MochaUI.initializeTabs("aboutTabs");
 
-        const showContent = (element) => {
-            for (const content of document.querySelectorAll(".aboutTabContent"))
-                content.classList.toggle("invisible", (content !== element));
-        };
+        $("aboutAboutLink").addEventListener("click", () => {
+            Array.prototype.forEach.call(document.querySelectorAll(".aboutTabContent"), (tab => tab.classList.add("invisible")));
+            $("aboutAboutContent").classList.remove("invisible");
+        });
 
-        document.getElementById("aboutAboutLink").addEventListener("click", (event) => {
-            showContent(document.getElementById("aboutAboutContent"));
+        $("aboutAuthorLink").addEventListener("click", () => {
+            Array.prototype.forEach.call(document.querySelectorAll(".aboutTabContent"), (tab => tab.classList.add("invisible")));
+            $("aboutAuthorContent").classList.remove("invisible");
         });
-        document.getElementById("aboutAuthorLink").addEventListener("click", (event) => {
-            showContent(document.getElementById("aboutAuthorContent"));
+
+        $("aboutSpecialThanksLink").addEventListener("click", () => {
+            Array.prototype.forEach.call(document.querySelectorAll(".aboutTabContent"), (tab => tab.classList.add("invisible")));
+            $("aboutSpecialThanksContent").classList.remove("invisible");
         });
-        document.getElementById("aboutSpecialThanksLink").addEventListener("click", (event) => {
-            showContent(document.getElementById("aboutSpecialThanksContent"));
+
+        $("aboutTranslatorsLink").addEventListener("click", () => {
+            Array.prototype.forEach.call(document.querySelectorAll(".aboutTabContent"), (tab => tab.classList.add("invisible")));
+            $("aboutTranslatorsContent").classList.remove("invisible");
         });
-        document.getElementById("aboutTranslatorsLink").addEventListener("click", (event) => {
-            showContent(document.getElementById("aboutTranslatorsContent"));
+
+        $("aboutLicenseLink").addEventListener("click", () => {
+            Array.prototype.forEach.call(document.querySelectorAll(".aboutTabContent"), (tab => tab.classList.add("invisible")));
+            $("aboutLicenseContent").classList.remove("invisible");
         });
-        document.getElementById("aboutLicenseLink").addEventListener("click", (event) => {
-            showContent(document.getElementById("aboutLicenseContent"));
-        });
-        document.getElementById("aboutSoftwareUsedLink").addEventListener("click", (event) => {
-            showContent(document.getElementById("aboutSoftwareUsedContent"));
+
+        $("aboutSoftwareUsedLink").addEventListener("click", () => {
+            Array.prototype.forEach.call(document.querySelectorAll(".aboutTabContent"), (tab => tab.classList.add("invisible")));
+            $("aboutSoftwareUsedContent").classList.remove("invisible");
         });
     })();
 </script>

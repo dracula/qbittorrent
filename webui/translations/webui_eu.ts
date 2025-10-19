@@ -192,14 +192,6 @@
         <translation>Ezezaguna</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Elkarbanatze maila muga 0 eta 9998 artekoa izan behar da.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Emaritza denbora muga 0 eta 525600 minutu artekoa izan behar da.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Ezarri</translation>
     </message>
@@ -441,6 +433,14 @@
     </message>
     <message>
         <source>Add web seeds</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Gelditu dena</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrent Sortzailea</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Torrent bat gehitzean</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Info: pasahitza zifratu gabe gordetzen da</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>uTP-TCP algoritmo modu nahastua:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>S/I hari asinkronoak:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -2037,22 +2041,6 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
     </message>
     <message>
         <source>Log Files</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -4042,14 +4030,6 @@ Erabili ';' sarrera ugari banantzeko. '*' ordez-hizkia erabili daiteke.</transla
         <source>URL cannot be empty</source>
         <translation type="unfinished" />
     </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Egilea: </translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4604,198 +4584,6 @@ Sostengatutako heuskarriak: S01E01, 1x1, 2017.12.31 eta 31.12.2017 (Data heuskar
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Erabiltzaile-izen edo Sarhitz baliogabea.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Pribatua</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>Lerrokatuta</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Aipamenak:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>Web emaritza URL-ak:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Iruzkina</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Ezarpenak</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Egoera</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Garapena</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Osatuta</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hibridoa</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>E/G</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>Aztarnari URL-ak:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Helburua:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Sortu Torrenta</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Berez</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Torrentaren heuskarria:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Gehituta</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrent Sortzailea</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Iturburua:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Jarraitzaileak</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Atal neurria:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Eremuak</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

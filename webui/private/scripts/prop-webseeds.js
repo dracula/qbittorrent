@@ -43,10 +43,8 @@ window.qBittorrent.PropWebseeds ??= (() => {
 
     let loadWebSeedsDataTimer = -1;
     const loadWebSeedsData = () => {
-        if (document.hidden)
-            return;
-        if (document.getElementById("propWebSeeds").classList.contains("invisible")
-            || document.getElementById("propertiesPanel_collapseToggle").classList.contains("panel-expand")) {
+        if ($("propWebSeeds").classList.contains("invisible")
+            || $("propertiesPanel_collapseToggle").classList.contains("panel-expand")) {
             // Tab changed, don't do anything
             return;
         }
@@ -152,14 +150,14 @@ window.qBittorrent.PropWebseeds ??= (() => {
             id: "webseedsPage",
             title: "QBT_TR(Add web seeds)QBT_TR[CONTEXT=HttpServer]",
             loadMethod: "iframe",
-            contentURL: `addwebseeds.html?v=${CACHEID}&hash=${current_hash}`,
+            contentURL: `addwebseeds.html?hash=${current_hash}`,
             scrollbars: true,
             resizable: false,
             maximizable: false,
             closable: true,
             paddingVertical: 0,
             paddingHorizontal: 0,
-            width: window.qBittorrent.Dialog.limitWidthToViewport(500),
+            width: 500,
             height: 260,
             onCloseComplete: () => {
                 updateData();
@@ -181,14 +179,14 @@ window.qBittorrent.PropWebseeds ??= (() => {
             id: "webseedsPage",
             title: "QBT_TR(Web seed editing)QBT_TR[CONTEXT=PropertiesWidget]",
             loadMethod: "iframe",
-            contentURL: `editwebseed.html?v=${CACHEID}&hash=${current_hash}&url=${encodeURIComponent(webseedUrl)}`,
+            contentURL: `editwebseed.html?hash=${current_hash}&url=${encodeURIComponent(webseedUrl)}`,
             scrollbars: true,
             resizable: false,
             maximizable: false,
             closable: true,
             paddingVertical: 0,
             paddingHorizontal: 0,
-            width: window.qBittorrent.Dialog.limitWidthToViewport(500),
+            width: 500,
             height: 150,
             onCloseComplete: () => {
                 updateData();
@@ -219,12 +217,13 @@ window.qBittorrent.PropWebseeds ??= (() => {
         torrentWebseedsTable.clear();
     };
 
-    document.getElementById("CopyWebseedUrl").addEventListener("click", async (event) => {
-        const text = torrentWebseedsTable.selectedRowsIds().join("\n");
-        await clipboardCopy(text);
+    new ClipboardJS("#CopyWebseedUrl", {
+        text: (trigger) => {
+            return torrentWebseedsTable.selectedRowsIds().join("\n");
+        }
     });
 
-    torrentWebseedsTable.setup("torrentWebseedsTableDiv", "torrentWebseedsTableFixedHeaderDiv", torrentWebseedsContextMenu, true);
+    torrentWebseedsTable.setup("torrentWebseedsTableDiv", "torrentWebseedsTableFixedHeaderDiv", torrentWebseedsContextMenu);
 
     return exports();
 })();

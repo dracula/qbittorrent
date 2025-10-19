@@ -1,6 +1,6 @@
 /*
  * Bittorrent Client using Qt and libtorrent.
- * Copyright (C) 2019  Thomas Piccirello <thomas@piccirello.com>
+ * Copyright (C) 2019  Thomas Piccirello <thomas.piccirello@gmail.com>
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -56,182 +56,141 @@ window.qBittorrent.FileTree ??= (() => {
     };
     Object.freeze(TriState);
 
-    class FileTree {
-        #root = null;
-        #nodeMap = {}; // Object with Number as keys is faster than anything
+    const FileTree = new Class({
+        root: null,
+        nodeMap: {},
 
-        setRoot(root) {
-            this.#root = root;
-            this.#generateNodeMap(root);
+        setRoot: function(root) {
+            this.root = root;
+            this.generateNodeMap(root);
 
-            if (this.#root.isFolder)
-                this.#root.calculateSize();
-        }
+            if (this.root.isFolder)
+                this.root.calculateSize();
+        },
 
-        getRoot() {
-            return this.#root;
-        }
+        getRoot: function() {
+            return this.root;
+        },
 
-        #generateNodeMap(root) {
-            const stack = [root];
-            while (stack.length > 0) {
-                const node = stack.pop();
+        generateNodeMap: function(node) {
+            // don't store root node in map
+            if (node.root !== null)
+                this.nodeMap[node.rowId] = node;
 
-                // don't store root node in map
-                if (node.root !== null)
-                    this.#nodeMap[node.rowId] = node;
+            node.children.each((child) => {
+                this.generateNodeMap(child);
+            });
+        },
 
-                stack.push(...node.children);
-            }
-        }
+        getNode: function(rowId) {
+            return (this.nodeMap[rowId] === undefined)
+                ? null
+                : this.nodeMap[rowId];
+        },
 
-        getNode(rowId) {
-            // TODO: enforce caller sites to pass `rowId` as number and not string
-            const value = this.#nodeMap[Number(rowId)];
-            return (value !== undefined) ? value : null;
-        }
-
-        getRowId(node) {
+        getRowId: (node) => {
             return node.rowId;
-        }
+        },
 
         /**
-         * Returns the nodes in DFS in-order
+         * Returns the nodes in dfs order
          */
-        toArray() {
-            const ret = [];
-            const stack = this.#root.children.toReversed();
-            while (stack.length > 0) {
-                const node = stack.pop();
-                ret.push(node);
-                stack.push(...node.children.toReversed());
-            }
-            return ret;
+        toArray: function() {
+            const nodes = [];
+            this.root.children.each((node) => {
+                this._getArrayOfNodes(node, nodes);
+            });
+            return nodes;
+        },
+
+        _getArrayOfNodes: function(node, array) {
+            array.push(node);
+            node.children.each((child) => {
+                this._getArrayOfNodes(child, array);
+            });
         }
-    }
+    });
 
-    class FileNode {
-        name = "";
-        path = "";
-        rowId = null;
-        fileId = null;
-        size = 0;
-        checked = TriState.Unchecked;
-        remaining = 0;
-        progress = 0;
-        priority = FilePriority.Normal;
-        availability = 0;
-        depth = 0;
-        root = null;
-        isFolder = false;
-        children = [];
+    const FileNode = new Class({
+        name: "",
+        path: "",
+        rowId: null,
+        size: 0,
+        checked: TriState.Unchecked,
+        remaining: 0,
+        progress: 0,
+        priority: FilePriority.Normal,
+        availability: 0,
+        depth: 0,
+        root: null,
+        data: null,
+        isFolder: false,
+        children: [],
+    });
 
-        isIgnored() {
-            return this.priority === FilePriority.Ignored;
-        }
+    const FolderNode = new Class({
+        Extends: FileNode,
 
-        calculateRemaining() {
-            this.remaining = this.isIgnored() ? 0 : (this.size * (1 - (this.progress / 100)));
-        }
-
-        serialize() {
-            return {
-                name: this.name,
-                path: this.path,
-                fileId: this.fileId,
-                size: this.size,
-                checked: this.checked,
-                remaining: this.remaining,
-                progress: this.progress,
-                priority: this.priority,
-                availability: this.availability
-            };
-        }
-    }
-
-    class FolderNode extends FileNode {
         /**
-         * When true, the folder's `checked` state will be calculately automatically based on its children
+         * Will automatically tick the checkbox for a folder if all subfolders and files are also ticked
          */
-        autoCalculateCheckedState = true;
-        isFolder = true;
-        fileId = -1;
+        autoCheckFolders: true,
+
+        initialize: function() {
+            this.isFolder = true;
+        },
 
         addChild(node) {
-            node.calculateRemaining();
             this.children.push(node);
-        }
+        },
 
         /**
-         * Calculate size of node and its children
+         * Recursively calculate size of node and its children
          */
-        calculateSize() {
-            const stack = [this];
-            const visited = [];
+        calculateSize: function() {
+            let size = 0;
+            let remaining = 0;
+            let progress = 0;
+            let availability = 0;
+            let checked = TriState.Unchecked;
+            let priority = FilePriority.Normal;
 
-            while (stack.length > 0) {
-                const root = stack.at(-1);
+            let isFirstFile = true;
 
-                if (root.isFolder) {
-                    if (visited.at(-1) !== root) {
-                        visited.push(root);
-                        stack.push(...root.children);
-                        continue;
-                    }
+            this.children.each((node) => {
+                if (node.isFolder)
+                    node.calculateSize();
 
-                    visited.pop();
+                size += node.size;
 
-                    // process children
-                    root.size = 0;
-                    root.remaining = 0;
-                    root.progress = 0;
-                    root.availability = 0;
-                    root.checked = TriState.Unchecked;
-                    root.priority = FilePriority.Normal;
-                    let isFirstFile = true;
-
-                    for (const child of root.children) {
-                        root.size += child.size;
-
-                        if (isFirstFile) {
-                            root.priority = child.priority;
-                            root.checked = child.checked;
-                            isFirstFile = false;
-                        }
-                        else {
-                            if (root.priority !== child.priority)
-                                root.priority = FilePriority.Mixed;
-                            if (root.checked !== child.checked)
-                                root.checked = TriState.Partial;
-                        }
-
-                        if (!child.isIgnored()) {
-                            root.remaining += child.remaining;
-                            root.progress += (child.progress * child.size);
-                            root.availability += (child.availability * child.size);
-                        }
-                    }
-
-                    root.checked = root.autoCalculateCheckedState ? root.checked : TriState.Checked;
-                    root.progress = (root.size > 0) ? (root.progress / root.size) : 0;
-                    root.availability = (root.size > 0) ? (root.availability / root.size) : 0;
+                if (isFirstFile) {
+                    priority = node.priority;
+                    checked = node.checked;
+                    isFirstFile = false;
+                }
+                else {
+                    if (priority !== node.priority)
+                        priority = FilePriority.Mixed;
+                    if (checked !== node.checked)
+                        checked = TriState.Partial;
                 }
 
-                stack.pop();
-            }
-        }
+                const isIgnored = (node.priority === FilePriority.Ignored);
+                if (!isIgnored) {
+                    remaining += node.remaining;
+                    progress += (node.progress * node.size);
+                    availability += (node.availability * node.size);
+                }
+            });
 
-        /**
-         * Recursively recalculate the amount of data remaining to be downloaded.
-         * This is useful for updating a folder's "remaining" size as files are unchecked/ignored.
-         */
-        calculateRemaining() {
-            this.remaining = this.children.reduce((sum, node) => {
-                node.calculateRemaining();
-                return sum + node.remaining;
-            }, 0);
+            this.size = size;
+            this.remaining = remaining;
+            this.checked = this.autoCheckFolders ? checked : TriState.Checked;
+            this.progress = (progress / size);
+            this.priority = priority;
+            this.availability = (availability / size);
         }
-    }
+    });
 
     return exports();
 })();

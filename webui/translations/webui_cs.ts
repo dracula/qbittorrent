@@ -5,7 +5,7 @@
     <name>AboutDlg</name>
     <message>
         <source>About</source>
-        <translation type="vanished">O aplikaci</translation>
+        <translation type="vanished">O</translation>
     </message>
 </context>
 <context>
@@ -190,14 +190,6 @@
     <message>
         <source>Unknown</source>
         <translation>Neznámý</translation>
-    </message>
-    <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Limit ratia musí být v rozsahu od 0 do 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Doba seedování musí být v rozsahu od 0 do 525600 minut.</translation>
     </message>
     <message>
         <source>Apply</source>
@@ -421,7 +413,7 @@
     </message>
     <message>
         <source>Unable to download file</source>
-        <translation>Nelze stáhnout soubor</translation>
+        <translation>Nelze stáhnout soubor.</translation>
     </message>
     <message>
         <source>External IPs: %1, %2</source>
@@ -442,6 +434,14 @@
     <message>
         <source>Add web seeds</source>
         <translation>Přidat web seedy</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation>Limit poměru sdílení nesmí být zadán jako záporné číslo.</translation>
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation>Limit času seedování nesmí být zadán jako záporné číslo.</translation>
     </message>
 </context>
 <context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Zastavit vše</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Vytvoření torrentu</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Při přidání torrentu</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Info: Heslo je uloženo nešifrované</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>μTP-TCP mixed mode algoritmus:</translation>
     </message>
@@ -1249,7 +1249,7 @@
     </message>
     <message>
         <source>Recheck torrents on completion:</source>
-        <translation>Při dokončení překontrolovat torrenty:</translation>
+        <translation>Překontrolování torrentů po dokončení:</translation>
     </message>
     <message>
         <source>Allow encryption</source>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Asynchronní I/O vlákna:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -2039,22 +2043,6 @@ Použijte ';' pro oddělení více položek. Můžete použít masku '*'.</trans
         <source>Log Files</source>
         <translation>Log soubory</translation>
     </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation>sec</translation>
-    </message>
 </context>
 <context>
     <name>PeerListWidget</name>
@@ -2120,7 +2108,7 @@ Použijte ';' pro oddělení více položek. Můžete použít masku '*'.</trans
     </message>
     <message>
         <source>Are you sure you want to permanently ban the selected peers?</source>
-        <translation>Opravdu chcete natrvalo zakázat označené peery?</translation>
+        <translation>Opravdu chcete natrvalo zakázat vybrané peery?</translation>
     </message>
     <message>
         <source>Copy IP:port</source>
@@ -4016,7 +4004,7 @@ Použijte ';' pro oddělení více položek. Můžete použít masku '*'.</trans
     </message>
     <message>
         <source>Are you sure you want to delete the selected RSS feeds?</source>
-        <translation>Určitě chcete smazar označené RSS feedy?</translation>
+        <translation>Určitě chcete smazat vybrané RSS feedy?</translation>
     </message>
     <message>
         <source>New subscription...</source>
@@ -4041,14 +4029,6 @@ Použijte ';' pro oddělení více položek. Můžete použít masku '*'.</trans
     <message>
         <source>URL cannot be empty</source>
         <translation>URL nemůže být prázdná</translation>
-    </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Autor</translation>
     </message>
 </context>
 <context>
@@ -4167,7 +4147,7 @@ Použijte ';' pro oddělení více položek. Můžete použít masku '*'.</trans
     </message>
     <message>
         <source>Are you sure you want to remove the selected download rules?</source>
-        <translation>Opravdu chcete odstranit označená pravidla?</translation>
+        <translation>Opravdu chcete odstranit vybraná pravidla stahování?</translation>
     </message>
     <message>
         <source>Use global settings</source>
@@ -4557,7 +4537,7 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (Formáty dat také pod
     <name>confirmRecheckDialog</name>
     <message>
         <source>Are you sure you want to recheck the selected torrent(s)?</source>
-        <translation>Opravdu chcete znovu zkontrolovat označené torrenty?</translation>
+        <translation>Opravdu chcete překontrolovat vybrané torrenty?</translation>
     </message>
     <message>
         <source>Recheck confirmation</source>
@@ -4604,198 +4584,6 @@ Podporuje formáty: S01E01, 1x1, 2017.12.31 a 31.12.2017 (Formáty dat také pod
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Neplatné jméno nebo heslo</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Soukromý</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>Zařazeno do fronty</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>Nelze exportovat soubor torrentu</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Komentáře:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation>Stavová ikona</translation>
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>URL odkazy pro webseed:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Komentář</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Nastavení</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Stav</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Průběh</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Dokončen</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hybridní</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Není k dispozici</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>URL trackeru:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Cesta:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Vytvořit Torrent</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Auto</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Formát torrentu:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Přidán</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Vytvoření torrentu</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Zdroj:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Trackery</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Velikost části:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Polia</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

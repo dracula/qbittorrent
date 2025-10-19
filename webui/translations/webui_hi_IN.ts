@@ -192,14 +192,6 @@
         <translation>अज्ञात</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>बांटने की दर का अनुपात 0 से 9998 के बीच हो।</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>स्रोत काल 0 व 525600 मिनट के बीच में ही होना चाहिए</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>लागू करें</translation>
     </message>
@@ -441,6 +433,14 @@
     </message>
     <message>
         <source>Add web seeds</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>टाॅरेंट निर्माणक</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>टौरेंट जोड़ते समय</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>सूचना: पासवर्ड गोपनीय नहीं है</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation type="unfinished" />
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>s</source>
+        <translation>से०</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -2033,22 +2037,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Log Files</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -4038,14 +4026,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>URL cannot be empty</source>
         <translation type="unfinished" />
     </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>रचनाकार:</translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4600,198 +4580,6 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>यूजरनेम व पासवर्ड अमान्य हैं।</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>कतारबद्ध</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>टिप्पणियाँ :</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>वेब स्रोत URL :</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>सेटिंग</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>स्थिति</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>प्रगति</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>पूर्ण होने का समय</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation> मिश्रित</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>लागू नहीं</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>ट्रैकर URL :</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>पथ:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>टाॅरेंट बनायें</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>स्वतः</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>टाॅरेंट प्रारूप:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>जोड़ने का समय</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>टाॅरेंट निर्माणक</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>स्रोत :</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>ट्रैकर</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>टुकड़े का आकर:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

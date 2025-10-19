@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <title>QBT_TR(Renaming)QBT_TR[CONTEXT=TorrentContentTreeView]</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
-    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
-    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
-    <script defer src="scripts/filesystem.js?v=${CACHEID}"></script>
+    <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
+    <script src="scripts/filesystem.js?v=${CACHEID}"></script>
     <script>
         "use strict";
 
-        window.addEventListener("DOMContentLoaded", (event) => {
+        window.addEventListener("DOMContentLoaded", () => {
             window.addEventListener("keydown", (event) => {
                 switch (event.key) {
                     case "Enter":
                         event.preventDefault();
-                        document.getElementById("renameButton").click();
+                        $("renameButton").click();
                         break;
                     case "Escape":
                         event.preventDefault();
@@ -31,17 +34,17 @@
             const isFolder = ((searchParams.get("isFolder")) === "true");
 
             const oldName = window.qBittorrent.Filesystem.fileName(oldPath);
-            document.getElementById("rename").value = oldName;
-            document.getElementById("rename").focus();
+            $("rename").value = oldName;
+            $("rename").focus();
             if (!isFolder)
-                document.getElementById("rename").setSelectionRange(0, oldName.lastIndexOf("."));
+                $("rename").setSelectionRange(0, oldName.lastIndexOf("."));
 
-            document.getElementById("renameButton").addEventListener("click", (e) => {
+            $("renameButton").addEventListener("click", (e) => {
                 e.preventDefault();
                 e.stopPropagation();
 
                 // check field
-                const newName = document.getElementById("rename").value.trim();
+                const newName = $("rename").value.trim();
                 if (newName === "") {
                     alert("QBT_TR(Name cannot be empty)QBT_TR[CONTEXT=HttpServer]");
                     return;
@@ -52,7 +55,7 @@
                     return;
                 }
 
-                document.getElementById("renameButton").disabled = true;
+                $("renameButton").disabled = true;
 
                 const parentPath = window.qBittorrent.Filesystem.folderName(oldPath);
                 const newPath = parentPath
@@ -69,7 +72,7 @@
                     .then((response) => {
                         if (!response.ok) {
                             alert("QBT_TR(Failed to update name)QBT_TR[CONTEXT=HttpServer]");
-                            document.getElementById("renameButton").disabled = false;
+                            $("renameButton").disabled = false;
                             return;
                         }
 

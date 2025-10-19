@@ -192,14 +192,6 @@
         <translation>Necunoscut</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Limita raportului de partajare trebuie să fie între 0 și 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Limita de timp pentru partajare trebuie să fie între 0 și 525600 de minute.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Aplică</translation>
     </message>
@@ -441,6 +433,14 @@
     </message>
     <message>
         <source>Add web seeds</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Creator de torente</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Când se adaugă un torent</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Informație: Parola este salvată fără criptare</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>Algoritm pentru regim mixt μTP-TCP:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>s</source>
+        <translation>s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1821,7 +1825,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Write-through</source>
-        <translation type="unfinished" />
+        <translation>Scriere completă</translation>
     </message>
     <message>
         <source>WebUI</source>
@@ -2013,7 +2017,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Simple pread/pwrite</source>
-        <translation type="unfinished" />
+        <translation>Pread/Pwrite simplu</translation>
     </message>
     <message>
         <source>Resolve relative Save Path against appropriate Category path instead of Default one</source>
@@ -2033,22 +2037,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Log Files</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -4038,14 +4026,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>URL cannot be empty</source>
         <translation type="unfinished" />
     </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Autor: </translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4600,198 +4580,6 @@ Recunoaște formatele: S01E01, 1x1, 2017.12.31 si 31.12.2017 (Formatele pentru d
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Numele de utilizator sau parola nu sunt valide.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>În coadă</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Comentarii:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>URL sursă Web:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Configurări</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Stare</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Progres</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Încheiat la</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hibrid</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Indisp.</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>URL-urile urmăritorului:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Cale:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Creează torent</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Automat</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Format torent:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Adăugat la</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Creator de torente</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Sursă:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Urmăritoare</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Dimensiune bucată:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Câmpuri</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

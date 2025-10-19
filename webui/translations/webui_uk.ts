@@ -192,14 +192,6 @@
         <translation>Невідомо</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Коефіцієнт роздачі має бути у діапазоні від 0 до 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Обмеження часу роздачі має бути у діапазоні від 0 до 525600 хвилин.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Застосувати</translation>
     </message>
@@ -442,6 +434,14 @@
     <message>
         <source>Add web seeds</source>
         <translation>Додайте веб seed</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Зупинити все</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Створити торрент</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>При додаванні торрента</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Примітка: Пароль буде збережений в нешифрованому вигляді</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>Алгоритм змішаного режиму μTP-TCP:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Потоки асинхронного введення-виведення:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>с</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -2038,22 +2042,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Log Files</source>
         <translation>Файли журналів</translation>
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation>с</translation>
     </message>
 </context>
 <context>
@@ -4042,14 +4030,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>URL cannot be empty</source>
         <translation>URL не може бути порожнім</translation>
     </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Автор: </translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4604,198 +4584,6 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Неправильний логін або пароль.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Приватний</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>В черзі</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>Неможливо експортувати торрент файл</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Коментарі:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation>Значок статусу</translation>
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>Адреси веб-сідів:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Коментар</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Налаштування</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Статус</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Прогрес</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Завершено о</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Гібридний</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>—</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>Адреси трекерів:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Шлях:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Створити торрент</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Автоматично</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Формат торрента:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Додано</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Створити торрент</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Джерело:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Трекери</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Розмір частини:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Поля</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

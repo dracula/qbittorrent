@@ -192,14 +192,6 @@
         <translation>לא ידוע</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>מגבלת יחס שיתוף חייבת להיות בין 0 לבין 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>מגבלת זמן זריעה חייבת להיות בין 0 לבין 525600 דקות.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>החל</translation>
     </message>
@@ -441,6 +433,14 @@
     </message>
     <message>
         <source>Add web seeds</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>יוצר הטורנטים</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>בעת הוספת טורנט</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>מידע: הסיסמה נשמרת באופן בלתי מוצפן</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>אלגוריתם מצב משולב μTP-TCP:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>תהליכוני ק/פ אי־סינכרוניים:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>ש'</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -2038,22 +2042,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Log Files</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation>שניות</translation>
     </message>
 </context>
 <context>
@@ -4042,14 +4030,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>URL cannot be empty</source>
         <translation type="unfinished" />
     </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>מחבר:</translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4604,198 +4584,6 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>שם משתמש או סיסמה בלתי תקפים.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>פרטי</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>בתור</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>הערות:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>כתובות זורעי רשת:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>הגדרות</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>מיצב</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>התקדמות</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>הושלם בתאריך</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>בן כלאים</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>לא זמין</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>כתובות עוקבנים:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>נתיב:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>צור טורנט</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>אוטומטי</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>תסדיר טורנט:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>התווסף בתאריך</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>יוצר הטורנטים</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>מקור:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>גששים</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>גודל חתיכה:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>שדות</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

@@ -80,11 +80,11 @@
     </message>
     <message>
         <source>Select .torrent files</source>
-        <translation type="unfinished" />
+        <translation>Vali .torrent failid</translation>
     </message>
     <message>
         <source>Torrent options</source>
-        <translation type="unfinished" />
+        <translation>Torrenti valikud</translation>
     </message>
 </context>
 <context>
@@ -190,14 +190,6 @@
     <message>
         <source>Unknown</source>
         <translation>Tundmatu</translation>
-    </message>
-    <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Jagamise suhte limiit peab olema vahemikus 0 ja 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Jagamise aja limiit peab olema vahemikus 0 ja 525600 minutit.</translation>
     </message>
     <message>
         <source>Apply</source>
@@ -401,7 +393,7 @@
     </message>
     <message>
         <source>External IP: %1%2</source>
-        <translation type="unfinished" />
+        <translation>Väline IP: %1%2</translation>
     </message>
     <message>
         <source>Edit web seed</source>
@@ -409,7 +401,7 @@
     </message>
     <message>
         <source>Are you sure you want to remove %1 from the transfer list?</source>
-        <translation type="unfinished" />
+        <translation>Kindel, et soovite eemaldada %1 edastuste nimekirjast?</translation>
     </message>
     <message>
         <source>Unable to set Auto Torrent Management for the selected torrents.</source>
@@ -442,6 +434,14 @@
     <message>
         <source>Add web seeds</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation>Jagamise suhe limiit ei tohi olla negatiivne.</translation>
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation>Jagamise aja limiit ei tohi olla negatiivne.</translation>
     </message>
 </context>
 <context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Peata kõik</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrenti Looja</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Kui lisatakse torrent</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Info: See parool salvestatakse krüpteerimata</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>μTP-TCP miksitud režiimi algoritm:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <source>s</source>
+        <translation>s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1857,7 +1861,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Color scheme:</source>
-        <translation type="unfinished" />
+        <translation>Värvi teema:</translation>
     </message>
     <message>
         <source>Show external IP in status bar</source>
@@ -1953,7 +1957,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Run on torrent finished:</source>
-        <translation type="unfinished" />
+        <translation>Käivita kui torrent on valmis:</translation>
     </message>
     <message>
         <source>Attempted to send email. Check your inbox to confirm success</source>
@@ -1981,11 +1985,11 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>List of alternative WebUI</source>
-        <translation type="unfinished" />
+        <translation>Alternatiivse WebUI nimekiri</translation>
     </message>
     <message>
         <source>Run on torrent added:</source>
-        <translation type="unfinished" />
+        <translation>Käivita kui torrent on lisatud:</translation>
     </message>
     <message>
         <source>Port reported to trackers (requires restart) [0: listening port]:</source>
@@ -1993,7 +1997,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>User interface language:</source>
-        <translation type="unfinished" />
+        <translation>Kasutajaliidese keel:</translation>
     </message>
     <message>
         <source>Merge trackers to existing torrent</source>
@@ -2033,23 +2037,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Log Files</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation type="unfinished" />
+        <translation>Logi failid</translation>
     </message>
 </context>
 <context>
@@ -3294,7 +3282,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Location:</source>
-        <translation type="unfinished" />
+        <translation>Asukoht:</translation>
     </message>
     <message>
         <source>Stop</source>
@@ -3571,7 +3559,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Select category</source>
-        <translation type="unfinished" />
+        <translation>Vali kategooria</translation>
     </message>
     <message>
         <source>Min size prefix</source>
@@ -4036,15 +4024,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>URL cannot be empty</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Autor:</translation>
+        <translation>URL ei tohi olla tühi</translation>
     </message>
 </context>
 <context>
@@ -4293,11 +4273,11 @@ Toetab formaate: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (kuupäevade formaate toe
     </message>
     <message>
         <source>Remove rule</source>
-        <translation type="unfinished" />
+        <translation>Eemalda reegel</translation>
     </message>
     <message>
         <source>Add rule</source>
-        <translation type="unfinished" />
+        <translation>Lisa reegel</translation>
     </message>
     <message>
         <source>Add Stopped:</source>
@@ -4515,7 +4495,7 @@ Toetab formaate: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (kuupäevade formaate toe
     </message>
     <message>
         <source>Add Cookie</source>
-        <translation type="unfinished" />
+        <translation>Lisa küpsis</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -4600,198 +4580,6 @@ Toetab formaate: S01E01, 1x1, 2017.12.31 ja 31.12.2017 (kuupäevade formaate toe
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Sobimatu Kasutajanimi või Parool</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Privaatne</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>Järjekorras</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Kommentaarid:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>Veebi-seemne URL-id:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Kommentaar</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Seaded</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Olek</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Edenemine</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Lõpetatud</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hübriid</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Puudub</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>Jälgija URL-id:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Asukoht:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Loo Torrent</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Automaatne</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Torrenti formaat:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Lisatud</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrenti Looja</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Allikas:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Jälitajad</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Tüki suurus:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Väljad</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

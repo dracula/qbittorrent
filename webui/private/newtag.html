@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <title>QBT_TR(Add tags)QBT_TR[CONTEXT=TransferListWidget]</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
-    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
-    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
-    <script defer src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
+    <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
     <script>
         "use strict";
 
-        window.addEventListener("DOMContentLoaded", (event) => {
+        window.addEventListener("DOMContentLoaded", () => {
             window.addEventListener("keydown", (event) => {
                 switch (event.key) {
                     case "Enter":
                         event.preventDefault();
-                        document.getElementById("tagNameButton").click();
+                        $("tagNameButton").click();
                         break;
                     case "Escape":
                         event.preventDefault();
@@ -29,15 +31,15 @@
             const uriAction = window.qBittorrent.Misc.safeTrim(searchParams.get("action"));
 
             if (uriAction === "create")
-                document.getElementById("legendText").textContent = "QBT_TR(Tag:)QBT_TR[CONTEXT=TagFilterWidget]";
+                $("legendText").textContent = "QBT_TR(Tag:)QBT_TR[CONTEXT=TagFilterWidget]";
 
-            document.getElementById("tagName").focus();
+            $("tagName").focus();
 
-            document.getElementById("tagNameButton").addEventListener("click", (e) => {
+            $("tagNameButton").addEventListener("click", (e) => {
                 e.preventDefault();
                 e.stopPropagation();
 
-                const tagName = document.getElementById("tagName").value.trim();
+                const tagName = $("tagName").value.trim();
 
                 const verifyTagName = (name) => {
                     if ((name === null) || (name === ""))
@@ -62,7 +64,7 @@
                                     tags: tagName
                                 })
                             })
-                            .then((response) => {
+                            .then(async (response) => {
                                 if (!response.ok)
                                     return;
 
@@ -81,7 +83,7 @@
                                     tags: tagName
                                 })
                             })
-                            .then((response) => {
+                            .then(async (response) => {
                                 if (!response.ok)
                                     return;
 

@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <title>QBT_TR(Tracker editing)QBT_TR[CONTEXT=TrackerListWidget]</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
-    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
-    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
     <script>
         "use strict";
 
-        window.addEventListener("DOMContentLoaded", (event) => {
+        window.addEventListener("DOMContentLoaded", () => {
             window.addEventListener("keydown", (event) => {
                 switch (event.key) {
                     case "Enter":
                         event.preventDefault();
-                        document.getElementById("editTrackerButton").click();
+                        $("editTrackerButton").click();
                         break;
                     case "Escape":
                         event.preventDefault();
@@ -26,15 +28,13 @@
 
             const searchParams = new URLSearchParams(window.location.search);
             const currentUrl = searchParams.get("url");
-            const currentTier = searchParams.get("tier");
-            if ((currentUrl === null) || (currentTier === null))
+            if (currentUrl === null)
                 return;
 
-            document.getElementById("trackerTier").value = currentTier;
-            document.getElementById("trackerUrl").value = currentUrl;
-            document.getElementById("trackerUrl").focus();
+            $("trackerUrl").value = currentUrl;
+            $("trackerUrl").focus();
 
-            document.getElementById("editTrackerButton").addEventListener("click", (e) => {
+            $("editTrackerButton").addEventListener("click", (e) => {
                 e.preventDefault();
                 e.stopPropagation();
 
@@ -42,9 +42,8 @@
                         method: "POST",
                         body: new URLSearchParams({
                             hash: searchParams.get("hash"),
-                            url: currentUrl,
-                            newUrl: document.getElementById("trackerUrl").value,
-                            tier: document.getElementById("trackerTier").value
+                            origUrl: currentUrl,
+                            newUrl: $("trackerUrl").value
                         })
                     })
                     .then((response) => {
@@ -64,11 +63,6 @@
         <label for="trackerUrl">QBT_TR(Tracker URL:)QBT_TR[CONTEXT=TrackerListWidget]</label>
         <div style="text-align: center; padding-top: 10px;">
             <input type="text" id="trackerUrl" style="width: 90%;">
-        </div>
-        <br>
-        <label for="trackerTier">QBT_TR(Tier:)QBT_TR[CONTEXT=TrackerListWidget]</label>
-        <div style="text-align: center; padding-top: 10px;">
-            <input type="number" id="trackerTier" style="width: 90%; max-width: 100px;" min="0" max="255">
         </div>
         <br>
         <input type="button" value="QBT_TR(Edit)QBT_TR[CONTEXT=HttpServer]" id="editTrackerButton">

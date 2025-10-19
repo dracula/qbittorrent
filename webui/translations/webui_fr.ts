@@ -192,14 +192,6 @@
         <translation>Inconnu</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>La limite du ratio de partage doit être comprise entre 0 et 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>La limite du temps de partage doit être comprise entre 0 et 525600 minutes.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Appliquer</translation>
     </message>
@@ -405,7 +397,7 @@
     </message>
     <message>
         <source>Edit web seed</source>
-        <translation>Modifier la source web</translation>
+        <translation>Modifier la source Web</translation>
     </message>
     <message>
         <source>Are you sure you want to remove %1 from the transfer list?</source>
@@ -433,7 +425,7 @@
     </message>
     <message>
         <source>List of web seeds to add (one per line):</source>
-        <translation>Liste des seed Web à ajouter (un par ligne) :</translation>
+        <translation>Liste des sources Web à ajouter (une par ligne) :</translation>
     </message>
     <message>
         <source>Unable to start torrents.</source>
@@ -441,7 +433,15 @@
     </message>
     <message>
         <source>Add web seeds</source>
-        <translation>Ajouter des seeds Web</translation>
+        <translation>Ajouter des sources Web</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation>La limite du ratio de partage ne doit pas avoir une valeur négative.</translation>
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation>La limite du temps de partage ne doit pas avoir une valeur négative.</translation>
     </message>
 </context>
 <context>
@@ -694,10 +694,6 @@
         <source>Stop All</source>
         <translation>Arrêter tout</translation>
     </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Créateur de torrent</translation>
-    </message>
 </context>
 <context>
     <name>OptionsDialog</name>
@@ -743,7 +739,7 @@
     </message>
     <message>
         <source>Web User Interface (Remote control)</source>
-        <translation>Activer l'interface utilisateur Web (contrôle distant)</translation>
+        <translation>Activer l'Interface Utilisateur Web (contrôle distant)</translation>
     </message>
     <message>
         <source>IP address:</source>
@@ -1172,6 +1168,10 @@
         <translation>Lors de l'ajout d'un torrent</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Info : le mot de passe est enregistré en texte clair</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>Algorithme du mode mixte μTP-TCP :</translation>
     </message>
@@ -1181,7 +1181,7 @@
     </message>
     <message>
         <source>%G: Tags (separated by comma)</source>
-        <translation>%G : Étiquettes (séparés par des virgules)</translation>
+        <translation>%G : Étiquettes (séparées par une virgule)</translation>
     </message>
     <message>
         <source>Socket backlog size:</source>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Fils d'E/S asynchrones</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1588,7 +1592,7 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     </message>
     <message>
         <source>Specify reverse proxy IPs (or subnets, e.g. 0.0.0.0/24) in order to use forwarded client address (X-Forwarded-For header). Use ';' to split multiple entries.</source>
-        <translation>Spécifier les adresses IP du proxy inverse (ou les sous-réseaux, p. ex. 0.0.0.0/24) afin d'utiliser l'adresse client transférée (attribut X-Forwarded-For). Utiliser ';' pour séparer plusieurs entrées.</translation>
+        <translation>Spécifier les adresses IPs du proxy inverse (ou les sous-réseaux, p. ex. 0.0.0.0/24) afin d'utiliser l'adresse client transférée (attribut X-Forwarded-For). Utiliser ';' pour séparer plusieurs entrées.</translation>
     </message>
     <message>
         <source>HTTPS key should not be empty</source>
@@ -1984,7 +1988,7 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     </message>
     <message>
         <source>List of alternative WebUI</source>
-        <translation>Liste des interfaces Web alternatives</translation>
+        <translation>Liste des IU Web alternatives</translation>
     </message>
     <message>
         <source>Run on torrent added:</source>
@@ -1996,7 +2000,7 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     </message>
     <message>
         <source>User interface language:</source>
-        <translation>Langue de l'interface utilisateur :</translation>
+        <translation>Langue de l'interface utilisateur :</translation>
     </message>
     <message>
         <source>Merge trackers to existing torrent</source>
@@ -2004,15 +2008,15 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     </message>
     <message>
         <source>Confirm torrent recheck:</source>
-        <translation>Confirmer la vérification du torrent :</translation>
+        <translation>Confirmer la vérification du torrent :</translation>
     </message>
     <message>
         <source>Custom WebUI settings</source>
-        <translation>Paramètres d'interface Web personnalisés</translation>
+        <translation>Paramètres de l'IU Web personnalisés</translation>
     </message>
     <message>
         <source>Following settings are WebUI only</source>
-        <translation>Les paramètres suivants sont uniquement disponibles sur l'interface Web</translation>
+        <translation>Les paramètres suivants sont uniquement disponibles sur l'IU Web</translation>
     </message>
     <message>
         <source>Simple pread/pwrite</source>
@@ -2037,22 +2041,6 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     <message>
         <source>Log Files</source>
         <translation>Fichier journal</translation>
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2420,7 +2408,7 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     </message>
     <message>
         <source>Copy web seed URL</source>
-        <translation>Copier l'URL de la source web</translation>
+        <translation>Copier l'URL de la source Web</translation>
     </message>
     <message>
         <source>Replace option</source>
@@ -2432,7 +2420,7 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     </message>
     <message>
         <source>Web seed URL:</source>
-        <translation>URL de la source web :</translation>
+        <translation>URL de la source Web :</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -2456,15 +2444,15 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     </message>
     <message>
         <source>Remove web seed</source>
-        <translation>Supprimer la source web</translation>
+        <translation>Supprimer la source Web</translation>
     </message>
     <message>
         <source>Web seed editing</source>
-        <translation>Modification de la source web</translation>
+        <translation>Modification de la source Web</translation>
     </message>
     <message>
         <source>Add web seeds...</source>
-        <translation>Ajouter les seeds Web...</translation>
+        <translation>Ajouter des sources Web…</translation>
     </message>
     <message>
         <source>Private:</source>
@@ -3710,7 +3698,7 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     </message>
     <message>
         <source>Format: IPv4:port / [IPv6]:port</source>
-        <translation>Format: IPv4:port / [IPv6]:port</translation>
+        <translation>Format : IPv4:port / [IPv6]:port</translation>
     </message>
 </context>
 <context>
@@ -4039,15 +4027,7 @@ Utiliser ';' pour diviser plusieurs entrées. Le caractère générique '*' peut
     </message>
     <message>
         <source>URL cannot be empty</source>
-        <translation>L'URL ne peut pas être vide</translation>
-    </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Auteur : </translation>
+        <translation>l'URL ne peut pas être vide</translation>
     </message>
 </context>
 <context>
@@ -4292,7 +4272,7 @@ Les formats supportés : S01E01, 1x1, 2017.12.31 et 31.12.2017 (les formats date
     </message>
     <message>
         <source>Add Tags:</source>
-        <translation>Ajouter des Tags :</translation>
+        <translation>Ajouter des étiquettes :</translation>
     </message>
     <message>
         <source>Remove rule</source>
@@ -4574,7 +4554,7 @@ Les formats supportés : S01E01, 1x1, 2017.12.31 et 31.12.2017 (les formats date
     <name>Login</name>
     <message>
         <source>qBittorrent WebUI</source>
-        <translation>WebUI qBitTorrent </translation>
+        <translation>IU Web de qBittorrent </translation>
     </message>
     <message>
         <source>Password</source>
@@ -4603,198 +4583,6 @@ Les formats supportés : S01E01, 1x1, 2017.12.31 et 31.12.2017 (les formats date
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nom d'utilisateur ou mot de passe invalide.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Privé</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>En file d’attente</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>Impossible d'exporter le fichier torrent</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Commentaires :</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation>Icône de status </translation>
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>URL des sources Web :</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Commentaire</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Paramètres</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Statut</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Progression</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Complété le</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hybride</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>URL des trackers :</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Chemin :</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Créer le torrent</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Auto</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Format du torrent :</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Ajouté le</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Créateur de torrent</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Source :</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Trackers</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Taille des morceaux :</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Champs</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

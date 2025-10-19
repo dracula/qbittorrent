@@ -16,7 +16,7 @@
     </message>
     <message>
         <source>Start torrent</source>
-        <translation>Khởi chạy torrent</translation>
+        <translation>Chạy torrent</translation>
     </message>
     <message>
         <source>Skip hash check</source>
@@ -192,14 +192,6 @@
         <translation>Không rõ</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Giới hạn tỷ lệ chia sẻ phải từ 0 đến 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Giới hạn thời gian chia sẻ phải trong khoảng từ 0 đến 525600 phút.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Áp dụng</translation>
     </message>
@@ -289,7 +281,7 @@
     </message>
     <message>
         <source>qBittorrent client is not reachable</source>
-        <translation>Ứng dụng khách QbittTorrent không thể truy cập được</translation>
+        <translation>Máy khách qBittorrent không thể kết nối</translation>
     </message>
     <message>
         <source>Global number of upload slots limit must be greater than 0 or disabled.</source>
@@ -301,7 +293,7 @@
     </message>
     <message>
         <source>Upload rate threshold must be greater than 0.</source>
-        <translation>Ngưỡng tỷ lệ tải lên phải lớn hơn 0.</translation>
+        <translation>Ngưỡng tốc độ tải lên phải lớn hơn 0.</translation>
     </message>
     <message>
         <source>Edit</source>
@@ -309,7 +301,7 @@
     </message>
     <message>
         <source>Free space: %1</source>
-        <translation>Không gian trống: %1</translation>
+        <translation>Dung lượng trống: %1</translation>
     </message>
     <message>
         <source>Torrent inactivity timer must be greater than 0.</source>
@@ -425,7 +417,7 @@
     </message>
     <message>
         <source>External IPs: %1, %2</source>
-        <translation>IP bên ngoài: %1, %2</translation>
+        <translation>IP ngoài: %1, %2</translation>
     </message>
     <message>
         <source>Unable to recheck torrents.</source>
@@ -442,6 +434,14 @@
     <message>
         <source>Add web seeds</source>
         <translation>Thêm hạt giống web</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -512,7 +512,7 @@
     </message>
     <message>
         <source>No</source>
-        <translation>Không Đồng Ý</translation>
+        <translation>Không</translation>
     </message>
     <message>
         <source>Global Upload Speed Limit</source>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Dừng Tất Cả</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Trình tạo Torrent</translation>
     </message>
 </context>
 <context>
@@ -887,7 +883,7 @@
     </message>
     <message>
         <source>Manually banned IP addresses...</source>
-        <translation>Các địa chỉ IP bị cấm theo cách thủ công...</translation>
+        <translation>Các địa chỉ IP bị cấm thủ công...</translation>
     </message>
     <message>
         <source>Apply to trackers</source>
@@ -1172,6 +1168,10 @@
         <translation>Khi thêm một torrent</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Thông tin: Mật khẩu đã lưu không mã hóa</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>Thuật toán chế độ hỗn hợp μTP-TCP:</translation>
     </message>
@@ -1269,7 +1269,11 @@
     </message>
     <message>
         <source>Asynchronous I/O threads:</source>
-        <translation>Luồng I/O không đồng bộ:</translation>
+        <translation>Luồng I/O bất đồng bộ:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>giây</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1337,11 +1341,11 @@
     </message>
     <message>
         <source>ban for:</source>
-        <translation>cấm:</translation>
+        <translation>cấm vì:</translation>
     </message>
     <message>
         <source>Ban client after consecutive failures:</source>
-        <translation>Cấm máy khách sau những lần thất bại liên tiếp:</translation>
+        <translation>Cấm máy khách sau khi thất bại liên tiếp:</translation>
     </message>
     <message>
         <source>Header: value pairs, one per line</source>
@@ -1865,7 +1869,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>Show external IP in status bar</source>
-        <translation>Hiển thị IP bên ngoài trong thanh trạng thái</translation>
+        <translation>Hiển thị IP ngoài trong thanh trạng thái</translation>
     </message>
     <message>
         <source>Fetched trackers</source>
@@ -1993,7 +1997,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>Port reported to trackers (requires restart) [0: listening port]:</source>
-        <translation>Cổng được báo cáo cho Trình theo dõi (yêu cầu khởi động lại) [0: Cổng nghe]:</translation>
+        <translation>Cổng được báo cáo cho máy theo dõi (yêu cầu khởi động lại) [0: Cổng nghe]:</translation>
     </message>
     <message>
         <source>User interface language:</source>
@@ -2025,7 +2029,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>No action</source>
-        <translation>Không thao tác</translation>
+        <translation>Không có hành động</translation>
     </message>
     <message>
         <source>Auto hide zero status filters</source>
@@ -2038,22 +2042,6 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     <message>
         <source>Log Files</source>
         <translation>Tệp Nhật Ký</translation>
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -2120,7 +2108,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>Are you sure you want to permanently ban the selected peers?</source>
-        <translation>Bạn có chắc chắn muốn cấm vĩnh viễn máy ngang hàng đã chọn không?</translation>
+        <translation>Bạn có chắc muốn cấm vĩnh viễn các máy ngang hàng đã chọn?</translation>
     </message>
     <message>
         <source>Copy IP:port</source>
@@ -2196,7 +2184,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>Transfer</source>
-        <translation>Truyền Đổi</translation>
+        <translation>Trao Đổi</translation>
     </message>
     <message>
         <source>Time Active:</source>
@@ -2353,7 +2341,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>N/A</source>
-        <translation>Không áp dụng</translation>
+        <translation>Không</translation>
     </message>
     <message>
         <source>Progress:</source>
@@ -2433,7 +2421,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>Web seed URL:</source>
-        <translation>Đường liên kết seed Web:</translation>
+        <translation>URL hạt giống web:</translation>
     </message>
     <message>
         <source>Yes</source>
@@ -2453,7 +2441,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>No</source>
-        <translation>Không Đồng Ý</translation>
+        <translation>Không</translation>
     </message>
     <message>
         <source>Remove web seed</source>
@@ -2461,7 +2449,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>Web seed editing</source>
-        <translation>Đang chỉnh sửa seed Web</translation>
+        <translation>Chỉnh sửa hạt giống web</translation>
     </message>
     <message>
         <source>Add web seeds...</source>
@@ -3090,7 +3078,7 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
     </message>
     <message>
         <source>N/A</source>
-        <translation>Không áp dụng</translation>
+        <translation>Không</translation>
     </message>
 </context>
 <context>
@@ -4042,14 +4030,6 @@ Sử dụng ';' để chia nhiều mục nhập. Có thể sử dụng ký tự 
         <source>URL cannot be empty</source>
         <translation>URL không thể bỏ trống</translation>
     </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Tác giả:</translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4485,7 +4465,7 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
     <name>TrackersFilterWidget</name>
     <message>
         <source>Are you sure you want to remove tracker %1 from all torrents?</source>
-        <translation>Bạn có chắc là bạn muốn xóa Tracker %1 khỏi tất cả các torrent?</translation>
+        <translation>Bạn có chắc muốn xóa máy theo dõi %1 khỏi tất cả các torrent?</translation>
     </message>
 </context>
 <context>
@@ -4604,198 +4584,6 @@ Hỗ trợ định dạng: S01E01, 1x1, 2017.12.31 và 31.12.2017 (Hỗ trợ đ
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Tên tài khoản hoặc Mật khẩu không hợp lệ</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Riêng tư</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>Xếp hàng</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>Không thể xuất tệp torrent</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Bình luận:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation>Biểu Tượng Trạng Thái</translation>
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>URL Web chia sẻ</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Bình luận</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Cài đặt</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Trạng thái</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Tiến độ</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Đã Xong Lúc</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hỗn hợp</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Không áp dụng</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>URL máy theo dõi:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Đường dẫn:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Tạo Torrent</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Tự động</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Dạng torrent:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Thêm Lúc</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Trình tạo Torrent</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Nguồn:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Máy theo dõi</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Kích thước mảnh:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Trường</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

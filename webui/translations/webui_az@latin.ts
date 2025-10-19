@@ -192,14 +192,6 @@
         <translation>Naməlum</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Paylaşım nisbəti həddi 0 ilə 9998 arasında olmalıdır.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Göndərmə vaxtı limiti 0 ilə 525600 dəqiqələri arasında olmalıdır.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Tətbiq etmək</translation>
     </message>
@@ -433,7 +425,7 @@
     </message>
     <message>
         <source>List of web seeds to add (one per line):</source>
-        <translation>Əlavə ediləcək veb iştirakçıların siyahısı (hər sətirdə biri):</translation>
+        <translation>Əlavə ediləcək veb iştirakçıların siyahısı (hər sətirdə bir):</translation>
     </message>
     <message>
         <source>Unable to start torrents.</source>
@@ -442,6 +434,14 @@
     <message>
         <source>Add web seeds</source>
         <translation>Veb iştirakçı əlavə etmək</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Hamısını dayandırmaq</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrent yaradıcı</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Torrent əlavə edildikdə</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>İnfo: Parol, şifrələnməmiş şəkildə saxlanıldı</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>μTP-TCP qarışıq rejimi alqoritmi:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Zamanla bir birinə uzlaşmayan Giriş/Çıxış axınları:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>san</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -2038,22 +2042,6 @@ serveri tərəfindən istifadə olunan domen adını göstərməlisiniz.
     <message>
         <source>Log Files</source>
         <translation>Jurnal faylları</translation>
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -3653,7 +3641,7 @@ serveri tərəfindən istifadə olunan domen adını göstərməlisiniz.
     </message>
     <message>
         <source>Published On</source>
-        <translation>Yayımlandığı yer</translation>
+        <translation>Nəşr olunduğu yer</translation>
     </message>
     <message>
         <source>Engine URL</source>
@@ -4041,14 +4029,6 @@ serveri tərəfindən istifadə olunan domen adını göstərməlisiniz.
     <message>
         <source>URL cannot be empty</source>
         <translation>URL boş ola bilməz</translation>
-    </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Müəllif:</translation>
     </message>
 </context>
 <context>
@@ -4604,198 +4584,6 @@ Bu formatlar dəstəklənir: S01E01, 1x1, 2017.12.31 və 31.12.2017 (Həmçinin 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>İstifadəçi adı və Şifrə səhvdir.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Məxfi</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>Növbədə</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>Torrent faylları ixrac etmk mümkün deyil</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Şərhlər:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation>Vəziyyət nişanı</translation>
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>Veb göndərişi URL-ları:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Şərh</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Ayarlar</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Vəziyyət</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Gedişat</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Tamamlanıb</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hibrid</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Ə/D</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>İzləyici URL-ları:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Yol:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Torrent yaratmaq</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Avtomatik</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Torrent formatı</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Əlavə edilib</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrent yaradıcı</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Mənbə:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>İzləyicilər</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Hissənin ölçüsü:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Sahələr</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

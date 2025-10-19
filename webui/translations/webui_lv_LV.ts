@@ -192,14 +192,6 @@
         <translation>Nezināms</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>Koplietošanas reitinga limitam jābūt starp 0 un 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>Augšupielādes ilguma limitam jābūt starp 0 un 525600 minūtēm.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Apstiprināt</translation>
     </message>
@@ -443,6 +435,14 @@
         <source>Add web seeds</source>
         <translation>Pievienot tīmekļa devējus</translation>
     </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -676,7 +676,7 @@
     </message>
     <message>
         <source>Unable to export torrent file</source>
-        <translation>Neizdevās eksportēt .torrent failu</translation>
+        <translation>Neizdevās izgūt .torrent datni</translation>
     </message>
     <message>
         <source>Name</source>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrentu veidotājs</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Pievienojot torrentu</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Brīdinājums: Šī parole netiek glabāta šifrētā veidā</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>μTP-TCP jaukta režīma algoritms:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Asinhronās I/O plūsmas:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation> s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1529,7 +1533,7 @@
     </message>
     <message>
         <source>It controls the internal state update interval which in turn will affect UI updates</source>
-        <translation type="unfinished" />
+        <translation>Tas kontrolē iekšējā stāvokļa atjaunināšanas intervālu, kas savukārt ietekmēs lietotāja saskarnes atjauninājumus</translation>
     </message>
     <message>
         <source>Disk IO read mode:</source>
@@ -1685,7 +1689,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Socket send buffer size [0: system default]:</source>
-        <translation type="unfinished" />
+        <translation>Soketa sūtīšanas bufera izmērs [0: sistēmas noklusējums]:</translation>
     </message>
     <message>
         <source>Outgoing ports (Max) [0: disabled]:</source>
@@ -1693,7 +1697,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Socket receive buffer size [0: system default]:</source>
-        <translation type="unfinished" />
+        <translation>Soketa saņemšanas bufera izmērs [0: sistēmas noklusējums]:</translation>
     </message>
     <message>
         <source>Use Subcategories</source>
@@ -1717,11 +1721,11 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Bdecode depth limit:</source>
-        <translation type="unfinished" />
+        <translation>Bdekodēšanas dziļuma ierobežojums:</translation>
     </message>
     <message>
         <source>Bdecode token limit:</source>
-        <translation type="unfinished" />
+        <translation>Bdekodēšanas tokenu ierobežojums:</translation>
     </message>
     <message>
         <source>When total seeding time reaches</source>
@@ -1853,7 +1857,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Same host request delay:</source>
-        <translation type="unfinished" />
+        <translation>Tā paša resursdatora pieprasījuma aizkave:</translation>
     </message>
     <message>
         <source>Customize application instance name:</source>
@@ -1869,7 +1873,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Fetched trackers</source>
-        <translation type="unfinished" />
+        <translation>Iegūtie trakeri</translation>
     </message>
     <message>
         <source>Confirm when deleting torrents</source>
@@ -1881,7 +1885,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Dark</source>
-        <translation type="unfinished" />
+        <translation>Tumšs</translation>
     </message>
     <message>
         <source>Delete files permanently</source>
@@ -1913,7 +1917,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Light</source>
-        <translation type="unfinished" />
+        <translation>Gaišs</translation>
     </message>
     <message>
         <source>Automatically append these trackers to new downloads:</source>
@@ -1937,7 +1941,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Enable cookie Secure flag (requires HTTPS or localhost connection)</source>
-        <translation type="unfinished" />
+        <translation>Iespējot sīkdatņu Secure parametru (nepieciešams HTTPS vai localhost savienojums)</translation>
     </message>
     <message>
         <source>When duplicate torrent is being added</source>
@@ -1957,7 +1961,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Run on torrent finished:</source>
-        <translation type="unfinished" />
+        <translation>Palaist, kad torrents pabeigts:</translation>
     </message>
     <message>
         <source>Attempted to send email. Check your inbox to confirm success</source>
@@ -1965,7 +1969,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Automatically append trackers from URL to new downloads:</source>
-        <translation type="unfinished" />
+        <translation>Automātiski pievienot trakerus no URL jauniem lejupielādēm:</translation>
     </message>
     <message>
         <source>Torrent content removing mode:</source>
@@ -1973,7 +1977,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Move files to trash (if possible)</source>
-        <translation type="unfinished" />
+        <translation>Pārvietot failus uz atkritni (ja iespējams)</translation>
     </message>
     <message>
         <source>Stop torrent</source>
@@ -1989,7 +1993,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Run on torrent added:</source>
-        <translation type="unfinished" />
+        <translation>Palaist, kad torrents pievienots:</translation>
     </message>
     <message>
         <source>Port reported to trackers (requires restart) [0: listening port]:</source>
@@ -2017,7 +2021,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Simple pread/pwrite</source>
-        <translation type="unfinished" />
+        <translation>Vienkāršs pread/pwrite</translation>
     </message>
     <message>
         <source>Resolve relative Save Path against appropriate Category path instead of Default one</source>
@@ -2029,7 +2033,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Auto hide zero status filters</source>
-        <translation type="unfinished" />
+        <translation>Automātiski slēpt nulles statusa filtrus</translation>
     </message>
     <message>
         <source>Interface</source>
@@ -2038,22 +2042,6 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     <message>
         <source>Log Files</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation>sek</translation>
     </message>
 </context>
 <context>
@@ -2429,7 +2417,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Edit web seed URL...</source>
-        <translation type="unfinished" />
+        <translation>Rediģēt tīmekļa sēklas URL...</translation>
     </message>
     <message>
         <source>Web seed URL:</source>
@@ -2441,7 +2429,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Ratio / Time Active (in months), indicates how popular the torrent is</source>
-        <translation type="unfinished" />
+        <translation>Attiecība / Aktīvais laiks (mēnešos), norāda, cik populārs ir torrents</translation>
     </message>
     <message>
         <source>Popularity:</source>
@@ -3113,7 +3101,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Collapse/expand</source>
-        <translation>Samazināt/Paplašināt</translation>
+        <translation>Sakļaut/izvērst</translation>
     </message>
     <message>
         <source>Collapse/expand category</source>
@@ -3270,7 +3258,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Export .torrent</source>
-        <translation>Eksportēt .torentu</translation>
+        <translation>Izgūt .torentu</translation>
     </message>
     <message>
         <source>Remove</source>
@@ -3367,7 +3355,7 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Also remove the content files</source>
-        <translation type="unfinished" />
+        <translation>Arī noņemt satura failus</translation>
     </message>
     <message>
         <source>Remove tracker</source>
@@ -3657,11 +3645,11 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     </message>
     <message>
         <source>Engine URL</source>
-        <translation type="unfinished" />
+        <translation>Dzinēja URL</translation>
     </message>
     <message>
         <source>Engine</source>
-        <translation type="unfinished" />
+        <translation>Dzinējs</translation>
     </message>
 </context>
 <context>
@@ -4041,14 +4029,6 @@ Izmantojiet ';' lai atdalītu vairākus vārdus. Varat izmantot vietturi '*'.</t
     <message>
         <source>URL cannot be empty</source>
         <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Autors:</translation>
     </message>
 </context>
 <context>
@@ -4604,198 +4584,6 @@ Atbalsta formātus: S01E01, 1x1, 2017.12.31 un 31.12.2017 (Datumu formātos kā 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nederīgs lietotājvārds vai parole.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Privāts</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>Ierindots</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>Neizdevās eksportēt .torrent failu</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Komentārs:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>Tīmekļa devēju adreses:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Komentārs</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Iestatījumi</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Stāvoklis</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Pabeigti</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Pabeigts</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Hibrīds</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Nav zināms</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>Trakeru adreses:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Vieta:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Izveidot torrentu</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Automātiski</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Torrenta formāts:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Pievienots</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Torrentu veidotājs</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Avots:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Trakeri</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Daļiņas izmērs:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Laukumi</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

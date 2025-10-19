@@ -192,14 +192,6 @@
         <translation>Desconhecido</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>O limite da proporção de compartilhamento deve estar entre 0 e 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>O limite do tempo do seeding deve estar entre 0 e 525600 minutos.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Aplicar</translation>
     </message>
@@ -442,6 +434,14 @@
     <message>
         <source>Add web seeds</source>
         <translation>Adicionar seeds da web</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation>O limite da proporção de compartilhamento não deve ter um valor negativo.</translation>
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation>O limite da proporção de semeadura não deve ter um valor negativo.</translation>
     </message>
 </context>
 <context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>Parar todos</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Criador de torrents</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>Quando adicionar um torrent</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Informação: A senha é salva desencriptada</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>Algorítmo de modo misto do μTP-TCP:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Threads de E/S assíncronos:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -2038,22 +2042,6 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
     <message>
         <source>Log Files</source>
         <translation>Arquivos do log</translation>
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation>Ativar renderização de tabela otimizada (experimental)</translation>
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation>Aviso: A senha é salva sem criptografia</translation>
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation>Intervalo de expiração do cache do resolvedor de nome de host interno</translation>
-    </message>
-    <message>
-        <source>sec</source>
-        <translation>seg</translation>
     </message>
 </context>
 <context>
@@ -4042,14 +4030,6 @@ Use ';' pra dividir múltiplas entradas. Pode usar o wildcard '*'.</translation>
         <source>URL cannot be empty</source>
         <translation>O URL não pode estar vazi</translation>
     </message>
-    <message>
-        <source>Open link</source>
-        <translation>Abrir link</translation>
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Autor: </translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4604,202 +4584,6 @@ Suporta os formatos: S01E01, 1x1, 2017.12.31 e 31.12.2017 (Os formatos de data t
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nome de usuário ou senha inválidos.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Privado</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation>Fonte</translation>
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>Na Fila</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation>Não foi possível criar o torrent.</translation>
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation>Torrent privado
-(não distribuirá na rede DHT)</translation>
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>Não foi possível exportar o arquivo torrent</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation>Criar novo torrent</translation>
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Comentários:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation>Baixar torrent</translation>
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation>Ícone de status</translation>
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>URLs de semente da web:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation>Falhou</translation>
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Comentário</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation>Concluído</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Configurações</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation>Mensagem de erro</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Status</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation>Alinhar ao limite dos pedaços pra arquivos maiores do que:</translation>
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation>Selecione o arquivo/pasta para compartilhar:</translation>
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation>Tamanho da parte</translation>
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Progresso</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Completado em</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Híbrido</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation>Não é possível carregar as tarefas de criação de torrent</translation>
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation>Otimizar
-alinhamento</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/D</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>URLs do rastreador:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation>Você deseja realmente apagar as tarefas selecionadas?</translation>
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Caminho:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Criar Torrent</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Auto</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation>Iniciado em</translation>
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation>Seeds da web</translation>
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation>Começar
-a semear
-imediatamente</translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>Formato</translation>
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Formato do torrent:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation>Caminho da fonte</translation>
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Adicionado em</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation>Em execução</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Criador de torrents</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Fonte:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Trackers</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Tamanho do pedaço:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Campos</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation>Remover tarefa</translation>
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation>Exportar torrent</translation>
     </message>
 </context>
 </TS>

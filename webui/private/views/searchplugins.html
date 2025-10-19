@@ -118,13 +118,13 @@
                 icon: "images/qbittorrent-tray.svg",
                 title: "QBT_TR(Install plugin)QBT_TR[CONTEXT=PluginSourceDlg]",
                 loadMethod: "xhr",
-                contentURL: "views/installsearchplugin.html?v=${CACHEID}",
+                contentURL: "views/installsearchplugin.html",
                 scrollbars: false,
                 resizable: false,
                 maximizable: false,
                 paddingVertical: 0,
                 paddingHorizontal: 0,
-                width: window.qBittorrent.Dialog.limitWidthToViewport(500),
+                width: 500,
                 height: 120
             });
         };
@@ -178,16 +178,16 @@
         const updateTable = () => {
             const oldPlugins = [...searchPluginsTable.getRowIds()];
             // remove old rows from the table
-            for (const oldPlugin of oldPlugins) {
+            for (let i = 0; i < oldPlugins.length; ++i) {
                 let found = false;
                 for (let j = 0; j < window.qBittorrent.Search.searchPlugins.length; ++j) {
-                    if (window.qBittorrent.Search.searchPlugins[j].name === oldPlugin) {
+                    if (window.qBittorrent.Search.searchPlugins[j].name === oldPlugins[i]) {
                         found = true;
                         break;
                     }
                 }
                 if (!found)
-                    searchPluginsTable.removeRow(oldPlugin);
+                    searchPluginsTable.removeRow(oldPlugins[i]);
             }
 
             for (let i = 0; i < window.qBittorrent.Search.searchPlugins.length; ++i) {

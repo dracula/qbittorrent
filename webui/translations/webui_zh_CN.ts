@@ -192,14 +192,6 @@
         <translation>未知</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>分享率限制必须在 0 和 9998 之间。</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>做种时间限制必须在 0 和 525600 分钟之间。</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>确定</translation>
     </message>
@@ -442,6 +434,14 @@
     <message>
         <source>Add web seeds</source>
         <translation>添加 web 种子</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation>分享率限制不能为负值</translation>
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation>做种时间限制不能为负值</translation>
     </message>
 </context>
 <context>
@@ -693,10 +693,6 @@
     <message>
         <source>Stop All</source>
         <translation>全部停止</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>制作 Torrent</translation>
     </message>
 </context>
 <context>
@@ -1172,6 +1168,10 @@
         <translation>添加 torrent 时</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>提示：密码未加密</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>μTP-TCP 混合模式策略:</translation>
     </message>
@@ -1270,6 +1270,10 @@
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>异步 I/O 线程数:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>秒</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1965,7 +1969,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Automatically append trackers from URL to new downloads:</source>
-        <translation>自动添加 URL 中的 trackers 到新的下载：</translation>
+        <translation>自动附加 URL 的 trackers 到新的下载：</translation>
     </message>
     <message>
         <source>Torrent content removing mode:</source>
@@ -1993,7 +1997,7 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     </message>
     <message>
         <source>Port reported to trackers (requires restart) [0: listening port]:</source>
-        <translation>报告给 trackers的端口（需要重启）[0：监听端口]:</translation>
+        <translation>报告给 trackers的端口（需要重启）[0：监听端口]</translation>
     </message>
     <message>
         <source>User interface language:</source>
@@ -2038,22 +2042,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
     <message>
         <source>Log Files</source>
         <translation>日志文件</translation>
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation>启用优化的表格渲染（实验性）</translation>
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation>注意：密码以非加密形式保存</translation>
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation>内部主机名解析器缓存过期间隔</translation>
-    </message>
-    <message>
-        <source>sec</source>
-        <translation>秒</translation>
     </message>
 </context>
 <context>
@@ -4042,14 +4030,6 @@ Use ';' to split multiple entries. Can use wildcard '*'.</source>
         <source>URL cannot be empty</source>
         <translation>URL 不能为空</translation>
     </message>
-    <message>
-        <source>Open link</source>
-        <translation>打开链接</translation>
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>作者：</translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4604,198 +4584,6 @@ Supports the formats: S01E01, 1x1, 2017.12.31 and 31.12.2017 (Date formats also 
     <message>
         <source>Invalid Username or Password.</source>
         <translation>无效的用户名或密码。</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>私密</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation>来源</translation>
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>排队</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation>无法创建种子</translation>
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation>私密种子文件（不会在 DHT 网络分发）</translation>
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>无法导出 torrent 文件</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation>新建种子</translation>
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>注释：</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation>下载种子</translation>
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation>状态图标</translation>
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>Web 种子 URL：</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation>失败了</translation>
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>注释</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation>完成了</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>设置</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation>错误消息</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>状态</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation>大于下列数值的文件启用文件块边界对齐：</translation>
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation>选择要分享的文件/文件夹：</translation>
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation>文件块大小</translation>
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>进度</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>完成于</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>混合</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation>无法加载种子创建任务</translation>
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation>对齐优化</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>Tracker URL：</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation>确定要删除所选任务吗？</translation>
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>路径：</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>制作 Torrent</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>自动</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation>开始于</translation>
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation>Web Seeds</translation>
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation>立即开始做种</translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>格式</translation>
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Torrent 格式：</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation>源路径</translation>
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>添加于</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation>运行中</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>制作 Torrent</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>源：</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Tracker</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>分块大小：</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>字段</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation>删除任务</translation>
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation>导出种子</translation>
     </message>
 </context>
 </TS>

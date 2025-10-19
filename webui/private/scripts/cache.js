@@ -53,7 +53,7 @@ window.qBittorrent.Cache ??= (() => {
     class BuildInfoCache {
         #m_store = {};
 
-        init() {
+        async init() {
             return fetch("api/v2/app/buildInfo", {
                     method: "GET",
                     cache: "no-store"
@@ -76,59 +76,84 @@ window.qBittorrent.Cache ??= (() => {
     class PreferencesCache {
         #m_store = {};
 
-        async init() {
-            return await fetch("api/v2/app/preferences", {
+        // obj: {
+        //   onFailure: () => {},
+        //   onSuccess: () => {}
+        // }
+        async init(obj = {}) {
+            return fetch("api/v2/app/preferences", {
                     method: "GET",
                     cache: "no-store"
                 })
                 .then(async (response) => {
-                    if (!response.ok)
-                        return;
+                        if (!response.ok)
+                            return;
 
-                    const responseText = await response.text();
-                    const responseJSON = JSON.parse(responseText);
-                    deepFreeze(responseJSON);
-                    this.#m_store = responseJSON;
+                        const responseText = await response.text();
+                        const responseJSON = JSON.parse(responseText);
+                        deepFreeze(responseJSON);
+                        this.#m_store = responseJSON;
 
-                    return responseJSON;
-                });
+                        if (typeof obj.onSuccess === "function")
+                            obj.onSuccess(responseJSON, responseText);
+                    },
+                    (error) => {
+                        if (typeof obj.onFailure === "function")
+                            obj.onFailure(error);
+                    });
         }
 
         get() {
             return this.#m_store;
         }
 
-        async set(data) {
-            if (typeof data !== "object")
+        // obj: {
+        //   data: {},
+        //   onFailure: () => {},
+        //   onSuccess: () => {}
+        // }
+        set(obj) {
+            if (typeof obj !== "object")
+                throw new Error("`obj` is not an object.");
+            if (typeof obj.data !== "object")
                 throw new Error("`data` is not an object.");
 
-            return await fetch("api/v2/app/setPreferences", {
+            fetch("api/v2/app/setPreferences", {
                     method: "POST",
                     body: new URLSearchParams({
-                        json: JSON.stringify(data)
+                        json: JSON.stringify(obj.data)
                     })
                 })
-                .then((response) => {
-                    if (!response.ok)
-                        return;
+                .then(async (response) => {
+                        if (!response.ok)
+                            return;
 
-                    this.#m_store = structuredClone(this.#m_store);
-                    for (const key in data) {
-                        if (!Object.hasOwn(data, key))
-                            continue;
+                        this.#m_store = structuredClone(this.#m_store);
+                        for (const key in obj.data) {
+                            if (!Object.hasOwn(obj.data, key))
+                                continue;
 
-                        const value = data[key];
-                        this.#m_store[key] = value;
-                    }
-                    deepFreeze(this.#m_store);
-                });
+                            const value = obj.data[key];
+                            this.#m_store[key] = value;
+                        }
+                        deepFreeze(this.#m_store);
+
+                        if (typeof obj.onSuccess === "function") {
+                            const responseText = await response.text();
+                            obj.onSuccess(responseText);
+                        }
+                    },
+                    (error) => {
+                        if (typeof obj.onFailure === "function")
+                            obj.onFailure(error);
+                    });
         }
     }
 
     class QbtVersionCache {
         #m_store = "";
 
-        init() {
+        async init() {
             return fetch("api/v2/app/version", {
                     method: "GET",
                     cache: "no-store"

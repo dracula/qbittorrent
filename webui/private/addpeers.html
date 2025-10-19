@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <title>QBT_TR(Add Peers)QBT_TR[CONTEXT=PeersAdditionDialog]</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
-    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
-    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
+    <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
+    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
     <script>
         "use strict";
 
-        window.addEventListener("DOMContentLoaded", (event) => {
+        window.addEventListener("DOMContentLoaded", () => {
             window.addEventListener("keydown", (event) => {
                 switch (event.key) {
                     case "Escape":
@@ -24,13 +26,13 @@
             if (hash === null)
                 return;
 
-            document.getElementById("peers").focus();
+            $("peers").focus();
 
-            document.getElementById("addPeersOk").addEventListener("click", (e) => {
+            $("addPeersOk").addEventListener("click", (e) => {
                 e.preventDefault();
                 e.stopPropagation();
 
-                const peers = document.getElementById("peers").value.trim().split(/[\r\n]+/);
+                const peers = $("peers").value.trim().split(/[\r\n]+/);
                 if (peers.length === 0)
                     return;
 

@@ -192,14 +192,6 @@
         <translation>Desconegut</translation>
     </message>
     <message>
-        <source>Share ratio limit must be between 0 and 9998.</source>
-        <translation>El límit de la ràtio de compartició ha de ser entre 0 i 9998.</translation>
-    </message>
-    <message>
-        <source>Seeding time limit must be between 0 and 525600 minutes.</source>
-        <translation>El límit de la sembra ha de ser entre 0 i 525600 minuts.</translation>
-    </message>
-    <message>
         <source>Apply</source>
         <translation>Aplica</translation>
     </message>
@@ -443,6 +435,14 @@ Si us plau, no useu cap caràcter especial al nom de la categoria.</translation>
     <message>
         <source>Add web seeds</source>
         <translation>Afegeix llavors web</translation>
+    </message>
+    <message>
+        <source>Share ratio limit must not have a negative value.</source>
+        <translation>El límit de la ràtio de compartició no pot tenir un valor negatiu.</translation>
+    </message>
+    <message>
+        <source>Seeding time limit must not have a negative value.</source>
+        <translation>El límit del temps de sembra no pot tenir un valor negatiu.</translation>
     </message>
 </context>
 <context>
@@ -694,10 +694,6 @@ Si us plau, no useu cap caràcter especial al nom de la categoria.</translation>
     <message>
         <source>Stop All</source>
         <translation>Interromp-los tots</translation>
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Creador del torrent</translation>
     </message>
 </context>
 <context>
@@ -1173,6 +1169,10 @@ Si us plau, no useu cap caràcter especial al nom de la categoria.</translation>
         <translation>En afegir un torrent</translation>
     </message>
     <message>
+        <source>Info: The password is saved unencrypted</source>
+        <translation>Informació: la contrasenya es desa sense encriptar.</translation>
+    </message>
+    <message>
         <source>μTP-TCP mixed mode algorithm:</source>
         <translation>Algorisme de mode mesclat uTP-TCP:</translation>
     </message>
@@ -1271,6 +1271,10 @@ Si us plau, no useu cap caràcter especial al nom de la categoria.</translation>
     <message>
         <source>Asynchronous I/O threads:</source>
         <translation>Fils d'E/S asincrònics:</translation>
+    </message>
+    <message>
+        <source>s</source>
+        <translation>s</translation>
     </message>
     <message>
         <source>Send buffer watermark:</source>
@@ -1982,7 +1986,7 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
     </message>
     <message>
         <source>Use Category paths in Manual Mode</source>
-        <translation>Usa els camins de la categoria en el mode manual</translation>
+        <translation>Usa els camins de la categoria al mode manual</translation>
     </message>
     <message>
         <source>List of alternative WebUI</source>
@@ -2039,22 +2043,6 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
     <message>
         <source>Log Files</source>
         <translation>Fitxers de registre</translation>
-    </message>
-    <message>
-        <source>Enable optimized table rendering (experimental)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Note: The password is saved unencrypted</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Internal hostname resolver cache expiry interval</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>sec</source>
-        <translation>s</translation>
     </message>
 </context>
 <context>
@@ -4043,14 +4031,6 @@ Useu ";" per separar les entrades. Podeu usar el comodí "*".</translation>
         <source>URL cannot be empty</source>
         <translation>L'URL no pot estar en blanc.</translation>
     </message>
-    <message>
-        <source>Open link</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Author: </source>
-        <translation>Autor:</translation>
-    </message>
 </context>
 <context>
     <name>AutomatedRssDownloader</name>
@@ -4605,198 +4585,6 @@ Admet els formats S01E01, 1x1, 2017.12.31 i 31.12.2017 (Els formats de data tamb
     <message>
         <source>Invalid Username or Password.</source>
         <translation>Nom d'usuari o contrasenya incorrectes.</translation>
-    </message>
-</context>
-<context>
-    <name>TorrentCreator</name>
-    <message>
-        <source>Private</source>
-        <translation>Privat</translation>
-    </message>
-    <message>
-        <source>Source</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Queued</source>
-        <translation>A la cua</translation>
-    </message>
-    <message>
-        <source>Unable to create torrent.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Private
-                torrent (Won't distribute on DHT network)</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Unable to export torrent file</source>
-        <translation>No es pot exportar el fitxer de torrent.</translation>
-    </message>
-    <message>
-        <source>Create New Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comments:</source>
-        <translation>Comentaris:</translation>
-    </message>
-    <message>
-        <source>Download Torrent</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status Icon</source>
-        <translation>Icona d'estat</translation>
-    </message>
-    <message>
-        <source>Web seed URLs:</source>
-        <translation>URLs de llavor web:</translation>
-    </message>
-    <message>
-        <source>Failed</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Comment</source>
-        <translation>Comentari</translation>
-    </message>
-    <message>
-        <source>Finished</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation>Configuració</translation>
-    </message>
-    <message>
-        <source>Error Message</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Status</source>
-        <translation>Estat</translation>
-    </message>
-    <message>
-        <source>Align to piece boundary for files larger
-                than:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Select file/folder to share:</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Piece Size</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Progrés</translation>
-    </message>
-    <message>
-        <source>Completed On</source>
-        <translation>Completat a</translation>
-    </message>
-    <message>
-        <source>Hybrid</source>
-        <translation>Híbrid</translation>
-    </message>
-    <message>
-        <source>Unable to load torrent creation tasks</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Optimize
-                    alignment</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N / D</translation>
-    </message>
-    <message>
-        <source>Tracker URLs:</source>
-        <translation>URLs de rastrejador:</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to delete selected tasks?</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Path:</source>
-        <translation>Camí:</translation>
-    </message>
-    <message>
-        <source>Create Torrent</source>
-        <translation>Crea un torrent</translation>
-    </message>
-    <message>
-        <source>Auto</source>
-        <translation>Auto</translation>
-    </message>
-    <message>
-        <source>Started On</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Web Seeds</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Start
-                seeding
-                immediately</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent format:</source>
-        <translation>Format del torrent:</translation>
-    </message>
-    <message>
-        <source>Source Path</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Added On</source>
-        <translation>Afegit el</translation>
-    </message>
-    <message>
-        <source>Running</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Torrent Creator</source>
-        <translation>Creador del torrent</translation>
-    </message>
-    <message>
-        <source>Source:</source>
-        <translation>Font:</translation>
-    </message>
-    <message>
-        <source>Trackers</source>
-        <translation>Rastrejadors</translation>
-    </message>
-    <message>
-        <source>Piece size:</source>
-        <translation>Mida del tros:</translation>
-    </message>
-    <message>
-        <source>Fields</source>
-        <translation>Camps</translation>
-    </message>
-    <message>
-        <source>Remove Task</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <source>Export Torrent</source>
-        <translation type="unfinished" />
     </message>
 </context>
 </TS>

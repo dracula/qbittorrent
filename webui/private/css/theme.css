@@ -46,7 +46,8 @@
   --radius: 3px;
   --radius-lg: 6px;
   --border-width: 1px;
-  --focus-ring: 0 0 0 2px color-mix(in srgb, var(--accent) 40%, transparent);
+  --focus-ring-color: #BD93F966; /* Accent color with 40% opacity */
+  --focus-ring: 0 0 0 2px var(--focus-ring-color);
   --font-ui: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif;
 }
 
@@ -161,18 +162,6 @@ fieldset.settings table, fieldset.settings td, fieldset.settings th { background
 select option { background: var(--bg-primary); color: var(--fg-primary); }
 input[type="text"], input[type="number"], input[type="password"], textarea { background: var(--bg-primary) !important; color: var(--fg-primary) !important; }
 
-/* Toolbar tabs and buttons */
-#mochaToolbar a, #mochaToolbar button, #mochaToolbar .button,
-.toolbar a, .toolbar button, .toolbar .button {
-  background: var(--button-bg) !important;
-  color: var(--button-fg) !important;
-  border: var(--border-width) solid var(--button-border) !important;
-}
-#mochaToolbar a:hover, #mochaToolbar button:hover,
-.toolbar a:hover, .toolbar button:hover {
-  background: var(--bg-selected) !important;
-  border-color: var(--accent) !important;
-}
 #mochaToolbar a.selected, #mochaToolbar button.selected,
 .toolbar a.selected, .toolbar button.selected,
 #preferencesTabs li.selected a,
@@ -181,4 +170,35 @@ input[type="text"], input[type="number"], input[type="password"], textarea { bac
   color: var(--accent) !important;
   border: var(--border-width) solid var(--border) !important;
   border-bottom: 2px solid var(--tab-indicator) !important;
+}
+
+/* Reset toolbar icon buttons to have no background/border */
+#mochaToolbar a:has(.mochaToolButton),
+#mochaToolbar > a {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+#mochaToolbar a:has(.mochaToolButton):hover,
+#mochaToolbar > a:hover {
+  background: none !important;
+  border: none !important;
+}
+
+/* Fix toolbar button alignment - preserve original layout */
+#mochaToolbar .mochaToolButton {
+  vertical-align: middle !important;
+}
+
+/* Fix divider alignment to match other elements */
+#mochaToolbar .divider {
+  padding-top: 0 !important;
+}
+
+/* Ensure all toolbar elements align properly */
+#mochaToolbar a,
+#mochaToolbar span {
+  vertical-align: middle !important;
 }
