@@ -5,20 +5,17 @@
     <meta charset="UTF-8">
     <title>QBT_TR(Rename)QBT_TR[CONTEXT=TransferListWidget]</title>
     <link rel="stylesheet" href="css/style.css?v=${CACHEID}" type="text/css">
-    <script src="scripts/lib/MooTools-Core-1.6.0-compat-compressed.js"></script>
-    <script src="scripts/lib/MooTools-More-1.6.0-compat-compressed.js"></script>
-    <script src="scripts/localpreferences.js?v=${CACHEID}"></script>
-    <script src="scripts/color-scheme.js?v=${CACHEID}"></script>
-    <script src="scripts/misc.js?locale=${LANG}&v=${CACHEID}"></script>
+    <script defer src="scripts/localpreferences.js?v=${CACHEID}"></script>
+    <script defer src="scripts/color-scheme.js?v=${CACHEID}"></script>
     <script>
         "use strict";
 
-        window.addEventListener("DOMContentLoaded", () => {
+        window.addEventListener("DOMContentLoaded", (event) => {
             window.addEventListener("keydown", (event) => {
                 switch (event.key) {
                     case "Enter":
                         event.preventDefault();
-                        $("renameButton").click();
+                        document.getElementById("renameButton").click();
                         break;
                     case "Escape":
                         event.preventDefault();
@@ -31,15 +28,15 @@
             const name = searchParams.get("name");
             // set text field to current value
             if (name !== null)
-                $("rename").value = name;
+                document.getElementById("rename").value = name;
 
-            $("rename").focus();
-            $("renameButton").addEventListener("click", (e) => {
+            document.getElementById("rename").focus();
+            document.getElementById("renameButton").addEventListener("click", (e) => {
                 e.preventDefault();
                 e.stopPropagation();
 
                 // check field
-                const name = $("rename").value.trim();
+                const name = document.getElementById("rename").value.trim();
                 if ((name === null) || (name === ""))
                     return;
 

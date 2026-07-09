@@ -212,59 +212,32 @@ window.qBittorrent.TorrentContent ??= (() => {
 
     const getComboboxPriority = (id) => {
         const node = torrentFilesTable.getNode(id.toString());
-        return normalizePriority(node.priority, 10);
+        return normalizePriority(node.priority);
     };
 
     const switchGlobalCheckboxState = (e) => {
         e.stopPropagation();
 
-        const rowIds = [];
-        const fileIds = [];
-        const checkbox = document.getElementById("tristate_cb");
-        const priority = (checkbox.state === TriState.Checked) ? FilePriority.Ignored : FilePriority.Normal;
-
-        if (checkbox.state === TriState.Checked) {
-            setCheckboxUnchecked(checkbox);
-            for (const row of torrentFilesTable.rows) {
-                const rowId = row.rowId;
-                const node = torrentFilesTable.getNode(rowId);
-                const fileId = node.fileId;
-                const isChecked = (node.checked === TriState.Checked);
-                if (isChecked) {
-                    rowIds.push(rowId);
-                    fileIds.push(fileId);
-                }
-            }
-        }
-        else {
-            setCheckboxChecked(checkbox);
-            for (const row of torrentFilesTable.rows) {
-                const rowId = row.rowId;
-                const node = torrentFilesTable.getNode(rowId);
-                const fileId = node.fileId;
-                const isUnchecked = (node.checked === TriState.Unchecked);
-                if (isUnchecked) {
-                    rowIds.push(rowId);
-                    fileIds.push(fileId);
-                }
-            }
-        }
-
-        if (rowIds.length > 0) {
-            setFilePriority(rowIds, fileIds, priority);
-            for (const id of rowIds)
-                updateParentFolder(id);
-        }
-    };
-
-    const updateGlobalCheckbox = () => {
-        const checkbox = document.getElementById("tristate_cb");
-        if (torrentFilesTable.isAllCheckboxesChecked())
-            setCheckboxChecked(checkbox);
-        else if (torrentFilesTable.isAllCheckboxesUnchecked())
+        const checkbox = e.target;
+        const checked = (checkbox.state === TriState.Checked) ? TriState.Unchecked : TriState.Checked;
+        if (checked === TriState.Unchecked)
             setCheckboxUnchecked(checkbox);
         else
-            setCheckboxPartial(checkbox);
+            setCheckboxChecked(checkbox);
+
+        const fileIds = [];
+        const priority = (checkbox.state === TriState.Checked) ? FilePriority.Normal : FilePriority.Ignored;
+        for (const row of torrentFilesTable.rows.values()) {
+            const node = torrentFilesTable.getNode(row.rowId);
+            if (onFilePriorityChanged && (node.priority !== priority))
+                fileIds.push(node.fileId);
+            node.priority = priority;
+            node.checked = checked;
+        }
+        torrentFilesTable.updateTable(true);
+
+        if (onFilePriorityChanged)
+            onFilePriorityChanged(fileIds, priority);
     };
 
     const setCheckboxChecked = (checkbox) => {
@@ -320,7 +293,7 @@ window.qBittorrent.TorrentContent ??= (() => {
         });
 
         addRowsToTable(rows);
-        updateGlobalCheckbox();
+        torrentFilesTable.updateHeaderCheckbox();
     };
 
     const addRowsToTable = (rows) => {
@@ -419,7 +392,7 @@ window.qBittorrent.TorrentContent ??= (() => {
     const updateParentFolder = (id) => {
         const updateComplete = () => {
             // we've finished recursing
-            updateGlobalCheckbox();
+            torrentFilesTable.updateHeaderCheckbox();
             torrentFilesTable.calculateRemaining();
             torrentFilesTable.updateTable(true);
         };
@@ -492,6 +465,14 @@ window.qBittorrent.TorrentContent ??= (() => {
                         onFileRenameHandler(torrentFilesTable.selectedRows, nodes);
                     }
                 },
+                Download: async (element, ref) => {
+                    const url = getSelectedFileUrl();
+                    await window.qBittorrent.Misc.downloadFileStream(url);
+                },
+                CopyURL: async (element, ref) => {
+                    const url = getSelectedFileUrl();
+                    await clipboardCopy(url);
+                },
 
                 FilePrioIgnore: (element, ref) => {
                     filesPriorityMenuClicked(FilePriority.Ignored);
@@ -510,20 +491,30 @@ window.qBittorrent.TorrentContent ??= (() => {
                 x: 0,
                 y: 2
             },
+            onShow: function() {
+                const selectedFiles = torrentFilesTable.selectedRowsIds();
+                if (selectedFiles.length !== 1) {
+                    this.hideItem("Download");
+                    this.hideItem("CopyURL");
+                }
+                else {
+                    const node = torrentFilesTable.getNode(selectedFiles[0]);
+                    const isFullyDownloaded = node.progress >= 100;
+                    if (!node.isFolder && isFullyDownloaded) {
+                        this.showItem("Download");
+                        this.showItem("CopyURL");
+                    }
+                    else {
+                        this.hideItem("Download");
+                        this.hideItem("CopyURL");
+                    }
+                }
+            }
         });
 
-        torrentFilesTable.setup(tableId, "torrentFilesTableFixedHeaderDiv", torrentFilesContextMenu, true);
-        // inject checkbox into table header
-        const tableHeaders = document.querySelectorAll("#torrentFilesTableFixedHeaderDiv .dynamicTableHeader th");
-        if (tableHeaders.length > 0) {
-            const checkbox = document.createElement("input");
-            checkbox.type = "checkbox";
-            checkbox.id = "tristate_cb";
-            checkbox.addEventListener("click", switchGlobalCheckboxState);
-
-            const checkboxTH = tableHeaders[0];
-            checkboxTH.appendChild(checkbox);
-        }
+        torrentFilesTable.setup(tableId, "torrentFilesTableFixedHeaderDiv", torrentFilesContextMenu);
+        torrentFilesTable.headerCheckboxClickHandler = switchGlobalCheckboxState;
+        torrentFilesTable.injectHeaderCheckbox();
 
         // default sort by name column
         if (torrentFilesTable.getSortedColumn() === null)
@@ -555,6 +546,24 @@ window.qBittorrent.TorrentContent ??= (() => {
     const clearFilterInputTimer = () => {
         clearTimeout(torrentFilesFilterInputTimer);
         torrentFilesFilterInputTimer = -1;
+    };
+
+    const getSelectedFileUrl = () => {
+        const current_hash = torrentsTable.getCurrentTorrentID();
+        if (current_hash.length === 0)
+            return;
+
+        const selectedFiles = torrentFilesTable.selectedRowsIds();
+        if (selectedFiles.length !== 1)
+            return;
+
+        const node = torrentFilesTable.getNode(selectedFiles[0]);
+        const url = new URL("api/v2/torrents/downloadFile", window.location);
+        url.search = new URLSearchParams({
+            hash: current_hash,
+            file: node.fileId
+        });
+        return url;
     };
 
     return exports();

@@ -33,40 +33,36 @@
     "use strict";
 
     (() => {
-        // Tabs
         MochaUI.initializeTabs("preferencesTabs");
 
-        $("PrefBehaviorLink").addEventListener("click", (e) => {
-            Array.prototype.forEach.call(document.querySelectorAll(".PrefTab"), (tab => tab.classList.add("invisible")));
-            $("BehaviorTab").classList.remove("invisible");
+        const showTab = (element) => {
+            for (const tab of document.querySelectorAll(".PrefTab"))
+                tab.classList.toggle("invisible", (tab !== element));
+        };
+
+        document.getElementById("PrefBehaviorLink").addEventListener("click", (e) => {
+            showTab(document.getElementById("BehaviorTab"));
         });
-        $("PrefDownloadsLink").addEventListener("click", (e) => {
-            Array.prototype.forEach.call(document.querySelectorAll(".PrefTab"), (tab => tab.classList.add("invisible")));
-            $("DownloadsTab").classList.remove("invisible");
+        document.getElementById("PrefDownloadsLink").addEventListener("click", (e) => {
+            showTab(document.getElementById("DownloadsTab"));
         });
-        $("PrefConnectionLink").addEventListener("click", (e) => {
-            Array.prototype.forEach.call(document.querySelectorAll(".PrefTab"), (tab => tab.classList.add("invisible")));
-            $("ConnectionTab").classList.remove("invisible");
+        document.getElementById("PrefConnectionLink").addEventListener("click", (e) => {
+            showTab(document.getElementById("ConnectionTab"));
         });
-        $("PrefSpeedLink").addEventListener("click", (e) => {
-            Array.prototype.forEach.call(document.querySelectorAll(".PrefTab"), (tab => tab.classList.add("invisible")));
-            $("SpeedTab").classList.remove("invisible");
+        document.getElementById("PrefSpeedLink").addEventListener("click", (e) => {
+            showTab(document.getElementById("SpeedTab"));
         });
-        $("PrefBittorrentLink").addEventListener("click", (e) => {
-            Array.prototype.forEach.call(document.querySelectorAll(".PrefTab"), (tab => tab.classList.add("invisible")));
-            $("BittorrentTab").classList.remove("invisible");
+        document.getElementById("PrefBittorrentLink").addEventListener("click", (e) => {
+            showTab(document.getElementById("BittorrentTab"));
         });
-        $("PrefRSSLink").addEventListener("click", (e) => {
-            Array.prototype.forEach.call(document.querySelectorAll(".PrefTab"), (tab => tab.classList.add("invisible")));
-            $("RSSTab").classList.remove("invisible");
+        document.getElementById("PrefRSSLink").addEventListener("click", (e) => {
+            showTab(document.getElementById("RSSTab"));
         });
-        $("PrefWebUILink").addEventListener("click", (e) => {
-            Array.prototype.forEach.call(document.querySelectorAll(".PrefTab"), (tab => tab.classList.add("invisible")));
-            $("WebUITab").classList.remove("invisible");
+        document.getElementById("PrefWebUILink").addEventListener("click", (e) => {
+            showTab(document.getElementById("WebUITab"));
         });
-        $("PrefAdvancedLink").addEventListener("click", (e) => {
-            Array.prototype.forEach.call(document.querySelectorAll(".PrefTab"), (tab => tab.classList.add("invisible")));
-            $("AdvancedTab").classList.remove("invisible");
+        document.getElementById("PrefAdvancedLink").addEventListener("click", (e) => {
+            showTab(document.getElementById("AdvancedTab"));
         });
     })();
 </script>

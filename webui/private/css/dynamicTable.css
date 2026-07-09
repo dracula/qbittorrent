@@ -12,6 +12,17 @@
     padding: 2px;
 }
 
+:root.compact .dynamicTable td {
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+:root.compact #torrentFilesTableDiv .dynamicTable td,
+:root.compact #bulkRenameFilesTableDiv .dynamicTable td {
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
 .dynamicTableDiv table.dynamicTable tbody tr.selected {
     background-color: var(--color-background-blue);
     color: var(--color-text-white);
@@ -22,7 +33,8 @@
     color: var(--color-text-white);
 }
 
-#transferList .stateIcon {
+#transferList .stateIcon,
+#torrentCreatorContentView .stateIcon {
     background: left center / contain no-repeat;
     margin-left: 3px;
     padding-left: 1.65em;
@@ -72,6 +84,10 @@
 
     &.stateError {
         background-image: url("../images/error.svg");
+    }
+
+    &.stateRunning {
+        background-image: url("../images/torrent-start.svg");
     }
 
     &.stateUnknown {
@@ -134,15 +150,21 @@
     padding-left: 25px;
 }
 
-div:has(> div.dynamicTableFixedHeaderDiv):not(.invisible) {
+div:has(> div.dynamicTableDiv):not(.invisible) {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
 .dynamicTableFixedHeaderDiv {
-    flex-shrink: 0;
-    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* opaque background on the header table so body rows don't show through when scrolling under it */
+.dynamicTableFixedHeaderDiv table {
+    background-color: var(--color-background-primary);
 }
 
 #propertiesPanel .dynamicTableFixedHeaderDiv,
@@ -153,13 +175,6 @@ div:has(> div.dynamicTableFixedHeaderDiv):not(.invisible) {
 .dynamicTableDiv {
     flex-grow: 1;
     overflow: auto;
-}
-
-.dynamicTableDiv thead th {
-    height: 0 !important;
-    line-height: 0 !important;
-    padding-bottom: 0 !important;
-    padding-top: 0 !important;
 }
 
 /* Trackers table */

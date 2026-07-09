@@ -60,22 +60,12 @@ window.qBittorrent.ContextMenu ??= (() => {
                 onShow: () => {},
                 onHide: () => {},
                 onClick: () => {},
-                fadeSpeed: 200,
                 touchTimer: 600,
                 ...options
             };
 
             // option diffs menu
-            this.menu = $(this.options.menu);
-
-            // fx
-            this.fx = new Fx.Tween(this.menu, {
-                property: "opacity",
-                duration: this.options.fadeSpeed,
-                onComplete: () => {
-                    this.menu.style.visibility = (getComputedStyle(this.menu).opacity > 0) ? "visible" : "hidden";
-                }
-            });
+            this.menu = document.getElementById(this.options.menu);
 
             // hide and begin the listener
             this.hide().startListener();
@@ -116,8 +106,7 @@ window.qBittorrent.ContextMenu ??= (() => {
 
             // position the sub-menu
             const uls = this.menu.getElementsByTagName("ul");
-            for (let i = 0; i < uls.length; ++i) {
-                const ul = uls[i];
+            for (const ul of uls) {
                 if (ul.classList.contains("scrollableMenu"))
                     ul.style.maxHeight = `${scrollableMenuMaxHeight}px`;
                 const rectParent = ul.parentNode.getBoundingClientRect();
@@ -176,8 +165,10 @@ window.qBittorrent.ContextMenu ??= (() => {
         }
 
         searchAndAddTargets() {
-            if (this.options.targets.length > 0)
-                document.querySelectorAll(this.options.targets).forEach((target) => { this.addTarget(target); });
+            if (this.options.targets.length > 0) {
+                for (const target of document.querySelectorAll(this.options.targets))
+                    this.addTarget(target);
+            }
         }
 
         triggerMenu(e, el) {
@@ -190,7 +181,7 @@ window.qBittorrent.ContextMenu ??= (() => {
                 e.stopPropagation();
             }
             // record this as the trigger
-            this.options.element = $(el);
+            this.options.element = el;
             this.adjustMenuPosition(e);
             // show the menu
             this.show();
@@ -219,7 +210,19 @@ window.qBittorrent.ContextMenu ??= (() => {
             });
 
             // hide on body click
-            $(document.body).addEventListener("click", () => {
+            document.body.addEventListener("click", (event) => {
+                const parentNode = event.target.parentNode;
+
+                // make sure the click was on a context menu item
+                if ((parentNode !== null) && (parentNode.tagName.toLowerCase() === "li")) {
+                    const grandParentNode = parentNode.parentNode;
+                    if ((grandParentNode !== null) && (grandParentNode.classList.contains("contextMenu"))) {
+                        const submenuNodes = parentNode.getElementsByTagName("ul");
+                        if (submenuNodes.length > 0)
+                            return;
+                    }
+                }
+
                 this.hide();
                 this.options.element = null;
             });
@@ -231,7 +234,7 @@ window.qBittorrent.ContextMenu ??= (() => {
         show(trigger) {
             if (lastShownContextMenu && (lastShownContextMenu !== this))
                 lastShownContextMenu.hide();
-            this.fx.start(1);
+            this.menu.classList.add("visible");
             this.options.onShow.call(this);
             lastShownContextMenu = this;
             return this;
@@ -240,7 +243,7 @@ window.qBittorrent.ContextMenu ??= (() => {
         // hide the menu
         hide(trigger) {
             if (lastShownContextMenu && (lastShownContextMenu.menu.style.visibility !== "hidden")) {
-                this.fx.start(0);
+                this.menu.classList.remove("visible");
                 this.options.onHide.call(this);
             }
             return this;
@@ -292,7 +295,7 @@ window.qBittorrent.ContextMenu ??= (() => {
                 this.options.actions[action](element, this, action);
             return this;
         }
-    };
+    }
 
     class FilterListContextMenu extends ContextMenu {
         constructor(options) {
@@ -313,10 +316,11 @@ window.qBittorrent.ContextMenu ??= (() => {
         updateTorrentActions() {
             const torrentsVisible = torrentsTable.tableBody.children.length > 0;
             this.setEnabled("startTorrents", torrentsVisible)
+                .setEnabled("forceStartTorrents", torrentsVisible)
                 .setEnabled("stopTorrents", torrentsVisible)
                 .setEnabled("deleteTorrents", torrentsVisible);
         }
-    };
+    }
 
     class TorrentsTableContextMenu extends ContextMenu {
         updateMenuItems() {
@@ -331,14 +335,13 @@ window.qBittorrent.ContextMenu ??= (() => {
             let there_are_force_start = false;
             let all_are_super_seeding = true;
             let all_are_auto_tmm = true;
-            let there_are_auto_tmm = false;
             let thereAreV1Hashes = false;
             let thereAreV2Hashes = false;
             const tagCount = new Map();
             const categoryCount = new Map();
 
             const selectedRows = torrentsTable.selectedRowsIds();
-            selectedRows.forEach((item, index) => {
+            for (const item of selectedRows) {
                 const data = torrentsTable.getRow(item).full_data;
 
                 if (data["seq_dl"] !== true)
@@ -351,7 +354,7 @@ window.qBittorrent.ContextMenu ??= (() => {
                 else
                     there_are_f_l_piece_prio = true;
 
-                if (data["progress"] !== 1.0) // not downloaded
+                if (data["progress"] !== 1) // not downloaded
                     all_are_downloaded = false;
                 else if (data["super_seeding"] !== true)
                     all_are_super_seeding = false;
@@ -366,9 +369,7 @@ window.qBittorrent.ContextMenu ??= (() => {
                 else
                     there_are_force_start = true;
 
-                if (data["auto_tmm"] === true)
-                    there_are_auto_tmm = true;
-                else
+                if (data["auto_tmm"] !== true)
                     all_are_auto_tmm = false;
 
                 if (data["infohash_v1"] !== "")
@@ -386,7 +387,7 @@ window.qBittorrent.ContextMenu ??= (() => {
                 const torrentCategory = data["category"];
                 const count = categoryCount.get(torrentCategory);
                 categoryCount.set(torrentCategory, ((count !== undefined) ? (count + 1) : 1));
-            });
+            }
 
             // hide renameFiles when more than 1 torrent is selected
             if (selectedRows.length === 1) {
@@ -446,20 +447,14 @@ window.qBittorrent.ContextMenu ??= (() => {
             else if (!there_are_stopped && !there_are_force_start)
                 this.hideItem("start");
 
-            if (!all_are_auto_tmm && there_are_auto_tmm) {
-                this.hideItem("autoTorrentManagement");
-            }
-            else {
-                this.showItem("autoTorrentManagement");
-                this.setItemChecked("autoTorrentManagement", all_are_auto_tmm);
-            }
+            this.setItemChecked("autoTorrentManagement", all_are_auto_tmm);
 
             this.setEnabled("copyInfohash1", thereAreV1Hashes);
             this.setEnabled("copyInfohash2", thereAreV2Hashes);
 
-            const contextTagList = $("contextTagList");
-            for (const tag of tagMap.keys()) {
-                const checkbox = contextTagList.querySelector(`a[href="#Tag/${tag}"] input[type="checkbox"]`);
+            const contextTagList = document.getElementById("contextTagList");
+            for (const tag of window.qBittorrent.Client.tagMap.keys()) {
+                const checkbox = contextTagList.querySelector(`a[href="#Tag/${CSS.escape(tag)}"] input[type="checkbox"]`);
                 const count = tagCount.get(tag);
                 const hasCount = (count !== undefined);
                 const isLesser = (count < selectedRows.length);
@@ -468,8 +463,8 @@ window.qBittorrent.ContextMenu ??= (() => {
             }
 
             const contextCategoryList = document.getElementById("contextCategoryList");
-            for (const category of categoryMap.keys()) {
-                const categoryIcon = contextCategoryList.querySelector(`a[href$="#Category/${category}"] img`);
+            for (const category of window.qBittorrent.Client.categoryMap.keys()) {
+                const categoryIcon = contextCategoryList.querySelector(`a[href$="#Category/${CSS.escape(category)}"] img`);
                 const count = categoryCount.get(category);
                 const isEqual = ((count !== undefined) && (count === selectedRows.length));
                 categoryIcon.classList.toggle("highlightedCategoryIcon", isEqual);
@@ -477,13 +472,15 @@ window.qBittorrent.ContextMenu ??= (() => {
         }
 
         updateCategoriesSubMenu(categories) {
-            const contextCategoryList = $("contextCategoryList");
-            [...contextCategoryList.children].forEach((el) => { el.remove(); });
+            const contextCategoryList = document.getElementById("contextCategoryList");
+
+            for (const el of [...contextCategoryList.children])
+                el.remove();
 
             const createMenuItem = (text, imgURL, clickFn) => {
                 const anchor = document.createElement("a");
                 anchor.textContent = text;
-                anchor.addEventListener("click", () => { clickFn(); });
+                anchor.addEventListener("click", clickFn);
 
                 const img = document.createElement("img");
                 img.src = imgURL;
@@ -495,8 +492,8 @@ window.qBittorrent.ContextMenu ??= (() => {
 
                 return item;
             };
-            contextCategoryList.appendChild(createMenuItem("QBT_TR(New...)QBT_TR[CONTEXT=TransferListWidget]", "images/list-add.svg", torrentNewCategoryFN));
-            contextCategoryList.appendChild(createMenuItem("QBT_TR(Reset)QBT_TR[CONTEXT=TransferListWidget]", "images/edit-clear.svg", () => { torrentSetCategoryFN(""); }));
+            contextCategoryList.appendChild(createMenuItem("QBT_TR(New...)QBT_TR[CONTEXT=TransferListWidget]", "images/list-add.svg", (event) => { torrentNewCategoryFN(); }));
+            contextCategoryList.appendChild(createMenuItem("QBT_TR(Reset)QBT_TR[CONTEXT=TransferListWidget]", "images/edit-clear.svg", (event) => { torrentSetCategoryFN(""); }));
 
             const sortedCategories = [...categories.keys()];
             sortedCategories.sort(window.qBittorrent.Misc.naturalSortCollator.compare);
@@ -527,13 +524,13 @@ window.qBittorrent.ContextMenu ??= (() => {
         }
 
         updateTagsSubMenu(tags) {
-            const contextTagList = $("contextTagList");
+            const contextTagList = document.getElementById("contextTagList");
             contextTagList.replaceChildren();
 
             const createMenuItem = (text, imgURL, clickFn) => {
                 const anchor = document.createElement("a");
                 anchor.textContent = text;
-                anchor.addEventListener("click", () => { clickFn(); });
+                anchor.addEventListener("click", clickFn);
 
                 const img = document.createElement("img");
                 img.src = imgURL;
@@ -545,15 +542,13 @@ window.qBittorrent.ContextMenu ??= (() => {
 
                 return item;
             };
-            contextTagList.appendChild(createMenuItem("QBT_TR(Add...)QBT_TR[CONTEXT=TransferListWidget]", "images/list-add.svg", torrentAddTagsFN));
-            contextTagList.appendChild(createMenuItem("QBT_TR(Remove All)QBT_TR[CONTEXT=TransferListWidget]", "images/edit-clear.svg", torrentRemoveAllTagsFN));
+            contextTagList.appendChild(createMenuItem("QBT_TR(Add...)QBT_TR[CONTEXT=TransferListWidget]", "images/list-add.svg", (event) => { torrentAddTagsFN(); }));
+            contextTagList.appendChild(createMenuItem("QBT_TR(Remove All)QBT_TR[CONTEXT=TransferListWidget]", "images/edit-clear.svg", (event) => { torrentRemoveAllTagsFN(); }));
 
             const sortedTags = [...tags.keys()];
             sortedTags.sort(window.qBittorrent.Misc.naturalSortCollator.compare);
 
-            for (let i = 0; i < sortedTags.length; ++i) {
-                const tagName = sortedTags[i];
-
+            for (const [i, tagName] of sortedTags.entries()) {
                 const input = document.createElement("input");
                 input.type = "checkbox";
                 input.addEventListener("click", (event) => {
@@ -577,13 +572,13 @@ window.qBittorrent.ContextMenu ??= (() => {
                 contextTagList.appendChild(setTagItem);
             }
         }
-    };
+    }
 
     class StatusesFilterContextMenu extends FilterListContextMenu {
         updateMenuItems() {
             this.updateTorrentActions();
         }
-    };
+    }
 
     class CategoriesFilterContextMenu extends FilterListContextMenu {
         updateMenuItems() {
@@ -591,10 +586,7 @@ window.qBittorrent.ContextMenu ??= (() => {
             if ((id !== CATEGORIES_ALL) && (id !== CATEGORIES_UNCATEGORIZED)) {
                 this.showItem("editCategory");
                 this.showItem("deleteCategory");
-                if (useSubcategories)
-                    this.showItem("createSubcategory");
-                else
-                    this.hideItem("createSubcategory");
+                this.showItem("createSubcategory");
             }
             else {
                 this.hideItem("editCategory");
@@ -604,7 +596,7 @@ window.qBittorrent.ContextMenu ??= (() => {
 
             this.updateTorrentActions();
         }
-    };
+    }
 
     class TagsFilterContextMenu extends FilterListContextMenu {
         updateMenuItems() {
@@ -616,23 +608,30 @@ window.qBittorrent.ContextMenu ??= (() => {
 
             this.updateTorrentActions();
         }
-    };
+    }
 
     class TrackersFilterContextMenu extends FilterListContextMenu {
         updateMenuItems() {
-            const id = this.options.element.id;
-            if ((id !== TRACKERS_ALL) && (id !== TRACKERS_TRACKERLESS))
-                this.showItem("deleteTracker");
-            else
-                this.hideItem("deleteTracker");
+            switch (this.options.element.id) {
+                case TRACKERS_ALL:
+                case TRACKERS_ANNOUNCE_ERROR:
+                case TRACKERS_ERROR:
+                case TRACKERS_TRACKERLESS:
+                case TRACKERS_WARNING:
+                    this.hideItem("deleteTracker");
+                    break;
+                default:
+                    this.showItem("deleteTracker");
+                    break;
+            }
 
             this.updateTorrentActions();
         }
-    };
+    }
 
     class SearchPluginsTableContextMenu extends ContextMenu {
         updateMenuItems() {
-            const enabledColumnIndex = (text) => {
+            const enabledColumnIndex = () => {
                 const columns = document.querySelectorAll("#searchPluginsTableFixedHeaderRow th");
                 return Array.prototype.findIndex.call(columns, (column => column.textContent === "Enabled"));
             };
@@ -642,7 +641,7 @@ window.qBittorrent.ContextMenu ??= (() => {
 
             this.showItem("Uninstall");
         }
-    };
+    }
 
     class RssFeedContextMenu extends ContextMenu {
         updateMenuItems() {
@@ -715,24 +714,25 @@ window.qBittorrent.ContextMenu ??= (() => {
                     break;
             }
         }
-    };
+    }
 
-    class RssArticleContextMenu extends ContextMenu {};
+    class RssArticleContextMenu extends ContextMenu {}
 
     class RssDownloaderRuleContextMenu extends ContextMenu {
         adjustMenuPosition(e) {
+            const rssDownloaderPage = document.getElementById("rssdownloaderpage");
             this.updateMenuItems();
 
             // draw the menu off-screen to know the menu dimensions
             this.menu.style.left = "-999em";
             this.menu.style.top = "-999em";
             // position the menu
-            let xPosMenu = e.pageX + this.options.offsets.x - $("rssdownloaderpage").offsetLeft;
-            let yPosMenu = e.pageY + this.options.offsets.y - $("rssdownloaderpage").offsetTop;
-            if ((xPosMenu + this.menu.offsetWidth) > document.documentElement.clientWidth)
+            let xPosMenu = e.pageX + this.options.offsets.x - rssDownloaderPage.offsetLeft;
+            let yPosMenu = e.pageY + this.options.offsets.y - rssDownloaderPage.offsetTop;
+            if ((xPosMenu + this.menu.offsetWidth) > rssDownloaderPage.clientWidth)
                 xPosMenu -= this.menu.offsetWidth;
-            if ((yPosMenu + this.menu.offsetHeight) > document.documentElement.clientHeight)
-                yPosMenu = document.documentElement.clientHeight - this.menu.offsetHeight;
+            if ((yPosMenu + this.menu.offsetHeight) > rssDownloaderPage.clientHeight)
+                yPosMenu = rssDownloaderPage.clientHeight - this.menu.offsetHeight;
             xPosMenu = Math.max(xPosMenu, 0);
             yPosMenu = Math.max(yPosMenu, 0);
 
@@ -749,23 +749,26 @@ window.qBittorrent.ContextMenu ??= (() => {
                     // menu when nothing selected
                     this.hideItem("deleteRule");
                     this.hideItem("renameRule");
+                    this.hideItem("cloneRule");
                     this.hideItem("clearDownloadedEpisodes");
                     break;
                 case 1:
                     // menu when single item selected
                     this.showItem("deleteRule");
                     this.showItem("renameRule");
+                    this.showItem("cloneRule");
                     this.showItem("clearDownloadedEpisodes");
                     break;
                 default:
                     // menu when multiple items selected
                     this.showItem("deleteRule");
                     this.hideItem("renameRule");
+                    this.hideItem("cloneRule");
                     this.showItem("clearDownloadedEpisodes");
                     break;
             }
         }
-    };
+    }
 
     return exports();
 })();

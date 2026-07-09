@@ -1,8 +1,11 @@
 import Globals from "globals";
 import Html from "eslint-plugin-html";
 import Js from "@eslint/js";
+import PluginQbtWebUI from "eslint-plugin-qbt-webui";
 import PreferArrowFunctions from "eslint-plugin-prefer-arrow-functions";
 import Stylistic from "@stylistic/eslint-plugin";
+import Unicorn from "eslint-plugin-unicorn";
+
 import * as RegexpPlugin from "eslint-plugin-regexp";
 
 export default [
@@ -23,23 +26,31 @@ export default [
         },
         plugins: {
             Html,
+            PluginQbtWebUI,
             PreferArrowFunctions,
             RegexpPlugin,
-            Stylistic
+            Stylistic,
+            Unicorn
         },
         rules: {
             "curly": ["error", "multi-or-nest", "consistent"],
             "eqeqeq": "error",
             "guard-for-in": "error",
+            "no-implicit-coercion": "error",
             "no-undef": "off",
             "no-unused-vars": "off",
             "no-var": "error",
+            "object-shorthand": ["error", "consistent"],
             "operator-assignment": "error",
             "prefer-arrow-callback": "error",
             "prefer-const": "error",
             "prefer-template": "error",
             "radix": "error",
+            "require-await": "error",
+            "sort-imports": ["error", { allowSeparatedGroups: true }],
+            "PluginQbtWebUI/prefix-inc-dec-operators": "error",
             "PreferArrowFunctions/prefer-arrow-functions": "error",
+            "Stylistic/no-extra-semi": "error",
             "Stylistic/no-mixed-operators": [
                 "error",
                 {
@@ -54,12 +65,26 @@ export default [
                 "double",
                 {
                     avoidEscape: true,
-                    allowTemplateLiterals: true
+                    allowTemplateLiterals: "avoidEscape"
                 }
             ],
             "Stylistic/quote-props": ["error", "consistent-as-needed"],
             "Stylistic/semi": "error",
-            "Stylistic/spaced-comment": ["error", "always", { exceptions: ["*"] }]
+            "Stylistic/spaced-comment": ["error", "always", { exceptions: ["*"] }],
+            "Unicorn/no-for-each": "error",
+            "Unicorn/no-for-loop": "error",
+            "Unicorn/no-invalid-argument-count": [
+                "error",
+                {
+                    "location.reload": [0, 1],
+                }
+            ],
+            "Unicorn/no-zero-fractions": "error",
+            "Unicorn/prefer-classlist-toggle": "error",
+            "Unicorn/prefer-native-coercion-functions": "error",
+            "Unicorn/prefer-number-properties": "error",
+            "Unicorn/prefer-single-call": "error",
+            "Unicorn/switch-case-braces": ["error", "avoid"]
         }
     }
 ];

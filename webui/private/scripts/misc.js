@@ -34,18 +34,23 @@ window.qBittorrent.Misc ??= (() => {
         return {
             getHost: getHost,
             createDebounceHandler: createDebounceHandler,
+            filterInPlace: filterInPlace,
             friendlyUnit: friendlyUnit,
             friendlyDuration: friendlyDuration,
             friendlyPercentage: friendlyPercentage,
             parseHtmlLinks: parseHtmlLinks,
             parseVersion: parseVersion,
+            compareVersions: compareVersions,
             escapeHtml: escapeHtml,
             naturalSortCollator: naturalSortCollator,
             safeTrim: safeTrim,
             toFixedPointString: toFixedPointString,
             containsAllTerms: containsAllTerms,
             sleep: sleep,
+            DateFormatOptions: DateFormatOptions,
             downloadFile: downloadFile,
+            downloadFileStream: downloadFileStream,
+            formatDate: formatDate,
             // variables
             FILTER_INPUT_DELAY: 400,
             MAX_ETA: 8640000
@@ -88,10 +93,25 @@ window.qBittorrent.Misc ??= (() => {
         };
     };
 
+    const filterInPlace = (array, predicate) => {
+        let j = 0;
+        for (let i = 0; i < array.length; ++i) {
+            if (predicate(array[i])) {
+                if (i > j)
+                    array[j] = array[i];
+                ++j;
+            }
+        }
+        array.splice(j, (array.length - j));
+    };
+
     /*
      * JS counterpart of the function in src/misc.cpp
      */
     const friendlyUnit = (value, isSpeed) => {
+        if ((value === undefined) || (value === null) || Number.isNaN(value) || (value < 0))
+            return "QBT_TR(Unknown)QBT_TR[CONTEXT=misc]";
+
         const units = [
             "QBT_TR(B)QBT_TR[CONTEXT=misc]",
             "QBT_TR(KiB)QBT_TR[CONTEXT=misc]",
@@ -102,15 +122,6 @@ window.qBittorrent.Misc ??= (() => {
             "QBT_TR(EiB)QBT_TR[CONTEXT=misc]"
         ];
 
-        if ((value === undefined) || (value === null) || (value < 0))
-            return "QBT_TR(Unknown)QBT_TR[CONTEXT=misc]";
-
-        let i = 0;
-        while ((value >= 1024.0) && (i < 6)) {
-            value /= 1024.0;
-            ++i;
-        }
-
         const friendlyUnitPrecision = (sizeUnit) => {
             if (sizeUnit <= 2) // KiB, MiB
                 return 1;
@@ -120,15 +131,20 @@ window.qBittorrent.Misc ??= (() => {
                 return 3;
         };
 
+        let i = 0;
+        while ((value >= 1024) && (i < 6)) {
+            value /= 1024;
+            ++i;
+        }
+
         let ret;
         if (i === 0) {
             ret = `${value} ${units[i]}`;
         }
         else {
             const precision = friendlyUnitPrecision(i);
-            const offset = Math.pow(10, precision);
             // Don't round up
-            ret = `${(Math.floor(offset * value) / offset).toFixed(precision)} ${units[i]}`;
+            ret = `${toFixedPointString(value, precision)} ${units[i]}`;
         }
 
         if (isSpeed)
@@ -163,12 +179,12 @@ window.qBittorrent.Misc ??= (() => {
     };
 
     const friendlyPercentage = (value) => {
-        let percentage = (value * 100).round(1);
-        if (isNaN(percentage) || (percentage < 0))
+        let percentage = value * 100;
+        if (Number.isNaN(percentage) || (percentage < 0))
             percentage = 0;
         if (percentage > 100)
             percentage = 100;
-        return `${percentage.toFixed(1)}%`;
+        return `${toFixedPointString(percentage, 1)}%`;
     };
 
     /*
@@ -179,20 +195,27 @@ window.qBittorrent.Misc ??= (() => {
         return text.replace(exp, "<a target='_blank' rel='noopener noreferrer' href='$1'>$1</a>");
     };
 
+    /**
+     * Parse a string into a Version Record.
+     * It is generally recommended to use `compareVersions()` instead.
+     *
+     * @param {string} versionString
+     * @returns {Record<string, any>}
+     */
     const parseVersion = (versionString) => {
         const failure = {
             valid: false
         };
 
-        if (typeof versionString !== "string")
+        if ((typeof versionString !== "string") || (versionString.length === 0))
             return failure;
 
         const tryToNumber = (str) => {
             const num = Number(str);
-            return (isNaN(num) ? str : num);
+            return (Number.isNaN(num) ? str : num);
         };
 
-        const ver = versionString.split(".", 4).map(val => tryToNumber(val));
+        const ver = versionString.split(".", 4).map(tryToNumber);
         return {
             valid: true,
             major: ver[0],
@@ -200,6 +223,51 @@ window.qBittorrent.Misc ??= (() => {
             fix: ver[2],
             patch: ver[3]
         };
+    };
+
+    /**
+     * @param {string | Record<string, any>} left - A version string or the return type of `parseVersion()`
+     * @param {string | Record<string, any>} right - A version string or the return type of `parseVersion()`
+     * @returns {number} `< 0` if `left` is less than `right`. `=== 0` if equal. `> 0` if `left` is greater than `right`.
+     */
+    const compareVersions = (left, right) => {
+        if (typeof left === "string")
+            left = parseVersion(left);
+        if (typeof right === "string")
+            right = parseVersion(right);
+
+        if (!left.valid)
+            return right.valid ? 1 : 0;
+        if (!right.valid)
+            return -1;
+
+        const cmp = (left, right) => {
+            // possible types for `left` and `right`: undefined, number, string (where length === 1)
+
+            if (left === undefined)
+                left = 0;
+            if (right === undefined)
+                right = 0;
+
+            const isNumber = (val) => ((typeof val === "number") && !Number.isNaN(val));
+            return (isNumber(left) && isNumber(right))
+                ? (left - right)
+                : naturalSortCollator.compare(left, right);
+        };
+
+        const resultMajor = cmp(left.major, right.major);
+        if (resultMajor !== 0)
+            return resultMajor;
+
+        const resultMinor = cmp(left.minor, right.minor);
+        if (resultMinor !== 0)
+            return resultMinor;
+
+        const resultFix = cmp(left.fix, right.fix);
+        if (resultFix !== 0)
+            return resultFix;
+
+        return cmp(left.patch, right.patch);
     };
 
     const escapeHtml = (() => {
@@ -225,13 +293,27 @@ window.qBittorrent.Misc ??= (() => {
     };
 
     const toFixedPointString = (number, digits) => {
-        // Do not round up number
-        const power = Math.pow(10, digits);
-        return (Math.floor(power * number) / power).toFixed(digits);
+        if (Number.isNaN(number))
+            return number.toString();
+
+        const sign = (number < 0) ? "-" : "";
+        // Do not round up `number`
+        // Small floating point numbers are imprecise, thus process as a String
+        const tmp = Math.trunc(`${Math.abs(number)}e${digits}`).toString();
+        if (digits <= 0) {
+            return (tmp === "0") ? tmp : `${sign}${tmp}`;
+        }
+        else if (digits < tmp.length) {
+            const idx = tmp.length - digits;
+            return `${sign}${tmp.slice(0, idx)}.${tmp.slice(idx)}`;
+        }
+        else {
+            const zeros = "0".repeat(digits - tmp.length);
+            return `${sign}0.${zeros}${tmp}`;
+        }
     };
 
     /**
-     *
      * @param {String} text the text to search
      * @param {Array<String>} terms terms to search for within the text
      * @returns {Boolean} true if all terms match the text, false otherwise
@@ -288,6 +370,143 @@ window.qBittorrent.Misc ??= (() => {
             alert(errorMessage);
         }
     };
+
+    const downloadFileStream = async (url, errorMessage = "QBT_TR(Unable to download file)QBT_TR[CONTEXT=HttpServer]") => {
+        try {
+            // Pre-flight HEAD request to check for errors before triggering download
+            // This avoids navigating to an error page on failure
+            const response = await fetch(url, { method: "HEAD" });
+            if (!response.ok) {
+                alert(errorMessage);
+                return;
+            }
+
+            // Trigger native browser download
+            const link = document.createElement("a");
+            link.href = url;
+            link.click();
+        }
+        catch (error) {
+            alert(errorMessage);
+        }
+    };
+
+    /**
+     * @param {Date} date
+     * @param {string} format
+     * @returns {string}
+     */
+    const formatDate = (date, format = window.parent.qBittorrent.ClientData.get("date_format")) => {
+        if ((format === "default") || !Object.hasOwn(DateFormatOptions, format))
+            return date.toLocaleString();
+
+        const { locale, options } = DateFormatOptions[format];
+        const formatter = new Intl.DateTimeFormat(locale, options);
+        const formatted = formatter.format(date).replace(" at ", ", ");
+        return format.includes(".") ? formatted.replaceAll("/", ".") : formatted;
+    };
+
+    /**
+     * @type Record<string, {locale: string, options: {}}>
+     */
+    const DateFormatOptions = Object.freeze({
+        "MM/dd/yyyy, h:mm:ss AM/PM": {
+            locale: "en-US",
+            options: {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "numeric",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: true
+            }
+        },
+        "MM/dd/yyyy, HH:mm:ss": {
+            locale: "en-US",
+            options: {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false
+            }
+        },
+        "dd/MM/yyyy, HH:mm:ss": {
+            locale: "en-GB",
+            options: {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false
+            }
+        },
+        "yyyy-MM-dd HH:mm:ss": {
+            locale: "sv-SE",
+            options: {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false
+            }
+        },
+        "yyyy/MM/dd HH:mm:ss": {
+            locale: "ja-JP",
+            options: {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false
+            }
+        },
+        "dd.MM.yyyy, HH:mm:ss": {
+            locale: "en-GB",
+            options: {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false
+            }
+        },
+        "MMM dd, yyyy, h:mm:ss AM/PM": {
+            locale: "en-US",
+            options: {
+                year: "numeric",
+                month: "short",
+                day: "2-digit",
+                hour: "numeric",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: true
+            }
+        },
+        "dd MMM yyyy, HH:mm:ss": {
+            locale: "en-GB",
+            options: {
+                year: "numeric",
+                month: "short",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false
+            }
+        },
+    });
 
     return exports();
 })();
