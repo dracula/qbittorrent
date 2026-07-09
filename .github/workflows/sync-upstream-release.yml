@@ -1,0 +1,93 @@
+name: Sync Upstream Release
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstream-release
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Out Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download Latest Upstream Release
+        id: sync
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_REPO: MahdiMirzadeh/qbittorrent
+        run: |
+          set -euo pipefail
+
+          release_json="$(curl -fsSL \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${SOURCE_REPO}/releases/latest")"
+
+          upstream_tag="$(jq -r '.tag_name' <<<"$release_json")"
+          qbtheme_url="$(jq -r '.assets[] | select(.name == "dracula.qbtheme") | .browser_download_url' <<<"$release_json")"
+          webui_url="$(jq -r '.assets[] | select(.name == "webui-dracula.tar.gz") | .browser_download_url' <<<"$release_json")"
+
+          if [ -z "$upstream_tag" ] || [ "$upstream_tag" = "null" ]; then
+            echo "Unable to resolve the latest upstream release tag." >&2
+            exit 1
+          fi
+
+          if [ -z "$qbtheme_url" ] || [ "$qbtheme_url" = "null" ]; then
+            echo "Unable to find the dracula.qbtheme asset in upstream release $upstream_tag." >&2
+            exit 1
+          fi
+
+          if [ -z "$webui_url" ] || [ "$webui_url" = "null" ]; then
+            echo "Unable to find the webui-dracula.tar.gz asset in upstream release $upstream_tag." >&2
+            exit 1
+          fi
+
+          temp_dir="$(mktemp -d)"
+          trap 'rm -rf "$temp_dir"' EXIT
+
+          curl -fsSL -o "$temp_dir/dracula.qbtheme" "$qbtheme_url"
+          curl -fsSL -o "$temp_dir/webui-dracula.tar.gz" "$webui_url"
+          tar -xzf "$temp_dir/webui-dracula.tar.gz" -C "$temp_dir"
+
+          if [ ! -d "$temp_dir/webui-dracula" ]; then
+            echo "Downloaded WebUI archive does not contain the expected webui-dracula directory." >&2
+            exit 1
+          fi
+
+          rm -rf webui
+          mv "$temp_dir/webui-dracula" webui
+          mv "$temp_dir/dracula.qbtheme" dracula.qbtheme
+
+          echo "upstream_tag=$upstream_tag" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and Push Changes
+        env:
+          UPSTREAM_TAG: ${{ steps.sync.outputs.upstream_tag }}
+        run: |
+          set -euo pipefail
+
+          git add dracula.qbtheme webui
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit for upstream release $UPSTREAM_TAG."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git commit -m "chore: sync from ${UPSTREAM_TAG}"
+          git push
